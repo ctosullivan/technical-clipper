@@ -175,5 +175,4 @@ Plus a manual/reviewed checklist matching the Phase 1 done-criteria below.
   `git status` before the commit showed only `planning/`, `decisions/`,
   `architecture/overview.md`, and `CHANGELOG.md` changed; no file under
   `packages/`, `tests/`, or `fixtures/` was touched.
-- **Commit:** `docs(phase-1): plan implementation through MVP` — see
-  `planning/CONTEXT.md` for the hash.
+- **Commit:** `b367100` — `docs(phase-1): plan implementation through MVP`.

@@ -18,8 +18,8 @@ gate). Implementation proceeds in roadmap order, one phase per commit.
 Phase 1 planning: `decisions/0011`–`0020` (cross-phase ADRs),
 `planning/phase-2`…`phase-10` plans, `planning/mvp-execution-plan.md`,
 refined `planning/ROADMAP.md`, `architecture/overview.md` target section,
-`CHANGELOG.md` entry. Committed as `docs(phase-1): plan implementation through
-MVP` (hash recorded below once made).
+`CHANGELOG.md` entry. Committed as `b367100`
+(`docs(phase-1): plan implementation through MVP`).
 
 ## Unresolved decisions
 
