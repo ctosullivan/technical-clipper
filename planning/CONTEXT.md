@@ -51,10 +51,9 @@ use `pnpm <cmd>` directly once `pnpm` is available on PATH.
 
 ## Working-tree state
 
-Git repository initialized; Phase 0 committed on `main`.
-Commit: see `git log -1` — one logical commit,
-`feat(phase-0): scaffold repository and governance`. Nothing pushed,
-tagged, or released (not authorized, and not requested).
+Git repository initialized; Phase 0 committed on `master`.
+Commit `f845e78` — `feat(phase-0): scaffold repository and governance`.
+Nothing pushed, tagged, or released (not authorized, and not requested).
 
 ## Next concrete action
 

@@ -164,5 +164,5 @@ tests plus `packages/extension` manifest validation).
 - Full file list reviewed directly (see `planning/CONTEXT.md`); no
   unplanned files. `dist/` and `*.tsbuildinfo` build output exists on disk
   but is git-ignored, not committed.
-- Commit hash(es): recorded in `planning/CONTEXT.md` once the commit is
-  made.
+- Commit `f845e78` — `feat(phase-0): scaffold repository and governance`
+  (see `planning/CONTEXT.md`).
