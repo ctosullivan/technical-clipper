@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "producedByExtractorVersion": "1.0.0",
+  "sourceUrl": "https://chatgpt.com/c/rich-example",
+  "canonicalUrl": "https://chatgpt.com/c/rich-example",
+  "notes": "Message with a table, a link, a nested list, and a user image attachment (metadata only). NOT a real transcript."
+}

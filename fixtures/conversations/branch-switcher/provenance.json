@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "producedByExtractorVersion": "1.0.0",
+  "sourceUrl": "https://chatgpt.com/c/branch-example",
+  "canonicalUrl": "https://chatgpt.com/c/branch-example",
+  "notes": "Conversation with a branch switcher showing \"2 / 3\"; only the visible (selected) branch is captured. NOT a real transcript."
+}

@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "producedByExtractorVersion": "1.0.0",
+  "sourceUrl": "https://chatgpt.com/c/linear-example",
+  "canonicalUrl": "https://chatgpt.com/c/linear-example",
+  "notes": "Linear conversation (no branches), assistant message contains a code block. NOT a real transcript."
+}

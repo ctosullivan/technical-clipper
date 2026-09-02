@@ -51,7 +51,14 @@ export interface NoiseResult {
 /** Remove noise from `root` in place; returns what was removed. */
 export function removeNoise(
   root: Element,
-  ctx: { url: string; doc: Document },
+  ctx: {
+    url: string;
+    doc: Document;
+    /** ClipSpec `dropSelectors` (`decisions/0018`). */
+    extraDropSelectors?: readonly string[];
+    /** ClipSpec `keepSelectors` — protected from removal. */
+    extraKeepSelectors?: readonly string[];
+  },
 ): NoiseResult {
   const removed: RemovedRegion[] = [];
   const diagnostics: Diagnostic[] = [];
@@ -62,8 +69,14 @@ export function removeNoise(
       rules.push({ selector, reason: 'chrome' });
     }
   }
+  for (const selector of ctx.extraDropSelectors ?? []) {
+    rules.push({ selector, reason: 'other' });
+  }
 
   const keepSet = new Set<Element>();
+  for (const sel of ctx.extraKeepSelectors ?? []) {
+    for (const el of Array.from(root.querySelectorAll(sel))) keepSet.add(el);
+  }
   if (looksLikeWikipedia(ctx.doc, ctx.url)) {
     for (const sel of WIKIPEDIA_KEEP_SELECTORS) {
       for (const el of Array.from(root.querySelectorAll(sel))) keepSet.add(el);

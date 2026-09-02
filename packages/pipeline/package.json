@@ -14,6 +14,7 @@
   "dependencies": {
     "@technical-clipper/core": "workspace:*",
     "@technical-clipper/detectors": "workspace:*",
+    "@technical-clipper/adapters": "workspace:*",
     "linkedom": "^0.18.0"
   }
 }

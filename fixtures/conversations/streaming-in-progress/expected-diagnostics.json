@@ -1,0 +1,20 @@
+{
+  "canExport": false,
+  "diagnostics": [
+    {
+      "blocksExport": true,
+      "code": "TC-ADAPT-STREAMING",
+      "message": "the conversation was still generating a response when captured",
+      "phase": "adapt",
+      "severity": "fatal"
+    },
+    {
+      "blocksExport": true,
+      "code": "TC-ADAPT-STREAMING",
+      "message": "The conversation was still streaming when captured.",
+      "phase": "validate",
+      "severity": "fatal"
+    }
+  ],
+  "exportStatus": "failed"
+}

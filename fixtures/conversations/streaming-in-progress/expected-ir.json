@@ -1,0 +1,104 @@
+{
+  "body": {
+    "branchEvidence": {
+      "branchIndicator": null,
+      "notes": "no branch switcher present; conversation is linear",
+      "streamingObserved": true,
+      "turnCount": 2
+    },
+    "conversationTitle": "Example chat",
+    "messages": [
+      {
+        "attachments": [],
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Explain recursion."
+              }
+            ],
+            "id": "tm6zuox7eo3tfrfb",
+            "type": "paragraph"
+          }
+        ],
+        "hash": "9fc579a929a874b8ffad8bb12a259bbd50f262b4bb8f6260c2d95be54f5ff269",
+        "id": "gd4hvmrhvhqx7vhm",
+        "order": 0,
+        "role": "user",
+        "roleEvidence": "nested data-message-author-role attribute"
+      },
+      {
+        "attachments": [],
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Recursion is when a function calls itself"
+              }
+            ],
+            "id": "r6pygnof43j64da5",
+            "type": "paragraph"
+          }
+        ],
+        "hash": "69cf75f42ecbaea005f2027ddb255d8781f997c247f0c28b474e00710d154612",
+        "id": "a4rgdeoeaf47yyhs",
+        "order": 1,
+        "role": "assistant",
+        "roleEvidence": "nested data-message-author-role attribute"
+      }
+    ],
+    "modelLabel": null
+  },
+  "captureKind": "conversation",
+  "diagnostics": [
+    {
+      "blocksExport": true,
+      "code": "TC-ADAPT-STREAMING",
+      "message": "the conversation was still generating a response when captured",
+      "phase": "adapt",
+      "severity": "fatal"
+    },
+    {
+      "blocksExport": true,
+      "code": "TC-ADAPT-STREAMING",
+      "message": "The conversation was still streaming when captured.",
+      "phase": "validate",
+      "severity": "fatal"
+    }
+  ],
+  "hashes": {
+    "blocks": {
+      "a4rgdeoeaf47yyhs": "69cf75f42ecbaea005f2027ddb255d8781f997c247f0c28b474e00710d154612",
+      "gd4hvmrhvhqx7vhm": "9fc579a929a874b8ffad8bb12a259bbd50f262b4bb8f6260c2d95be54f5ff269"
+    },
+    "documentContentIdentity": "34ba4d2d9709cdfd40c0ee4f30bfae5613f6bd9e0c8fde85ed8586df8ef251ab",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://chatgpt.com/c/streaming-example",
+    "captureScope": "chatgpt-current-branch",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "chatgpt/current-branch@1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": true,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://chatgpt.com/c/streaming-example",
+    "title": "Example chat"
+  }
+}

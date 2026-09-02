@@ -1,0 +1,165 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 107,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 77,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Install"
+          }
+        ],
+        "id": "2z7ntbnpzgqkr2hu",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Pick your package manager."
+          }
+        ],
+        "id": "stlakixe5yjy4ye4",
+        "type": "paragraph"
+      },
+      {
+        "group": {
+          "defaultMemberIndex": 0,
+          "extraction": {
+            "detectorId": "code/docusaurus-tabs",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "groupKind": "docusaurus-tabs",
+          "id": "juv7becxjj3ca77r",
+          "label": null,
+          "members": [
+            {
+              "code": {
+                "caption": null,
+                "confidence": "exact",
+                "evidenceSource": "dom-text-content",
+                "extraction": {
+                  "detectorId": "code/docusaurus-tabs",
+                  "evidenceSource": "dom-text-content",
+                  "method": "detector",
+                  "methodVersion": "1.0.0"
+                },
+                "filename": null,
+                "hasFinalNewline": false,
+                "hash": "03a56b41daad98779f1848a6de665f813383ce7f6b69d814da8530ca5281e32f",
+                "highlightedLines": null,
+                "id": "6zo74ubwccoolbbg",
+                "language": "shell",
+                "languageEvidence": "class-token",
+                "text": "my-tool init"
+              },
+              "label": "CLI"
+            }
+          ]
+        },
+        "type": "codeGroup"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Then run the dev server."
+          }
+        ],
+        "id": "t2deazxz7ngmdlep",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Pick your package manager.",
+      "outline": [
+        {
+          "id": "2z7ntbnpzgqkr2hu",
+          "level": 1,
+          "text": "Install"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-OVERLAP",
+      "data": {
+        "loser": "code/pre-code",
+        "winner": "code/docusaurus-tabs"
+      },
+      "message": "detector code/pre-code lost an overlap to code/docusaurus-tabs",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "main[1]/div[1]/div[1]/pre[1]"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-ADAPT-GROUP-NONCODE",
+      "message": "Docusaurus tab \"Manual\" has no code; not retained as a member",
+      "phase": "adapt",
+      "severity": "info"
+    }
+  ],
+  "hashes": {
+    "blocks": {
+      "6zo74ubwccoolbbg": "03a56b41daad98779f1848a6de665f813383ce7f6b69d814da8530ca5281e32f"
+    },
+    "documentContentIdentity": "03d6383e77c063668b9072f315de0a2924461fa900eeae9505757266e6934812",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://docs.example/install-mixed",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://docs.example/install-mixed",
+    "title": "Install"
+  }
+}

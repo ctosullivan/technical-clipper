@@ -1,0 +1,163 @@
+{
+  "body": {
+    "branchEvidence": {
+      "branchIndicator": "2 / 3",
+      "notes": "branch switcher present showing \"2 / 3\"; captured the selected branch only, never hidden branches",
+      "streamingObserved": false,
+      "turnCount": 4
+    },
+    "conversationTitle": "Example chat",
+    "messages": [
+      {
+        "attachments": [],
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Give me a haiku."
+              }
+            ],
+            "id": "r6z2ly7un6wtdhbp",
+            "type": "paragraph"
+          }
+        ],
+        "hash": "3ff53130ed30e990447f22a8e9bdfd26151d5c2bdd974ec54a476abd4717b2c1",
+        "id": "bv6o7nrmy7dheb47",
+        "order": 0,
+        "role": "user",
+        "roleEvidence": "nested data-message-author-role attribute"
+      },
+      {
+        "attachments": [],
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Silent pond at dawn"
+              },
+              {
+                "hard": true,
+                "type": "lineBreak"
+              },
+              {
+                "type": "text",
+                "value": "a frog leaps into water"
+              },
+              {
+                "hard": true,
+                "type": "lineBreak"
+              },
+              {
+                "type": "text",
+                "value": "sound of the splash fades"
+              }
+            ],
+            "id": "szutwfx4q4bjzuvv",
+            "type": "paragraph"
+          }
+        ],
+        "hash": "21aa3c989436fecaa8bc8a5daead7906dc79cb46654d050b43a94f5223e8b339",
+        "id": "bwng5publno2m4nb",
+        "order": 1,
+        "role": "assistant",
+        "roleEvidence": "nested data-message-author-role attribute"
+      },
+      {
+        "attachments": [],
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Another about autumn."
+              }
+            ],
+            "id": "z6gut6ddsyhjt3pv",
+            "type": "paragraph"
+          }
+        ],
+        "hash": "b9b6863871e10293fb38c8e550305b4fd5a96357d344b03c1c7a801e048334d9",
+        "id": "q4nodacm4dhsassf",
+        "order": 2,
+        "role": "user",
+        "roleEvidence": "nested data-message-author-role attribute"
+      },
+      {
+        "attachments": [],
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Red leaves let go now"
+              },
+              {
+                "hard": true,
+                "type": "lineBreak"
+              },
+              {
+                "type": "text",
+                "value": "drifting on the cooling wind"
+              },
+              {
+                "hard": true,
+                "type": "lineBreak"
+              },
+              {
+                "type": "text",
+                "value": "the bare branch remains"
+              }
+            ],
+            "id": "w7wgpxi3wfh3vxbe",
+            "type": "paragraph"
+          }
+        ],
+        "hash": "db5d508fd2d00acd936193835471ad39969cf60135bdf5396f0fb90453b98514",
+        "id": "ovn3dbag4difafle",
+        "order": 3,
+        "role": "assistant",
+        "roleEvidence": "nested data-message-author-role attribute"
+      }
+    ],
+    "modelLabel": null
+  },
+  "captureKind": "conversation",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {
+      "bv6o7nrmy7dheb47": "3ff53130ed30e990447f22a8e9bdfd26151d5c2bdd974ec54a476abd4717b2c1",
+      "bwng5publno2m4nb": "21aa3c989436fecaa8bc8a5daead7906dc79cb46654d050b43a94f5223e8b339",
+      "ovn3dbag4difafle": "db5d508fd2d00acd936193835471ad39969cf60135bdf5396f0fb90453b98514",
+      "q4nodacm4dhsassf": "b9b6863871e10293fb38c8e550305b4fd5a96357d344b03c1c7a801e048334d9"
+    },
+    "documentContentIdentity": "a0333e73e8d2cea9950edf51b1f381c2400be7baa877f97396d014fa3ddfff0b",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://chatgpt.com/c/branch-example",
+    "captureScope": "chatgpt-current-branch",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "chatgpt/current-branch@1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://chatgpt.com/c/branch-example",
+    "title": "Example chat"
+  }
+}

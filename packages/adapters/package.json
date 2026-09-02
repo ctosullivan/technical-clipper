@@ -2,7 +2,7 @@
   "name": "@technical-clipper/adapters",
   "version": "0.0.0",
   "private": true,
-  "description": "Site/conversation adapters (e.g. Docusaurus tab groups, ChatGPT current-branch conversations) that describe what is unusual about a page rather than reimplementing extraction. Scaffold only in Phase 0 — real behaviour lands in Phase 6.",
+  "description": "The ChatGPT current-branch conversation adapter and the ClipSpec override seam. Docusaurus tab groups are handled by a component detector in @technical-clipper/detectors.",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -12,6 +12,10 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@technical-clipper/core": "workspace:*"
+    "@technical-clipper/core": "workspace:*",
+    "@technical-clipper/detectors": "workspace:*"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.0"
   }
 }

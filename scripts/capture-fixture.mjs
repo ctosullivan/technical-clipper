@@ -21,6 +21,7 @@ import { canonicalizePretty } from '../packages/core/dist/index.js';
 
 const ARTICLES_DIR = 'fixtures/articles';
 const CODE_DIR = 'fixtures/code';
+const CONVERSATIONS_DIR = 'fixtures/conversations';
 const FIXED_TS = '2026-01-01T00:00:00.000Z';
 
 function dirsUnder(base) {
@@ -99,11 +100,17 @@ const args = process.argv.slice(2);
 const write = args.includes('--write');
 let targets;
 if (args.includes('--all')) {
-  targets = [...dirsUnder(ARTICLES_DIR), ...dirsUnder(CODE_DIR)];
+  targets = [
+    ...dirsUnder(ARTICLES_DIR),
+    ...dirsUnder(CODE_DIR),
+    ...dirsUnder(CONVERSATIONS_DIR),
+  ];
 } else if (args.includes('--articles')) {
   targets = dirsUnder(ARTICLES_DIR);
 } else if (args.includes('--code')) {
   targets = dirsUnder(CODE_DIR);
+} else if (args.includes('--conversations')) {
+  targets = dirsUnder(CONVERSATIONS_DIR);
 } else {
   targets = args.filter((a) => !a.startsWith('--'));
 }

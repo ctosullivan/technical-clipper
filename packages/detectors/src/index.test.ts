@@ -59,9 +59,12 @@ function detectOne(html: string): {
 }
 
 describe('standard detector set', () => {
-  it('registers six detectors, terminal highest priority', () => {
-    expect(standardDetectors).toHaveLength(6);
+  it('registers the detectors, terminal highest priority', () => {
+    expect(standardDetectors).toHaveLength(7);
     expect(standardDetectorRegistry().all()[0]?.id).toBe('terminal/session');
+    expect(standardDetectors.map((d) => d.id)).toContain(
+      'code/docusaurus-tabs',
+    );
   });
 });
 

@@ -1,19 +1,32 @@
 /**
  * @technical-clipper/adapters
  *
- * Site/conversation `Adapter` implementations (Docusaurus tab groups, the
- * ChatGPT current-branch conversation adapter, ...). Adapters describe what
- * is unusual about a page rather than reimplementing whole-page extraction
- * (see AGENTS.md § "General extraction plus narrow adapters").
- *
- * Phase 0 scaffold only — no adapters exist yet. See `planning/ROADMAP.md`
- * (Phase 6) once the Phase 1 plans are written.
+ * The ChatGPT current-branch conversation adapter (`decisions/0008`, `0026`)
+ * and the ClipSpec override seam (`decisions/0018`). Docusaurus tab groups are
+ * handled by a component detector in `@technical-clipper/detectors`
+ * (`code/docusaurus-tabs`) since they are DOM-pattern structure, not
+ * whole-page reinterpretation.
  */
-import { notImplemented } from '@technical-clipper/core';
+export { chatgptConversationAdapter } from './chatgpt.js';
+export type {
+  ConversationAdapter,
+  ConversationAdapterContext,
+  ConversationAdaptResult,
+} from './types.js';
+export {
+  resolveClipSpec,
+  mergeEffectiveConfig,
+  validateClipSpec,
+  type ClipSpec,
+  type EffectiveConfig,
+  type MarkdownProfile,
+  type UserToggles,
+} from './clipspec.js';
 
-export const ADAPTERS_PACKAGE_STATUS = 'scaffold' as const;
+import { chatgptConversationAdapter } from './chatgpt.js';
+import type { ConversationAdapter } from './types.js';
 
-/** Placeholder entrypoint — real adapter registry lands in Phase 6. */
-export function adaptDocument(): never {
-  return notImplemented('adapter-based extraction');
-}
+/** The standard conversation adapter set (one, per `decisions/0013`). */
+export const standardConversationAdapters: readonly ConversationAdapter[] = [
+  chatgptConversationAdapter,
+];

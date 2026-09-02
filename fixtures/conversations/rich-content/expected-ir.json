@@ -1,0 +1,245 @@
+{
+  "body": {
+    "branchEvidence": {
+      "branchIndicator": null,
+      "notes": "no branch switcher present; conversation is linear",
+      "streamingObserved": false,
+      "turnCount": 2
+    },
+    "conversationTitle": "Example chat",
+    "messages": [
+      {
+        "attachments": [
+          {
+            "kind": "image",
+            "name": "sketch.png",
+            "reason": "attachment download is out of MVP scope (decisions/0008, non-goals)",
+            "state": "not-downloaded"
+          }
+        ],
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Compare the two approaches in a table."
+              }
+            ],
+            "id": "wsrgldkp7hfebqvc",
+            "type": "paragraph"
+          }
+        ],
+        "hash": "41af52fdb39bcfc27bcd8419b2f7e8c8975096b2a85888d02fe2791196de2302",
+        "id": "arpylrst7bq35rgm",
+        "order": 0,
+        "role": "user",
+        "roleEvidence": "nested data-message-author-role attribute"
+      },
+      {
+        "attachments": [],
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Here is a comparison:"
+              }
+            ],
+            "id": "lifdyyzdtuvgzoha",
+            "type": "paragraph"
+          },
+          {
+            "id": "l5dtkk263enkhk4u",
+            "table": {
+              "alignments": [
+                "none",
+                "none"
+              ],
+              "header": [
+                [
+                  {
+                    "type": "text",
+                    "value": "Approach"
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "value": "Pro"
+                  }
+                ]
+              ],
+              "rows": [
+                [
+                  [
+                    {
+                      "type": "text",
+                      "value": "A"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "value": "simple"
+                    }
+                  ]
+                ],
+                [
+                  [
+                    {
+                      "type": "text",
+                      "value": "B"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "value": "fast"
+                    }
+                  ]
+                ]
+              ]
+            },
+            "type": "table"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "See the"
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "docs"
+                  }
+                ],
+                "href": "https://docs.example/x",
+                "id": "3wmvsxkubysladt2",
+                "title": null,
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": "for details."
+              }
+            ],
+            "id": "k3m2n4g5tkncy2xt",
+            "type": "paragraph"
+          },
+          {
+            "id": "76xx7nrerxwxpblm",
+            "items": [
+              {
+                "blocks": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Start"
+                      }
+                    ],
+                    "id": "ubkpqicsowpvjnix",
+                    "type": "paragraph"
+                  }
+                ],
+                "checked": null,
+                "id": "jxpwdaexqqa7lfim",
+                "type": "listItem"
+              },
+              {
+                "blocks": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Measure"
+                      }
+                    ],
+                    "id": "gejsrue4vycfwrst",
+                    "type": "paragraph"
+                  },
+                  {
+                    "id": "nemzhnf36kakj42n",
+                    "items": [
+                      {
+                        "blocks": [
+                          {
+                            "children": [
+                              {
+                                "type": "text",
+                                "value": "baseline"
+                              }
+                            ],
+                            "id": "ct2whrkawbqqmcku",
+                            "type": "paragraph"
+                          }
+                        ],
+                        "checked": null,
+                        "id": "myrrlsydukgthhrf",
+                        "type": "listItem"
+                      }
+                    ],
+                    "ordered": true,
+                    "start": null,
+                    "tight": true,
+                    "type": "list"
+                  }
+                ],
+                "checked": null,
+                "id": "mv2u7fjkunuornwo",
+                "type": "listItem"
+              }
+            ],
+            "ordered": true,
+            "start": null,
+            "tight": true,
+            "type": "list"
+          }
+        ],
+        "hash": "0fd9eb13c67d214c884a09c374bbdb7ca23176ea386391d1e448096cddd97f34",
+        "id": "rhtuvd2umd7jaxig",
+        "order": 1,
+        "role": "assistant",
+        "roleEvidence": "nested data-message-author-role attribute"
+      }
+    ],
+    "modelLabel": null
+  },
+  "captureKind": "conversation",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {
+      "arpylrst7bq35rgm": "41af52fdb39bcfc27bcd8419b2f7e8c8975096b2a85888d02fe2791196de2302",
+      "rhtuvd2umd7jaxig": "0fd9eb13c67d214c884a09c374bbdb7ca23176ea386391d1e448096cddd97f34"
+    },
+    "documentContentIdentity": "d3e33bb60a548b963acec28439193aec031945a65cc41aea18630f77e13136b9",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://chatgpt.com/c/rich-example",
+    "captureScope": "chatgpt-current-branch",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "chatgpt/current-branch@1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://chatgpt.com/c/rich-example",
+    "title": "Example chat"
+  }
+}

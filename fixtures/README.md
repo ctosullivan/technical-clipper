@@ -29,10 +29,13 @@ page whose article body contains a code / terminal structure, so it exercises
 `capture()` end to end (`captureKind === technical_article`).
 `provenance.json` records the `category`.
 
-**Status: growing.** Phase 4 added 8 `articles/*` fixtures; Phase 5 added 13
-`code/*` fixtures across `semantic-html` / `prism` / `highlightjs` /
-`blocklevel-code` / `terminal` / `adversarial`. Toward the § 12 minimums
-(≥ 20 article fixtures incl. ≥ 5 **revision-pinned** real Wikipedia articles;
-≥ 50 individual code blocks): real Wikipedia captures and the rest of the code
-corpus are added in Phases 6–10. Do not add a fixture without a matching
-provenance record.
+`fixtures/conversations/<slug>/` holds synthetic ChatGPT-structured pages
+(`captureKind === conversation`).
+
+**Status: growing.** Phase 4: 8 `articles/*`. Phase 5: 13 `code/*`
+(`semantic-html` / `prism` / `highlightjs` / `blocklevel-code` / `terminal` /
+`adversarial`). Phase 6: 4 `conversations/*` + 3 `code/docusaurus-*`. Toward
+the § 12 minimums (≥ 20 article fixtures incl. ≥ 5 **revision-pinned** real
+Wikipedia articles; ≥ 50 individual code blocks): real Wikipedia captures and
+the rest of the code corpus are added in Phases 7–10. Do not add a fixture
+without a matching provenance record.

@@ -1,0 +1,13 @@
+{
+  "origin": "synthetic",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "producedByExtractorVersion": "1.0.0",
+  "sourceUrl": "https://docs.example/install5",
+  "canonicalUrl": "https://docs.example/install5",
+  "category": "docusaurus-tabs",
+  "notes": "Five-tab group -> all five alternatives retained (gate 7)."
+}

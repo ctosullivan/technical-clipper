@@ -1,0 +1,13 @@
+{
+  "origin": "synthetic",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "producedByExtractorVersion": "1.0.0",
+  "sourceUrl": "https://docs.example/install-mixed",
+  "canonicalUrl": "https://docs.example/install-mixed",
+  "category": "docusaurus-tabs",
+  "notes": "A non-code tab is not made a member; TC-ADAPT-GROUP-NONCODE info diagnostic."
+}

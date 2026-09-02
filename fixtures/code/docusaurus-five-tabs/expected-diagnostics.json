@@ -1,0 +1,76 @@
+{
+  "canExport": true,
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-OVERLAP",
+      "data": {
+        "loser": "code/pre-code",
+        "winner": "code/docusaurus-tabs"
+      },
+      "message": "detector code/pre-code lost an overlap to code/docusaurus-tabs",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "main[1]/div[1]/div[1]/pre[1]"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-OVERLAP",
+      "data": {
+        "loser": "code/pre-code",
+        "winner": "code/docusaurus-tabs"
+      },
+      "message": "detector code/pre-code lost an overlap to code/docusaurus-tabs",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "main[1]/div[1]/div[2]/pre[1]"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-OVERLAP",
+      "data": {
+        "loser": "code/pre-code",
+        "winner": "code/docusaurus-tabs"
+      },
+      "message": "detector code/pre-code lost an overlap to code/docusaurus-tabs",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "main[1]/div[1]/div[3]/pre[1]"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-OVERLAP",
+      "data": {
+        "loser": "code/pre-code",
+        "winner": "code/docusaurus-tabs"
+      },
+      "message": "detector code/pre-code lost an overlap to code/docusaurus-tabs",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "main[1]/div[1]/div[4]/pre[1]"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-OVERLAP",
+      "data": {
+        "loser": "code/pre-code",
+        "winner": "code/docusaurus-tabs"
+      },
+      "message": "detector code/pre-code lost an overlap to code/docusaurus-tabs",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "main[1]/div[1]/div[5]/pre[1]"
+      }
+    }
+  ],
+  "exportStatus": "complete"
+}

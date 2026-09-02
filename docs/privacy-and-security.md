@@ -23,12 +23,16 @@ export behaviour.
 - Captured HTML and page metadata will be treated as untrusted at every
   boundary: never executed, never injected unsanitized into extension pages.
 - ChatGPT captures need explicit sanitization/privacy handling before export,
-  since conversation content is more sensitive than a public article. This is
-  decided in Phase 1 planning and implemented in Phase 7
-  (`docs/capture-format.md`).
+  since conversation content is more sensitive than a public article. Raw
+  HTML inclusion defaults **off** for `conversation` captures (`decisions/0017`,
+  implemented in Phase 7); the conversation adapter (Phase 6) already reads
+  only the currently selected branch and downloads nothing.
 - The extension will only ever capture the currently rendered, user-visible
   page state — see
-  [`decisions/0008-chatgpt-current-branch-scope.md`](../decisions/0008-chatgpt-current-branch-scope.md).
+  [`decisions/0008-chatgpt-current-branch-scope.md`](../decisions/0008-chatgpt-current-branch-scope.md)
+  and [`decisions/0026-chatgpt-branch-and-role-evidence.md`](../decisions/0026-chatgpt-branch-and-role-evidence.md).
+  Hidden branches, deleted edits, and internal reasoning are never captured;
+  attachments are recorded as metadata only, never fetched.
 - A security review is a named MVP release gate (Phase 10).
 
 ## Reporting a concern

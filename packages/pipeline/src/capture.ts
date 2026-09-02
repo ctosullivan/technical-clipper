@@ -1,10 +1,13 @@
 /**
- * Top-level capture orchestrator (`architecture/overview.md` steps 1–7).
+ * Top-level capture orchestrator (`architecture/overview.md`).
  *
- * The article path: clone -> detect + sentinel -> general extraction ->
- * restore -> assemble + validate `DocumentIR`. `capture()` uses the standard
- * code detectors (Phase 5) by default; callers may inject a different
- * `DetectorRegistry`. Adapters + the conversation path arrive in Phase 6.
+ * - Resolve the ClipSpec + user toggles into an effective config
+ *   (`decisions/0018`).
+ * - If a conversation adapter applies (`decisions/0008`), take the
+ *   `ConversationIR` path; otherwise take the article path: clone -> detect +
+ *   sentinel -> general extraction -> restore.
+ * - Assemble + validate a `DocumentIR`, compute hashes, derive the export
+ *   status (`decisions/0015`). All inside a network trap.
  */
 import {
   canonicalize,
@@ -19,12 +22,23 @@ import {
   IR_SCHEMA_VERSION,
   PROSE_RULESET_ID,
   type ArticleDocumentIR,
+  type BlockNode,
+  type ConversationDocumentIR,
   type Diagnostic,
   type DocumentIR,
   type ExportDecision,
+  type HashSet,
   type PageLoadState,
 } from '@technical-clipper/core';
-import { standardDetectorRegistry } from '@technical-clipper/detectors';
+import { standardDetectors } from '@technical-clipper/detectors';
+import {
+  mergeEffectiveConfig,
+  resolveClipSpec,
+  standardConversationAdapters,
+  type ClipSpec,
+  type ConversationAdapter,
+  type UserToggles,
+} from '@technical-clipper/adapters';
 import { cloneRoot, parseDocument } from './dom.js';
 import { assertSentinelBalance, substituteSentinels } from './sentinels.js';
 import {
@@ -43,13 +57,33 @@ export interface CaptureInput {
   /** ISO-8601 UTC; defaults to now. Kept injectable for deterministic tests. */
   capturedAt?: string;
   detectors?: DetectorRegistry;
-  /** ClipSpec `articleRootSelector` override (`decisions/0018`). */
+  /** Conversation adapters to try; defaults to the standard set. */
+  adapters?: readonly ConversationAdapter[];
+  /** ClipSpec documents to resolve against `url` (`decisions/0018`). */
+  clipSpecs?: readonly ClipSpec[];
+  /** Explicit user toggles (highest precedence). */
+  userConfig?: UserToggles;
+  /** Direct article-root override (bypasses ClipSpec). */
   forcedRootSelector?: string | null;
 }
 
 export interface CaptureResult {
   document: DocumentIR;
   export: ExportDecision;
+}
+
+function emptyHashes(): HashSet {
+  return {
+    documentContentIdentity: '',
+    blocks: {},
+    markdown: null,
+    rawPageHtml: null,
+    normalizationRulesets: {
+      prose: PROSE_RULESET_ID,
+      code: CODE_RULESET_ID,
+      infostring: INFOSTRING_RULESET_ID,
+    },
+  };
 }
 
 function detectPageLoadState(doc: Document, observedAt: string): PageLoadState {
@@ -77,10 +111,75 @@ function detectPageLoadState(doc: Document, observedAt: string): PageLoadState {
   };
 }
 
+function metaContent(doc: Document, name: string): string | null {
+  const el =
+    doc.querySelector(`meta[name="${name}"]`) ??
+    doc.querySelector(`meta[property="${name}"]`);
+  return el ? el.getAttribute('content') : null;
+}
+
+/** Walk block nodes, collecting per-code-block hashes keyed by node id. */
+function collectCodeHashes(
+  blocks: readonly BlockNode[],
+  out: Record<string, string>,
+): void {
+  for (const b of blocks) {
+    switch (b.type) {
+      case 'codeBlock':
+        out[b.code.id] = hashCodeText(b.code.text);
+        break;
+      case 'codeGroup':
+        for (const m of b.group.members)
+          out[m.code.id] = hashCodeText(m.code.text);
+        break;
+      case 'blockquote':
+      case 'footnoteDefinition':
+        collectCodeHashes(b.blocks, out);
+        break;
+      case 'listItem':
+        collectCodeHashes(b.blocks, out);
+        break;
+      case 'list':
+        for (const item of b.items) collectCodeHashes(item.blocks, out);
+        break;
+      default:
+        break;
+    }
+  }
+}
+
+/** Common finalize: hashes, validation, export decision. Mutates `doc`. */
+function finalize(doc: DocumentIR): CaptureResult {
+  const validation = validateDocumentIR(doc);
+  doc.diagnostics.push(...validation);
+
+  const blockHashes: Record<string, string> = {};
+  if (doc.captureKind === 'conversation') {
+    for (const m of doc.body.messages) {
+      blockHashes[m.id] = m.hash;
+      collectCodeHashes(m.blocks, blockHashes);
+    }
+  } else {
+    collectCodeHashes(doc.body.blocks, blockHashes);
+  }
+  doc.hashes.blocks = blockHashes;
+  doc.hashes.documentContentIdentity = hashCanonicalExcluding(doc, [
+    'captureTimestamp',
+    'observedAt',
+    'documentContentIdentity',
+  ]);
+  void canonicalize(doc);
+
+  const decision = deriveExportStatus(doc.diagnostics, {
+    irValidationFailed: validation.some((d) => d.severity === 'fatal'),
+  });
+  return { document: doc, export: decision };
+}
+
 function runCapture(input: CaptureInput): CaptureResult {
   const capturedAt = input.capturedAt ?? new Date().toISOString();
   const doc = input.doc ?? parseDocument(input.html ?? '');
-  const detectors = input.detectors ?? standardDetectorRegistry();
+  const canonicalUrl = input.canonicalUrl ?? null;
 
   const diagnostics: Diagnostic[] = [];
   const pageLoadState = detectPageLoadState(doc, capturedAt);
@@ -96,6 +195,58 @@ function runCapture(input: CaptureInput): CaptureResult {
     );
   }
 
+  // --- ClipSpec + effective config (decisions/0018) ---
+  const clipResolution = resolveClipSpec(input.url, input.clipSpecs ?? []);
+  diagnostics.push(...clipResolution.diagnostics);
+  const config = mergeEffectiveConfig(clipResolution.spec, input.userConfig);
+
+  // --- conversation path (decisions/0008) ---
+  const conversationAdapters = input.adapters ?? standardConversationAdapters;
+  const applicable = conversationAdapters.filter((a) =>
+    a.appliesTo({ url: input.url, doc }),
+  );
+  if (applicable.length > 1) {
+    diagnostics.push(
+      makeDiagnostic('TC-ADAPT-MULTI-SITE', {
+        phase: 'adapt',
+        message: `${applicable.length} conversation adapters matched`,
+      }),
+    );
+  }
+  const convAdapter = applicable[0];
+  if (convAdapter) {
+    const result = convAdapter.adapt({ doc, url: input.url, canonicalUrl });
+    diagnostics.push(...result.diagnostics);
+    const convDoc: ConversationDocumentIR = {
+      schemaVersion: IR_SCHEMA_VERSION,
+      captureKind: 'conversation',
+      source: {
+        captureTimestamp: capturedAt,
+        sourceUrl: input.url,
+        canonicalUrl,
+        title: result.body.conversationTitle,
+        byline: null,
+        publishedDate: null,
+        captureScope: result.captureScope,
+        extractorVersion: `${convAdapter.name}@${convAdapter.version}`,
+        pageLoadState,
+      },
+      diagnostics,
+      hashes: emptyHashes(),
+      body: result.body,
+    };
+    return finalize(convDoc);
+  }
+
+  // --- article path ---
+  const detectors =
+    input.detectors ??
+    new DetectorRegistry().registerAll(
+      standardDetectors.filter(
+        (d) => !config.suppressedDetectorIds.includes(d.id),
+      ),
+    );
+
   const clone = cloneRoot(doc);
   const { leaves, diagnostics: sentinelDiags } = substituteSentinels(
     clone,
@@ -107,9 +258,12 @@ function runCapture(input: CaptureInput): CaptureResult {
     cloneRootEl: clone,
     doc,
     url: input.url,
-    canonicalUrl: input.canonicalUrl ?? null,
+    canonicalUrl,
     leaves,
-    forcedRootSelector: input.forcedRootSelector ?? null,
+    forcedRootSelector:
+      input.forcedRootSelector ?? config.articleRootSelector ?? null,
+    extraDropSelectors: config.dropSelectors,
+    extraKeepSelectors: config.keepSelectors,
   });
   diagnostics.push(...extraction.diagnostics);
   diagnostics.push(
@@ -122,7 +276,6 @@ function runCapture(input: CaptureInput): CaptureResult {
     : 'article';
 
   if (!extraction.article) {
-    // No article root -> a shell document that fails validation and export.
     const shell = shellDocument(
       input,
       captureKind,
@@ -136,74 +289,32 @@ function runCapture(input: CaptureInput): CaptureResult {
     return { document: shell, export: decision };
   }
 
-  const blockHashes: Record<string, string> = {};
-  for (const leaf of leaves.values()) {
-    if (leaf.kind === 'code') {
-      const cb = leaf.node as { id: string; text: string };
-      blockHashes[cb.id] = hashCodeText(cb.text);
-    }
-  }
-
   const docIR: ArticleDocumentIR = {
     schemaVersion: IR_SCHEMA_VERSION,
     captureKind,
     source: {
       captureTimestamp: capturedAt,
       sourceUrl: input.url,
-      canonicalUrl: input.canonicalUrl ?? null,
+      canonicalUrl,
       title: articleTitle(doc),
-      byline: metaContent(doc, 'author') ?? null,
+      byline: metaContent(doc, 'author'),
       publishedDate:
         metaContent(doc, 'article:published_time') ??
-        metaContent(doc, 'datePublished') ??
-        null,
+        metaContent(doc, 'datePublished'),
       captureScope: 'full-article',
       extractorVersion: EXTRACTOR_VERSION,
       pageLoadState,
     },
     diagnostics,
-    hashes: {
-      documentContentIdentity: '',
-      blocks: blockHashes,
-      markdown: null,
-      rawPageHtml: null,
-      normalizationRulesets: {
-        prose: PROSE_RULESET_ID,
-        code: CODE_RULESET_ID,
-        infostring: INFOSTRING_RULESET_ID,
-      },
-    },
+    hashes: emptyHashes(),
     body: extraction.article,
   };
-
-  const validation = validateDocumentIR(docIR);
-  docIR.diagnostics.push(...validation);
-
-  docIR.hashes.documentContentIdentity = hashCanonicalExcluding(docIR, [
-    'captureTimestamp',
-    'observedAt',
-    'documentContentIdentity',
-  ]);
-  // Freeze the compact form so a second identical capture is byte-identical.
-  void canonicalize(docIR);
-
-  const decision = deriveExportStatus(docIR.diagnostics, {
-    irValidationFailed: validation.some((d) => d.severity === 'fatal'),
-  });
-
-  return { document: docIR, export: decision };
+  return finalize(docIR);
 }
 
 /** Run a capture with the network trap installed (`decisions/0001`, `0009`). */
 export function capture(input: CaptureInput): CaptureResult {
   return runWithNetworkTrap(() => runCapture(input));
-}
-
-function metaContent(doc: Document, name: string): string | null {
-  const el =
-    doc.querySelector(`meta[name="${name}"]`) ??
-    doc.querySelector(`meta[property="${name}"]`);
-  return el ? el.getAttribute('content') : null;
 }
 
 function shellDocument(
@@ -228,17 +339,7 @@ function shellDocument(
       pageLoadState,
     },
     diagnostics,
-    hashes: {
-      documentContentIdentity: '',
-      blocks: {},
-      markdown: null,
-      rawPageHtml: null,
-      normalizationRulesets: {
-        prose: PROSE_RULESET_ID,
-        code: CODE_RULESET_ID,
-        infostring: INFOSTRING_RULESET_ID,
-      },
-    },
+    hashes: emptyHashes(),
     body: {
       articleRoot: {
         selectorPath: '',

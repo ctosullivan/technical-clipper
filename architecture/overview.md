@@ -5,13 +5,13 @@ the _target_ architecture it is heading toward. Do not read the target
 section as already true — it is refined as later phases land, per
 `AGENTS.md` § documentation sync.
 
-## Current state (Phase 5)
+## Current state (Phase 6)
 
 A pnpm/TypeScript workspace. `packages/core` holds the browser-independent
-foundation, `packages/detectors` the code/terminal detectors, and
-`packages/pipeline` the article capture path (wiring the detectors in by
-default); `adapters` / `extension` are still scaffolds; plus a development-time
-Claude skill:
+foundation, `packages/detectors` the code/terminal/tab-group detectors,
+`packages/adapters` the ChatGPT conversation adapter + ClipSpec seam, and
+`packages/pipeline` the capture orchestrator (article **and** conversation
+paths); `extension` is still a scaffold; plus a development-time Claude skill:
 
 - `packages/core` — **implemented** (Phase 3): the typed IR family
   (`DocumentIR` / `ArticleIR` / `ConversationIR` / `MessageIR`, the shared
@@ -43,8 +43,15 @@ Claude skill:
   stripping removes line-number gutters, copy buttons, and language pills;
   language inference is `decisions/0025`. `standardDetectorRegistry()` is the
   default `capture()` uses.
-- `packages/adapters` — depends on `core`; exports a stub `adaptDocument()`
-  that throws. No real adapters exist yet (Phase 6).
+- `packages/detectors` also carries `code/docusaurus-tabs` (Phase 6, priority
+  30): groups the code blocks inside a Docusaurus `<Tabs>` widget into a
+  `CodeGroupIR` retaining every alternative + label (`decisions/0027`).
+- `packages/adapters` — **implemented** (Phase 6): the ChatGPT current-branch
+  conversation adapter (`ConversationIR`; role/branch evidence per
+  `decisions/0026`; streaming ⇒ fatal `TC-ADAPT-STREAMING`; attachments as
+  metadata only), and the ClipSpec override seam (`resolveClipSpec` +
+  `mergeEffectiveConfig`, `decisions/0018`). Message content reuses the
+  standard code detectors.
 - `packages/extension` — a Manifest V3 shell with a zero-permission
   `manifest.json` and an empty background service worker. No capture action,
   preview UI, or Obsidian handoff exists yet (Phase 9).
@@ -56,14 +63,13 @@ Claude skill:
   (`scripts/verify-examples.mjs`). It is not shipped in the extension and is
   never authority to change extraction behaviour (`decisions/0002`, `0021`).
 
-Article **and** code-bearing-technical-article capture work end to end for
-saved HTML fixtures (`fixtures/articles/*`, `fixtures/code/*`, verified by
-`tests/pipeline-article.test.ts` / `tests/pipeline-code.test.ts` +
+Article, technical-article, **and ChatGPT conversation** capture work end to
+end for saved HTML fixtures (`fixtures/articles/*`, `fixtures/code/*`,
+`fixtures/conversations/*`, verified by `tests/pipeline-*.test.ts` +
 `scripts/capture-fixture.mjs`). There is no Markdown rendering, no capture
-bundle, no conversation capture, and no browser extension yet. CI
-(`.github/workflows/ci.yml`) runs
+bundle, and no browser extension yet. CI (`.github/workflows/ci.yml`) runs
 format-check/lint/typecheck/build/test/skill:verify across the workspace;
-~100 deterministic tests.
+~118 deterministic tests.
 
 The detector/adapter seam contracts (`ComponentDetector`, `Adapter`,
 `DETECTOR_PRIORITY`, the registries) live in `packages/core/src/seam.ts` —

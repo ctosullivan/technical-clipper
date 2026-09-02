@@ -9,6 +9,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Phase 6: structured adapters — the conversation path and the ClipSpec seam.
+  - `@technical-clipper/adapters`: the ChatGPT current-branch conversation
+    adapter (`ConversationIR`; role + branch evidence per `decisions/0026`;
+    `TC-ADAPT-STREAMING` fatal when a response is still generating; visible
+    attachment metadata only, nothing downloaded), and the ClipSpec override
+    seam — `resolveClipSpec`, `mergeEffectiveConfig` (defaults < ClipSpec <
+    user toggles), `validateClipSpec` (`decisions/0018`).
+  - `code/docusaurus-tabs` detector in `@technical-clipper/detectors`
+    (`decisions/0027`): groups a Docusaurus `<Tabs>` widget into a
+    `CodeGroupIR` retaining every alternative + label; a non-code tab is
+    omitted with `TC-ADAPT-GROUP-NONCODE`.
+  - `capture()` now takes the conversation path when a conversation adapter
+    applies, and applies ClipSpec `articleRootSelector` / `dropSelectors` /
+    `keepSelectors` / `suppressDetector` on the article path.
+  - `decisions/0026` (ChatGPT branch/role evidence), `decisions/0027`
+    (Docusaurus tabs as a detector).
+  - 4 `fixtures/conversations/*` + 3 `fixtures/code/docusaurus-*` fixtures with
+    goldens; `tests/pipeline-adapters.test.ts` (§ 12 gates 7, 8).
+
 - Phase 5: `@technical-clipper/detectors` — the standard code / terminal
   detector set.
   - `code/pre-code`, `code/blocklevel-code`, `code/prism`, `code/highlightjs`

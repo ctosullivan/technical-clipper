@@ -1,0 +1,130 @@
+{
+  "body": {
+    "branchEvidence": {
+      "branchIndicator": null,
+      "notes": "no branch switcher present; conversation is linear",
+      "streamingObserved": false,
+      "turnCount": 2
+    },
+    "conversationTitle": "Example chat",
+    "messages": [
+      {
+        "attachments": [],
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "How do I read a file in Python?"
+              }
+            ],
+            "id": "tiukpyzirgc7mjef",
+            "type": "paragraph"
+          }
+        ],
+        "hash": "9889276caed397a3490f36cf7333cfd3bb8529d1bbc14059cc4e7c965269a3e6",
+        "id": "nvlgn5mxqlookshp",
+        "order": 0,
+        "role": "user",
+        "roleEvidence": "nested data-message-author-role attribute"
+      },
+      {
+        "attachments": [],
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Use"
+              },
+              {
+                "type": "codeSpan",
+                "value": "open"
+              },
+              {
+                "type": "text",
+                "value": ":"
+              }
+            ],
+            "id": "oopzom5aw6hqve3s",
+            "type": "paragraph"
+          },
+          {
+            "code": {
+              "caption": null,
+              "confidence": "exact",
+              "evidenceSource": "dom-text-content",
+              "extraction": {
+                "detectorId": "code/pre-code",
+                "evidenceSource": "dom-text-content",
+                "method": "detector",
+                "methodVersion": "1.0.0"
+              },
+              "filename": null,
+              "hasFinalNewline": true,
+              "hash": "381ea50d0939f59891e7ffc74a0dfe31ff2154e9602956e5980cdcb93bfeeef4",
+              "highlightedLines": null,
+              "id": "rfht5dqewr5yyg43",
+              "language": "python",
+              "languageEvidence": "class-token",
+              "text": "with open(\"f.txt\") as fh:\n    data = fh.read()\n"
+            },
+            "type": "codeBlock"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "That reads the whole file."
+              }
+            ],
+            "id": "vlfpdw7cz6v565ov",
+            "type": "paragraph"
+          }
+        ],
+        "hash": "5124cdd86c7f235743372efba04a788cc3155f86469b748baa26f5a1bb6da87e",
+        "id": "rhafdmpmmd4lzxir",
+        "order": 1,
+        "role": "assistant",
+        "roleEvidence": "nested data-message-author-role attribute"
+      }
+    ],
+    "modelLabel": null
+  },
+  "captureKind": "conversation",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {
+      "nvlgn5mxqlookshp": "9889276caed397a3490f36cf7333cfd3bb8529d1bbc14059cc4e7c965269a3e6",
+      "rfht5dqewr5yyg43": "381ea50d0939f59891e7ffc74a0dfe31ff2154e9602956e5980cdcb93bfeeef4",
+      "rhafdmpmmd4lzxir": "5124cdd86c7f235743372efba04a788cc3155f86469b748baa26f5a1bb6da87e"
+    },
+    "documentContentIdentity": "a1ca6a3c4babc8055c698bdabea724c377a3aaa9a2babfda5727f6cfe422562f",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://chatgpt.com/c/linear-example",
+    "captureScope": "chatgpt-current-branch",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "chatgpt/current-branch@1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://chatgpt.com/c/linear-example",
+    "title": "Example chat"
+  }
+}

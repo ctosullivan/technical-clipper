@@ -1,0 +1,13 @@
+{
+  "origin": "synthetic",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "producedByExtractorVersion": "1.0.0",
+  "sourceUrl": "https://docs.example/install",
+  "canonicalUrl": "https://docs.example/install",
+  "category": "docusaurus-tabs",
+  "notes": "Two-tab Docusaurus code group -> CodeGroupIR with both members + labels."
+}

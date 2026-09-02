@@ -2,7 +2,39 @@
 
 ## Status
 
-planned
+done
+
+## Completion evidence
+
+- **`@technical-clipper/adapters`:** `chatgpt.ts`
+  (`chatgptConversationAdapter`), `message-blocks.ts` (message DOM →
+  `BlockNode[]`, reusing the standard code detectors), `clipspec.ts`
+  (`resolveClipSpec` / `mergeEffectiveConfig` / `validateClipSpec`), `types.ts`,
+  `index.ts` (`standardConversationAdapters`).
+- **`code/docusaurus-tabs`** detector added to `packages/detectors`
+  (`decisions/0027` — a detector, not a site adapter).
+- **`capture()` restructured:** ClipSpec resolution + effective-config merge;
+  the conversation path (a matching conversation adapter → `ConversationIR`,
+  `TC-ADAPT-MULTI-SITE` fatal if two match); `dropSelectors` / `keepSelectors`
+  / `suppressDetector` applied on the article path; a shared `finalize()`
+  (hashes + validate + status) for both kinds.
+- **ADRs:** `decisions/0026` (branch/role evidence), `0027` (Docusaurus).
+- **Fixtures:** `fixtures/conversations/{linear-with-code, branch-switcher,
+streaming-in-progress, rich-content}`, `fixtures/code/docusaurus-{two-tabs,
+five-tabs, noncode-tab}`, each with goldens.
+- **Tests:** `packages/adapters/src/index.test.ts` (9);
+  `tests/pipeline-adapters.test.ts` (8 — golden + determinism, § 12 gate 8
+  role/order for every conversation fixture, gate 7 tab-alternative retention,
+  streaming fatal, rich content). `pnpm run ci` green: 15 test files /
+  118 tests.
+- **Deferred as planned:** Markdown rendering of groups/conversations
+  (Phase 7); real ChatGPT DOM snapshots (Phase 10; synthetic fixtures marked
+  `origin: synthetic`); `forceDetector` ClipSpec application is schema-only
+  for the MVP.
+- **Commit:** see `planning/CONTEXT.md`.
+
+The scope and plan below are the original Phase 1 statement, retained for
+context.
 
 ## Goal and user-visible outcome
 

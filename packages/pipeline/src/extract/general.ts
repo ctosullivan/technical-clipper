@@ -33,6 +33,9 @@ export interface GeneralExtractionInput {
   canonicalUrl: string | null;
   leaves: Map<string, SentinelLeaf>;
   forcedRootSelector?: string | null;
+  /** ClipSpec `dropSelectors` / `keepSelectors` (`decisions/0018`). */
+  extraDropSelectors?: readonly string[];
+  extraKeepSelectors?: readonly string[];
 }
 
 export interface GeneralExtractionResult {
@@ -122,6 +125,8 @@ export function generalExtract(
   const noise = removeNoise(input.cloneRootEl, {
     url: input.url,
     doc: input.doc,
+    extraDropSelectors: input.extraDropSelectors,
+    extraKeepSelectors: input.extraKeepSelectors,
   });
   diagnostics.push(...noise.diagnostics);
 
