@@ -2,7 +2,7 @@
   "name": "@technical-clipper/core",
   "version": "0.0.0",
   "private": true,
-  "description": "Browser-independent core: typed IR contracts, provenance/confidence semantics, normalization, and hashing. Scaffold only in Phase 0 — real behaviour lands in Phase 3.",
+  "description": "Browser-independent core: typed IR contracts, provenance/confidence semantics, diagnostics + export-status derivation, canonical serialization, normalization rulesets, node ids, hashing, and safe Markdown fence selection. Pure functions, no DOM.",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",

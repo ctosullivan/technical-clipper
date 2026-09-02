@@ -9,6 +9,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Phase 3: `@technical-clipper/core` — the browser-independent foundation, all
+  pure functions with ~70 deterministic unit tests.
+  - Typed IR family (`decisions/0011`): `DocumentIR` discriminated on
+    `captureKind`, `ArticleIR` / `ConversationIR` / `MessageIR`, one shared
+    block/inline node set, `CodeBlockIR` / `CodeGroupIR` / `TerminalSessionIR`,
+    and article sub-contracts.
+  - Provenance / evidence / confidence semantics + legality predicates
+    (`decisions/0012`).
+  - Diagnostics registry (`TC-*` codes, default severities) and
+    `deriveExportStatus` (`complete` / `complete_with_warnings` / `partial` /
+    `failed`, the export gate) — `decisions/0015`.
+  - Canonical JSON (`canonicalize` compact / `canonicalizePretty`),
+    normalization rulesets `norm/prose@1` / `norm/code@1` / `norm/infostring@1`,
+    content-addressable node ids, SHA-256 hashing with fixed boundaries, and
+    safe Markdown fence selection — `decisions/0014`, `0016` (mirrors the
+    Phase 2 skill verifier per `decisions/0021`).
+  - `validateDocumentIR` — schema + cross-field checks (confidence/evidence
+    legality, id uniqueness, approximate/failed-artifact diagnostic pairing,
+    schema-version ceiling, conversation message order).
+
 - Phase 2: `markdown-clipping` development-time Claude skill.
   - `.claude/skills/markdown-clipping/SKILL.md` with discovery frontmatter
     (loads for Markdown-rendering / capture-fixture / Obsidian-export /

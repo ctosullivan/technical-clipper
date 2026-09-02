@@ -2,7 +2,34 @@
 
 ## Status
 
-planned
+done
+
+## Completion evidence
+
+- **Modules** (`packages/core/src/`): `ir/{nodes,code,article,conversation,document,index}.ts`,
+  `provenance.ts`, `diagnostics/{registry,status,index}.ts`, `canonical.ts`,
+  `normalize.ts`, `ids.ts`, `hash.ts`, `fence.ts`, `validate.ts`, `index.ts`;
+  `__fixtures__/build.ts` (test-only IR builders).
+- **Tests:** `canonical.test.ts` (8), `normalize.test.ts` (11), `ids.test.ts`
+  (5), `hash.test.ts` (4, incl. known-answer SHA-256 vectors),
+  `fence.test.ts` (14, sharing the fence table with the Phase 2 verifier —
+  `decisions/0021`), `diagnostics/diagnostics.test.ts` (9), `validate.test.ts`
+  (9), `index.test.ts` (3, incl. the walking-skeleton IR→canonical→hash→fence
+  test). Total ~71 tests; `pnpm run ci` green
+  (`format:check`, `lint`, `tsc -b`, tests, `skill:verify`).
+- **Scaffold cleanup:** `CORE_PACKAGE_STATUS` removed; `NotImplementedError` /
+  `notImplemented` kept and still consumed by the `detectors` / `adapters`
+  scaffolds (replaced in Phases 5–6). `index.test.ts` rewritten.
+- **Deferred as planned:** no DOM, detectors, adapters, renderer, or bundle;
+  `mathBlock` TeX recovery, sentinel-balance and completeness assertions
+  (Phases 4/8).
+- **Doc sync:** `architecture/overview.md` (current state + `core` row),
+  `docs/capture-format.md`, `packages/core/package.json` description,
+  `CHANGELOG.md`.
+- **Commit:** see `planning/CONTEXT.md`.
+
+The scope and plan below are the original Phase 1 statement, retained for
+context.
 
 ## Goal and user-visible outcome
 

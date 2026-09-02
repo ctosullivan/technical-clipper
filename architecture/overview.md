@@ -5,20 +5,29 @@ the _target_ architecture it is heading toward. Do not read the target
 section as already true — it is refined as later phases land, per
 `AGENTS.md` § documentation sync.
 
-## Current state (Phase 2)
+## Current state (Phase 3)
 
-A pnpm/TypeScript workspace with four packages, none of which contain real
-capture behaviour yet, plus a development-time Claude skill:
+A pnpm/TypeScript workspace. `packages/core` now holds the real
+browser-independent foundation; the other three packages are still scaffolds;
+plus a development-time Claude skill:
 
-- `packages/core` — exports a `NotImplementedError`/`notImplemented()` pair
-  and a `CORE_PACKAGE_STATUS = 'scaffold'` marker. No IR types exist yet.
+- `packages/core` — **implemented** (Phase 3): the typed IR family
+  (`DocumentIR` / `ArticleIR` / `ConversationIR` / `MessageIR`, the shared
+  block/inline node set, `CodeBlockIR` / `CodeGroupIR` / `TerminalSessionIR`),
+  provenance / confidence semantics + legality predicates, the diagnostics
+  registry and `deriveExportStatus`, canonical JSON
+  (`canonicalize` / `canonicalizePretty`), the normalization rulesets
+  (`norm/prose@1`, `norm/code@1`, `norm/infostring@1`), content-addressable
+  node ids, SHA-256 hashing with fixed boundaries, safe Markdown fence
+  selection, and `validateDocumentIR`. All pure functions, no DOM. Still
+  exports `notImplemented` for the downstream scaffolds.
 - `packages/detectors` — depends on `core`; exports a stub
-  `detectComponents()` that throws. No real detectors exist yet.
+  `detectComponents()` that throws. No real detectors exist yet (Phase 5).
 - `packages/adapters` — depends on `core`; exports a stub `adaptDocument()`
-  that throws. No real adapters exist yet.
+  that throws. No real adapters exist yet (Phase 6).
 - `packages/extension` — a Manifest V3 shell with a zero-permission
   `manifest.json` and an empty background service worker. No capture action,
-  preview UI, or Obsidian handoff exists yet.
+  preview UI, or Obsidian handoff exists yet (Phase 9).
 
 - `.claude/skills/markdown-clipping/` — a **development-time** Claude skill
   (Phase 2): profile-separated CommonMark / GFM / Obsidian reference notes, a
@@ -27,10 +36,12 @@ capture behaviour yet, plus a development-time Claude skill:
   (`scripts/verify-examples.mjs`). It is not shipped in the extension and is
   never authority to change extraction behaviour (`decisions/0002`, `0021`).
 
-There is no DOM capture pipeline, no rendering, and no capture bundle output.
-CI (`.github/workflows/ci.yml`) runs
-format-check/lint/typecheck/build/test/skill:verify across the workspace —
-these are the only currently-real invariants.
+There is no DOM capture pipeline, no rendering, and no capture bundle output —
+`packages/core` defines the contracts those later phases produce and consume,
+but nothing populates an IR from a page yet. CI
+(`.github/workflows/ci.yml`) runs
+format-check/lint/typecheck/build/test/skill:verify across the workspace;
+`packages/core` carries ~70 deterministic unit tests.
 
 ## Target architecture
 

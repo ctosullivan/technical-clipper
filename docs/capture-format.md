@@ -1,9 +1,15 @@
 # Capture bundle format
 
-**Status: not yet implemented.** This document is a Phase 0 stub. The full
-capture bundle contract (file layout, canonical JSON encoding, hashing
-boundaries, ZIP determinism policy) is designed in Phase 1 planning and
-implemented in Phase 7 — see `planning/ROADMAP.md`.
+**Status: partially implemented.** The bundle packaging (file layout, ZIP
+determinism) is designed in `decisions/0017` and implemented in Phase 7. The
+IR contract that `document.json` serializes — `DocumentIR` and its node tree,
+per `decisions/0011` — is implemented in `packages/core` as of Phase 3, along
+with the canonical JSON encoding (`decisions/0016`: compact form is hashed,
+pretty form with LF newlines + one trailing LF is written to disk),
+the normalization rulesets (`norm/prose@1`, `norm/code@1`,
+`norm/infostring@1`), the SHA-256 hashing boundaries, and content-addressable
+node ids (`decisions/0014`). `content.md` / `manifest.json` / `diagnostics.json`
+and the ZIP still land in Phase 7.
 
 ## Planned minimum bundle shape
 

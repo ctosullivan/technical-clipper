@@ -1,15 +1,41 @@
 /**
  * @technical-clipper/core
  *
- * Browser-independent core: typed IR contracts (`DocumentIR`, `ArticleIR`,
- * `ConversationIR`, `CodeBlockIR`, ...), provenance/confidence semantics,
- * canonical normalization, and hashing.
+ * Browser-independent core (Phase 3): the typed IR family, provenance /
+ * confidence semantics, the diagnostics model + export-status derivation,
+ * canonical serialization, normalization rulesets, content-addressable node
+ * ids, hashing, and safe Markdown fence selection. All pure functions — no
+ * DOM, no detectors, no adapters, no renderer, no bundle.
  *
- * Phase 0 scaffold only. No IR types or normalization logic exist yet — see
- * `planning/ROADMAP.md` (Phase 3) once the Phase 1 plans are written.
+ * Contracts: `decisions/0011`–`0016`, `0019` (fence), `0021` (fence parity
+ * with the markdown-clipping skill verifier).
  */
 
-/** Thrown by scaffolding stubs that intentionally have no behaviour yet. */
+// --- IR contracts ---
+export * from './ir/index.js';
+
+// --- provenance / confidence ---
+export * from './provenance.js';
+
+// --- diagnostics + export status ---
+export * from './diagnostics/index.js';
+
+// --- deterministic primitives ---
+export * from './canonical.js';
+export * from './normalize.js';
+export * from './ids.js';
+export * from './hash.js';
+export * from './fence.js';
+
+// --- validation ---
+export * from './validate.js';
+
+/**
+ * Thrown by scaffolding stubs in `@technical-clipper/detectors` /
+ * `@technical-clipper/adapters` that intentionally have no behaviour yet
+ * (replaced in Phases 5 and 6). Kept here so those packages fail loudly
+ * rather than silently returning fake data.
+ */
 export class NotImplementedError extends Error {
   constructor(feature: string) {
     super(`${feature} is not implemented yet (see planning/ROADMAP.md)`);
@@ -17,16 +43,7 @@ export class NotImplementedError extends Error {
   }
 }
 
-/**
- * Marks a scaffold surface that a later phase must replace with real
- * behaviour. Throwing (rather than returning a placeholder value) means a
- * caller that forgets to wire up the real implementation fails loudly
- * instead of silently succeeding with fake data.
- */
+/** Throw a {@link NotImplementedError} for an unfinished scaffold surface. */
 export function notImplemented(feature: string): never {
   throw new NotImplementedError(feature);
 }
-
-/** Honest scaffold marker — never claim more than "scaffold" until real
- * IR/normalization/hashing behaviour lands. */
-export const CORE_PACKAGE_STATUS = 'scaffold' as const;
