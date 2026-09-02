@@ -1,0 +1,7 @@
+dist
+coverage
+pnpm-lock.yaml
+
+# Exact, durable copy of the original planning brief — must stay
+# byte-identical to the supplied prompt, never reformatted.
+planning/v0-to-mvp-planning-prompt.md

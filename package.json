@@ -1,0 +1,30 @@
+{
+  "name": "technical-clipper",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Local-first browser extension for high-fidelity capture of code-heavy technical pages and ChatGPT conversations into deterministic Markdown and structured capture bundles.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "typecheck": "tsc -b",
+    "build": "tsc -b",
+    "test": "vitest run",
+    "ci": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm build && pnpm test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.0",
+    "@types/node": "^20.14.0",
+    "eslint": "^9.11.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.7.0",
+    "vitest": "^2.1.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@technical-clipper/adapters",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Site/conversation adapters (e.g. Docusaurus tab groups, ChatGPT current-branch conversations) that describe what is unusual about a page rather than reimplementing extraction. Scaffold only in Phase 0 — real behaviour lands in Phase 6.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@technical-clipper/core": "workspace:*"
+  }
+}
