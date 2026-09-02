@@ -20,4 +20,18 @@ export default tseslint.config(
       // silent blanket disables.
     },
   },
+  {
+    // Plain Node ESM tooling scripts (not part of a package's TS build):
+    // the markdown-clipping skill verifier and any future repo scripts.
+    files: ['**/*.mjs', 'scripts/**/*.js'],
+    languageOptions: {
+      globals: {
+        console: 'readonly',
+        process: 'readonly',
+        URL: 'readonly',
+        Buffer: 'readonly',
+        __dirname: 'readonly',
+      },
+    },
+  },
 );

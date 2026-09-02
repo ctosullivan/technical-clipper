@@ -9,6 +9,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Phase 2: `markdown-clipping` development-time Claude skill.
+  - `.claude/skills/markdown-clipping/SKILL.md` with discovery frontmatter
+    (loads for Markdown-rendering / capture-fixture / Obsidian-export /
+    output-profile / fence-selection / clipping-fidelity tasks).
+  - `references/commonmark.md`, `references/gfm.md`,
+    `references/obsidian-markdown.md` — profile-separated derived notes
+    (CommonMark 0.31.2, GFM 0.29-gfm, Obsidian Help retrieved 2026-09-03).
+  - `references/clipping-antipatterns.md` — 17 catalogued clipping failures,
+    each with wrong/right examples.
+  - `references/source-register.md` — retrieval dates, spec versions, licences,
+    and SHA-256 of each derived note.
+  - `scripts/verify-examples.mjs` + `pnpm run skill:verify` — dependency-free
+    offline checks of fence selection, code-span sizing, table/YAML escaping,
+    the anti-pattern detectors, and the discovery description; wired into
+    `pnpm run ci` and the CI workflow.
+  - `discovery-check.md` — should/should-not-trigger prompt checklist.
+  - `decisions/0021` — ADR: the verifier deliberately uses no Markdown parser.
+
 - Phase 1: complete implementation plan through the MVP (planning only, no
   product code).
   - `planning/phase-2-*.md` … `planning/phase-10-*.md` — implementation-ready
@@ -56,6 +74,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     `planning/phase-1-plan-mvp.md` — phase plans.
   - `fixtures/` and `tests/` skeleton directories with READMEs, empty
     pending real fixtures/integration tests in later phases.
+
+### Changed
+
+- Phase 2: `.github/workflows/ci.yml` push trigger corrected from `main` to
+  `master` (the repository's default branch) and extended with a
+  `skill:verify` step; `pnpm run ci` now also runs `skill:verify`.
+- Phase 2: `eslint.config.js` gains a Node-globals block for plain `.mjs` /
+  `scripts/` tooling files.
 
 <!--
   Version-comparison links will be added once a remote repository URL

@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
 
 jobs:
@@ -35,3 +35,6 @@ jobs:
 
       - name: Test
         run: pnpm test
+
+      - name: Verify markdown-clipping skill examples
+        run: pnpm skill:verify

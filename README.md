@@ -40,7 +40,7 @@ resumption state.
 | `planning/`                         | Roadmap, phase plans, resumption context                           |
 | `ai-docs/`                          | Product capabilities and evidence boundaries, for agents           |
 | `fixtures/`                         | Offline HTML/IR/Markdown fixture corpus                            |
-| `.claude/skills/markdown-clipping/` | Development-time Markdown/Obsidian guidance (Phase 2+)             |
+| `.claude/skills/markdown-clipping/` | Development-time Markdown/Obsidian guidance + offline verifier     |
 
 `AGENTS.md` is the canonical, tool-neutral working contract for anyone —
 human or AI — contributing here. `CLAUDE.md` is a small pointer to it.
@@ -49,7 +49,7 @@ human or AI — contributing here. `CLAUDE.md` is a small pointer to it.
 
 ```sh
 pnpm install
-pnpm run ci   # format:check + lint + typecheck + build + test
+pnpm run ci   # format:check + lint + typecheck + build + test + skill:verify
 ```
 
 Use `pnpm run ci`, not `pnpm ci` — pnpm reserves the bare `ci` subcommand for

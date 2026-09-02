@@ -2,7 +2,40 @@
 
 ## Status
 
-planned
+done
+
+## Completion evidence
+
+- **Sources retrieved 2026-09-03** (recorded in `references/source-register.md`
+  with URLs, versions, licences, sections, and SHA-256 of each derived note):
+  CommonMark **0.31.2 (2024-01-28)**, GFM **0.29-gfm (2019-04-06)**, Obsidian
+  Help pages `syntax` / `advanced-syntax` / `properties` / `links` / `embeds` /
+  `callouts` (no version string exposed; `help.obsidian.md` → `obsidian.md/help`
+  301), Claude Code skills docs (`docs.anthropic.com` → `code.claude.com` 301).
+- **Files:** `.claude/skills/markdown-clipping/SKILL.md`,
+  `references/{commonmark,gfm,obsidian-markdown,clipping-antipatterns,source-register}.md`,
+  `scripts/verify-examples.mjs`, `discovery-check.md`; `decisions/0021`;
+  `package.json` (`skill:verify`, added to `ci`); `.github/workflows/ci.yml`
+  (branch fix + verify step); `eslint.config.js` (mjs globals); `CLAUDE.md`,
+  `README.md`, `architecture/overview.md`, `CHANGELOG.md`.
+- **`pnpm run skill:verify`** — PASS, 0 failures (fence selection, code-span
+  sizing, table pipe escaping, YAML quoting, anti-pattern detectors, reference
+  files present, source-register versions + real hashes, SKILL.md discovery
+  description + under 500 lines).
+- **`pnpm run ci`** — green (`format:check`, `lint`, `tsc -b`, 9 tests,
+  `skill:verify`).
+- **Profile-correctness review:** every rule in the three profile references
+  sits under the correct profile heading; Obsidian-only constructs (`==`,
+  `[[ ]]`, callouts, `%%`, properties, block refs) are all in
+  `obsidian-markdown.md` and the anti-pattern catalogue explicitly forbids
+  them in `commonmark`/`gfm`.
+- **Discovery check:** `discovery-check.md` should/should-not table reviewed;
+  the verifier asserts the description mentions Markdown, Obsidian, CommonMark,
+  GFM, fixture, profile and stays under the 1,536-char listing cap.
+- **Commit:** `b6…` — see `planning/CONTEXT.md`.
+
+The scope note in the plan below is the original Phase 1 statement, retained
+for context.
 
 ## Goal and user-visible outcome
 

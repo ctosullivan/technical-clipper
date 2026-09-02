@@ -5,10 +5,10 @@ the _target_ architecture it is heading toward. Do not read the target
 section as already true — it is refined as later phases land, per
 `AGENTS.md` § documentation sync.
 
-## Current state (Phase 0)
+## Current state (Phase 2)
 
 A pnpm/TypeScript workspace with four packages, none of which contain real
-capture behaviour yet:
+capture behaviour yet, plus a development-time Claude skill:
 
 - `packages/core` — exports a `NotImplementedError`/`notImplemented()` pair
   and a `CORE_PACKAGE_STATUS = 'scaffold'` marker. No IR types exist yet.
@@ -20,9 +20,17 @@ capture behaviour yet:
   `manifest.json` and an empty background service worker. No capture action,
   preview UI, or Obsidian handoff exists yet.
 
+- `.claude/skills/markdown-clipping/` — a **development-time** Claude skill
+  (Phase 2): profile-separated CommonMark / GFM / Obsidian reference notes, a
+  clipping anti-pattern catalogue, a source register with retrieval dates and
+  derived-note hashes, and a dependency-free offline verifier
+  (`scripts/verify-examples.mjs`). It is not shipped in the extension and is
+  never authority to change extraction behaviour (`decisions/0002`, `0021`).
+
 There is no DOM capture pipeline, no rendering, and no capture bundle output.
-CI (`.github/workflows/ci.yml`) runs format-check/lint/typecheck/build/test
-across the workspace — these are the only currently-real invariants.
+CI (`.github/workflows/ci.yml`) runs
+format-check/lint/typecheck/build/test/skill:verify across the workspace —
+these are the only currently-real invariants.
 
 ## Target architecture
 

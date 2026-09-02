@@ -16,7 +16,8 @@
     "typecheck": "tsc -b",
     "build": "tsc -b",
     "test": "vitest run",
-    "ci": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm build && pnpm test"
+    "skill:verify": "node .claude/skills/markdown-clipping/scripts/verify-examples.mjs",
+    "ci": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm build && pnpm test && pnpm skill:verify"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.0",
