@@ -2,7 +2,7 @@
 
 ## Status
 
-not started
+done
 
 ## Goal and user-visible outcome
 
@@ -144,13 +144,36 @@ Plus a manual/reviewed checklist matching the Phase 1 done-criteria below.
   while drafting a plan (e.g. a licence/provenance question surfaces while
   designing the fixture strategy).
 
-## Completion evidence to record
+## Completion evidence
 
-- Full list of new/changed planning and ADR files.
-- The cross-phase review notes (missing dependencies, circular ordering,
-  oversized phases, contradictions, premature work, unmeasurable gates) and
-  their resolutions.
-- `pnpm run ci` output confirming no product-code regression.
-- Confirmation (stated explicitly, not just implied by a green build) that
-  no product implementation leaked into this phase.
-- Commit hash once authorized and made.
+- **New files:** `decisions/0011`–`0020` (10 ADRs);
+  `planning/phase-2-markdown-clipping-skill.md`,
+  `planning/phase-3-core-ir-provenance-normalization-hashing.md`,
+  `planning/phase-4-dom-capture-and-article-extraction.md`,
+  `planning/phase-5-standard-code-extraction.md`,
+  `planning/phase-6-structured-adapters.md`,
+  `planning/phase-7-rendering-and-capture-bundle.md`,
+  `planning/phase-8-validation-and-completeness-diagnostics.md`,
+  `planning/phase-9-chromium-extension-and-obsidian-handoff.md`,
+  `planning/phase-10-corpus-evaluation-security-review-mvp-release.md`,
+  `planning/mvp-execution-plan.md`.
+- **Modified:** `planning/ROADMAP.md`, `planning/CONTEXT.md`,
+  `planning/phase-1-plan-mvp.md`, `architecture/overview.md`, `CHANGELOG.md`.
+- **Cross-phase review notes + resolutions:** recorded in
+  `planning/ROADMAP.md` § "Dependency-order rationale and cross-phase review"
+  and summarised in `planning/CONTEXT.md`. Key points: order kept 0→10; the
+  circular-looking 4↔5↔6 dependency is resolved by the detector/adapter seams
+  (Phase 4 ships stubs, later phases fill them); every § 12 release gate is
+  mapped to a runnable or recorded-manual check in `decisions/0020`; Phases 4
+  and 7 are the largest and carry a "split and update the roadmap if
+  un-shippable as one unit" instruction; the risk-first spike is a throwaway
+  walking-skeleton test inside Phase 3, not a separate phase.
+- **Verification:** `npx --yes pnpm@9.12.0 run ci` — green (`format:check`
+  clean, `lint` 0 errors, `tsc -b` passes, 4 test files / 9 tests pass),
+  unchanged from Phase 0.
+- **No product implementation leaked into Phase 1** — confirmed explicitly:
+  `git status` before the commit showed only `planning/`, `decisions/`,
+  `architecture/overview.md`, and `CHANGELOG.md` changed; no file under
+  `packages/`, `tests/`, or `fixtures/` was touched.
+- **Commit:** `docs(phase-1): plan implementation through MVP` — see
+  `planning/CONTEXT.md` for the hash.

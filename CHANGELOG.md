@@ -9,6 +9,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Phase 1: complete implementation plan through the MVP (planning only, no
+  product code).
+  - `planning/phase-2-*.md` … `planning/phase-10-*.md` — implementation-ready
+    plans for every phase to the MVP release, each with the full field set
+    from `AGENTS.md` § "Plan before implementation".
+  - `planning/mvp-execution-plan.md` — resumable per-phase execution,
+    verification, documentation, commit, and stop-on-blocker procedure.
+  - `decisions/0011`–`0020` — cross-phase ADRs settling the typed IR family,
+    provenance/confidence semantics, detector/adapter interfaces and
+    precedence, stable node identifiers, the diagnostics model and
+    export-status levels, canonical serialization/normalization/hashing and
+    fence selection, the capture bundle contract, the ClipSpec override seam,
+    Markdown output profiles, and the fixture corpus / release-gate map.
+  - `planning/ROADMAP.md` — refined dependency order, per-phase plan links,
+    cross-phase ADR index, and the cross-phase review findings.
+  - `architecture/overview.md` — target section made precise against ADRs
+    0011–0020; `evaluate` stage and `packages/pipeline` added.
+  - `planning/CONTEXT.md` — updated to name Phase 2 as the next concrete
+    action.
+
 - Phase 0: repository scaffolding and governance.
   - Workspace tooling: pnpm workspaces, TypeScript project references,
     ESLint (flat config) + Prettier, Vitest, GitHub Actions CI.
