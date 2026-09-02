@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://noisy.example/post",
+  "canonicalUrl": "https://noisy.example/post",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "Deliberately noisy: nav, cookie banner, related panel, newsletter, footer around the body.",
+  "producedByExtractorVersion": "1.0.0"
+}

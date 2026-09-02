@@ -1,0 +1,13 @@
+{
+  "canExport": true,
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-INFOBOX-POLICY",
+      "message": "infobox included as a table node per decisions/0024",
+      "phase": "extract",
+      "severity": "info"
+    }
+  ],
+  "exportStatus": "complete"
+}

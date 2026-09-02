@@ -2,7 +2,43 @@
 
 ## Status
 
-planned
+done
+
+## Completion evidence
+
+- **New package `@technical-clipper/pipeline`** (`packages/pipeline/`):
+  `dom.ts` (linkedom parse + clone + structural paths + URL absolutization),
+  `network-trap.ts`, `seam.ts` (`ComponentDetector` / `Adapter` +
+  `DetectorRegistry` / `AdapterRegistry` + fixed priority table),
+  `sentinels.ts` (deterministic overlap resolution + comment-node sentinels +
+  `assertSentinelBalance`), `extract/{article-root,noise,blocks,general,
+wikipedia-policy}.ts`, `capture.ts`, `index.ts`;
+  `__fixtures__/stub-detector.ts` (test-only).
+- **ADRs:** `decisions/0022` (linkedom), `0023` (in-house extractor + root
+  scoring), `0024` (Wikipedia infobox/furniture policy). ADR `0013`'s
+  interfaces were implemented here (DOM-typed) rather than in `core` — noted
+  in `CHANGELOG.md`.
+- **Fixtures:** `scripts/capture-fixture.mjs` + 8 `fixtures/articles/*`
+  (`simple-blog-post`, `news-article`, `noisy-blog`, `footnotes-article`,
+  `wikipedia-style-alpha`, `wikipedia-style-beta`, `ambiguous-root`,
+  `no-credible-root`), each with `source.html` (byte-exact, prettier-ignored),
+  `provenance.json`, and golden `expected-ir.json` / `expected-diagnostics.json`.
+- **Tests:** `packages/pipeline/src/capture.test.ts` (7 — article path, link
+  absolutization, noise recording, determinism, sentinel round-trip,
+  sentinel-loss fatal, `TC-EXTRACT-NOROOT` fatal, network trap);
+  `tests/pipeline-article.test.ts` (7 — golden + determinism over all
+  fixtures, structural invariants, no chrome text in blocks).
+  `pnpm run ci` green: 13 test files / 85 tests.
+- **Scope notes / deferred:** real revision-pinned Wikipedia fixtures (the
+  § 12 ≥ 5 minimum) are deferred to Phase 10 — WebFetch cannot return raw
+  page HTML, so Phase 4 uses synthetic MediaWiki-structured fixtures marked
+  `origin: synthetic`. Real code detectors (Phase 5), adapters + conversation
+  path (Phase 6), Markdown/bundle (Phase 7), completeness assertions (Phase 8)
+  remain stubbed/absent as planned.
+- **Commit:** see `planning/CONTEXT.md`.
+
+The scope and plan below are the original Phase 1 statement, retained for
+context.
 
 ## Goal and user-visible outcome
 

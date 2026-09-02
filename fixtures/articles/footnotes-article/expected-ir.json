@@ -1,0 +1,147 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 134,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 104,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "On Citations"
+          }
+        ],
+        "id": "22ywuihuhwc6aqhb",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The first claim is supported"
+          },
+          {
+            "referenceId": "1",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "dc2gun7f7n332ctt",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The second claim is also supported"
+          },
+          {
+            "referenceId": "2",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "owkepnkxcn54f627",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "References"
+          }
+        ],
+        "id": "kwcud4ph6r5vzslp",
+        "level": 2,
+        "type": "heading"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "The first claim is supported.",
+      "outline": [
+        {
+          "id": "22ywuihuhwc6aqhb",
+          "level": 1,
+          "text": "On Citations"
+        },
+        {
+          "id": "kwcud4ph6r5vzslp",
+          "level": 2,
+          "text": "References"
+        }
+      ]
+    },
+    "references": [
+      {
+        "id": "or7asmc7m3bif2al",
+        "rawText": "^ Smith, J. (2020). A Study.",
+        "sourceUrl": "https://doi.example/10.1/abc",
+        "structuredFields": null
+      },
+      {
+        "id": "kuxbpumoe36fxqfx",
+        "rawText": "^ Jones, K. (2021). Another Study.",
+        "sourceUrl": null,
+        "structuredFields": null
+      }
+    ],
+    "removedRegions": []
+  },
+  "captureKind": "article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "b8a3bc198fc8ed81dfef3e8466abc1667d248e88956b292f9a2603e9f632ea8c",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://refs.example/paper",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://refs.example/paper",
+    "title": "On Citations"
+  }
+}

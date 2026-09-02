@@ -1,0 +1,289 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 94,
+          "selectorPath": "body"
+        },
+        {
+          "score": 94,
+          "selectorPath": "div[1]"
+        },
+        {
+          "score": 94,
+          "selectorPath": "div[1]/div[1]"
+        },
+        {
+          "score": 94,
+          "selectorPath": "div[1]/div[1]/div[1]"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "div[1]/div[1]/div[1]"
+    },
+    "blocks": [
+      {
+        "id": "qd4a25ghcjc3nsw4",
+        "table": {
+          "alignments": [
+            "none",
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Type"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Concept"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Coined"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1998"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "example topic"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": "is a concept in the field of examples."
+          },
+          {
+            "referenceId": "1",
+            "type": "citationRef"
+          }
+        ],
+        "id": "gz2z4zwruecnctc5",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "History"
+          }
+        ],
+        "id": "2mr2x4w4i7g6o7bv",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "It was first described in 1998."
+          },
+          {
+            "referenceId": "2",
+            "type": "citationRef"
+          }
+        ],
+        "id": "xeemnp4bt5k2d4zb",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "See also"
+          }
+        ],
+        "id": "e53dwfuvbn37vw7y",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "bbihcvnv3dn5mkpt",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Other topic"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Other",
+                    "id": "ljafm5izglbo5yxc",
+                    "title": null,
+                    "type": "link"
+                  }
+                ],
+                "id": "go45n4fkelzrte5y",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "di2lpyrgx5tpgwlp",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "References"
+          }
+        ],
+        "id": "nhpa2wjkbanuo624",
+        "level": 2,
+        "type": "heading"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Theis a concept in the field of examples.",
+      "outline": [
+        {
+          "id": "2mr2x4w4i7g6o7bv",
+          "level": 2,
+          "text": "History"
+        },
+        {
+          "id": "e53dwfuvbn37vw7y",
+          "level": 2,
+          "text": "See also"
+        },
+        {
+          "id": "nhpa2wjkbanuo624",
+          "level": 2,
+          "text": "References"
+        }
+      ]
+    },
+    "references": [
+      {
+        "id": "54mag42gefilvm7x",
+        "rawText": "Author A. Source one.",
+        "sourceUrl": "https://ex.example/1",
+        "structuredFields": null
+      },
+      {
+        "id": "6gfosxx6eoglwjrh",
+        "rawText": "Author B. Source two.",
+        "sourceUrl": null,
+        "structuredFields": null
+      }
+    ],
+    "removedRegions": [
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[1]/div[1]/div[1]/div[1]"
+      },
+      {
+        "approxTextLength": 17,
+        "reason": "chrome",
+        "selectorPath": "div[1]/div[1]/div[1]/div[2]"
+      },
+      {
+        "approxTextLength": 20,
+        "reason": "navigation",
+        "selectorPath": "div[1]/div[1]/div[1]/div[3]"
+      },
+      {
+        "approxTextLength": 60,
+        "reason": "chrome",
+        "selectorPath": "div[1]/div[1]/div[1]/div[4]"
+      },
+      {
+        "approxTextLength": 8,
+        "reason": "chrome",
+        "selectorPath": "div[1]/div[1]/div[1]/div[5]"
+      },
+      {
+        "approxTextLength": 4,
+        "reason": "chrome",
+        "selectorPath": "div[1]/div[1]/div[1]/h2[1]/span[1]"
+      }
+    ]
+  },
+  "captureKind": "article",
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-INFOBOX-POLICY",
+      "message": "infobox included as a table node per decisions/0024",
+      "phase": "extract",
+      "severity": "info"
+    }
+  ],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "1dbd9f16841bf97569aa8d65d85635fb4bba7077f49ee7d3d61e16680cd11903",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://en.wikipedia.org/wiki/Example_topic",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Example_topic",
+    "title": "Example topic - Wikipedia"
+  }
+}

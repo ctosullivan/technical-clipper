@@ -5,11 +5,12 @@ the _target_ architecture it is heading toward. Do not read the target
 section as already true — it is refined as later phases land, per
 `AGENTS.md` § documentation sync.
 
-## Current state (Phase 3)
+## Current state (Phase 4)
 
-A pnpm/TypeScript workspace. `packages/core` now holds the real
-browser-independent foundation; the other three packages are still scaffolds;
-plus a development-time Claude skill:
+A pnpm/TypeScript workspace. `packages/core` holds the browser-independent
+foundation and `packages/pipeline` runs the article capture path;
+`detectors` / `adapters` / `extension` are still scaffolds; plus a
+development-time Claude skill:
 
 - `packages/core` — **implemented** (Phase 3): the typed IR family
   (`DocumentIR` / `ArticleIR` / `ConversationIR` / `MessageIR`, the shared
@@ -21,6 +22,16 @@ plus a development-time Claude skill:
   node ids, SHA-256 hashing with fixed boundaries, safe Markdown fence
   selection, and `validateDocumentIR`. All pure functions, no DOM. Still
   exports `notImplemented` for the downstream scaffolds.
+- `packages/pipeline` — **implemented** (Phase 4): the capture orchestrator.
+  `capture()` clones the rendered DOM (linkedom for fixtures, `decisions/0022`),
+  runs the detector→sentinel seam (`decisions/0013`; detectors are injected —
+  real ones arrive in Phase 5), removes structural chrome into `RemovedRegion`s,
+  selects a deterministic article root by density scoring (`decisions/0023`,
+  `TC-EXTRACT-NOROOT` fatal), extracts DOM → `ArticleIR` block/inline nodes
+  (Wikipedia infobox/navbox policy per `decisions/0024`), restores protected
+  code at sentinels with a balance check, and assembles + validates a
+  `DocumentIR` with hashes and a derived export status. All offline, run inside
+  a network trap. Conversation captures and real code detection are Phases 5–6.
 - `packages/detectors` — depends on `core`; exports a stub
   `detectComponents()` that throws. No real detectors exist yet (Phase 5).
 - `packages/adapters` — depends on `core`; exports a stub `adaptDocument()`
@@ -36,12 +47,13 @@ plus a development-time Claude skill:
   (`scripts/verify-examples.mjs`). It is not shipped in the extension and is
   never authority to change extraction behaviour (`decisions/0002`, `0021`).
 
-There is no DOM capture pipeline, no rendering, and no capture bundle output —
-`packages/core` defines the contracts those later phases produce and consume,
-but nothing populates an IR from a page yet. CI
+Article capture works end to end for saved HTML fixtures
+(`fixtures/articles/*`, verified by `tests/pipeline-article.test.ts` +
+`scripts/capture-fixture.mjs`). There is no Markdown rendering, no capture
+bundle, no conversation capture, and no browser extension yet. CI
 (`.github/workflows/ci.yml`) runs
 format-check/lint/typecheck/build/test/skill:verify across the workspace;
-`packages/core` carries ~70 deterministic unit tests.
+~85 deterministic tests.
 
 ## Target architecture
 

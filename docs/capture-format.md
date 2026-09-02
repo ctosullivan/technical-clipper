@@ -11,6 +11,13 @@ the normalization rulesets (`norm/prose@1`, `norm/code@1`,
 node ids (`decisions/0014`). `content.md` / `manifest.json` / `diagnostics.json`
 and the ZIP still land in Phase 7.
 
+As of Phase 4, `packages/pipeline` populates a `DocumentIR` from a rendered
+article DOM (`decisions/0022`–`0024`): deterministic article-root selection,
+structural-noise removal recorded as `removedRegions`, DOM → block/inline
+nodes, protected-code restoration at sentinels, and the
+`documentContentIdentity` plus per-code-block hashes. The Markdown and bundle
+files are still Phase 7.
+
 ## Planned minimum bundle shape
 
 ```text

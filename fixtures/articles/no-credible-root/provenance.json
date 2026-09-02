@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://empty.example/",
+  "canonicalUrl": "https://empty.example/",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "A page with no article-like content. Must emit TC-EXTRACT-NOROOT (fatal) and status failed.",
+  "producedByExtractorVersion": "1.0.0"
+}

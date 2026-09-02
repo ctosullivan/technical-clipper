@@ -1,0 +1,273 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 242,
+          "selectorPath": "body"
+        },
+        {
+          "score": 242,
+          "selectorPath": "div[1]"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "div[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "This article is about the example. For other uses, see Example (disambiguation)."
+          }
+        ],
+        "id": "6npwf56h6nupxwbc",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "another example"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": "illustrates tables and figures."
+          }
+        ],
+        "id": "a7mfvgbewkmr7ot3",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Data"
+          }
+        ],
+        "id": "nlsocbc7v5gfn4oe",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "w2z5c6es7dmrfkwz",
+        "table": {
+          "alignments": [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Region"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "2020"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "2021"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "2022"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "2023"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "North"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "10"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "12"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "15"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "18"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "South"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "8"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "9"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "11"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "13"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "altText": "A chart",
+        "caption": [
+          {
+            "type": "text",
+            "value": "Regional trend."
+          }
+        ],
+        "id": "3bel7zy2j6gnqshk",
+        "image": {
+          "alt": "A chart",
+          "intrinsicHeight": null,
+          "intrinsicWidth": null,
+          "resolved": false,
+          "url": "https://upload.example/chart.svg"
+        },
+        "type": "figure"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "References"
+          }
+        ],
+        "id": "kwcud4ph6r5vzslp",
+        "level": 2,
+        "type": "heading"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "This article is about the example. For other uses, see Example (disambiguation).",
+      "outline": [
+        {
+          "id": "nlsocbc7v5gfn4oe",
+          "level": 2,
+          "text": "Data"
+        },
+        {
+          "id": "kwcud4ph6r5vzslp",
+          "level": 2,
+          "text": "References"
+        }
+      ]
+    },
+    "references": [
+      {
+        "id": "kh44x7775g3vpput",
+        "rawText": "Ref one.",
+        "sourceUrl": null,
+        "structuredFields": null
+      }
+    ],
+    "removedRegions": [
+      {
+        "approxTextLength": 1,
+        "reason": "chrome",
+        "selectorPath": "div[1]/div[1]"
+      }
+    ]
+  },
+  "captureKind": "article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "35498e28bc69d7606ee8f7442e629fd7449d047bfcdfbc4de23628c58f1d82c7",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://en.wikipedia.org/wiki/Another_example",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Another_example",
+    "title": "Another example - Wikipedia"
+  }
+}

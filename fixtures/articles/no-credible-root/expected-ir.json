@@ -1,0 +1,63 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [],
+      "method": "none",
+      "methodVersion": "1.0.0",
+      "selectorPath": ""
+    },
+    "blocks": [],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": null,
+      "outline": []
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "article",
+  "diagnostics": [
+    {
+      "blocksExport": true,
+      "code": "TC-EXTRACT-NOROOT",
+      "message": "no candidate had a credible content score or any paragraph",
+      "phase": "extract",
+      "severity": "fatal"
+    }
+  ],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://empty.example/",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://empty.example/",
+    "title": null
+  }
+}

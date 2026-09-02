@@ -9,6 +9,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Phase 4: `@technical-clipper/pipeline` — the article capture path.
+  - `capture(html | doc, …)` runs clone, detect + sentinel, noise removal,
+    deterministic article-root selection, DOM→`ArticleIR`, restore, then
+    assemble and validate the `DocumentIR` — inside a network trap
+    (`decisions/0001`, `0009`).
+  - `decisions/0022` (linkedom DOM implementation), `decisions/0023` (in-house
+    Defuddle-inspired extractor + root-selection scoring), `decisions/0024`
+    (Wikipedia infobox / page-furniture policy).
+  - The `ComponentDetector` / `Adapter` seam interfaces + deterministic
+    overlap resolution and the comment-node sentinel protocol (`decisions/0013`);
+    detector/adapter registries are injectable (real detectors Phase 5,
+    adapters Phase 6).
+  - `scripts/capture-fixture.mjs` fixture runner; 8 `fixtures/articles/*`
+    fixtures with provenance + golden `expected-ir.json` /
+    `expected-diagnostics.json`; `tests/pipeline-article.test.ts` integration
+    test (golden + determinism).
+
 - Phase 3: `@technical-clipper/core` — the browser-independent foundation, all
   pure functions with ~70 deterministic unit tests.
   - Typed IR family (`decisions/0011`): `DocumentIR` discriminated on
@@ -102,6 +119,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `skill:verify` step; `pnpm run ci` now also runs `skill:verify`.
 - Phase 2: `eslint.config.js` gains a Node-globals block for plain `.mjs` /
   `scripts/` tooling files.
+- Phase 4: `tsconfig.json` references `packages/pipeline`; `.prettierignore`
+  excludes `fixtures/` (byte-exact test data + generated goldens).
+- Phase 4: `decisions/0013` interfaces are implemented in `packages/pipeline`
+  (Phase 4), not `packages/core` (they are DOM-typed); the ADR's "Phase 3"
+  note is superseded by this entry.
 
 <!--
   Version-comparison links will be added once a remote repository URL

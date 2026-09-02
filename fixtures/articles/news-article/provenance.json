@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://news.example/2025/05/report",
+  "canonicalUrl": "https://news.example/2025/05/report",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "News layout with byline, dateline, pull-quote, and a data table.",
+  "producedByExtractorVersion": "1.0.0"
+}

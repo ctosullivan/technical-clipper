@@ -2,6 +2,10 @@ dist
 coverage
 pnpm-lock.yaml
 
+# Test fixtures are byte-exact inputs and generated golden outputs — never
+# reformat them (the pipeline's determinism tests compare exact bytes).
+fixtures/
+
 # Exact, durable copy of the original planning brief — must stay
 # byte-identical to the supplied prompt, never reformatted.
 planning/v0-to-mvp-planning-prompt.md

@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://blog.example/widgets",
+  "canonicalUrl": "https://blog.example/widgets",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "Clean semantic article: header/main/footer, one figure, nested list.",
+  "producedByExtractorVersion": "1.0.0"
+}

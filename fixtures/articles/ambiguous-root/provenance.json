@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://ambiguous.example/",
+  "canonicalUrl": "https://ambiguous.example/",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "Two <article> elements and an empty <main>. The scorer must pick the content-bearing one deterministically.",
+  "producedByExtractorVersion": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@technical-clipper/pipeline",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Capture orchestrator: clone rendered DOM -> detect + sentinel -> general article extraction -> adapt -> restore -> assemble + validate DocumentIR. Browser-independent; consumes a pinned DOM implementation for fixtures.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@technical-clipper/core": "workspace:*",
+    "linkedom": "^0.18.0"
+  }
+}

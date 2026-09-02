@@ -1,0 +1,160 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 158,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 128,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Real Content Here"
+          }
+        ],
+        "id": "qalbvixve5fvmpgl",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "This is the actual article body that must survive noise removal."
+          }
+        ],
+        "id": "3um6fetrqhwy4wyo",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Second section"
+          }
+        ],
+        "id": "oy6sijm2xdynnpib",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "More real content with a"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "link"
+              }
+            ],
+            "href": "https://external.example/x",
+            "id": "czhhfexarrpkudvt",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "agdqavxoyz3b7hul",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "This is the actual article body that must survive noise removal.",
+      "outline": [
+        {
+          "id": "qalbvixve5fvmpgl",
+          "level": 1,
+          "text": "Real Content Here"
+        },
+        {
+          "id": "oy6sijm2xdynnpib",
+          "level": 2,
+          "text": "Second section"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": [
+      {
+        "approxTextLength": 22,
+        "reason": "cookie-ui",
+        "selectorPath": "div[1]"
+      },
+      {
+        "approxTextLength": 21,
+        "reason": "related-content",
+        "selectorPath": "div[2]"
+      },
+      {
+        "approxTextLength": 28,
+        "reason": "chrome",
+        "selectorPath": "div[3]"
+      },
+      {
+        "approxTextLength": 16,
+        "reason": "footer",
+        "selectorPath": "footer[1]"
+      },
+      {
+        "approxTextLength": 17,
+        "reason": "navigation",
+        "selectorPath": "nav[1]"
+      }
+    ]
+  },
+  "captureKind": "article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "e9902ed37e668044b106571211eed774d7cd603f6dcd97985115bbe0cc9030ae",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://noisy.example/post",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://noisy.example/post",
+    "title": "Real Content Here"
+  }
+}

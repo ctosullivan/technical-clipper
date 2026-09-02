@@ -4,6 +4,7 @@
     { "path": "packages/core" },
     { "path": "packages/detectors" },
     { "path": "packages/adapters" },
+    { "path": "packages/pipeline" },
     { "path": "packages/extension" }
   ]
 }

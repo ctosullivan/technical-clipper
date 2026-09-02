@@ -1,0 +1,205 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 212,
+          "selectorPath": "article[1]"
+        },
+        {
+          "score": 182,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "article[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "City Adopts New Rules"
+          }
+        ],
+        "id": "fcvohrbcsckfld6y",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "By A. Reporter"
+          }
+        ],
+        "id": "peroazxlmup3qhfq",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The city council voted on Tuesday."
+          }
+        ],
+        "id": "2hzirwlwnwfi7bon",
+        "type": "paragraph"
+      },
+      {
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "This is a good day for residents."
+              }
+            ],
+            "id": "mdfenj6kdaaaxhik",
+            "type": "paragraph"
+          }
+        ],
+        "callout": null,
+        "id": "nchsxgotdjbpcp2b",
+        "type": "blockquote"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "By the numbers"
+          }
+        ],
+        "id": "ixcrahi5myxouosb",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "6fevigriyoqdio4g",
+        "table": {
+          "alignments": [
+            "none",
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Year"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Permits"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "2023"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1,204"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "2024"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1,507"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "By A. Reporter",
+      "outline": [
+        {
+          "id": "fcvohrbcsckfld6y",
+          "level": 1,
+          "text": "City Adopts New Rules"
+        },
+        {
+          "id": "ixcrahi5myxouosb",
+          "level": 2,
+          "text": "By the numbers"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": [
+      {
+        "approxTextLength": 18,
+        "reason": "related-content",
+        "selectorPath": "aside[1]"
+      },
+      {
+        "approxTextLength": 4,
+        "reason": "navigation",
+        "selectorPath": "div[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 8,
+        "reason": "footer",
+        "selectorPath": "footer[1]"
+      }
+    ]
+  },
+  "captureKind": "article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "3630f1e9c36004401e5fe72db40fc136f34cec9acdefa52e5326dbfbf1c42def",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": "A. Reporter",
+    "canonicalUrl": "https://news.example/2025/05/report",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://news.example/2025/05/report",
+    "title": "City Adopts New Rules"
+  }
+}

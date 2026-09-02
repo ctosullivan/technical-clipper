@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Another_example",
+  "canonicalUrl": "https://en.wikipedia.org/wiki/Another_example",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "Synthetic MediaWiki structure with a wide data table and a figure. NOT a real revision.",
+  "producedByExtractorVersion": "1.0.0"
+}

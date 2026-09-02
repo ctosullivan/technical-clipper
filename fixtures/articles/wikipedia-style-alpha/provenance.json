@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Example_topic",
+  "canonicalUrl": "https://en.wikipedia.org/wiki/Example_topic",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "Synthetic MediaWiki structure (NOT a real revision). Exercises decisions/0024: infobox kept, navbox/editsection/toc removed, <ref> + reference list. Real revision-pinned Wikipedia fixtures are added in Phase 10.",
+  "producedByExtractorVersion": "1.0.0"
+}

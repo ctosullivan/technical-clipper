@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://refs.example/paper",
+  "canonicalUrl": "https://refs.example/paper",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "Article with citation markers and a reference list.",
+  "producedByExtractorVersion": "1.0.0"
+}

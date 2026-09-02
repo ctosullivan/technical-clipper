@@ -1,0 +1,13 @@
+{
+  "canExport": false,
+  "diagnostics": [
+    {
+      "blocksExport": true,
+      "code": "TC-EXTRACT-NOROOT",
+      "message": "no candidate had a credible content score or any paragraph",
+      "phase": "extract",
+      "severity": "fatal"
+    }
+  ],
+  "exportStatus": "failed"
+}

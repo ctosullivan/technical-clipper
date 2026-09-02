@@ -1,0 +1,278 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 218,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 188,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Understanding Widgets"
+          }
+        ],
+        "id": "ch5hgp4hszb4olyc",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "A"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "widget"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": "is a small component. See the"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "spec"
+              }
+            ],
+            "href": "https://blog.example/spec",
+            "id": "c47io5qahegdqnez",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "for details."
+          }
+        ],
+        "id": "2p3rkyk65plqwakm",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Kinds of widget"
+          }
+        ],
+        "id": "yz66oe25q3gkwasd",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "mfnzt5o6lhdh5vdd",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Static widgets"
+                  }
+                ],
+                "id": "hhlz5xzmgc2gftzg",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "cnbl5zezs2ismdpm",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Dynamic widgets"
+                  }
+                ],
+                "id": "4pytls7vr5s5aaj6",
+                "type": "paragraph"
+              },
+              {
+                "id": "f7unom4pidwg6vyi",
+                "items": [
+                  {
+                    "blocks": [
+                      {
+                        "children": [
+                          {
+                            "type": "text",
+                            "value": "Polling"
+                          }
+                        ],
+                        "id": "nilvvg2qkqki5ncz",
+                        "type": "paragraph"
+                      }
+                    ],
+                    "checked": null,
+                    "id": "lqvegoesywl2pdlc",
+                    "type": "listItem"
+                  },
+                  {
+                    "blocks": [
+                      {
+                        "children": [
+                          {
+                            "type": "text",
+                            "value": "Push"
+                          }
+                        ],
+                        "id": "nn4yrl62bek7p6uz",
+                        "type": "paragraph"
+                      }
+                    ],
+                    "checked": null,
+                    "id": "oeffhevwn6usb2su",
+                    "type": "listItem"
+                  }
+                ],
+                "ordered": false,
+                "start": null,
+                "tight": true,
+                "type": "list"
+              }
+            ],
+            "checked": null,
+            "id": "jobg2bsjqo4ngdwq",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": false,
+        "type": "list"
+      },
+      {
+        "altText": "A widget",
+        "caption": [
+          {
+            "type": "text",
+            "value": "Figure 1. A widget."
+          }
+        ],
+        "id": "b22imualastph5ct",
+        "image": {
+          "alt": "A widget",
+          "intrinsicHeight": 480,
+          "intrinsicWidth": 640,
+          "resolved": false,
+          "url": "https://blog.example/img/widget.png"
+        },
+        "type": "figure"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Conclusion"
+          }
+        ],
+        "id": "cb5s5otp2qi3ltdy",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Widgets are useful."
+          }
+        ],
+        "id": "esxu73nsr66aqq6s",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Ais a small component. See thefor details.",
+      "outline": [
+        {
+          "id": "ch5hgp4hszb4olyc",
+          "level": 1,
+          "text": "Understanding Widgets"
+        },
+        {
+          "id": "yz66oe25q3gkwasd",
+          "level": 2,
+          "text": "Kinds of widget"
+        },
+        {
+          "id": "cb5s5otp2qi3ltdy",
+          "level": 2,
+          "text": "Conclusion"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": [
+      {
+        "approxTextLength": 14,
+        "reason": "footer",
+        "selectorPath": "footer[1]"
+      },
+      {
+        "approxTextLength": 10,
+        "reason": "navigation",
+        "selectorPath": "header[1]/nav[1]"
+      }
+    ]
+  },
+  "captureKind": "article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "4d62eed33f06dd0bf8db0cd8ff86daaa3de7d9e7f79f3433d02b3d89194b5695",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": "Jane Doe",
+    "canonicalUrl": "https://blog.example/widgets",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": "2025-04-01T09:00:00Z",
+    "sourceUrl": "https://blog.example/widgets",
+    "title": "Understanding Widgets"
+  }
+}

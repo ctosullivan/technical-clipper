@@ -1,0 +1,116 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 356,
+          "selectorPath": "body"
+        },
+        {
+          "score": 355,
+          "selectorPath": "article[2]"
+        },
+        {
+          "score": 60,
+          "selectorPath": "article[1]"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "article[2]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The Real Article"
+          }
+        ],
+        "id": "7h5dtj7sit54pjau",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "This article has substantially more text than the teaser, several paragraphs, and should win the density score comfortably."
+          }
+        ],
+        "id": "tqp5qywe4z2fr45f",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Second paragraph with more words to build up the text length that the scoring function rewards."
+          }
+        ],
+        "id": "2e3ef7vqx6tfd7g6",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Third paragraph, still more content here for good measure."
+          }
+        ],
+        "id": "p64qs2pvgney22a3",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "This article has substantially more text than the teaser, several paragraphs, and should win the density score comfortably.",
+      "outline": [
+        {
+          "id": "7h5dtj7sit54pjau",
+          "level": 1,
+          "text": "The Real Article"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "73400c3b2db1ede64f6b27f9af80c8290103c1f8160decfcce121e1334d87a93",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://ambiguous.example/",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://ambiguous.example/",
+    "title": "The Real Article"
+  }
+}
