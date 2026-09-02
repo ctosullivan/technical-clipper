@@ -1,0 +1,20 @@
+{
+  "canExport": true,
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-OVERLAP",
+      "data": {
+        "loser": "code/pre-code",
+        "winner": "code/highlightjs"
+      },
+      "message": "detector code/pre-code lost an overlap to code/highlightjs",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "main[1]/pre[1]"
+      }
+    }
+  ],
+  "exportStatus": "complete"
+}

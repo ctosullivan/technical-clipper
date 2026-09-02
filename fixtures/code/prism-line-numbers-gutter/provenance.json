@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/prism-line-numbers-gutter",
+  "canonicalUrl": "https://fixture.example/code/prism-line-numbers-gutter",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "prism",
+  "notes": "Prism line-numbers plugin gutter stripped; source stays exact.",
+  "producedByExtractorVersion": "1.0.0"
+}

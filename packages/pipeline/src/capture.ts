@@ -1,11 +1,10 @@
 /**
  * Top-level capture orchestrator (`architecture/overview.md` steps 1–7).
  *
- * Phase 4 covers the article path: clone -> detect + sentinel -> general
- * extraction -> restore -> assemble + validate `DocumentIR`. Real code
- * detectors arrive in Phase 5; adapters (incl. the conversation path) in
- * Phase 6. The `detectors` registry is injectable so later phases wire in the
- * real set without touching this file.
+ * The article path: clone -> detect + sentinel -> general extraction ->
+ * restore -> assemble + validate `DocumentIR`. `capture()` uses the standard
+ * code detectors (Phase 5) by default; callers may inject a different
+ * `DetectorRegistry`. Adapters + the conversation path arrive in Phase 6.
  */
 import {
   canonicalize,
@@ -14,6 +13,7 @@ import {
   deriveExportStatus,
   makeDiagnostic,
   validateDocumentIR,
+  DetectorRegistry,
   CODE_RULESET_ID,
   INFOSTRING_RULESET_ID,
   IR_SCHEMA_VERSION,
@@ -24,8 +24,8 @@ import {
   type ExportDecision,
   type PageLoadState,
 } from '@technical-clipper/core';
+import { standardDetectorRegistry } from '@technical-clipper/detectors';
 import { cloneRoot, parseDocument } from './dom.js';
-import { DetectorRegistry } from './seam.js';
 import { assertSentinelBalance, substituteSentinels } from './sentinels.js';
 import {
   EXTRACTOR_VERSION,
@@ -80,7 +80,7 @@ function detectPageLoadState(doc: Document, observedAt: string): PageLoadState {
 function runCapture(input: CaptureInput): CaptureResult {
   const capturedAt = input.capturedAt ?? new Date().toISOString();
   const doc = input.doc ?? parseDocument(input.html ?? '');
-  const detectors = input.detectors ?? new DetectorRegistry();
+  const detectors = input.detectors ?? standardDetectorRegistry();
 
   const diagnostics: Diagnostic[] = [];
   const pageLoadState = detectPageLoadState(doc, capturedAt);

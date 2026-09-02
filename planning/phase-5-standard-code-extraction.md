@@ -2,7 +2,37 @@
 
 ## Status
 
-planned
+done
+
+## Completion evidence
+
+- **Modules** (`packages/detectors/src/`): `chrome.ts` (strip + contamination
+  check), `language.ts` (`decisions/0025`), `code.ts` (`preCodeDetector`,
+  `blockLevelCodeDetector`, `prismDetector`, `highlightjsDetector`,
+  `buildCodeBlock`), `terminal.ts` (`terminalSessionDetector`), `virtualized.ts`
+  (guard), `index.ts` (`standardDetectors`, `standardDetectorRegistry`).
+- **Seam relocation:** `ComponentDetector` / `Adapter` / `DETECTOR_PRIORITY` /
+  registries moved to `packages/core/src/seam.ts`; `packages/pipeline` now
+  depends on `@technical-clipper/detectors` and `capture()` defaults to
+  `standardDetectorRegistry()`.
+- **ADR:** `decisions/0025` (language inference + confidence).
+- **Fixtures:** 13 `fixtures/code/*` full-page fixtures across
+  `semantic-html` / `prism` / `highlightjs` / `blocklevel-code` / `terminal` /
+  `adversarial`, each with provenance + goldens.
+- **Tests:** `packages/detectors/src/index.test.ts` (13 — per-detector unit
+  tests incl. chrome contamination, line-number table → approximate,
+  virtualized guard, `inferLanguage`); `tests/pipeline-code.test.ts` (7 —
+  golden + determinism, `captureKind === technical_article`, § 12 gates 6
+  (exact text), 7, 10 (no chrome), 11 (adversarial diagnostics), terminal
+  stream order, per-code-block hash == SHA-256 of exact text).
+  `pnpm run ci` green: 14 test files / 103 tests.
+- **Deferred as planned:** Docusaurus tab groups + ChatGPT message code
+  (Phase 6 adapters); Markdown fence rendering (Phase 7); the ≥ 50-block
+  corpus minimum (Phase 10 — 13 blocks so far).
+- **Commit:** see `planning/CONTEXT.md`.
+
+The scope and plan below are the original Phase 1 statement, retained for
+context.
 
 ## Goal and user-visible outcome
 

@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/prism-token-spans",
+  "canonicalUrl": "https://fixture.example/code/prism-token-spans",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "prism",
+  "notes": "Prism token soup with language class — exact from textContent.",
+  "producedByExtractorVersion": "1.0.0"
+}

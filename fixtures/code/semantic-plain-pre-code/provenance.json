@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/semantic-plain-pre-code",
+  "canonicalUrl": "https://fixture.example/code/semantic-plain-pre-code",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "semantic-html",
+  "notes": "Standard <pre><code> — exact text incl. trailing newline.",
+  "producedByExtractorVersion": "1.0.0"
+}

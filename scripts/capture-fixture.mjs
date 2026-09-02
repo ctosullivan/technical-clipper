@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 /**
- * Headless capture runner for article fixtures (`decisions/0020` layout).
+ * Headless capture runner for the fixture corpora (`decisions/0020` layout).
  *
  *   node scripts/capture-fixture.mjs <fixture-dir> [--write]
- *   node scripts/capture-fixture.mjs --all [--write]
+ *   node scripts/capture-fixture.mjs --all [--write]      # articles + code
+ *   node scripts/capture-fixture.mjs --articles [--write]
+ *   node scripts/capture-fixture.mjs --code [--write]
  *
  * Without `--write` it prints a summary and exits non-zero on any golden
- * mismatch (this is what `tests/pipeline-article.test.ts` relies on being
- * possible). With `--write` it (re)generates `expected-ir.json` and
+ * mismatch (this is what `tests/pipeline-*.test.ts` rely on being possible).
+ * With `--write` it (re)generates `expected-ir.json` and
  * `expected-diagnostics.json` from `source.html`.
  *
  * Not shipped in the extension.
@@ -18,7 +20,15 @@ import { capture } from '../packages/pipeline/dist/index.js';
 import { canonicalizePretty } from '../packages/core/dist/index.js';
 
 const ARTICLES_DIR = 'fixtures/articles';
+const CODE_DIR = 'fixtures/code';
 const FIXED_TS = '2026-01-01T00:00:00.000Z';
+
+function dirsUnder(base) {
+  if (!existsSync(base)) return [];
+  return readdirSync(base, { withFileTypes: true })
+    .filter((e) => e.isDirectory())
+    .map((e) => join(base, e.name));
+}
 
 function runFixture(dir) {
   const provenance = JSON.parse(
@@ -87,9 +97,16 @@ function checkOne(dir, write) {
 
 const args = process.argv.slice(2);
 const write = args.includes('--write');
-const targets = args.includes('--all')
-  ? readdirSync(ARTICLES_DIR).map((d) => join(ARTICLES_DIR, d))
-  : args.filter((a) => !a.startsWith('--'));
+let targets;
+if (args.includes('--all')) {
+  targets = [...dirsUnder(ARTICLES_DIR), ...dirsUnder(CODE_DIR)];
+} else if (args.includes('--articles')) {
+  targets = dirsUnder(ARTICLES_DIR);
+} else if (args.includes('--code')) {
+  targets = dirsUnder(CODE_DIR);
+} else {
+  targets = args.filter((a) => !a.startsWith('--'));
+}
 
 let failed = 0;
 for (const dir of targets) {

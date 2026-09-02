@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { capture } from './capture.js';
-import { DetectorRegistry } from './seam.js';
+import { DetectorRegistry } from '@technical-clipper/core';
 import { runWithNetworkTrap, CaptureNetworkError } from './network-trap.js';
 import { stubCodeDetector } from './__fixtures__/stub-detector.js';
 

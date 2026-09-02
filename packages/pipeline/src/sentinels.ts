@@ -15,7 +15,10 @@ import {
   type TerminalSessionIR,
 } from '@technical-clipper/core';
 import { NODE_COMMENT, structuralPath } from './dom.js';
-import type { DetectedComponent, DetectorRegistry } from './seam.js';
+import type {
+  DetectedComponent,
+  DetectorRegistry,
+} from '@technical-clipper/core';
 
 export const SENTINEL_PREFIX = 'tc-sentinel:';
 

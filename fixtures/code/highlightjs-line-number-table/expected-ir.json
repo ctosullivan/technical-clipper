@@ -1,0 +1,161 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 126,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 96,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "highlightjs line number table"
+          }
+        ],
+        "id": "n5aw7srvunbtbahf",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Intro paragraph for context."
+          }
+        ],
+        "id": "udqqftl2sppadhy7",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "approximate",
+          "evidenceSource": "dom-rendered-reconstruction",
+          "extraction": {
+            "detectorId": "code/highlightjs",
+            "evidenceSource": "dom-rendered-reconstruction",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": false,
+          "hash": "5f7f06b913240cf040948eefac3f214d0984397aeca1204040e9fd50558f9789",
+          "highlightedLines": null,
+          "id": "jcwgjzrwo6aixajy",
+          "language": "sql",
+          "languageEvidence": "inferred-heuristic",
+          "text": "SELECT id\nFROM users;"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Trailing paragraph."
+          }
+        ],
+        "id": "mrihvlfehy7nagvr",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Intro paragraph for context.",
+      "outline": [
+        {
+          "id": "n5aw7srvunbtbahf",
+          "level": 1,
+          "text": "highlightjs line number table"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-OVERLAP",
+      "data": {
+        "loser": "code/pre-code",
+        "winner": "code/highlightjs"
+      },
+      "message": "detector code/pre-code lost an overlap to code/highlightjs",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "main[1]/pre[1]"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/highlightjs: language 'sql' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "jcwgjzrwo6aixajy"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-RECONSTRUCT",
+      "message": "code/highlightjs: code reconstructed from token spans; whitespace may be approximate",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "jcwgjzrwo6aixajy"
+      }
+    }
+  ],
+  "hashes": {
+    "blocks": {
+      "jcwgjzrwo6aixajy": "5f7f06b913240cf040948eefac3f214d0984397aeca1204040e9fd50558f9789"
+    },
+    "documentContentIdentity": "77356488981594ed26d494954117a6d96be8fa2814e03a654874c51bb0ecafc4",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://fixture.example/code/highlightjs-line-number-table",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://fixture.example/code/highlightjs-line-number-table",
+    "title": "highlightjs line number table"
+  }
+}

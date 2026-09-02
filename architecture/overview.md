@@ -5,12 +5,13 @@ the _target_ architecture it is heading toward. Do not read the target
 section as already true — it is refined as later phases land, per
 `AGENTS.md` § documentation sync.
 
-## Current state (Phase 4)
+## Current state (Phase 5)
 
 A pnpm/TypeScript workspace. `packages/core` holds the browser-independent
-foundation and `packages/pipeline` runs the article capture path;
-`detectors` / `adapters` / `extension` are still scaffolds; plus a
-development-time Claude skill:
+foundation, `packages/detectors` the code/terminal detectors, and
+`packages/pipeline` the article capture path (wiring the detectors in by
+default); `adapters` / `extension` are still scaffolds; plus a development-time
+Claude skill:
 
 - `packages/core` — **implemented** (Phase 3): the typed IR family
   (`DocumentIR` / `ArticleIR` / `ConversationIR` / `MessageIR`, the shared
@@ -32,8 +33,16 @@ development-time Claude skill:
   code at sentinels with a balance check, and assembles + validates a
   `DocumentIR` with hashes and a derived export status. All offline, run inside
   a network trap. Conversation captures and real code detection are Phases 5–6.
-- `packages/detectors` — depends on `core`; exports a stub
-  `detectComponents()` that throws. No real detectors exist yet (Phase 5).
+- `packages/detectors` — **implemented** (Phase 5): the standard code/terminal
+  detector set — `code/pre-code`, `code/blocklevel-code`, `code/prism`,
+  `code/highlightjs` (exact from a copy-source or token `textContent`, else
+  `approximate` reconstruction from a line-number-table layout),
+  `terminal/session` (explicit input/output markup → `exact`, prompt-span
+  split → `approximate`), and a virtualized-editor guard (`monaco` / `cm` /
+  `ace` → `failed` + `TC-DETECT-VIRTUALIZED`, never fake content). Chrome
+  stripping removes line-number gutters, copy buttons, and language pills;
+  language inference is `decisions/0025`. `standardDetectorRegistry()` is the
+  default `capture()` uses.
 - `packages/adapters` — depends on `core`; exports a stub `adaptDocument()`
   that throws. No real adapters exist yet (Phase 6).
 - `packages/extension` — a Manifest V3 shell with a zero-permission
@@ -47,13 +56,19 @@ development-time Claude skill:
   (`scripts/verify-examples.mjs`). It is not shipped in the extension and is
   never authority to change extraction behaviour (`decisions/0002`, `0021`).
 
-Article capture works end to end for saved HTML fixtures
-(`fixtures/articles/*`, verified by `tests/pipeline-article.test.ts` +
+Article **and** code-bearing-technical-article capture work end to end for
+saved HTML fixtures (`fixtures/articles/*`, `fixtures/code/*`, verified by
+`tests/pipeline-article.test.ts` / `tests/pipeline-code.test.ts` +
 `scripts/capture-fixture.mjs`). There is no Markdown rendering, no capture
 bundle, no conversation capture, and no browser extension yet. CI
 (`.github/workflows/ci.yml`) runs
 format-check/lint/typecheck/build/test/skill:verify across the workspace;
-~85 deterministic tests.
+~100 deterministic tests.
+
+The detector/adapter seam contracts (`ComponentDetector`, `Adapter`,
+`DETECTOR_PRIORITY`, the registries) live in `packages/core/src/seam.ts` —
+DOM-typed but implementation-free — so `detectors` and `adapters` depend only
+on `core`, and `pipeline` depends on `core` + `detectors` with no cycle.
 
 ## Target architecture
 

@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/highlightjs-basic",
+  "canonicalUrl": "https://fixture.example/code/highlightjs-basic",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "highlightjs",
+  "notes": "Highlight.js block — exact text, language from the hljs class token.",
+  "producedByExtractorVersion": "1.0.0"
+}

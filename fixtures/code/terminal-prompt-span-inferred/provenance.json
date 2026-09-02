@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/terminal-prompt-span-inferred",
+  "canonicalUrl": "https://fixture.example/code/terminal-prompt-span-inferred",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "terminal",
+  "notes": "Prompt-span layout, no output markup -> approximate + TC-DETECT-TERMINAL-AMBIGUOUS.",
+  "producedByExtractorVersion": "1.0.0"
+}

@@ -1,0 +1,40 @@
+{
+  "canExport": true,
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-OVERLAP",
+      "data": {
+        "loser": "code/pre-code",
+        "winner": "code/highlightjs"
+      },
+      "message": "detector code/pre-code lost an overlap to code/highlightjs",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "main[1]/pre[1]"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/highlightjs: language 'sql' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "jcwgjzrwo6aixajy"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-RECONSTRUCT",
+      "message": "code/highlightjs: code reconstructed from token spans; whitespace may be approximate",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "jcwgjzrwo6aixajy"
+      }
+    }
+  ],
+  "exportStatus": "complete_with_warnings"
+}

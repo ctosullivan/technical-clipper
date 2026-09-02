@@ -1,0 +1,138 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 115,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 85,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "terminal marked io"
+          }
+        ],
+        "id": "k7ss4djz2srgxrzv",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Intro paragraph for context."
+          }
+        ],
+        "id": "udqqftl2sppadhy7",
+        "type": "paragraph"
+      },
+      {
+        "session": {
+          "confidence": "exact",
+          "entries": [
+            {
+              "hasFinalNewline": false,
+              "stream": "input",
+              "text": "npm run build"
+            },
+            {
+              "hasFinalNewline": false,
+              "stream": "output",
+              "text": "Build succeeded in 1.2s"
+            },
+            {
+              "hasFinalNewline": false,
+              "stream": "input",
+              "text": "npm test"
+            },
+            {
+              "hasFinalNewline": false,
+              "stream": "output",
+              "text": "12 passed"
+            }
+          ],
+          "extraction": {
+            "detectorId": "terminal/session",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "id": "6oubrrb72rt6gcen",
+          "streamEvidence": "explicit per-segment input/output markup"
+        },
+        "type": "terminalSession"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Trailing paragraph."
+          }
+        ],
+        "id": "mrihvlfehy7nagvr",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Intro paragraph for context.",
+      "outline": [
+        {
+          "id": "k7ss4djz2srgxrzv",
+          "level": 1,
+          "text": "terminal marked io"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "33ad785690ba0953d13f68fc95be018bd9d48d941f85d462b27090854d6778a8",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://fixture.example/code/terminal-marked-io",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://fixture.example/code/terminal-marked-io",
+    "title": "terminal marked io"
+  }
+}

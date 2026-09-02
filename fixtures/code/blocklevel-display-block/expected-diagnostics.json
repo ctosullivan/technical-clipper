@@ -1,0 +1,16 @@
+{
+  "canExport": true,
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/blocklevel-code: language 'shell' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "ei5rl7ttlk573wt4"
+      }
+    }
+  ],
+  "exportStatus": "complete_with_warnings"
+}

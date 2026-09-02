@@ -1,0 +1,16 @@
+{
+  "canExport": true,
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'javascript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "ybozgrier64m5x6r"
+      }
+    }
+  ],
+  "exportStatus": "complete_with_warnings"
+}

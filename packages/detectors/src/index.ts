@@ -1,19 +1,48 @@
 /**
  * @technical-clipper/detectors
  *
- * `ComponentDetector` implementations that identify code blocks, tab groups,
- * and terminal I/O structures in a cloned rendered DOM, ahead of general
- * article extraction (see AGENTS.md § "General extraction plus narrow
- * adapters").
- *
- * Phase 0 scaffold only — no detectors exist yet. See `planning/ROADMAP.md`
- * (Phase 5) once the Phase 1 plans are written.
+ * `ComponentDetector` implementations (Phase 5) that identify code and
+ * terminal structures in a cloned rendered DOM for sentinel-based
+ * pre-extraction. The fixed priority table and overlap-resolution algorithm
+ * live with the seam contracts in `@technical-clipper/core`
+ * (`decisions/0013`).
  */
-import { notImplemented } from '@technical-clipper/core';
+import {
+  DetectorRegistry,
+  type ComponentDetector,
+} from '@technical-clipper/core';
+import {
+  blockLevelCodeDetector,
+  highlightjsDetector,
+  preCodeDetector,
+  prismDetector,
+} from './code.js';
+import { terminalSessionDetector } from './terminal.js';
+import { virtualizedEditorDetector } from './virtualized.js';
 
-export const DETECTORS_PACKAGE_STATUS = 'scaffold' as const;
+export {
+  buildCodeBlock,
+  preCodeDetector,
+  blockLevelCodeDetector,
+  prismDetector,
+  highlightjsDetector,
+} from './code.js';
+export { terminalSessionDetector } from './terminal.js';
+export { virtualizedEditorDetector } from './virtualized.js';
+export { inferLanguage } from './language.js';
+export { stripChrome, looksContaminated } from './chrome.js';
 
-/** Placeholder entrypoint — real detector registry/precedence lands in Phase 5. */
-export function detectComponents(): never {
-  return notImplemented('component detection');
+/** The standard code/terminal detector set, in registration order. */
+export const standardDetectors: readonly ComponentDetector[] = [
+  terminalSessionDetector,
+  prismDetector,
+  highlightjsDetector,
+  virtualizedEditorDetector,
+  preCodeDetector,
+  blockLevelCodeDetector,
+];
+
+/** A fresh `DetectorRegistry` pre-loaded with {@link standardDetectors}. */
+export function standardDetectorRegistry(): DetectorRegistry {
+  return new DetectorRegistry().registerAll(standardDetectors);
 }

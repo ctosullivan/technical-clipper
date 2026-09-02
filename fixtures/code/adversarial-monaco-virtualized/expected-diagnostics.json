@@ -1,0 +1,16 @@
+{
+  "canExport": true,
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-VIRTUALIZED",
+      "message": "a virtualized code editor was detected; exact source recovery is out of scope",
+      "phase": "detect",
+      "severity": "error",
+      "sourceLocation": {
+        "nodeId": "wtfs2eod4uqrdc7l"
+      }
+    }
+  ],
+  "exportStatus": "partial"
+}

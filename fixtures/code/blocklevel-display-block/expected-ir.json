@@ -1,0 +1,137 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 121,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 91,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "blocklevel display block"
+          }
+        ],
+        "id": "zonxnbe3wvy7bgqi",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Intro paragraph for context."
+          }
+        ],
+        "id": "udqqftl2sppadhy7",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/blocklevel-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": false,
+          "hash": "d3fad46c29d36e8e517e576a08889a1980d2cd7c61964b683cdbee09fea4bad3",
+          "highlightedLines": null,
+          "id": "ei5rl7ttlk573wt4",
+          "language": "shell",
+          "languageEvidence": "inferred-heuristic",
+          "text": "git status\ngit add -A\ngit commit"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Trailing paragraph."
+          }
+        ],
+        "id": "mrihvlfehy7nagvr",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Intro paragraph for context.",
+      "outline": [
+        {
+          "id": "zonxnbe3wvy7bgqi",
+          "level": 1,
+          "text": "blocklevel display block"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/blocklevel-code: language 'shell' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "ei5rl7ttlk573wt4"
+      }
+    }
+  ],
+  "hashes": {
+    "blocks": {
+      "ei5rl7ttlk573wt4": "d3fad46c29d36e8e517e576a08889a1980d2cd7c61964b683cdbee09fea4bad3"
+    },
+    "documentContentIdentity": "3ea744fecd31214a9788bcce7eaa8a979e2db0138c7fe91d030bbffb9a7b4174",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://fixture.example/code/blocklevel-display-block",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://fixture.example/code/blocklevel-display-block",
+    "title": "blocklevel display block"
+  }
+}

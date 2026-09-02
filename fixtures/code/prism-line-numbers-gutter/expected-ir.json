@@ -1,0 +1,141 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 122,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 92,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "prism line numbers gutter"
+          }
+        ],
+        "id": "5nwz7bktyll6w7aa",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Intro paragraph for context."
+          }
+        ],
+        "id": "udqqftl2sppadhy7",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/prism",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": false,
+          "hash": "55d721b105cc17807ee87c96a274c6de30d5baba3df24d23099d467184d55eee",
+          "highlightedLines": null,
+          "id": "5jzptlcfw4r4arb7",
+          "language": "javascript",
+          "languageEvidence": "class-token",
+          "text": "a();\nb();\nc();"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Trailing paragraph."
+          }
+        ],
+        "id": "mrihvlfehy7nagvr",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Intro paragraph for context.",
+      "outline": [
+        {
+          "id": "5nwz7bktyll6w7aa",
+          "level": 1,
+          "text": "prism line numbers gutter"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-OVERLAP",
+      "data": {
+        "loser": "code/pre-code",
+        "winner": "code/prism"
+      },
+      "message": "detector code/pre-code lost an overlap to code/prism",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "main[1]/pre[1]"
+      }
+    }
+  ],
+  "hashes": {
+    "blocks": {
+      "5jzptlcfw4r4arb7": "55d721b105cc17807ee87c96a274c6de30d5baba3df24d23099d467184d55eee"
+    },
+    "documentContentIdentity": "b5c69787e7df267d353fe04d728334992825a4a491e0ff03a4f8d2625a758a95",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://fixture.example/code/prism-line-numbers-gutter",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://fixture.example/code/prism-line-numbers-gutter",
+    "title": "prism line numbers gutter"
+  }
+}

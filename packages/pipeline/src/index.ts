@@ -3,19 +3,12 @@
  *
  * The capture orchestrator (Phase 4): clone rendered DOM -> detect + sentinel
  * -> general article extraction -> restore -> assemble + validate `DocumentIR`.
- * Real code detectors land in Phase 5, adapters in Phase 6.
+ * `capture()` uses the standard code detectors (Phase 5) by default. Adapters
+ * land in Phase 6.
+ *
+ * The detector/adapter seam contracts live in `@technical-clipper/core`.
  */
 export { capture, type CaptureInput, type CaptureResult } from './capture.js';
-export {
-  DetectorRegistry,
-  AdapterRegistry,
-  DETECTOR_PRIORITY,
-  type Adapter,
-  type AdapterContext,
-  type ComponentDetector,
-  type DetectedComponent,
-  type DetectedKind,
-} from './seam.js';
 export { runWithNetworkTrap, CaptureNetworkError } from './network-trap.js';
 export { parseDocument } from './dom.js';
 export { EXTRACTOR_VERSION } from './extract/general.js';

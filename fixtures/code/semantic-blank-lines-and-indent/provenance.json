@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/semantic-blank-lines-and-indent",
+  "canonicalUrl": "https://fixture.example/code/semantic-blank-lines-and-indent",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "semantic-html",
+  "notes": "Internal blank lines and mixed indentation preserved verbatim.",
+  "producedByExtractorVersion": "1.0.0"
+}

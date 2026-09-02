@@ -1,0 +1,158 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 126,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 96,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "terminal prompt span inferred"
+          }
+        ],
+        "id": "hf24i2pk27bhvcsx",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Intro paragraph for context."
+          }
+        ],
+        "id": "udqqftl2sppadhy7",
+        "type": "paragraph"
+      },
+      {
+        "session": {
+          "confidence": "approximate",
+          "entries": [
+            {
+              "hasFinalNewline": false,
+              "stream": "input",
+              "text": "docker ps"
+            },
+            {
+              "hasFinalNewline": false,
+              "stream": "output",
+              "text": "CONTAINER ID   IMAGE"
+            },
+            {
+              "hasFinalNewline": false,
+              "stream": "output",
+              "text": "abc123         nginx"
+            }
+          ],
+          "extraction": {
+            "detectorId": "terminal/session",
+            "evidenceSource": "dom-rendered-reconstruction",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "id": "orzyupnrqpj5bkoc",
+          "streamEvidence": "prompt-span split on \"$\""
+        },
+        "type": "terminalSession"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Trailing paragraph."
+          }
+        ],
+        "id": "mrihvlfehy7nagvr",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Intro paragraph for context.",
+      "outline": [
+        {
+          "id": "hf24i2pk27bhvcsx",
+          "level": 1,
+          "text": "terminal prompt span inferred"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-OVERLAP",
+      "data": {
+        "loser": "code/pre-code",
+        "winner": "terminal/session"
+      },
+      "message": "detector code/pre-code lost an overlap to terminal/session",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "main[1]/pre[1]"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-TERMINAL-AMBIGUOUS",
+      "message": "terminal input/output split inferred from prompt spans, not marked structure",
+      "phase": "detect",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "orzyupnrqpj5bkoc"
+      }
+    }
+  ],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "b458c06a0f0b74b6e0d06923d1ec8128cef83f27f24c3b9bf87cd79c1cf52559",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://fixture.example/code/terminal-prompt-span-inferred",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://fixture.example/code/terminal-prompt-span-inferred",
+    "title": "terminal prompt span inferred"
+  }
+}

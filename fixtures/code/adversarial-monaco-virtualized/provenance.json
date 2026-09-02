@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/adversarial-monaco-virtualized",
+  "canonicalUrl": "https://fixture.example/code/adversarial-monaco-virtualized",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "adversarial",
+  "notes": "Monaco editor -> confidence:failed + TC-DETECT-VIRTUALIZED, never fake content.",
+  "producedByExtractorVersion": "1.0.0"
+}

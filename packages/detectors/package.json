@@ -2,7 +2,7 @@
   "name": "@technical-clipper/detectors",
   "version": "0.0.0",
   "private": true,
-  "description": "Component detectors that identify code/terminal/tab-group structures in a cloned rendered DOM for sentinel-based pre-extraction. Scaffold only in Phase 0 — real behaviour lands in Phase 5.",
+  "description": "Component detectors (code/pre-code, block-level code, Prism, Highlight.js, terminal sessions, virtualized-editor guard) that identify code structures in a cloned rendered DOM for sentinel-based pre-extraction.",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -13,5 +13,8 @@
   },
   "dependencies": {
     "@technical-clipper/core": "workspace:*"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.0"
   }
 }

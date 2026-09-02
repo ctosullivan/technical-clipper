@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/highlightjs-line-number-table",
+  "canonicalUrl": "https://fixture.example/code/highlightjs-line-number-table",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "highlightjs",
+  "notes": "hljs-ln table — reconstructed from code cells -> approximate + diagnostic.",
+  "producedByExtractorVersion": "1.0.0"
+}

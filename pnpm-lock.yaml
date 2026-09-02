@@ -43,6 +43,10 @@ importers:
       '@technical-clipper/core':
         specifier: workspace:*
         version: link:../core
+    devDependencies:
+      linkedom:
+        specifier: ^0.18.0
+        version: 0.18.13
 
   packages/extension:
     devDependencies:
@@ -55,6 +59,9 @@ importers:
       '@technical-clipper/core':
         specifier: workspace:*
         version: link:../core
+      '@technical-clipper/detectors':
+        specifier: workspace:*
+        version: link:../detectors
       linkedom:
         specifier: ^0.18.0
         version: 0.18.13

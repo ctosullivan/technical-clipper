@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/blocklevel-display-block",
+  "canonicalUrl": "https://fixture.example/code/blocklevel-display-block",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "blocklevel-code",
+  "notes": "A block-level <code> not wrapped in <pre>.",
+  "producedByExtractorVersion": "1.0.0"
+}

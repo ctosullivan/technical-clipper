@@ -1,17 +1,13 @@
 /**
- * Detector and adapter seam interfaces — `decisions/0013`.
+ * Detector and adapter seam contracts — `decisions/0013`.
  *
- * The interfaces are DOM-typed, so they live in `packages/pipeline` rather
- * than the DOM-free `packages/core`. Phase 5 fills the detector registry;
- * Phase 6 fills the adapter registry. Phase 4 ships empty registries plus one
- * test-only stub detector.
+ * These interfaces are DOM-typed (`Element` / `Document` from the TS DOM lib)
+ * but carry no DOM *implementation* — `packages/core` stays free of linkedom
+ * and the browser. `packages/detectors` (Phase 5) and `packages/adapters`
+ * (Phase 6) implement them; `packages/pipeline` consumes them.
  */
-import type {
-  CodeBlockIR,
-  CodeGroupIR,
-  Diagnostic,
-  TerminalSessionIR,
-} from '@technical-clipper/core';
+import type { CodeBlockIR, CodeGroupIR, TerminalSessionIR } from './ir/code.js';
+import type { Diagnostic } from './diagnostics/registry.js';
 
 /** Fixed detector priority order (`decisions/0013`). Higher wins overlaps. */
 export const DETECTOR_PRIORITY = {
@@ -66,8 +62,18 @@ export class DetectorRegistry {
     return this;
   }
 
+  registerAll(detectors: Iterable<ComponentDetector>): this {
+    for (const d of detectors) this.detectors.push(d);
+    return this;
+  }
+
+  /** Detectors, highest priority first. */
   all(): readonly ComponentDetector[] {
     return [...this.detectors].sort((a, b) => b.priority - a.priority);
+  }
+
+  get size(): number {
+    return this.detectors.length;
   }
 }
 

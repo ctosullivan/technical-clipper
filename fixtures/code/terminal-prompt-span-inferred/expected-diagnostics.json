@@ -1,0 +1,30 @@
+{
+  "canExport": true,
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-OVERLAP",
+      "data": {
+        "loser": "code/pre-code",
+        "winner": "terminal/session"
+      },
+      "message": "detector code/pre-code lost an overlap to terminal/session",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "main[1]/pre[1]"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-TERMINAL-AMBIGUOUS",
+      "message": "terminal input/output split inferred from prompt spans, not marked structure",
+      "phase": "detect",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "orzyupnrqpj5bkoc"
+      }
+    }
+  ],
+  "exportStatus": "complete_with_warnings"
+}

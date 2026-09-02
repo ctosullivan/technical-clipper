@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/terminal-marked-io",
+  "canonicalUrl": "https://fixture.example/code/terminal-marked-io",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "terminal",
+  "notes": "Terminal with explicit input/output markup -> exact TerminalSessionIR.",
+  "producedByExtractorVersion": "1.0.0"
+}

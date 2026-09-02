@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/adversarial-chrome-contamination",
+  "canonicalUrl": "https://fixture.example/code/adversarial-chrome-contamination",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "adversarial",
+  "notes": "Copy button + language pill + line-number spans must not enter the source.",
+  "producedByExtractorVersion": "1.0.0"
+}

@@ -4,17 +4,15 @@
  * `textContent` as exact code.
  */
 import {
+  DETECTOR_PRIORITY,
+  codeBlockSeed,
+  computeNodeId,
   hashCodeText,
   normalizeCode,
   type CodeBlockIR,
-  computeNodeId,
-  codeBlockSeed,
-} from '@technical-clipper/core';
-import {
-  DETECTOR_PRIORITY,
   type ComponentDetector,
   type DetectedComponent,
-} from '../seam.js';
+} from '@technical-clipper/core';
 
 export const stubCodeDetector: ComponentDetector = {
   id: 'test/stub-pre',

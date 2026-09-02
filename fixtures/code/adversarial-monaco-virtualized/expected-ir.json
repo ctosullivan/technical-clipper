@@ -1,0 +1,138 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 127,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 97,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "adversarial monaco virtualized"
+          }
+        ],
+        "id": "6v3cdn5csomgj4eg",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Intro paragraph for context."
+          }
+        ],
+        "id": "udqqftl2sppadhy7",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "failed",
+          "evidenceSource": "dom-rendered-reconstruction",
+          "extraction": {
+            "detectorId": "code/virtualized-guard",
+            "evidenceSource": "dom-rendered-reconstruction",
+            "method": "detector",
+            "methodVersion": "1.0.0",
+            "notes": "virtualized editor — exact source not recoverable"
+          },
+          "filename": null,
+          "hasFinalNewline": false,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "highlightedLines": null,
+          "id": "wtfs2eod4uqrdc7l",
+          "language": null,
+          "languageEvidence": "none",
+          "text": ""
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Trailing paragraph."
+          }
+        ],
+        "id": "mrihvlfehy7nagvr",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Intro paragraph for context.",
+      "outline": [
+        {
+          "id": "6v3cdn5csomgj4eg",
+          "level": 1,
+          "text": "adversarial monaco virtualized"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-DETECT-VIRTUALIZED",
+      "message": "a virtualized code editor was detected; exact source recovery is out of scope",
+      "phase": "detect",
+      "severity": "error",
+      "sourceLocation": {
+        "nodeId": "wtfs2eod4uqrdc7l"
+      }
+    }
+  ],
+  "hashes": {
+    "blocks": {
+      "wtfs2eod4uqrdc7l": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "documentContentIdentity": "c81153dcc2b5ce4e5dd3be3e424f5ef6c6d38a17c9a6e74e45f766133ba84d43",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://fixture.example/code/adversarial-monaco-virtualized",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://fixture.example/code/adversarial-monaco-virtualized",
+    "title": "adversarial monaco virtualized"
+  }
+}

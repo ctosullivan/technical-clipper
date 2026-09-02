@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/adversarial-backtick-tilde-runs",
+  "canonicalUrl": "https://fixture.example/code/adversarial-backtick-tilde-runs",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "adversarial",
+  "notes": "Code containing backtick and tilde runs — exact bytes (fence selection is Phase 7).",
+  "producedByExtractorVersion": "1.0.0"
+}

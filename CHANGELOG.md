@@ -9,6 +9,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Phase 5: `@technical-clipper/detectors` — the standard code / terminal
+  detector set.
+  - `code/pre-code`, `code/blocklevel-code`, `code/prism`, `code/highlightjs`
+    (exact from a copy-source or token `textContent`; `approximate` +
+    `TC-EXTRACT-RECONSTRUCT` for a line-number-table layout),
+    `terminal/session` (explicit input/output markup → `exact`; prompt-span
+    split → `approximate` + `TC-DETECT-TERMINAL-AMBIGUOUS`), and a
+    virtualized-editor guard (`monaco`/`cm`/`ace` → `failed` +
+    `TC-DETECT-VIRTUALIZED`).
+  - Chrome stripping (line-number gutters, copy buttons, language pills),
+    language inference (`decisions/0025`), filename / highlighted-line metadata,
+    BOM + final-newline handling.
+  - `standardDetectorRegistry()` is wired into `pipeline`'s `capture()` as the
+    default; the detector/adapter seam contracts moved to
+    `packages/core/src/seam.ts` (DOM-typed, implementation-free) so
+    `detectors` depends only on `core`.
+  - 13 `fixtures/code/*` fixtures with goldens; `tests/pipeline-code.test.ts`
+    (§ 12 gates 6/7/10/11 — exact-text preservation, no chrome contamination,
+    adversarial diagnostics).
+
 - Phase 4: `@technical-clipper/pipeline` — the article capture path.
   - `capture(html | doc, …)` runs clone, detect + sentinel, noise removal,
     deterministic article-root selection, DOM→`ArticleIR`, restore, then
@@ -124,6 +144,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Phase 4: `decisions/0013` interfaces are implemented in `packages/pipeline`
   (Phase 4), not `packages/core` (they are DOM-typed); the ADR's "Phase 3"
   note is superseded by this entry.
+- Phase 5: the seam contracts (`decisions/0013`) moved from
+  `packages/pipeline` to `packages/core/src/seam.ts` (still DOM-typed,
+  implementation-free) so `detectors`/`adapters` depend only on `core` and
+  `pipeline` can depend on `detectors` without a cycle. `tsconfig.json` +
+  package deps updated accordingly.
 
 <!--
   Version-comparison links will be added once a remote repository URL

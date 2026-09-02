@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/semantic-no-final-newline",
+  "canonicalUrl": "https://fixture.example/code/semantic-no-final-newline",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "semantic-html",
+  "notes": "Block with no trailing newline — hasFinalNewline must be false.",
+  "producedByExtractorVersion": "1.0.0"
+}
