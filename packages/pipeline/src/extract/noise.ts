@@ -116,10 +116,9 @@ export function removeNoise(
     if (nestedInAnother) continue;
     if (info.text.length > 2500) {
       diagnostics.push(
-        makeDiagnostic('TC-EXTRACT-SECTION-LOST', {
+        makeDiagnostic('TC-EXTRACT-NOISE-REGION', {
           phase: 'extract',
-          severity: 'warning',
-          message: `noise rule matched ${info.text.length} chars at ${info.path}; removed it — verify this was not article content`,
+          message: `noise rule (${info.reason}) matched ${info.text.length} chars at ${info.path}; removed it — verify this was not article content`,
           sourceLocation: { domPath: info.path },
         }),
       );

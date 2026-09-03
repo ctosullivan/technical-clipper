@@ -1,0 +1,6722 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 19590,
+          "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]"
+        },
+        {
+          "score": 19590,
+          "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[2]"
+        },
+        {
+          "score": 19590,
+          "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[2]/div[1]"
+        },
+        {
+          "score": 18505,
+          "selectorPath": "div[3]/div[1]/div[3]/main[1]"
+        },
+        {
+          "score": 18475,
+          "selectorPath": "div[3]"
+        },
+        {
+          "score": 18475,
+          "selectorPath": "div[3]/div[1]"
+        },
+        {
+          "score": 18475,
+          "selectorPath": "div[3]/div[1]/div[3]"
+        },
+        {
+          "score": 18133,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[2]/div[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Base64"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": " is a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "binary-to-text encoding"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Binary-to-text_encoding",
+            "id": "rc3tciwgigh5ir6y",
+            "title": "Binary-to-text encoding",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " that uses 64 "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "printable characters"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Graphic_character",
+            "id": "qx3i4qfsvjk7xf4t",
+            "title": "Graphic character",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " to represent each 6-bit segment of a sequence of byte"
+          },
+          {
+            "referenceId": "1",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " values. As for all binary-to-text encodings, Base64 encoding enables "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "transmitting"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Data_transmission",
+            "id": "bu4dwubsr2ytkdz2",
+            "title": "Data transmission",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "binary data"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Binary_data",
+            "id": "n4pa5p3v2qxuulqx",
+            "title": "Binary data",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " on a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "communication channel"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Communication_channel",
+            "id": "6fmoub4zazmgcsuh",
+            "title": "Communication channel",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " that only supports text."
+          }
+        ],
+        "id": "4qhf74bijfvo3alz",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "When comparing the original data to the resulting encoded data, Base64 encoding increases the size by 33% plus about 4% additional if inserting line breaks for typical line length."
+          }
+        ],
+        "id": "osf7cui3zbb44ifa",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The earliest uses of this encoding were for dial-up communication between systems running the same "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "operating system"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Operating_system",
+            "id": "hhzzmpol2df2wytj",
+            "title": "Operating system",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " – for example, "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "uuencode"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Uuencoding",
+            "id": "kawa6a6tsa2u6fba",
+            "title": "Uuencoding",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " for "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "UNIX"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/UNIX",
+            "id": "m6lizb7fa2lbqvkm",
+            "title": "UNIX",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "BinHex"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/BinHex",
+            "id": "crbekzktoma45kth",
+            "title": "BinHex",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " for the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "TRS-80"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/TRS-80",
+            "id": "lreeitutv4bbbtvc",
+            "title": "TRS-80",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " (later adapted for the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Macintosh"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Macintosh",
+            "id": "rs6wge2qb3qxqmb4",
+            "title": "Macintosh",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ") – and could therefore make more assumptions about what characters were safe to use. For instance, uuencode uses uppercase letters, digits, and many punctuation characters, but no lowercase."
+          },
+          {
+            "referenceId": "2",
+            "type": "citationRef"
+          },
+          {
+            "referenceId": "3",
+            "type": "citationRef"
+          },
+          {
+            "referenceId": "4",
+            "type": "citationRef"
+          },
+          {
+            "referenceId": "5",
+            "type": "citationRef"
+          }
+        ],
+        "id": "4rsuzsbozksqbflx",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Applications"
+          }
+        ],
+        "id": "zd36jni7g7v27w5g",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "altText": null,
+        "caption": [
+          {
+            "type": "text",
+            "value": "Example of an SVG file containing embedded JPEG images encoded in Base64"
+          },
+          {
+            "referenceId": "6",
+            "type": "citationRef"
+          }
+        ],
+        "id": "s7hlas2mz6s7gzrj",
+        "image": {
+          "alt": null,
+          "intrinsicHeight": 250,
+          "intrinsicWidth": 250,
+          "resolved": false,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/35_mm_angle_of_view_vs_focal_length.svg/250px-35_mm_angle_of_view_vs_focal_length.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+        },
+        "type": "figure"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Notable applications of Base64:"
+          }
+        ],
+        "id": "4kfj52kmylnqs6xg",
+        "type": "paragraph"
+      },
+      {
+        "id": "r7pb4zpsmqddp75f",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/World_Wide_Web\" title=\"World Wide Web\" id=\"mwNQ\">World Wide Web</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "eowsqluieloukpre",
+        "rawHtml": "<sup about=\"#mwt18\" class=\"mw-ref reference\" id=\"cite_ref-7\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-7&quot;}}\"><a href=\"#cite_note-7\" id=\"mwNg\"><span class=\"mw-reflink-text\" id=\"mwNw\"><span class=\"cite-bracket\" id=\"mwOA\">[</span>7<span class=\"cite-bracket\" id=\"mwOQ\">]</span></span></a></sup>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "x4fenv6l3urs2lfu",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/HTML\" title=\"HTML\" id=\"mwOg\">HTML</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "c5xt5px5z6ts47c6",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/CSS\" title=\"CSS\" id=\"mwOw\">CSS</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "x4rneoa2im7srdr7",
+        "rawHtml": "<sup about=\"#mwt21\" class=\"mw-ref reference\" id=\"cite_ref-8\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-8&quot;}}\"><a href=\"#cite_note-8\" id=\"mwPA\"><span class=\"mw-reflink-text\" id=\"mwPQ\"><span class=\"cite-bracket\" id=\"mwPg\">[</span>8<span class=\"cite-bracket\" id=\"mwPw\">]</span></span></a></sup>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "qaqqwdxzovyzbxvt",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/E-mail\" title=\"E-mail\" class=\"mw-redirect\" id=\"mwQg\">e-mail</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "gzsbsklelm5eifux",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol\" title=\"Simple Mail Transfer Protocol\" id=\"mwQw\">SMTP</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "xebizu4ydicavdzw",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/7-bit_ASCII\" title=\"7-bit ASCII\" class=\"mw-redirect\" id=\"mwRg\">7-bit ASCII</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "42pqijvxqvbvqna4",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/XML\" title=\"XML\" id=\"mwSw\">XML</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "7nwbf6ly52bgnuyc",
+        "rawHtml": "<code id=\"mwTA\"><span typeof=\"mw:Nowiki\" id=\"mwTQ\">&lt;data encoding=\"base64\"&gt;...&lt;/data&gt;</span></code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "tro2qorjixzl4ux3",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Favicon\" title=\"Favicon\" id=\"mwTg\">favicons</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "24oboptymlhu5n5j",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Firefox\" title=\"Firefox\" id=\"mwTw\">Firefox</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "r77fqwvsv5qpvdb7",
+        "rawHtml": "<code id=\"mwUA\">bookmarks.html</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "dsofhmhgesn5rbwe",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/PDF\" title=\"PDF\" id=\"mwUw\">PDF</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "hbqvlzziwrggxf5f",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/SVG\" title=\"SVG\" id=\"mwVg\">SVG</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "paj25dzfqbzwwgtb",
+        "rawHtml": "<sup about=\"#mwt24\" class=\"mw-ref reference\" id=\"cite_ref-9\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-9&quot;}}\"><a href=\"#cite_note-9\" id=\"mwVw\"><span class=\"mw-reflink-text\" id=\"mwWA\"><span class=\"cite-bracket\" id=\"mwWQ\">[</span>9<span class=\"cite-bracket\" id=\"mwWg\">]</span></span></a></sup>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "6c2wgqb4wytlix2g",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Delimiter_collision\" title=\"Delimiter collision\" class=\"mw-redirect\" id=\"mwXQ\">delimiter collision</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "qwynhxrherowwzi6",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format\" title=\"LDAP Data Interchange Format\" id=\"mwYA\">LDAP Data Interchange Format</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "u5rt3kse2svjw4kl",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Data_URI_scheme\" title=\"Data URI scheme\" id=\"mwYw\">data URI scheme</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "obrvdarvep364ki7",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/CSS\" title=\"CSS\" id=\"mwZA\">CSS</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "cwb2zp65ffaqtvtf",
+        "rawHtml": "<code id=\"mwZQ\">data:</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "agozbkcnwupuqoyk",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Clipboard_(computing)\" title=\"Clipboard (computing)\" id=\"mwaA\">clipboard</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "xuzvile27ibyn73f",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Cryptocurrency\" title=\"Cryptocurrency\" id=\"mwaQ\">cryptocurrency</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "oeh5fwowpuadhy7q",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Cryptocurrency_wallet\" title=\"Cryptocurrency wallet\" id=\"mwag\">wallet software</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "tndi5oanc2d27azi",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Checksum\" title=\"Checksum\" id=\"mwbQ\">file checksums</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "ksmvakkqfvbxbc3m",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Public_key_fingerprint\" title=\"Public key fingerprint\" id=\"mwbg\">key fingerprints</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "u34gtahp5qbfghg7",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Pretty_Good_Privacy\" title=\"Pretty Good Privacy\" id=\"mwbw\">PGP</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "imrzhr7ihjkqtmtu",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/QR_code\" title=\"QR code\" id=\"mwcg\">QR code</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Alphabet"
+          }
+        ],
+        "id": "32xibcebnng5fqwl",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The set of characters used to represent the values for each base-64 digit (value from 0 to 63) differs slightly between the variations of Base64. The general strategy is to use printable characters that are common to most "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "character encodings"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Character_encoding",
+            "id": "wrjciuafyjdjhfc5",
+            "title": "Character encoding",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ". This tends to result in data remaining unchanged as it moves through information systems, such as email, that were traditionally not "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "8-bit clean"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/8-bit_clean",
+            "id": "cibfpuvgt6ojvzre",
+            "title": "8-bit clean",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          },
+          {
+            "referenceId": "5",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " Typically, an encoding uses "
+          },
+          {
+            "type": "codeSpan",
+            "value": "A"
+          },
+          {
+            "type": "text",
+            "value": "–"
+          },
+          {
+            "type": "codeSpan",
+            "value": "Z"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "codeSpan",
+            "value": "a"
+          },
+          {
+            "type": "text",
+            "value": "–"
+          },
+          {
+            "type": "codeSpan",
+            "value": "z"
+          },
+          {
+            "type": "text",
+            "value": ", and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "0"
+          },
+          {
+            "type": "text",
+            "value": "–"
+          },
+          {
+            "type": "codeSpan",
+            "value": "9"
+          },
+          {
+            "type": "text",
+            "value": " for the first 62 values. Many variants use "
+          },
+          {
+            "type": "codeSpan",
+            "value": "+"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "/"
+          },
+          {
+            "type": "text",
+            "value": " for the last two."
+          }
+        ],
+        "id": "xazj7nj2c2t3kqx3",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Per "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC 4648 §4"
+              }
+            ],
+            "href": "https://datatracker.ietf.org/doc/html/rfc4648#section-4",
+            "id": "flytygszfwxtla64",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", the following table lists the characters used for each numeric value."
+          },
+          {
+            "type": "text",
+            "value": " To indicate padding, "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " is used."
+          }
+        ],
+        "id": "yliuldy3dsw256ad",
+        "type": "paragraph"
+      },
+      {
+        "id": "ivken53c5kpoxgcr",
+        "table": {
+          "alignments": [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Value"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "char"
+              }
+            ],
+            [],
+            [
+              {
+                "type": "text",
+                "value": "Value"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "char"
+              }
+            ],
+            [],
+            [
+              {
+                "type": "text",
+                "value": "value"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "char"
+              }
+            ],
+            [],
+            [
+              {
+                "type": "text",
+                "value": "value"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "char"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "A"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "16"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "Q"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "32"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "g"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "48"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "w"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "B"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "17"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "R"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "33"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "h"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "49"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "x"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "2"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "C"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "18"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "S"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "34"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "i"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "50"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "y"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "3"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "D"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "19"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "T"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "35"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "j"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "51"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "z"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "4"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "E"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "20"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "U"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "36"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "k"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "52"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "0"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "5"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "F"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "21"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "V"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "37"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "l"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "53"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "1"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "6"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "G"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "22"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "W"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "38"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "m"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "54"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "2"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "7"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "H"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "23"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "X"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "39"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "n"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "55"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "3"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "8"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "I"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "24"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "Y"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "40"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "o"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "56"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "4"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "9"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "J"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "25"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "Z"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "41"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "p"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "57"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "5"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "10"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "K"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "26"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "a"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "42"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "q"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "58"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "6"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "11"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "L"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "27"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "b"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "43"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "r"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "59"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "7"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "12"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "M"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "28"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "c"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "44"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "s"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "60"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "8"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "13"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "N"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "29"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "d"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "45"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "t"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "61"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "9"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "14"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "O"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "30"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "e"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "46"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "u"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "62"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "+"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "15"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "P"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "31"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "f"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "47"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "v"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "63"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "/"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Base64URL encoding replaces "
+          },
+          {
+            "type": "codeSpan",
+            "value": "+"
+          },
+          {
+            "type": "text",
+            "value": " with "
+          },
+          {
+            "type": "codeSpan",
+            "value": "-"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "/"
+          },
+          {
+            "type": "text",
+            "value": " with "
+          },
+          {
+            "type": "codeSpan",
+            "value": "_"
+          },
+          {
+            "type": "text",
+            "value": " to make the encoded string HTTP-safe and avoid the need for escaping."
+          }
+        ],
+        "id": "3poc5s52qifsqwmw",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Examples"
+          }
+        ],
+        "id": "6mjmq3f36jhjcapy",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "To simplify explanation, the example below uses plain text for input. While this is done in practice, a much more common use is encoding images and other data that are normally not representable with plain text, and the result then represents the data in a printable text format."
+          }
+        ],
+        "id": "4gsayabp2stpaioz",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "For the input data:"
+          }
+        ],
+        "id": "vwyn67kwoz6kz2ka",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "e4c3fc8ef2347ff50cdde3b877836cf1bfb4e0527f2e017089a86a44682ddce9",
+          "highlightedLines": null,
+          "id": "piiyt26ojsm55k3s",
+          "language": null,
+          "languageEvidence": "none",
+          "text": "Many hands make light work.\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The typical Base64 representation is:"
+          }
+        ],
+        "id": "mevr6md6mtjwzsjx",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "0293d08a99a9e02ff035cb90a11e82848f0c0e4ce6a8f142821d509a71188377",
+          "highlightedLines": null,
+          "id": "gyxkazcoqfwo4wtf",
+          "language": null,
+          "languageEvidence": "none",
+          "text": "TWFueSBoYW5kcyBtYWtlIGxpZ2h0IHdvcmsu\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Encoding when no padding needed"
+          }
+        ],
+        "id": "6l75p7of6ezjlbri",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Each input sequence of 6 bits (which can encode 2"
+          },
+          {
+            "type": "text",
+            "value": "6"
+          },
+          {
+            "type": "text",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": "64 values) is mapped to a Base64 alphabet letter. Therefore, Base64 encoding results in four characters for each three input bytes. Assuming the input is ASCII or similar, the byte-data for the first three characters 'M', 'a', 'n' are values "
+          },
+          {
+            "type": "codeSpan",
+            "value": "77"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "codeSpan",
+            "value": "97"
+          },
+          {
+            "type": "text",
+            "value": ", and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "110"
+          },
+          {
+            "type": "text",
+            "value": " which in 8-bit binary representation are "
+          },
+          {
+            "type": "codeSpan",
+            "value": "01001101"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "codeSpan",
+            "value": "01100001"
+          },
+          {
+            "type": "text",
+            "value": ", and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "01101110"
+          },
+          {
+            "type": "text",
+            "value": ". Joining these representations and splitting into 6-bit groups gives:"
+          }
+        ],
+        "id": "3bz7kwj7o2lszx5z",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "895ec1db4fecb76e7e71ada7c91ec47b245465458225f52240d6b0d109b52231",
+          "highlightedLines": null,
+          "id": "cqhlqksjqvieqhlw",
+          "language": null,
+          "languageEvidence": "none",
+          "text": "010011 010110 000101 101110\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Which encodes the string "
+          },
+          {
+            "type": "codeSpan",
+            "value": "TWFu"
+          },
+          {
+            "type": "text",
+            "value": " (per ASCII or similar)."
+          }
+        ],
+        "id": "g6jwkgqsegtf4wen",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The following table shows how input is encoded. For example, the letter 'M' has the value "
+          },
+          {
+            "type": "codeSpan",
+            "value": "77"
+          },
+          {
+            "type": "text",
+            "value": " (per ASCII and similar). The first 6 bits of the value is "
+          },
+          {
+            "type": "codeSpan",
+            "value": "010011"
+          },
+          {
+            "type": "text",
+            "value": " or 19 decimal which maps to Base64 letter 'T' which has a value "
+          },
+          {
+            "type": "codeSpan",
+            "value": "84"
+          },
+          {
+            "type": "text",
+            "value": " (per ASCII and similar)."
+          }
+        ],
+        "id": "bagz2khw3avtldwc",
+        "type": "paragraph"
+      },
+      {
+        "id": "5nkmxhlpskievbde",
+        "table": {
+          "alignments": [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Input"
+              },
+              {
+                "hard": true,
+                "type": "lineBreak"
+              },
+              {
+                "type": "text",
+                "value": "(ASCII)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Letter (ASCII)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "M"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "a"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "n"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "8-bit"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "decimal value"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "77"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "97"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "110"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Hexadecimal"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "value"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "4"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "D"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "6"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "6"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "E"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Bits"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Encoded"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "(Base64)"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "6-bit"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "decimal value"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "19"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "22"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "5"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "46"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Letter"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "(Base64 alphabet)"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "T"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "W"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "F"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "u"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Byte"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "84"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "87"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "70"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "117"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Encoding with one padding character"
+          }
+        ],
+        "id": "b5jpf6g6x3w4xkrf",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "If the input consists of a number of bytes that is 2 more than a multiple of 3 (e.g. 'M', 'a'), then the last 2 bytes (16 bits) are encoded in 3 Base64 digits (18 bits). The two "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "least significant bits"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Least_significant_bit",
+            "id": "g6ol5quwoj4ibdug",
+            "title": "Least significant bit",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " of the last content-bearing 6-bit block are treated as zero for encoding and discarded for decoding (along with the trailing "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " padding character)."
+          }
+        ],
+        "id": "gxy2uj4kmn6vzaaw",
+        "type": "paragraph"
+      },
+      {
+        "id": "cdjkuwrnsqmrux2v",
+        "table": {
+          "alignments": [
+            "none",
+            "none",
+            "none",
+            "none",
+            "center"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Input"
+              },
+              {
+                "hard": true,
+                "type": "lineBreak"
+              },
+              {
+                "type": "text",
+                "value": " (ASCII)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Letter (ASCII)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "M"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "a"
+              }
+            ],
+            []
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "8-bit "
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": " decimal value"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "77"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "97"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Hexadecimal"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "value"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "4"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "D"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "6"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Bits"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [],
+              [],
+              [],
+              [],
+              [],
+              []
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Encoded"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "(Base64)"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "6-bit"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "decimal value"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "19"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "22"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "4"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Padding"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Letter"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "(Base64 alphabet)"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "T"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "W"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "E"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "="
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Byte"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "84"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "87"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "69"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "61"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Encoding with two padding characters"
+          }
+        ],
+        "id": "q4f4wimrilfxgd5r",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "If the input consists of a number of bytes that is 1 more than a multiple of 3 (e.g. 'M'), then the last 8 bits are represented in 2 Base64 digits (12 bits). The four "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "least significant bits"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Least_significant_bit",
+            "id": "g6ol5quwoj4ibdug",
+            "title": "Least significant bit",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " of the last content-bearing 6-bit block are treated as zero for encoding and discarded for decoding (along with the trailing two "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " padding characters):"
+          }
+        ],
+        "id": "6cvmigkt2cljwc73",
+        "type": "paragraph"
+      },
+      {
+        "id": "laf6jtn43k54pihd",
+        "table": {
+          "alignments": [
+            "none",
+            "none",
+            "none",
+            "center"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Input"
+              },
+              {
+                "hard": true,
+                "type": "lineBreak"
+              },
+              {
+                "type": "text",
+                "value": "(ASCII)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Letter (ASCII)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "M"
+              }
+            ],
+            []
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "8-bit"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "decimal value"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "77"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Hexadecimal"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "value"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "4"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "D"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Bits"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              [],
+              []
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Encoded"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "(Base64)"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "6-bit"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "decimal value"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "19"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "16"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Padding"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Padding"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Letter"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "(Base64 alphabet)"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "T"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Q"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "="
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "="
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "byte"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "84"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "81"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "61"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "61"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Decoding with padding"
+          }
+        ],
+        "id": "x662ooxneq7ntaek",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "When decoding, each sequence of four encoded characters is converted to three output bytes, but with a single padding character the final 4 characters decode to only two bytes, or with two padding characters, the final 4 characters decode to a single byte. For example:"
+          }
+        ],
+        "id": "47o6zgatgsqtf5ss",
+        "type": "paragraph"
+      },
+      {
+        "id": "edqiculpanjzlvwj",
+        "table": {
+          "alignments": [
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Encoded"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Padding"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Length"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Decoded"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": ".mw-parser-output .monospaced{font-family:monospace,monospace}"
+                },
+                {
+                  "type": "text",
+                  "value": "bGlnaHQg"
+                },
+                {
+                  "type": "text",
+                  "value": "dw=="
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "=="
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "light "
+                    },
+                    {
+                      "type": "text",
+                      "value": "w"
+                    }
+                  ],
+                  "type": "emphasis"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "bGlnaHQg"
+                },
+                {
+                  "type": "text",
+                  "value": "d28="
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "="
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "2"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "light "
+                    },
+                    {
+                      "type": "text",
+                      "value": "wo"
+                    }
+                  ],
+                  "type": "emphasis"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "bGlnaHQg"
+                },
+                {
+                  "type": "text",
+                  "value": "d29y"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "None"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "3"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "light "
+                    },
+                    {
+                      "type": "text",
+                      "value": "wor"
+                    }
+                  ],
+                  "type": "emphasis"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Another way to interpret the padding character is to consider it as an instruction to discard 2 trailing bits from the bit string each time a "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " is encountered. For example, when "
+          },
+          {
+            "type": "text",
+            "value": "bGlnaHQg"
+          },
+          {
+            "type": "text",
+            "value": "dw=="
+          },
+          {
+            "type": "text",
+            "value": " is decoded, we convert each character (except the trailing occurrences of "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": ") into their corresponding 6-bit representation, and then discard 2 trailing bits for the first "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " and another 2 trailing bits for the other "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": ". In this instance, we would get 6 bits from the "
+          },
+          {
+            "type": "codeSpan",
+            "value": "d"
+          },
+          {
+            "type": "text",
+            "value": ", and another 6 bits from the "
+          },
+          {
+            "type": "codeSpan",
+            "value": "w"
+          },
+          {
+            "type": "text",
+            "value": " for a bit string of length 12, but since we remove 2 bits for each "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " (for a total of 4 bits), the "
+          },
+          {
+            "type": "codeSpan",
+            "value": "dw=="
+          },
+          {
+            "type": "text",
+            "value": " ends up producing 8 bits (1 byte) when decoded."
+          }
+        ],
+        "id": "h44n3bl3jomm3gbv",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Decoding without padding"
+          }
+        ],
+        "id": "ejiiljkzbwrvpjys",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Use of the padding character in encoded text is not essential for decoding. The number of missing bytes can be inferred from the length of the encoded text. In some variants, the padding character is mandatory, while for others it is not used. Notably, when "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "concatenating"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/String_concatenation",
+            "id": "viqyvoysz277n3th",
+            "title": "String concatenation",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " Base64 encoded strings, then use of padding characters is "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "required"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": " during encoding to avoid ambiguity when decoding."
+          }
+        ],
+        "id": "ljt6vmcif3iaiwie",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Without padding, after decoding each sequence of 4 encoded characters, there may be 2 or 3 encoded characters left over (as seen in the table above). A single remaining encoded character is not possible because a single Base64 character only contains 6 bits, and 8 bits are required to create a byte, so the first Base64 character contributes 6 bits, and the second Base64 character contributes its first 2 bits to finish filling the byte (see above)."
+          }
+        ],
+        "id": "d56dgqh5k6yprkvl",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The following table demonstrates decoding encoded strings that have 2, 3 or no left-over characters."
+          }
+        ],
+        "id": "xxmfo6jwao3ress2",
+        "type": "paragraph"
+      },
+      {
+        "id": "7j4miwtbgakwdyap",
+        "table": {
+          "alignments": [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Encoded"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Length"
+              },
+              {
+                "hard": true,
+                "type": "lineBreak"
+              },
+              {
+                "type": "text",
+                "value": "of last group"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "\"missing\" bytes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Decoded"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Decoded length"
+              },
+              {
+                "hard": true,
+                "type": "lineBreak"
+              },
+              {
+                "type": "text",
+                "value": "of last group"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "bGlnaHQg"
+                },
+                {
+                  "type": "text",
+                  "value": "dw"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "2"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "2"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "light "
+                    },
+                    {
+                      "type": "text",
+                      "value": "w"
+                    }
+                  ],
+                  "type": "emphasis"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "bGlnaHQg"
+                },
+                {
+                  "type": "text",
+                  "value": "d28"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "3"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "1"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "light "
+                    },
+                    {
+                      "type": "text",
+                      "value": "wo"
+                    }
+                  ],
+                  "type": "emphasis"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "2"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "bGlnaHQg"
+                },
+                {
+                  "type": "text",
+                  "value": "d29y"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "4"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "light "
+                    },
+                    {
+                      "type": "text",
+                      "value": "wor"
+                    }
+                  ],
+                  "type": "emphasis"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "3"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Decoding without padding is not performed consistently among decoders - some decoders require padding while other decoders infer the correct amount of padding from the encoded input string."
+          },
+          {
+            "referenceId": "10",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " In addition, allowing padless decoding by definition allows one list of strings written in some particular order to decode into several possible different output strings rather than only one possible output string, which can be a security risk due to the unpredictable and/or unexpected decoding."
+          },
+          {
+            "referenceId": "11",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " "
+          }
+        ],
+        "id": "3kqjxcxtpophtif2",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Variants"
+          }
+        ],
+        "id": "wr2z2dnwnh6hoomr",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Variations of Base64 differ in the alphabet used and structural aspects like maximum line length. The most commonly used alphabet is that described by RFC 4648 and most variations only differ in the last two letters used. The following table describes more commonly used encodings that are specified by an "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Request_for_Comments",
+            "id": "rpcnmtdf5asiwmuk",
+            "title": "Request for Comments",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "fdhtskib2mau3kqo",
+        "type": "paragraph"
+      },
+      {
+        "id": "6ubpd4p76g3mh6e7",
+        "table": {
+          "alignments": [
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Encoding"
+              },
+              {
+                "referenceId": "12",
+                "type": "citationRef"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Specification"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Alphabet"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Lines"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "62nd"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "63rd"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "pad"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Separators"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Length"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Checksum"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Base 64 Encoding"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "RFC 4648 §4"
+                    }
+                  ],
+                  "href": "https://datatracker.ietf.org/doc/html/rfc4648#section-4",
+                  "id": "flytygszfwxtla64",
+                  "title": null,
+                  "type": "link"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "+"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "/"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "="
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "No"
+                }
+              ],
+              [],
+              [
+                {
+                  "type": "text",
+                  "value": "No"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Base 64 Encoding with URL and Filename Safe Alphabet"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "RFC 4648 §5"
+                    }
+                  ],
+                  "href": "https://datatracker.ietf.org/doc/html/rfc4648#section-5",
+                  "id": "h7bknvgihdwurd26",
+                  "title": null,
+                  "type": "link"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "-"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "_"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "="
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "optional"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "No"
+                }
+              ],
+              [],
+              [
+                {
+                  "type": "text",
+                  "value": "No"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "for "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "MIME"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Base64#MIME",
+                  "id": "kdudpcjpikuyrsfv",
+                  "title": null,
+                  "type": "link"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "RFC 2045"
+                    }
+                  ],
+                  "href": "https://datatracker.ietf.org/doc/html/rfc2045",
+                  "id": "j2ptcxcdxl3fofr4",
+                  "title": null,
+                  "type": "link"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "+"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "/"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "="
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "76"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "No"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "for "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Privacy-Enhanced Mail"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Base64#Privacy-enhanced_mail",
+                  "id": "yyvlnlbfxuuizskk",
+                  "title": null,
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": " (deprecated)"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "RFC 1421"
+                    }
+                  ],
+                  "href": "https://datatracker.ietf.org/doc/html/rfc1421",
+                  "id": "j5wlviz44ujwspab",
+                  "title": null,
+                  "type": "link"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "+"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "/"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "="
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "64"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Yes, in PEM CRC"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "for "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "UTF-7"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Base64#UTF-7",
+                  "id": "bnvv4d2mvbtknzqp",
+                  "title": null,
+                  "type": "link"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "RFC 2152"
+                    }
+                  ],
+                  "href": "https://datatracker.ietf.org/doc/html/rfc2152",
+                  "id": "jdnpsec3evlc4nw2",
+                  "title": null,
+                  "type": "link"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "+"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "/"
+                }
+              ],
+              [],
+              [
+                {
+                  "type": "text",
+                  "value": "No"
+                }
+              ],
+              [],
+              [
+                {
+                  "type": "text",
+                  "value": "No"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "for IMAP mailbox names"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "RFC 3501"
+                    }
+                  ],
+                  "href": "https://datatracker.ietf.org/doc/html/rfc3501#section-5.1.3",
+                  "id": "y7z4g3hqg37zeflp",
+                  "title": null,
+                  "type": "link"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "+"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": ","
+                }
+              ],
+              [],
+              [
+                {
+                  "type": "text",
+                  "value": "No"
+                }
+              ],
+              [],
+              [
+                {
+                  "type": "text",
+                  "value": "No"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Textual Encodings of PKIX, PKCS, and CMS Structures"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "RFC 7468"
+                    }
+                  ],
+                  "href": "https://datatracker.ietf.org/doc/html/rfc7468",
+                  "id": "dg7gmpblmf25ongl",
+                  "title": null,
+                  "type": "link"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "+"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "/"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "="
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "64"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "No"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "ASCII armor for "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "OpenPGP"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Base64#OpenPGP",
+                  "id": "iyd75xqgjlokwwl2",
+                  "title": null,
+                  "type": "link"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "RFC 9580"
+                    }
+                  ],
+                  "href": "https://datatracker.ietf.org/doc/html/rfc9580",
+                  "id": "otf2ckdsc5xuehfq",
+                  "title": null,
+                  "type": "link"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "+"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "/"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "="
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "76"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Yes, (CRC24)"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "RFC 4648"
+          }
+        ],
+        "id": "p672tpk4v7vdoudt",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": ".mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:\"\\\"\"\"\\\"\"\"'\"\"'\"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url(\"//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url(\"//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url(\"//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url(\"//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg\")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "4648"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc4648",
+            "id": "lusjazkfx43m7rp2",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " describes various encodings including Base64, and it discusses the use of line feeds in encoded data, the use of padding in encoded data, the use of non-alphabet characters in encoded data, use of different encoding alphabets, and canonical encodings. The variant that it calls "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Base 64 Encoding"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "base64"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": " is intended for general-use."
+          }
+        ],
+        "id": "hbutggktwph4ynbb",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The RFC also specifies a second Base64 encoding that it calls "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Base 64 Encoding with URL and Filename Safe Alphabet"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": " that is intended for representing relatively long identifying information. For example, a database persistence framework for "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Java"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Java_(programming_language)",
+            "id": "7ggaknc3ao4i6ycm",
+            "title": "Java (programming language)",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " objects might use Base64 encoding to encode a relatively large unique id (generally 128-bit "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "UUIDs"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/UUID",
+            "id": "jml7w7gi6tnwybsh",
+            "title": "UUID",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ") as a string for use as an HTTP parameter in an HTTP form or an HTTP GET "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "URL"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/URL",
+            "id": "7sovooodab6y5lum",
+            "title": "URL",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ". Also, many "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "applications"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Application_software",
+            "id": "ejmh6kogdtcbehwu",
+            "title": "Application software",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " need to encode binary data in a way that is convenient for inclusion in a URL, including in hidden web form fields, and Base64 is a convenient encoding to render them in a compact way."
+          }
+        ],
+        "id": "b4hmwgnji3uh4ruq",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Using standard Base64 in a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "URL"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/URL",
+            "id": "7sovooodab6y5lum",
+            "title": "URL",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " requires encoding the "
+          },
+          {
+            "type": "codeSpan",
+            "value": "+"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "codeSpan",
+            "value": "/"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " characters as special "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "percent-encoded"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Percent-encoding",
+            "id": "v2vat5kiyvgagdv7",
+            "title": "Percent-encoding",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " hexadecimal sequences ("
+          },
+          {
+            "type": "codeSpan",
+            "value": "+"
+          },
+          {
+            "type": "text",
+            "value": " becomes "
+          },
+          {
+            "type": "codeSpan",
+            "value": "%2B"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "codeSpan",
+            "value": "/"
+          },
+          {
+            "type": "text",
+            "value": " becomes "
+          },
+          {
+            "type": "codeSpan",
+            "value": "%2F"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " becomes "
+          },
+          {
+            "type": "codeSpan",
+            "value": "%3D"
+          },
+          {
+            "type": "text",
+            "value": "), which makes the string longer and harder to read. Using a different alphabet allows for encoding as Base64 without requiring this extra markup. Typically, "
+          },
+          {
+            "type": "codeSpan",
+            "value": "+"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "/"
+          },
+          {
+            "type": "text",
+            "value": " are replaced by "
+          },
+          {
+            "type": "codeSpan",
+            "value": "-"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "_"
+          },
+          {
+            "type": "text",
+            "value": ", respectively, so that using URL encoders/decoders is no longer necessary and has no effect on the length of the encoded value, leaving the same encoded form intact for use in relational databases, web forms, and object identifiers in general. A popular site to make use of such is "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "YouTube"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/YouTube#Uploading",
+            "id": "gwzw35njhia7nfzn",
+            "title": "YouTube",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          },
+          {
+            "referenceId": "13",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " Some variants allow or require omitting the padding "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " signs to avoid them being confused with field separators, or require that any such padding be percent-encoded. Some libraries "
+          },
+          {
+            "type": "text",
+            "value": " encode "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " as "
+          },
+          {
+            "type": "codeSpan",
+            "value": "."
+          },
+          {
+            "type": "text",
+            "value": ", potentially exposing applications to "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "relative path attacks"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Directory_traversal_attack",
+            "id": "ev5xcvyh6lo5bzmc",
+            "title": "Directory traversal attack",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " when a folder name is encoded from user data."
+          }
+        ],
+        "id": "rnygpsetldgh57i4",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "RFC 3548"
+          }
+        ],
+        "id": "e5p4sigl74rvzwt3",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "3548"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc3548",
+            "id": "c4bl7dprdeb6f4rq",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", entitled "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "The Base16, Base32, and Base64 Data Encodings"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": ", is an informational (non-normative) memo that attempts to unify the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "1421"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc1421",
+            "id": "szeobnkufttd4foc",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "2045"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc2045",
+            "id": "hygeh6y7gkk4srmx",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " specifications of Base64 encodings, alternative-alphabet encodings, and the Base32 (which is seldom used) and Base16 encodings. RFC 4648 obsoletes RFC 3548."
+          }
+        ],
+        "id": "imuakpwohykxf2ln",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Unless an encoder is written to a specification that refers to "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "3548"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc3548",
+            "id": "c4bl7dprdeb6f4rq",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " and specifically requires otherwise"
+          },
+          {
+            "type": "text",
+            "value": ", RFC 3548 forbids an encoder from generating messages containing characters outside the encoding alphabet or without padding, and it also declares that a decoder must reject data that contain characters other than the encoding alphabet."
+          },
+          {
+            "referenceId": "4",
+            "type": "citationRef"
+          }
+        ],
+        "id": "hkvkktnd2vhsfvjm",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "MIME"
+          }
+        ],
+        "id": "yaz7m6jfflhlm6zk",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "MIME"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/MIME",
+            "id": "2ygmdiwef2nxwgdw",
+            "title": "MIME",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " (Multipurpose Internet Mail Extensions) specification lists Base64 as one of two "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "binary-to-text encoding"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Binary-to-text_encoding",
+            "id": "rc3tciwgigh5ir6y",
+            "title": "Binary-to-text encoding",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " schemes (the other being "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "quoted-printable"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Quoted-printable",
+            "id": "ked6gcmqoh7w6fpg",
+            "title": "Quoted-printable",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ")."
+          },
+          {
+            "referenceId": "3",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " MIME's Base64 encoding is based on that of the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "1421"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc1421",
+            "id": "szeobnkufttd4foc",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " version of PEM: it uses the same 64-character alphabet and encoding mechanism as PEM and uses the "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " symbol for output padding in the same way, as described at "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "2045"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc2045",
+            "id": "hygeh6y7gkk4srmx",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "zcp4citm6jypxif5",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "MIME does not specify a fixed length for Base64-encoded lines, but it does specify a maximum line length of 76 characters. Additionally, it specifies that any character outside the standard set of 64 encoding characters (for example CRLF sequences), must be ignored by a compliant decoder, although most implementations use a CR/LF "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "newline"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Newline",
+            "id": "6bigkfvclxnl5thg",
+            "title": "Newline",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " pair to delimit encoded lines."
+          }
+        ],
+        "id": "b5ul5yrlvhkjzxs2",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Thus, the actual length of MIME-compliant Base64-encoded binary data is usually about 137% of the original data length ("
+          },
+          {
+            "type": "text",
+            "value": ".mw-parser-output .frac{white-space:nowrap}.mw-parser-output .frac .num,.mw-parser-output .frac .den{font-size:80%;line-height:0;vertical-align:super}.mw-parser-output .frac .den{vertical-align:sub}.mw-parser-output .sr-only{border:0;clip:rect(0,0,0,0);clip-path:polygon(0px 0px,0px 0px,0px 0px);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}"
+          },
+          {
+            "type": "text",
+            "value": "4"
+          },
+          {
+            "type": "text",
+            "value": "⁄"
+          },
+          {
+            "type": "text",
+            "value": "3"
+          },
+          {
+            "type": "text",
+            "value": "×"
+          },
+          {
+            "type": "text",
+            "value": "78"
+          },
+          {
+            "type": "text",
+            "value": "⁄"
+          },
+          {
+            "type": "text",
+            "value": "76"
+          },
+          {
+            "type": "text",
+            "value": "), though for very short messages the overhead can be much higher due to the overhead of the headers. Very roughly, the final size of Base64-encoded binary data is equal to 1.37 times the original data size + 814 bytes (for headers). The size of the decoded data can be approximated with this formula:"
+          }
+        ],
+        "id": "alk4xkgf47d66oxs",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "3ce90e45e14ac796d54a1def1f49dd15cfdc712f46cbeeefd6074ebe74aeafa7",
+          "highlightedLines": null,
+          "id": "e7jie65goh6tyhxx",
+          "language": null,
+          "languageEvidence": "none",
+          "text": "bytes = (string_length(encoded_string) − 814) / 1.37\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Privacy-enhanced mail"
+          }
+        ],
+        "id": "lf6sjonoyl6dfnxo",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The first known standardized use of the encoding now called MIME Base64 was in the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Privacy-Enhanced Mail"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail",
+            "id": "ev46ugzh3jz7usvu",
+            "title": "Privacy-Enhanced Mail",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " (PEM) protocol, proposed by "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "989"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc989",
+            "id": "ddutwje2cjnkd6j3",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " in 1987. PEM defines a \"printable encoding\" scheme that uses Base64 encoding to transform an arbitrary sequence of bytes to a format that can be expressed in short lines of 6-bit characters, as required by transfer protocols such as "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "SMTP"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/SMTP",
+            "id": "cxf3gtr2rdrxyhvm",
+            "title": "SMTP",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          },
+          {
+            "referenceId": "14",
+            "type": "citationRef"
+          }
+        ],
+        "id": "b5pi4wpxhtmjqyhd",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The current version of PEM (specified in "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "1421"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc1421",
+            "id": "szeobnkufttd4foc",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ") uses a 64-character alphabet consisting of upper- and lower-case "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Roman letters"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Roman_letters",
+            "id": "q77ij2jtgpafreff",
+            "title": "Roman letters",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " ("
+          },
+          {
+            "type": "codeSpan",
+            "value": "A"
+          },
+          {
+            "type": "text",
+            "value": "–"
+          },
+          {
+            "type": "codeSpan",
+            "value": "Z"
+          },
+          {
+            "type": "text",
+            "value": ", "
+          },
+          {
+            "type": "codeSpan",
+            "value": "a"
+          },
+          {
+            "type": "text",
+            "value": "–"
+          },
+          {
+            "type": "codeSpan",
+            "value": "z"
+          },
+          {
+            "type": "text",
+            "value": "), the numerals ("
+          },
+          {
+            "type": "codeSpan",
+            "value": "0"
+          },
+          {
+            "type": "text",
+            "value": "–"
+          },
+          {
+            "type": "codeSpan",
+            "value": "9"
+          },
+          {
+            "type": "text",
+            "value": "), and the "
+          },
+          {
+            "type": "codeSpan",
+            "value": "+"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "/"
+          },
+          {
+            "type": "text",
+            "value": " symbols. The "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " symbol is also used as a padding suffix."
+          },
+          {
+            "referenceId": "2",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " The original specification, "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "989"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc989",
+            "id": "ddutwje2cjnkd6j3",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", additionally used the "
+          },
+          {
+            "type": "codeSpan",
+            "value": "*"
+          },
+          {
+            "type": "text",
+            "value": " symbol to delimit encoded but unencrypted data within the output stream."
+          }
+        ],
+        "id": "5kmvf5qeellog3tq",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "To convert data to PEM printable encoding, the first byte is placed in the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "most significant"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Most_significant_bit",
+            "id": "lsqkvvy2nnukhabn",
+            "title": "Most significant bit",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " eight bits of a 24-bit "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "buffer"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Data_buffer",
+            "id": "c2pu7kqsd7fgyovd",
+            "title": "Data buffer",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", the next in the middle eight, and the third in the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "least significant"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Least_significant_bit",
+            "id": "egcpbqj55bxpuvd6",
+            "title": "Least significant bit",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " eight bits. If there are fewer than three bytes left to encode (or in total), the remaining buffer bits will be zero. The buffer is then used, six bits at a time, most significant first, as indices into the string: \""
+          },
+          {
+            "type": "codeSpan",
+            "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+          },
+          {
+            "type": "text",
+            "value": "\", and the indicated character is output."
+          }
+        ],
+        "id": "mjq6gwws5fomjqhq",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The process is repeated on the remaining data until fewer than four bytes remain. If three bytes remain, they are processed normally. If fewer than three bytes (24 bits) are remaining to encode, the input data is right-padded with zero bits to form an integral multiple of six bits."
+          }
+        ],
+        "id": "abhus4b7tczp56ch",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "After encoding the non-padded data, if two bytes of the 24-bit buffer are padded-zeros, two "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " characters are appended to the output; if one byte of the 24-bit buffer is filled with padded-zeros, one "
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": " character is appended. This signals the decoder that the zero bits added due to padding should be excluded from the reconstructed data. This also guarantees that the encoded output length is a multiple of 4 bytes."
+          }
+        ],
+        "id": "kwu6vb5twet7ofr2",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "PEM requires that all encoded lines consist of exactly 64 printable characters, with the exception of the last line, which may contain fewer printable characters. Lines are delimited by whitespace characters according to local (platform-specific) conventions."
+          }
+        ],
+        "id": "x6svtnhc57crqwco",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "UTF-7"
+          }
+        ],
+        "id": "foj25k7pnci4scf2",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "UTF-7"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/UTF-7",
+            "id": "2fl7pttireb5dc6p",
+            "title": "UTF-7",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", described first in "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "1642"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc1642",
+            "id": "zz4ohumsfg265nlu",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", which was later superseded by "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "2152"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc2152",
+            "id": "f43cvgwmtzbbndnb",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", introduced a system called "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "modified Base64"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": ". This data encoding scheme is used to encode "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "UTF-16"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/UTF-16",
+            "id": "67sowqpppvs3xlnw",
+            "title": "UTF-16",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " as "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "ASCII"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/ASCII",
+            "id": "4yvmxog333nz6chy",
+            "title": "ASCII",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " characters for use in 7-bit transports such as "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "SMTP"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/SMTP",
+            "id": "cxf3gtr2rdrxyhvm",
+            "title": "SMTP",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ". It is a variant of the Base64 encoding used in MIME."
+          },
+          {
+            "referenceId": "15",
+            "type": "citationRef"
+          },
+          {
+            "referenceId": "16",
+            "type": "citationRef"
+          }
+        ],
+        "id": "by72q6gdwppflmst",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The \"Modified Base64\" alphabet consists of the MIME Base64 alphabet, but does not use the \""
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": "\" padding character. UTF-7 is intended for use in mail headers (defined in "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "2047"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc2047",
+            "id": "f5k2a5bd43mia5vm",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "), and the \""
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": "\" character is reserved in that context as the escape character for \"quoted-printable\" encoding. Modified Base64 simply omits the padding and ends immediately after the last Base64 digit containing useful bits leaving up to three unused bits in the last Base64 digit."
+          }
+        ],
+        "id": "b3alagp6plcqz4qa",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "OpenPGP"
+          }
+        ],
+        "id": "knighfb3ukkduhjc",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "id": "euvxqxlkf2ysuxoj",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP\" title=\"Pretty Good Privacy\">Pretty Good Privacy §<span typeof=\"mw:Entity\">&#160;</span>OpenPGP</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "OpenPGP"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/OpenPGP",
+            "id": "bx2nyohrw2eqjfyp",
+            "title": "OpenPGP",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", described in "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "9580"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc9580",
+            "id": "zrsqqytln7o6oqwi",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", specifies \""
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "ASCII armor"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/ASCII_armor",
+            "id": "cy5xxrs2czheyiby",
+            "title": "ASCII armor",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "\", which is identical to the \"Base64\" encoding described by MIME, with the addition of an optional 24-bit "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "CRC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Cyclic_redundancy_check",
+            "id": "6dovuyyfwwmu7gma",
+            "title": "Cyclic redundancy check",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ". The "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "checksum"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Checksum",
+            "id": "ujlet3gvyjmf3iyq",
+            "title": "Checksum",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " is calculated on the input data before encoding; the checksum is then encoded with the same Base64 algorithm and, prefixed by the \""
+          },
+          {
+            "type": "codeSpan",
+            "value": "="
+          },
+          {
+            "type": "text",
+            "value": "\" symbol as the separator, appended to the encoded output data."
+          },
+          {
+            "referenceId": "17",
+            "type": "citationRef"
+          }
+        ],
+        "id": "t3c4w67qjnqejy37",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Javascript (DOM Web API)"
+          }
+        ],
+        "id": "3q6kk64imrdnvfak",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "type": "codeSpan",
+            "value": "atob()"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "btoa()"
+          },
+          {
+            "type": "text",
+            "value": " JavaScript methods, defined in the HTML5 draft specification,"
+          },
+          {
+            "referenceId": "18",
+            "type": "citationRef"
+          },
+          {
+            "referenceId": "19",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " provide Base64 encoding and decoding functionality to web pages. The "
+          },
+          {
+            "type": "codeSpan",
+            "value": "btoa()"
+          },
+          {
+            "type": "text",
+            "value": " method outputs padding characters, but these are optional in the input of the "
+          },
+          {
+            "type": "codeSpan",
+            "value": "atob()"
+          },
+          {
+            "type": "text",
+            "value": " method."
+          },
+          {
+            "hard": true,
+            "type": "lineBreak"
+          },
+          {
+            "type": "text",
+            "value": " Example: Encoding of the beginning of a GIF file: "
+          },
+          {
+            "type": "codeSpan",
+            "value": "btoa(\"GIF89a\")"
+          },
+          {
+            "type": "text",
+            "value": " ↦ "
+          },
+          {
+            "type": "codeSpan",
+            "value": "\"R0lGODlh\""
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "phzxximfd672gnl2",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "With atypical alphabet order"
+          }
+        ],
+        "id": "6dum6nnlldwdibvi",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Several variants use alphabets similar to the common variants, but in a different order."
+          }
+        ],
+        "id": "4b3pzrpnoapfthm2",
+        "type": "paragraph"
+      },
+      {
+        "id": "xrwvc55e2yq5imcf",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Crypt_(C)\" title=\"Crypt (C)\" id=\"mwBAQ\"><b id=\"mwBAU\">crypt</b></a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "k3if4ikdbecwagik",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Passwd#Password_file\" title=\"Passwd\" id=\"mwBAY\"><code id=\"mwBAc\">/etc/passwd</code> file</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "w7hf5pftjszhmtzs",
+        "rawHtml": "<code id=\"mwBAg\">.</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "abawutqvf6cizxjo",
+        "rawHtml": "<code id=\"mwBAk\">/</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "lo2ogawbadxkgfj4",
+        "rawHtml": "<code id=\"mwBAo\">./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "quftomfw42chuzqr",
+        "rawHtml": "<b id=\"mwBA0\"><a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/GEDCOM\" title=\"GEDCOM\" id=\"mwBA4\">GEDCOM</a></b>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "wrrtzwqq6kxfhq75",
+        "rawHtml": "<code id=\"mwBBA\">./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "x4qvpp2y4sfa4rj2",
+        "rawHtml": "<sup about=\"#mwt226\" class=\"mw-ref reference\" id=\"cite_ref-20\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-20&quot;}}\"><a href=\"#cite_note-20\" id=\"mwBBE\"><span class=\"mw-reflink-text\" id=\"mwBBI\"><span class=\"cite-bracket\" id=\"mwBBM\">[</span>20<span class=\"cite-bracket\" id=\"mwBBQ\">]</span></span></a></sup>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "o3klroukj24qgicn",
+        "rawHtml": "<b id=\"mwBBc\"><a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Bcrypt\" title=\"Bcrypt\" id=\"mwBBg\">bcrypt</a></b>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "fhqt4lfufxmhqkzp",
+        "rawHtml": "<code id=\"mwBBo\">./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "fldht2x3pylwymgo",
+        "rawHtml": "<sup about=\"#mwt229\" class=\"mw-ref reference\" id=\"cite_ref-21\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-21&quot;}}\"><a href=\"#cite_note-21\" id=\"mwBBs\"><span class=\"mw-reflink-text\" id=\"mwBBw\"><span class=\"cite-bracket\" id=\"mwBB0\">[</span>21<span class=\"cite-bracket\" id=\"mwBB4\">]</span></span></a></sup>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "6rn6o7pju3tm22ln",
+        "rawHtml": "<b id=\"mwBCE\"><a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Xxencoding\" title=\"Xxencoding\" id=\"mwBCI\">Xxencoding</a></b>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "5a3jhed3krgan2bi",
+        "rawHtml": "<code id=\"mwBCM\">+</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "jsmokb3wer5n3t7g",
+        "rawHtml": "<code id=\"mwBCQ\">-</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "iz7zvfg64jfoqw7j",
+        "rawHtml": "<code id=\"mwBCU\">.</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "qx54m7nkkupmnrit",
+        "rawHtml": "<code id=\"mwBCY\">/</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "mvmyzh43wyhjphad",
+        "rawHtml": "<code id=\"mwBCg\">+-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "4b5vvyieygaob4yk",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Terminal_node_controller\" title=\"Terminal node controller\" id=\"mwBCs\">terminal node controllers</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "pon47f7zuzyopfzt",
+        "rawHtml": "<sup about=\"#mwt232\" class=\"mw-ref reference\" id=\"cite_ref-22\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-22&quot;}}\"><a href=\"#cite_note-22\" id=\"mwBCw\"><span class=\"mw-reflink-text\" id=\"mwBC0\"><span class=\"cite-bracket\" id=\"mwBC4\">[</span>22<span class=\"cite-bracket\" id=\"mwBC8\">]</span></span></a></sup>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "ov7hkybq2q77yrro",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Bash_(Unix_shell)\" title=\"Bash (Unix shell)\" id=\"mwBDI\"><b id=\"mwBDM\">Bash</b></a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "tvwfx3zy6basdrbq",
+        "rawHtml": "<code id=\"mwBDU\">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@_</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "7t6hqf4unygwtqas",
+        "rawHtml": "<sup about=\"#mwt235\" class=\"mw-ref reference\" id=\"cite_ref-23\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-23&quot;}}\"><a href=\"#cite_note-23\" id=\"mwBDY\"><span class=\"mw-reflink-text\" id=\"mwBDc\"><span class=\"cite-bracket\" id=\"mwBDg\">[</span>23<span class=\"cite-bracket\" id=\"mwBDk\">]</span></span></a></sup>",
+        "type": "htmlBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "With atypical alphabet"
+          }
+        ],
+        "id": "ugdweegtvlyq5fiw",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Some variants use a Base64 alphabet that is significantly different from the alphabets used in the most common Base64 variants (like RFC 4648)."
+          }
+        ],
+        "id": "nooingpaalpgzg57",
+        "type": "paragraph"
+      },
+      {
+        "id": "fe7yevc6bcby6tgd",
+        "rawHtml": "<b id=\"mwBD8\"><a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Uuencoding\" title=\"Uuencoding\" id=\"mwBEA\">Uuencoding</a></b>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "ozt2akxxaowsf7pb",
+        "rawHtml": "<code id=\"mwBEM\">_</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "unluoawz5vhod44q",
+        "rawHtml": "<code id=\"mwBEU\"><span typeof=\"mw:Entity\" id=\"mwBEY\">&#160;</span>!\"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "7snjnx53xpvwhtuq",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/BinHex\" title=\"BinHex\" id=\"mwBEs\"><b id=\"mwBEw\">BinHex 4</b></a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "fvdyvyhfvkzhjrpx",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Classic_Mac_OS\" title=\"Classic Mac OS\" id=\"mwBE0\">classic Mac OS</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "zy4kwm3ppezxcmcf",
+        "rawHtml": "<code id=\"mwBE4\">7</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "vft6raeuur5lzwez",
+        "rawHtml": "<code id=\"mwBE8\">O</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "at5z7anrkn5ptumu",
+        "rawHtml": "<code id=\"mwBFA\">g</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "l3tb63sxywtljwtf",
+        "rawHtml": "<code id=\"mwBFE\">o</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "b2wr3hce3kxswaki",
+        "rawHtml": "<code id=\"mwBFM\"><span typeof=\"mw:Nowiki\" id=\"mwBFQ\">!\"#$%&amp;'()*+,-012345689@ABCDEFGHIJKLMNPQRSTUVXYZ[`abcdefhijklmpqr</span></code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "svtzlf7jzsfhlo67",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/UTF-8\" title=\"UTF-8\" id=\"mwBFc\">UTF-8</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "psvueexlhoh7c23o",
+        "rawHtml": "<code id=\"mwBFg\">0b10<b id=\"mwBFk\">xxxxxx</b></code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "jnzmwrlo75yf76tt",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/UTF-8#Comparison_with_other_encodings\" title=\"UTF-8\" id=\"mwBFo\">UTF-8#Self-synchronization</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "See also"
+          }
+        ],
+        "id": "y2hfk4rhnmk2um57",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "v25a7mh72ummjjmq",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "8BITMIME"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/8BITMIME",
+                    "id": "obur5hj6lyjrkeb3",
+                    "title": "8BITMIME",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": " "
+                  },
+                  {
+                    "type": "text",
+                    "value": "–"
+                  },
+                  {
+                    "type": "text",
+                    "value": " 8-bit data transmission for SMTP"
+                  }
+                ],
+                "id": "rkorf6k7oeliybsj",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "wju5dkedr6jym3jk",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Ascii85"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Ascii85",
+                    "id": "aewy7v7pbp45vpeq",
+                    "title": "Ascii85",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": "– Encoding for a sequence of byte values using 85 printable characters"
+                  }
+                ],
+                "id": "rfwvahknxe5ku2qh",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "4lgrocifgnvpzdlt",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Base16"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Base16",
+                    "id": "6lyk3wkdsss2ls7x",
+                    "title": "Base16",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": " "
+                  },
+                  {
+                    "type": "text",
+                    "value": "–"
+                  },
+                  {
+                    "type": "text",
+                    "value": " Encoding for a sequence of byte values using hexadecimal"
+                  }
+                ],
+                "id": "fx22evcfitnix2lk",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "y2p3phsu2xmldh4p",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Base32"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Base32",
+                    "id": "nkjvhxssmqnkhxwv",
+                    "title": "Base32",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": "– Encoding for a sequence of byte values using 32 printable characters"
+                  }
+                ],
+                "id": "ql6ofhf3qchcq6bo",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "wulkfhj3tsr5zybd",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Base36"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Base36",
+                    "id": "p3fnc576nbw2tcvr",
+                    "title": "Base36",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": "– Encoding for a sequence of byte values using 36 printable characters"
+                  }
+                ],
+                "id": "75bktn5c4cdfbzhm",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "nyom2crhluzyzro5",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Base62"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Base62",
+                    "id": "7mz34dfsbk736tv4",
+                    "title": "Base62",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": "– Encoding for a sequence of byte values using 62 printable characters"
+                  }
+                ],
+                "id": "clhumbpyaacrxgez",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "pe5g6oxd5gyjr4f5",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Binary number"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Binary_number",
+                    "id": "xfzlzghddf2pwkpl",
+                    "title": "Binary number",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": "– Number expressed in the base-2 numeral system"
+                  }
+                ],
+                "id": "kjkbm45dmkdwvuxv",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "waujjxmrvulhmunp",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "References"
+          }
+        ],
+        "id": "63p5vqappemtqizw",
+        "level": 2,
+        "type": "heading"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "is a  that uses 64  to represent each 6-bit segment of a sequence of byte values. As for all binary-to-text encodings, Base64 encoding enables   on a  that only supports text.",
+      "outline": [
+        {
+          "id": "zd36jni7g7v27w5g",
+          "level": 2,
+          "text": "Applications"
+        },
+        {
+          "id": "32xibcebnng5fqwl",
+          "level": 2,
+          "text": "Alphabet"
+        },
+        {
+          "id": "6mjmq3f36jhjcapy",
+          "level": 2,
+          "text": "Examples"
+        },
+        {
+          "id": "6l75p7of6ezjlbri",
+          "level": 3,
+          "text": "Encoding when no padding needed"
+        },
+        {
+          "id": "b5jpf6g6x3w4xkrf",
+          "level": 3,
+          "text": "Encoding with one padding character"
+        },
+        {
+          "id": "q4f4wimrilfxgd5r",
+          "level": 3,
+          "text": "Encoding with two padding characters"
+        },
+        {
+          "id": "x662ooxneq7ntaek",
+          "level": 3,
+          "text": "Decoding with padding"
+        },
+        {
+          "id": "ejiiljkzbwrvpjys",
+          "level": 3,
+          "text": "Decoding without padding"
+        },
+        {
+          "id": "wr2z2dnwnh6hoomr",
+          "level": 2,
+          "text": "Variants"
+        },
+        {
+          "id": "p672tpk4v7vdoudt",
+          "level": 3,
+          "text": "RFC 4648"
+        },
+        {
+          "id": "e5p4sigl74rvzwt3",
+          "level": 3,
+          "text": "RFC 3548"
+        },
+        {
+          "id": "yaz7m6jfflhlm6zk",
+          "level": 3,
+          "text": "MIME"
+        },
+        {
+          "id": "lf6sjonoyl6dfnxo",
+          "level": 3,
+          "text": "Privacy-enhanced mail"
+        },
+        {
+          "id": "foj25k7pnci4scf2",
+          "level": 3,
+          "text": "UTF-7"
+        },
+        {
+          "id": "knighfb3ukkduhjc",
+          "level": 3,
+          "text": "OpenPGP"
+        },
+        {
+          "id": "3q6kk64imrdnvfak",
+          "level": 3,
+          "text": "Javascript (DOM Web API)"
+        },
+        {
+          "id": "6dum6nnlldwdibvi",
+          "level": 3,
+          "text": "With atypical alphabet order"
+        },
+        {
+          "id": "ugdweegtvlyq5fiw",
+          "level": 3,
+          "text": "With atypical alphabet"
+        },
+        {
+          "id": "y2hfk4rhnmk2um57",
+          "level": 2,
+          "text": "See also"
+        },
+        {
+          "id": "63p5vqappemtqizw",
+          "level": 2,
+          "text": "References"
+        }
+      ]
+    },
+    "references": [
+      {
+        "id": "hir4h2csduhnozvo",
+        "rawText": "technically octet",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Octet_(computing)",
+        "structuredFields": null
+      },
+      {
+        "id": "wuunv66oqxvj4ssc",
+        "rawText": "Privacy Enhancement for InternetElectronic Mail: Part I: Message Encryption and Authentication Procedures. IETF. February 1993. doi:10.17487/RFC1421. RFC 1421. Retrieved March 18, 2010.",
+        "sourceUrl": "https://www.rfc-editor.org/rfc/rfc1421",
+        "structuredFields": null
+      },
+      {
+        "id": "zvv2zdiuhewespqf",
+        "rawText": "Multipurpose Internet Mail Extensions: (MIME) Part One: Format of Internet Message Bodies. IETF. November 1996. doi:10.17487/RFC2045. RFC 2045. Retrieved March 18, 2010.",
+        "sourceUrl": "https://www.rfc-editor.org/rfc/rfc2045",
+        "structuredFields": null
+      },
+      {
+        "id": "ydhb4v64kxsinp3g",
+        "rawText": "The Base16, Base32, and Base64 Data Encodings. IETF. July 2003. doi:10.17487/RFC3548. RFC 3548. Retrieved March 18, 2010.",
+        "sourceUrl": "https://www.rfc-editor.org/rfc/rfc3548",
+        "structuredFields": null
+      },
+      {
+        "id": "msa4ki7c2i6scgkm",
+        "rawText": "The Base16, Base32, and Base64 Data Encodings. IETF. October 2006. doi:10.17487/RFC4648. RFC 4648. Retrieved March 18, 2010.",
+        "sourceUrl": "https://www.rfc-editor.org/rfc/rfc4648",
+        "structuredFields": null
+      },
+      {
+        "id": "v2tj3cq7n5gqf3dd",
+        "rawText": "<image xlink:href=\"data:image/jpeg;base64,JPEG contents encoded in Base64\" ... />",
+        "sourceUrl": null,
+        "structuredFields": null
+      },
+      {
+        "id": "56vmfbijmt6uqrw7",
+        "rawText": "\"Base64 encoding and decoding – Web APIs\". MDN Web Docs. Archived from the original on 2014-11-11.",
+        "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding",
+        "structuredFields": null
+      },
+      {
+        "id": "j37i5ruhnjgg7xhm",
+        "rawText": "\"When to base64 encode images (and when not to)\". 28 August 2011. Archived from the original on 2023-08-29.",
+        "sourceUrl": "https://www.davidbcalhoun.com/2011/when-to-base64-encode-images-and-when-not-to/",
+        "structuredFields": null
+      },
+      {
+        "id": "pr5umnlrjtygenju",
+        "rawText": "\"Edit fiddle\". jsfiddle.net.",
+        "sourceUrl": "http://jsfiddle.net/MxHPq/",
+        "structuredFields": null
+      },
+      {
+        "id": "mc5hluuce5fa63s6",
+        "rawText": "Andrews, William (May 27, 2026). \"Base64 explained — what it is, when to use it, and the gotchas that bite developers\". Retrieved June 15, 2026.",
+        "sourceUrl": "https://dev.to/willivan0706/base64-explained-what-it-is-when-to-use-it-and-the-gotchas-that-bite-developers-p8p",
+        "structuredFields": null
+      },
+      {
+        "id": "ctwg226zxhudpdo7",
+        "rawText": "Chalkias, Konstantinos; Chatzigiannis, Panagiotis (30 May 2022). Base64 Malleability in Practice (PDF). ASIA CCS '22: 2022 ACM on Asia Conference on Computer and Communications Security. pp. 1219–1221. doi:10.1145/3488932.3527284.",
+        "sourceUrl": "https://eprint.iacr.org/2022/361.pdf",
+        "structuredFields": null
+      },
+      {
+        "id": "bfbgtmrb2oljmssf",
+        "rawText": "Some specifications describe a Base64 encoding without naming it. This column identifies Base64 encodings in a descriptive way if no particular name is specified.",
+        "sourceUrl": null,
+        "structuredFields": null
+      },
+      {
+        "id": "2ugzxspyrgye7dy5",
+        "rawText": "\"Here's Why YouTube Will Practically Never Run Out of Unique Video IDs\". www.mentalfloss.com. 23 March 2016. Retrieved 27 December 2021.",
+        "sourceUrl": "https://www.mentalfloss.com/article/77598/heres-why-youtube-will-never-run-out-unique-video-ids",
+        "structuredFields": null
+      },
+      {
+        "id": "n7ajgrcxtrm3hkbt",
+        "rawText": "Privacy Enhancement for Internet Electronic Mail. IETF. February 1987. doi:10.17487/RFC0989. RFC 989. Retrieved March 18, 2010.",
+        "sourceUrl": "https://www.rfc-editor.org/rfc/rfc989",
+        "structuredFields": null
+      },
+      {
+        "id": "2dj2bovcvitmcaef",
+        "rawText": "UTF-7 A Mail-Safe Transformation Format of Unicode. IETF. July 1994. doi:10.17487/RFC1642. RFC 1642. Retrieved March 18, 2010.",
+        "sourceUrl": "https://www.rfc-editor.org/rfc/rfc1642",
+        "structuredFields": null
+      },
+      {
+        "id": "3w4uqm3ukeo4eqpm",
+        "rawText": "UTF-7 A Mail-Safe Transformation Format of Unicode. IETF. May 1997. doi:10.17487/RFC2152. RFC 2152. Retrieved March 18, 2010.",
+        "sourceUrl": "https://www.rfc-editor.org/rfc/rfc2152",
+        "structuredFields": null
+      },
+      {
+        "id": "3hphsomwaabac645",
+        "rawText": "OpenPGP Message Format. IETF. July 2024. doi:10.17487/RFC9580. RFC 9580. Retrieved February 13, 2025.",
+        "sourceUrl": "https://www.rfc-editor.org/rfc/rfc9580",
+        "structuredFields": null
+      },
+      {
+        "id": "e6u7inpogfbnttot",
+        "rawText": "\"7.3. Base64 utility methods\". HTML 5.2 Editor's Draft. World Wide Web Consortium. Retrieved 2 January 2018. Introduced by changeset 5814 Archived 2014-02-22 at the Wayback Machine, 2021-02-01.",
+        "sourceUrl": "https://w3c.github.io/html/webappapis.html#atob",
+        "structuredFields": null
+      },
+      {
+        "id": "zxgsptypugpuxymw",
+        "rawText": "\"Window: btoa() method\". 24 June 2025. Retrieved 2025-07-31.",
+        "sourceUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/btoa",
+        "structuredFields": null
+      },
+      {
+        "id": "uwwxcxzz5sp57q47",
+        "rawText": "\"The GEDCOM Standard Release 5.5\". Homepages.rootsweb.ancestry.com. Retrieved 2012-06-21.",
+        "sourceUrl": "https://homepages.rootsweb.ancestry.com/~pmcbride/gedcom/55gctoc.htm",
+        "structuredFields": null
+      },
+      {
+        "id": "j25oiwqeqtdbyuet",
+        "rawText": "Provos, Niels (1997-02-13). \"src/lib/libc/crypt/bcrypt.c r1.1\". Retrieved 2018-05-18.",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Niels_Provos",
+        "structuredFields": null
+      },
+      {
+        "id": "aw5d25jjva2qizwm",
+        "rawText": "\"6PACK a \"real time\" PC to TNC protocol\". Archived from the original on 2012-02-24. Retrieved 2013-05-19.",
+        "sourceUrl": "https://web.archive.org/web/20120224051938/http://private.freepage.de/cgi-bin/feets/freepage_ext/41030x030A/rewrite/alexs/xfr/flexnet/6pack_en/6pack.htm",
+        "structuredFields": null
+      },
+      {
+        "id": "j3cstpdrngqey2xa",
+        "rawText": "\"Shell Arithmetic\". Bash Reference Manual. Retrieved 8 April 2020. Otherwise, numbers take the form [base#]n, where the optional base is a decimal number between 2 and 64 representing the arithmetic base, and n is a number in that base.",
+        "sourceUrl": "https://www.gnu.org/software/bash/manual/html_node/Shell-Arithmetic.html",
+        "structuredFields": null
+      }
+    ],
+    "removedRegions": [
+      {
+        "approxTextLength": 15,
+        "reason": "chrome",
+        "selectorPath": "a[1]"
+      },
+      {
+        "approxTextLength": 205,
+        "reason": "navigation",
+        "selectorPath": "div[2]/header[1]/div[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 83,
+        "reason": "navigation",
+        "selectorPath": "div[2]/header[1]/div[2]/nav[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[2]/div[1]/div[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 505,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[2]/div[2]/nav[1]"
+      },
+      {
+        "approxTextLength": 20,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[1]/div[1]/div[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 22,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[1]/div[1]/div[2]/nav[1]"
+      },
+      {
+        "approxTextLength": 275,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[1]/div[1]/div[2]/nav[2]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[2]/div[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 31,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[2]/div[1]/nav[2]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[1]/div[1]"
+      },
+      {
+        "approxTextLength": 37,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[1]/div[2]"
+      },
+      {
+        "approxTextLength": 356,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[2]"
+      },
+      {
+        "approxTextLength": 68,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[1]/div[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[2]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[3]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[4]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[4]/section[1]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[4]/section[2]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[4]/section[3]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[4]/section[4]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[4]/section[5]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 16,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[4]/section[5]/p[4]/sup[3]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[1]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 8,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[1]/p[3]/sup[2]"
+      },
+      {
+        "approxTextLength": 17,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[1]/p[3]/sup[3]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[2]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 22,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[2]/p[2]/sup[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[3]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[4]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[5]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[6]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[6]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[7]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[8]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[9]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 17,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/section[9]/dl[1]/dd[1]/sup[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[6]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[7]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[7]/div[3]/span[1]"
+      },
+      {
+        "approxTextLength": 368,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[7]/div[4]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[7]/span[1]"
+      },
+      {
+        "approxTextLength": 83,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[2]"
+      },
+      {
+        "approxTextLength": 718,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[4]"
+      },
+      {
+        "approxTextLength": 28,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/header[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 520,
+        "reason": "footer",
+        "selectorPath": "div[3]/div[1]/div[4]/footer[1]"
+      },
+      {
+        "approxTextLength": 28,
+        "reason": "navigation",
+        "selectorPath": "div[4]/div[1]/div[1]/div[3]/nav[1]"
+      }
+    ]
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-BUNDLE-PAGE-INCOMPLETE",
+      "message": "page may not be fully loaded (3 lazy images, 0 skeletons)",
+      "phase": "assemble",
+      "severity": "warning"
+    }
+  ],
+  "hashes": {
+    "blocks": {
+      "cqhlqksjqvieqhlw": "895ec1db4fecb76e7e71ada7c91ec47b245465458225f52240d6b0d109b52231",
+      "e7jie65goh6tyhxx": "3ce90e45e14ac796d54a1def1f49dd15cfdc712f46cbeeefd6074ebe74aeafa7",
+      "gyxkazcoqfwo4wtf": "0293d08a99a9e02ff035cb90a11e82848f0c0e4ce6a8f142821d509a71188377",
+      "piiyt26ojsm55k3s": "e4c3fc8ef2347ff50cdde3b877836cf1bfb4e0527f2e017089a86a44682ddce9"
+    },
+    "documentContentIdentity": "98aac082d26540973bbbb43eff84bd9cfafd2ff90a3b0548665a18010948c9b5",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://en.wikipedia.org/wiki/Base64",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 3,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Base64",
+    "title": "Base64"
+  }
+}

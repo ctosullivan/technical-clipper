@@ -1,0 +1,13 @@
+{
+  "canExport": true,
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-BUNDLE-PAGE-INCOMPLETE",
+      "message": "page may not be fully loaded (3 lazy images, 0 skeletons)",
+      "phase": "assemble",
+      "severity": "warning"
+    }
+  ],
+  "exportStatus": "complete_with_warnings"
+}

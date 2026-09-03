@@ -59,15 +59,52 @@ export function absolutizeUrl(
   }
 }
 
-/** Visible text of an element with normalized whitespace collapsed. */
-export function collapsedText(el: Element): string {
-  return (el.textContent ?? '').replace(/\s+/g, ' ').trim();
+const NON_VISIBLE_TEXT_TAGS = new Set(['STYLE', 'SCRIPT', 'TEMPLATE']);
+
+function visibleTextOf(node: Node): string {
+  let out = '';
+  for (const child of Array.from(node.childNodes)) {
+    if (child.nodeType === NODE_TEXT) {
+      out += child.textContent ?? '';
+    } else if (child.nodeType === NODE_ELEMENT) {
+      if (NON_VISIBLE_TEXT_TAGS.has((child as Element).tagName)) continue;
+      out += visibleTextOf(child);
+    }
+  }
+  return out;
 }
 
-/** Total length of anchor text within an element (link-density signal). */
+/**
+ * Visible text of an element with normalized whitespace collapsed. `<style>`,
+ * `<script>`, and `<template>` contents are excluded: some parsers (linkedom on
+ * MediaWiki TemplateStyles blocks) leak CSS/JS as text, which must not inflate
+ * text-length or link-density metrics used for scoring and noise checks.
+ */
+export function collapsedText(el: Element): string {
+  return visibleTextOf(el).replace(/\s+/g, ' ').trim();
+}
+
+/**
+ * Total length of anchor text within an element (link-density signal).
+ *
+ * Links inside reference lists, infoboxes, navboxes, and data tables are
+ * excluded: a reference-rich article body is still an article body, and a
+ * container must not be disqualified as the article root just because it holds
+ * the citation list.
+ */
+const LINK_DENSITY_EXEMPT =
+  '.reflist, .references, ol.references, .refbegin, .navbox, .vertical-navbox, .infobox, .sidebar, table';
+
 export function linkTextLength(el: Element): number {
+  const exempt = new Set<Element>();
+  for (const container of Array.from(
+    el.querySelectorAll(LINK_DENSITY_EXEMPT),
+  )) {
+    for (const a of Array.from(container.querySelectorAll('a'))) exempt.add(a);
+  }
   let total = 0;
   for (const a of Array.from(el.querySelectorAll('a'))) {
+    if (exempt.has(a)) continue;
     total += (a.textContent ?? '').length;
   }
   return total;

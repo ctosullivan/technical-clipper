@@ -46,6 +46,7 @@ function score(el: Element): number {
   const text = collapsedText(el).length;
   const links = linkTextLength(el);
   const paragraphs = el.querySelectorAll('p').length;
+  const headings = el.querySelectorAll('h1, h2, h3, h4, h5, h6').length;
   const semantic =
     el.tagName === 'MAIN' ||
     el.tagName === 'ARTICLE' ||
@@ -54,11 +55,76 @@ function score(el: Element): number {
       : 0;
   return (
     text -
-    5 * links -
+    // Link density never drives a text-rich container below ~half its text.
+    Math.min(5 * links, 0.5 * text) -
     25 * navLikeChildren(el) +
     30 * semantic +
-    10 * paragraphs
+    10 * paragraphs +
+    // A container spanning many headings is more likely the whole article than
+    // any single dense section within it.
+    15 * headings
   );
+}
+
+interface Scored {
+  el: Element;
+  s: number;
+  paragraphs: number;
+  path: string;
+}
+
+/**
+ * Walk the scored-candidate lattice to the container that best represents the
+ * whole article: ascend out of a single dense section that is really one of
+ * several sibling sections (MediaWiki Parsoid output), then descend past any
+ * chrome-padded wrapper or decoy sibling. Both passes run to a fixpoint.
+ */
+function refineRoot(start: Scored, scored: readonly Scored[]): Scored {
+  let cur = start;
+
+  let advanced = true;
+  while (advanced) {
+    advanced = false;
+    const ancestors = scored
+      .filter((c) => c.el !== cur.el && c.el.contains(cur.el))
+      .sort((a, b) => (a.el.contains(b.el) ? 1 : -1)); // innermost first
+    for (const parent of ancestors) {
+      const enclosesOtherSection = scored.some(
+        (c) =>
+          c.el !== cur.el &&
+          c.el !== parent.el &&
+          parent.el.contains(c.el) &&
+          !c.el.contains(cur.el) &&
+          !cur.el.contains(c.el) &&
+          c.s >= cur.s * 0.4,
+      );
+      if (enclosesOtherSection && parent.s >= cur.s * 0.5) {
+        cur = parent;
+        advanced = true;
+        break;
+      }
+    }
+  }
+
+  advanced = true;
+  while (advanced) {
+    advanced = false;
+    for (const cand of scored) {
+      if (cand === cur || cand.el === cur.el || !cur.el.contains(cand.el))
+        continue;
+      const pFrac = cur.paragraphs > 0 ? cand.paragraphs / cur.paragraphs : 0;
+      const sFrac = cur.s > 0 ? cand.s / cur.s : cand.s >= cur.s ? 1 : 0;
+      const wrapperShed = pFrac >= 0.95 && sFrac >= 0.3;
+      const ambiguousRoot = pFrac >= 0.6 && sFrac >= 0.75;
+      if (wrapperShed || ambiguousRoot) {
+        cur = cand;
+        advanced = true;
+        break;
+      }
+    }
+  }
+
+  return cur;
 }
 
 export interface RootSelection {
@@ -130,21 +196,10 @@ export function selectArticleRoot(
     .filter((c) => c.paragraphs > 0)
     .sort((a, b) => (b.s !== a.s ? b.s - a.s : a.path < b.path ? -1 : 1));
 
-  // Prefer the most specific container: if the top candidate strictly contains
-  // another candidate that scores nearly as well, descend into the child.
-  let best = scored[0];
-  if (best) {
-    for (const cand of scored) {
-      if (
-        cand !== best &&
-        best.el.contains(cand.el) &&
-        cand.el !== best.el &&
-        cand.s >= best.s * 0.75
-      ) {
-        best = cand;
-      }
-    }
-  }
+  // Refine the top-scoring candidate to the container that best represents the
+  // whole article (see refineRoot).
+  const first = scored[0];
+  const best = first ? refineRoot(first, scored) : undefined;
 
   if (!best || best.s < 50 || best.paragraphs === 0) {
     return {

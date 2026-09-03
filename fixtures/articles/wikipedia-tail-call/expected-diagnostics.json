@@ -1,0 +1,171 @@
+{
+  "canExport": true,
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-BUNDLE-PAGE-INCOMPLETE",
+      "message": "page may not be fully loaded (5 lazy images, 0 skeletons)",
+      "phase": "assemble",
+      "severity": "warning"
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-CODE-IN-CHROME",
+      "message": "code component from code/pre-code sits inside reference/chrome furniture; kept as text",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[11]/div[2]/div[1]/ol[1]/li[1]/span[2]/div[1]/pre[1]"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-CODE-IN-CHROME",
+      "message": "code component from code/pre-code sits inside reference/chrome furniture; kept as text",
+      "phase": "detect",
+      "severity": "info",
+      "sourceLocation": {
+        "domPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[11]/div[2]/div[1]/ol[1]/li[2]/span[2]/div[1]/pre[1]"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'typescript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "oexbtu3lwrgddijg"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'typescript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "5bikp2cd5sikhsfx"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'javascript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "424ajyeph74rlysg"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'javascript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "h5wescyf34hc7qvn"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'javascript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "svbnhosnka5ypqi5"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'javascript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "wmahqikazycvt2oi"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'javascript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "pexv2w7rtozngwlq"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'sql' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "dwraz2szpxov2evj"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'javascript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "w6vpjfrzjg4hlpr2"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'javascript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "kntwgfjqgnuqpkaz"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'javascript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "2a2mvrayvnxykug6"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-TABLE-FLATTENED",
+      "message": "code-bearing table flattened to 4 sequential code block(s); tabular layout not preserved",
+      "phase": "extract",
+      "severity": "info"
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-TABLE-FLATTENED",
+      "message": "code-bearing table flattened to 3 sequential code block(s); tabular layout not preserved",
+      "phase": "extract",
+      "severity": "info"
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-TABLE-FLATTENED",
+      "message": "code-bearing table flattened to 3 sequential code block(s); tabular layout not preserved",
+      "phase": "extract",
+      "severity": "info"
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-TABLE-FLATTENED",
+      "message": "code-bearing table flattened to 3 sequential code block(s); tabular layout not preserved",
+      "phase": "extract",
+      "severity": "info"
+    }
+  ],
+  "exportStatus": "complete_with_warnings"
+}

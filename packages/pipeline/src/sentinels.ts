@@ -102,11 +102,40 @@ export function substituteSentinels(
     for (const c of detector.detect(root)) detected.push(c);
   }
 
-  const { accepted, diagnostics } = resolveOverlaps(
+  const resolved = resolveOverlaps(
     detected,
     (id) => priorityById.get(id) ?? 0,
     root,
   );
+  const diagnostics = resolved.diagnostics;
+
+  // A `<pre>` inside reference/citation/edit-section furniture is not a
+  // first-class code block of the article: the reference list is consumed as
+  // text and edit links are chrome. Leaving such a component protected would
+  // strand its sentinel (nothing restores it) and fail the balance check, so
+  // drop the protection and record an info note instead.
+  const CHROME_CODE_ANCESTORS =
+    '.reference, .references, ol.references, .reflist, .mw-references-wrap, ' +
+    '.mw-cite-backlink, .mw-editsection, .noprint, sup.reference';
+  const inChrome = (el: Element): boolean => {
+    for (const anc of Array.from(
+      root.querySelectorAll(CHROME_CODE_ANCESTORS),
+    )) {
+      if (anc.contains(el)) return true;
+    }
+    return false;
+  };
+  const accepted = resolved.accepted.filter((c) => {
+    if (!inChrome(c.element)) return true;
+    diagnostics.push(
+      makeDiagnostic('TC-EXTRACT-CODE-IN-CHROME', {
+        phase: 'detect',
+        message: `code component from ${c.detectorId} sits inside reference/chrome furniture; kept as text`,
+        sourceLocation: { domPath: structuralPath(c.element, root) },
+      }),
+    );
+    return false;
+  });
 
   const leaves = new Map<string, SentinelLeaf>();
   for (const c of accepted) {

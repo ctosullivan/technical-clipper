@@ -1,0 +1,13 @@
+{
+  "origin": "licensed",
+  "sourceUrl": "https://en.wikipedia.org/wiki/Tail_call",
+  "canonicalUrl": "https://en.wikipedia.org/wiki/Tail_call",
+  "retrievedAt": "2026-09-03",
+  "licence": "CC BY-SA 4.0 & GFDL",
+  "attribution": "Wikipedia contributors, \"Tail call\", Wikipedia, The Free Encyclopedia, revision 1371667598 (2026-08-27T19:22:28Z). Text is available under the Creative Commons Attribution-ShareAlike 4.0 License and the GNU Free Documentation License.",
+  "revisionId": "1371667598",
+  "revisionUrl": "https://en.wikipedia.org/w/index.php?title=Tail_call&oldid=1371667598",
+  "revisionTimestamp": "2026-08-27T19:22:28Z",
+  "notes": "Real revision-pinned Wikipedia read-view HTML, fetched 2026-09-03 at the revision above. Full site chrome present (nav, sidebar, footer, edit-section links, reflist, navboxes) — exercises decisions/0024 infobox policy and noise removal on genuine MediaWiki output via the generic path (no Wikipedia adapter).",
+  "producedByExtractorVersion": "1.0.0"
+}

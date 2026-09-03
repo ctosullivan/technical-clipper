@@ -127,6 +127,27 @@ const SPECS = [
     description: 'An expected article section is missing from the output.',
   },
   {
+    code: 'TC-EXTRACT-NOISE-REGION',
+    defaultSeverity: 'warning',
+    defaultBlocksExport: false,
+    description:
+      'A large region was removed by a noise rule; verify it was chrome, not content.',
+  },
+  {
+    code: 'TC-EXTRACT-TABLE-FLATTENED',
+    defaultSeverity: 'info',
+    defaultBlocksExport: false,
+    description:
+      'A code-bearing layout table was flattened to sequential code blocks; code is preserved exactly, tabular layout is not.',
+  },
+  {
+    code: 'TC-EXTRACT-CODE-IN-CHROME',
+    defaultSeverity: 'info',
+    defaultBlocksExport: false,
+    description:
+      'A detected code component sat inside chrome/reference furniture and was left as text rather than protected.',
+  },
+  {
     code: 'TC-EXTRACT-CITATION-UNRESOLVED',
     defaultSeverity: 'error',
     defaultBlocksExport: false,

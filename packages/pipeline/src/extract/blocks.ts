@@ -289,25 +289,41 @@ export function extractBlocks(
 
   const blocks: BlockNode[] = [];
 
+  const pushLeaf = (id: string): boolean => {
+    const leaf = ctx.leaves.get(id);
+    if (!leaf) return false;
+    ctx.restoredIds.push(id);
+    if (leaf.kind === 'code') {
+      blocks.push({ type: 'codeBlock', code: leaf.node as never });
+    } else if (leaf.kind === 'code-group') {
+      blocks.push({ type: 'codeGroup', group: leaf.node as never });
+    } else {
+      blocks.push({ type: 'terminalSession', session: leaf.node as never });
+    }
+    return true;
+  };
+
+  /** Sentinel ids inside `el`, in document order. */
+  const sentinelIdsIn = (el: Element): string[] => {
+    const ids: string[] = [];
+    const walk = (n: Node): void => {
+      for (const c of Array.from(n.childNodes)) {
+        if (c.nodeType === NODE_COMMENT) {
+          const sid = sentinelId((c as Comment).data);
+          if (sid) ids.push(sid);
+        } else if (c.nodeType === NODE_ELEMENT) {
+          walk(c);
+        }
+      }
+    };
+    walk(el);
+    return ids;
+  };
+
   const visit = (node: Node): void => {
     if (node.nodeType === NODE_COMMENT) {
       const id = sentinelId((node as Comment).data);
-      if (id) {
-        const leaf = ctx.leaves.get(id);
-        if (leaf) {
-          ctx.restoredIds.push(id);
-          if (leaf.kind === 'code') {
-            blocks.push({ type: 'codeBlock', code: leaf.node as never });
-          } else if (leaf.kind === 'code-group') {
-            blocks.push({ type: 'codeGroup', group: leaf.node as never });
-          } else {
-            blocks.push({
-              type: 'terminalSession',
-              session: leaf.node as never,
-            });
-          }
-        }
-      }
+      if (id) pushLeaf(id);
       return;
     }
     if (node.nodeType !== NODE_ELEMENT) return;
@@ -364,6 +380,21 @@ export function extractBlocks(
         return;
       }
       case 'TABLE': {
+        const tableSentinels = sentinelIdsIn(el);
+        if (tableSentinels.length > 0) {
+          // A table cell holds protected code (common: side-by-side code
+          // comparison). The IR has no block-in-cell node, and code fidelity
+          // outranks layout (`decisions/0006`), so flatten: emit each code
+          // leaf as a sequential block in document order and drop the grid.
+          for (const id of tableSentinels) pushLeaf(id);
+          ctx.diagnostics.push(
+            makeDiagnostic('TC-EXTRACT-TABLE-FLATTENED', {
+              phase: 'extract',
+              message: `code-bearing table flattened to ${tableSentinels.length} sequential code block(s); tabular layout not preserved`,
+            }),
+          );
+          return;
+        }
         blocks.push(
           extractTable(el, makeId('table', el.textContent ?? ''), ctx),
         );
@@ -424,12 +455,19 @@ export function extractBlocks(
       case 'NOSCRIPT':
       case 'TEMPLATE':
         return;
+      // Transparent containers: recurse into children. `<dl>`/`<dd>`/`<dt>`
+      // are here because MediaWiki uses a bare `<dd>` purely for indentation
+      // (often wrapping a code block) and we have no definition-list IR node —
+      // recurse rather than lose a protected sentinel or bury content.
       case 'DIV':
       case 'SECTION':
       case 'MAIN':
       case 'ARTICLE':
       case 'HEADER':
       case 'SPAN':
+      case 'DL':
+      case 'DD':
+      case 'DT':
         for (const child of Array.from(el.childNodes)) visit(child);
         return;
       default: {

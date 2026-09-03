@@ -1,0 +1,80 @@
+{
+  "canExport": true,
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-BUNDLE-PAGE-INCOMPLETE",
+      "message": "page may not be fully loaded (5 lazy images, 0 skeletons)",
+      "phase": "assemble",
+      "severity": "warning"
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'typescript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "bzjyktki3yzwplya"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'json' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "uukuqxcs6adsfw53"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'json' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "pspl3n5zjn2gogfw"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'javascript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "s6dz3cxxblaoehds"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'json' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "pho7dr6f5fhcwirw"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'html' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "445d7qe7cj3f5oye"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-INFOBOX-POLICY",
+      "message": "infobox included as a table node per decisions/0024",
+      "phase": "extract",
+      "severity": "info"
+    }
+  ],
+  "exportStatus": "complete_with_warnings"
+}

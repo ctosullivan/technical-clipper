@@ -3,11 +3,11 @@
     "articleRoot": {
       "candidatesConsidered": [
         {
-          "score": 128,
+          "score": 143,
           "selectorPath": "main[1]"
         },
         {
-          "score": 98,
+          "score": 113,
           "selectorPath": "body"
         }
       ],
@@ -106,7 +106,7 @@
     "blocks": {
       "4wnecsirfzm6hegr": "ed00e7a0f719c5f7ff3472cad8e5bc00e2e145e42076b1cc95b5d936b378c9ac"
     },
-    "documentContentIdentity": "65eab4762423707b3c370ee4582aad3e2244460b02fe0c7f4877bddc10689029",
+    "documentContentIdentity": "ecaaa9bca2c22d8d4d2bb5b167e663dcd74128f28a78b8e97876c832ea4aff76",
     "markdown": null,
     "normalizationRulesets": {
       "code": "norm/code@1",

@@ -3,19 +3,19 @@
     "articleRoot": {
       "candidatesConsidered": [
         {
-          "score": 94,
+          "score": 199,
           "selectorPath": "body"
         },
         {
-          "score": 94,
+          "score": 199,
           "selectorPath": "div[1]"
         },
         {
-          "score": 94,
+          "score": 199,
           "selectorPath": "div[1]/div[1]"
         },
         {
-          "score": 94,
+          "score": 199,
           "selectorPath": "div[1]/div[1]/div[1]"
         }
       ],
@@ -258,7 +258,7 @@
   ],
   "hashes": {
     "blocks": {},
-    "documentContentIdentity": "7b3f374c0282a316d884e5684d7d6524605def830b26add2953d1655f77e543c",
+    "documentContentIdentity": "e4af5c435de5cb7c2e9f9ebfb3124a2e5ca4fbfa4771ea4c0ed3b467c659ccd7",
     "markdown": null,
     "normalizationRulesets": {
       "code": "norm/code@1",

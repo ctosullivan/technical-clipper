@@ -1,0 +1,13 @@
+{
+  "origin": "licensed",
+  "sourceUrl": "https://en.wikipedia.org/wiki/JSON_Web_Token",
+  "canonicalUrl": "https://en.wikipedia.org/wiki/JSON_Web_Token",
+  "retrievedAt": "2026-09-03",
+  "licence": "CC BY-SA 4.0 & GFDL",
+  "attribution": "Wikipedia contributors, \"JSON Web Token\", Wikipedia, The Free Encyclopedia, revision 1372553352 (2026-09-01T05:58:03Z). Text is available under the Creative Commons Attribution-ShareAlike 4.0 License and the GNU Free Documentation License.",
+  "revisionId": "1372553352",
+  "revisionUrl": "https://en.wikipedia.org/w/index.php?title=JSON_Web_Token&oldid=1372553352",
+  "revisionTimestamp": "2026-09-01T05:58:03Z",
+  "notes": "Real revision-pinned Wikipedia read-view HTML, fetched 2026-09-03 at the revision above. Full site chrome present (nav, sidebar, footer, edit-section links, reflist, navboxes) — exercises decisions/0024 infobox policy and noise removal on genuine MediaWiki output via the generic path (no Wikipedia adapter).",
+  "producedByExtractorVersion": "1.0.0"
+}

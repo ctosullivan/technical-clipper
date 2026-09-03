@@ -43,12 +43,22 @@ function schemaError(ctx: Ctx, message: string, nodeId?: string): void {
   );
 }
 
-function addId(ctx: Ctx, id: string, what: string): void {
+function addId(
+  ctx: Ctx,
+  id: string,
+  what: string,
+  opts?: { allowDuplicate?: boolean },
+): void {
   if (typeof id !== 'string' || id.length === 0) {
     schemaError(ctx, `${what} has a missing or empty id`);
     return;
   }
-  if (ctx.ids.has(id)) {
+  // Content-addressable ids (`decisions/0014`) are a pure function of captured
+  // meaning: two inline links with the same target and text legitimately share
+  // an id, and that repetition is common on real pages (e.g. a term linked
+  // many times). Duplicate ids are only a defect for structural/block nodes,
+  // where an id must anchor exactly one node.
+  if (ctx.ids.has(id) && !opts?.allowDuplicate) {
     ctx.diagnostics.push(
       makeDiagnostic('TC-VALIDATE-DUP-ID', {
         phase: 'validate',
@@ -137,7 +147,7 @@ function validateInline(ctx: Ctx, node: InlineNode): void {
   }
   switch (node.type) {
     case 'link':
-      addId(ctx, node.id, 'link');
+      addId(ctx, node.id, 'link', { allowDuplicate: true });
       if (
         !/^[a-z][a-z0-9+.-]*:/i.test(node.href) &&
         !node.href.startsWith('//')

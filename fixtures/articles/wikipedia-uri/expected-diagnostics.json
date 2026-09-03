@@ -1,0 +1,20 @@
+{
+  "canExport": true,
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-BUNDLE-PAGE-INCOMPLETE",
+      "message": "page may not be fully loaded (4 lazy images, 0 skeletons)",
+      "phase": "assemble",
+      "severity": "warning"
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-INFOBOX-POLICY",
+      "message": "infobox included as a table node per decisions/0024",
+      "phase": "extract",
+      "severity": "info"
+    }
+  ],
+  "exportStatus": "complete_with_warnings"
+}

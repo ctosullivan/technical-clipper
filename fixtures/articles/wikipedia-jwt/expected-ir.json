@@ -1,0 +1,4992 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 9699,
+          "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]"
+        },
+        {
+          "score": 9699,
+          "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[2]"
+        },
+        {
+          "score": 9699,
+          "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[2]/div[1]"
+        },
+        {
+          "score": 9254,
+          "selectorPath": "div[3]/div[1]/div[3]/main[1]"
+        },
+        {
+          "score": 9224,
+          "selectorPath": "div[3]"
+        },
+        {
+          "score": 9224,
+          "selectorPath": "div[3]/div[1]"
+        },
+        {
+          "score": 9224,
+          "selectorPath": "div[3]/div[1]/div[3]"
+        },
+        {
+          "score": 8890,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[2]/div[1]"
+    },
+    "blocks": [
+      {
+        "id": "ncuriu4n6mj2no6s",
+        "table": {
+          "alignments": [
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "JSON Web Token"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Abbreviation"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "JWT"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Status"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Proposed Standard"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Internet_Standard#Proposed_Standard",
+                  "id": "i5xp744fvfdzaju2",
+                  "title": "Internet Standard",
+                  "type": "link"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "First published"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "December"
+                },
+                {
+                  "type": "text",
+                  "value": "28,"
+                },
+                {
+                  "type": "text",
+                  "value": "2010"
+                },
+                {
+                  "type": "text",
+                  "value": "("
+                },
+                {
+                  "type": "text",
+                  "value": "2010-12-28"
+                },
+                {
+                  "type": "text",
+                  "value": ")"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Latest version"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": ".mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:\"\\\"\"\"\\\"\"\"'\"\"'\"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url(\"//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url(\"//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url(\"//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url(\"//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg\")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}"
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "RFC"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+                  "id": "5ykpljmfi4ubw6oi",
+                  "title": "RFC (identifier)",
+                  "type": "link"
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "7519"
+                    }
+                  ],
+                  "href": "https://www.rfc-editor.org/rfc/rfc7519",
+                  "id": "mjdykxgbkq5zdnef",
+                  "title": null,
+                  "type": "link"
+                },
+                {
+                  "hard": true,
+                  "type": "lineBreak"
+                },
+                {
+                  "type": "text",
+                  "value": "May 2015"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Organization"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "IETF"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force",
+                  "id": "qhnsqon3filqlkjs",
+                  "title": "Internet Engineering Task Force",
+                  "type": "link"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Committee"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "IEGS"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force#Internet_Engineering_Steering_Group",
+                  "id": "52ceamnwdomqryfg",
+                  "title": "Internet Engineering Task Force",
+                  "type": "link"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Authors"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Michael B. Jones"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Microsoft"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Microsoft",
+                  "id": "3xxawkove7cl6m7j",
+                  "title": "Microsoft",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "type": "text",
+                  "value": "John Bradley"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Ping Identity"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Ping_Identity",
+                  "id": "2ushczmyzcuyolet",
+                  "title": "Ping Identity",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "type": "text",
+                  "value": "Nat Sakimura"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "NRI"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Nomura_Research_Institute",
+                  "id": "dwwvzrluqibu3iv3",
+                  "title": "Nomura Research Institute",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Base standards"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "JSON"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/JSON",
+                  "id": "lqxbsbbzjt3pxpaf",
+                  "title": "JSON",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "JSON Web Encryption"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/JSON_Web_Encryption",
+                  "id": "fosprxfzqamubdes",
+                  "title": "JSON Web Encryption",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": " (JWE)"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "JSON Web Signature"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/JSON_Web_Signature",
+                  "id": "6xdpz5wedqrg2lvo",
+                  "title": "JSON Web Signature",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": " (JWS)"
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Domain"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Data exchange"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Data_exchange",
+                  "id": "pjpe65uzzxwoxwuq",
+                  "title": "Data exchange",
+                  "type": "link"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Website"
+                }
+              ],
+              [
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "datatracker"
+                    },
+                    {
+                      "type": "text",
+                      "value": ".ietf"
+                    },
+                    {
+                      "type": "text",
+                      "value": ".org"
+                    },
+                    {
+                      "type": "text",
+                      "value": "/doc"
+                    },
+                    {
+                      "type": "text",
+                      "value": "/html"
+                    },
+                    {
+                      "type": "text",
+                      "value": "/rfc7519"
+                    }
+                  ],
+                  "href": "https://datatracker.ietf.org/doc/html/rfc7519",
+                  "id": "szcm2vyj6lrvgly3",
+                  "title": null,
+                  "type": "link"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "JSON Web Token"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": " ("
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "JWT"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": ", suggested pronunciation "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "/"
+              },
+              {
+                "type": "text",
+                "value": "dʒ"
+              },
+              {
+                "type": "text",
+                "value": "ɒ"
+              },
+              {
+                "type": "text",
+                "value": "t"
+              },
+              {
+                "type": "text",
+                "value": "/"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Help:IPA/English",
+            "id": "zbu2pj6pdtvafcvd",
+            "title": "Help:IPA/English",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", same as the word \"jot\")"
+          },
+          {
+            "referenceId": "1",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " is a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "proposed Internet standard"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Internet_Standard#Proposed_Standard",
+            "id": "4ixlb4j2o4prtgkg",
+            "title": "Internet Standard",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " for creating data with optional "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "signature"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Signature_(cryptography)",
+            "id": "5lbxu55fknxmm6ni",
+            "title": "Signature (cryptography)",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " and/or optional "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "encryption"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Encryption",
+            "id": "6dzveqds7rgr5gml",
+            "title": "Encryption",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " whose "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "payload"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Payload_(computing)",
+            "id": "qp4e5kh7f6yblosv",
+            "title": "Payload (computing)",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " holds "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "JSON"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/JSON",
+            "id": "lqxbsbbzjt3pxpaf",
+            "title": "JSON",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " that asserts some number of "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "claims"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Claims-based_identity",
+            "id": "ofhdq4zk25jsih6e",
+            "title": "Claims-based identity",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ". The tokens are signed either using a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "private secret"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Shared_secret",
+            "id": "7yozxezxkhy7tm6l",
+            "title": "Shared secret",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " or a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "public/private key"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Public-key_cryptography",
+            "id": "czx2kr5vz7efog7q",
+            "title": "Public-key cryptography",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "chtwciskwkahrpit",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "For example, a server could generate a token that has the claim \"logged in as administrator\" and provide that to a client. The client could then use that token to prove that it is logged in as admin. The tokens can be signed by one party's private key (usually the server's) so that any party can subsequently verify whether the token is legitimate. If the other party, by some suitable and trustworthy means, is in possession of the corresponding public key, they too are able to verify the token's legitimacy. The "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "tokens"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Session_token",
+            "id": "v2glmi6jjqgjqsaz",
+            "title": "Session token",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " are designed to be compact,"
+          },
+          {
+            "referenceId": "2",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "URL"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/URL",
+            "id": "7sovooodab6y5lum",
+            "title": "URL",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "-safe,"
+          },
+          {
+            "referenceId": "3",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " and usable, especially in a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "web-browser"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Web_browser",
+            "id": "mdjg27cfiojczmkw",
+            "title": "Web browser",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "single-sign-on"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Single_sign-on",
+            "id": "f3jwil7zycazlzdh",
+            "title": "Single sign-on",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " (SSO) context. JWT claims can typically be used to pass identity of authenticated users between an "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "identity provider"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Identity_provider",
+            "id": "ts2eeaupwh6cnpfp",
+            "title": "Identity provider",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " and a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "service provider"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Service_provider",
+            "id": "532n46go6bu2zy4j",
+            "title": "Service provider",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", or any other type of claims as required by business processes."
+          },
+          {
+            "referenceId": "4",
+            "type": "citationRef"
+          },
+          {
+            "referenceId": "5",
+            "type": "citationRef"
+          }
+        ],
+        "id": "lw5dx45ph5tfqlkj",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "JWT relies on other JSON-based standards: "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "JSON Web Signature"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/JSON_Web_Signature",
+            "id": "6xdpz5wedqrg2lvo",
+            "title": "JSON Web Signature",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "JSON Web Encryption"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/JSON_Web_Encryption",
+            "id": "fosprxfzqamubdes",
+            "title": "JSON Web Encryption",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          },
+          {
+            "referenceId": "1",
+            "type": "citationRef"
+          },
+          {
+            "referenceId": "6",
+            "type": "citationRef"
+          },
+          {
+            "referenceId": "7",
+            "type": "citationRef"
+          }
+        ],
+        "id": "2s7suwrbmqqmta5v",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Structure"
+          }
+        ],
+        "id": "6wf3grutu4qxbrde",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "zag5bfv2w7bus5y4",
+        "rawHtml": "<code id=\"mwRQ\">HS256</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "6m5i2biybgbreq25",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/HMAC\" title=\"HMAC\" id=\"mwSA\">HMAC</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "mqxtue32lc76ubpw",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/SHA-256\" title=\"SHA-256\" class=\"mw-redirect\" id=\"mwSQ\">SHA-256</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "pwenpqlldtntm5cc",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Digital_signature\" title=\"Digital signature\" id=\"mwSg\">RSA signature</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "x4rneoa2im7srdr7",
+        "rawHtml": "<sup about=\"#mwt32\" class=\"mw-ref reference\" id=\"cite_ref-8\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-8&quot;}}\"><a href=\"#cite_note-8\" id=\"mwSw\"><span class=\"mw-reflink-text\" id=\"mwTA\"><span class=\"cite-bracket\" id=\"mwTQ\">[</span>8<span class=\"cite-bracket\" id=\"mwTg\">]</span></span></a></sup>",
+        "type": "htmlBlock"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "563e225103455d1dbcdf2c095415e6b35b6b3e4f2c9386994b78dd32c604c55a",
+          "highlightedLines": null,
+          "id": "uukuqxcs6adsfw53",
+          "language": "json",
+          "languageEvidence": "inferred-heuristic",
+          "text": "{\n  \"alg\": \"HS256\",\n  \"typ\": \"JWT\"\n}\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "id": "boud2o7c3tnjxo7k",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"#Standard_fields\" class=\"mw-selflink-fragment\" id=\"mwYg\">standard fields</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "knexlwltwolth2ks",
+        "rawHtml": "<sup about=\"#mwt34\" class=\"mw-ref reference\" id=\"cite_ref-rfc7519_1-2\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{&quot;name&quot;:&quot;rfc7519&quot;}}\"><a href=\"#cite_note-rfc7519-1\" id=\"mwYw\"><span class=\"mw-reflink-text\" id=\"mwZA\"><span class=\"cite-bracket\" id=\"mwZQ\">[</span>1<span class=\"cite-bracket\" id=\"mwZg\">]</span></span></a></sup>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "yza4dkf7lv5gerua",
+        "rawHtml": "<code id=\"mwaA\">iat</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "pxzxzsmt7spclcy3",
+        "rawHtml": "<code id=\"mwaQ\">loggedInAs</code>",
+        "type": "htmlBlock"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "005b45088043e9e261fb82cf91be0d6d620363e4d23d0eb36a9e28e13a342aab",
+          "highlightedLines": null,
+          "id": "pspl3n5zjn2gogfw",
+          "language": "json",
+          "languageEvidence": "inferred-heuristic",
+          "text": "{\n  \"loggedInAs\": \"admin\",\n  \"iat\": 1422779638\n}\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "id": "gc73tyzh5oakaqoz",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Base64#RFC_4648\" title=\"Base64\" id=\"mwfQ\">Base64url Encoding</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "za53f2wjx7p6fn5q",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/RFC_(identifier)\" title=\"RFC (identifier)\" about=\"#mwt36\" class=\"mw-redirect\">RFC</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "7pnqbwwjyyilucvq",
+        "rawHtml": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.rfc-editor.org/rfc/rfc4648\" about=\"#mwt36\" class=\"external text\">4648</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "3noengupo2p7y2cz",
+        "rawHtml": "<i id=\"mwfw\">Base64url Encoding</i>",
+        "type": "htmlBlock"
+      },
+      {
+        "id": "6rphjwpnsenmewbi",
+        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Base64\" title=\"Base64\" id=\"mwgA\">base64</a>",
+        "type": "htmlBlock"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "d50b932c6283d3021789d3e9d2cbf8bb79234e7d9244f344b8339a106cd05bcf",
+          "highlightedLines": null,
+          "id": "na2secpsv4waabc6",
+          "language": null,
+          "languageEvidence": "none",
+          "text": "HMAC_SHA256(\n  secret,\n  base64urlEncoding(header) + '.' +\n  base64urlEncoding(payload)\n)\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The three are encoded separately using "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Base64url Encoding"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Base64#RFC_4648",
+            "id": "jb6ex4ftdm55tsxe",
+            "title": "Base64",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "4648"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc4648",
+            "id": "lusjazkfx43m7rp2",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", and concatenated using periods to produce the JWT:"
+          }
+        ],
+        "id": "t5ply5v72fay6xbh",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "92c2cfce1b1edda57ce781245273c32cc5bd9603746d7dcbe3f354ce39ee45be",
+          "highlightedLines": null,
+          "id": "bzjyktki3yzwplya",
+          "language": "typescript",
+          "languageEvidence": "inferred-heuristic",
+          "text": "const token: string = base64urlEncoding(header) + '.' + base64urlEncoding(payload) + '.' + base64urlEncoding(signature)\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The above data and the secret of \"secretkey\" creates the token:"
+          }
+        ],
+        "id": "a25pj3xljha72zsi",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "7406ec73b43889293486339379187f66e5918bc77c9effaf11265450fc30cce3",
+          "highlightedLines": null,
+          "id": "wnicw2iqhxslqsf4",
+          "language": null,
+          "languageEvidence": "none",
+          "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dnZWRJbkFzIjoiYWRtaW4iLCJpYXQiOjE0MjI3Nzk2Mzh9.gzSraSYS8EXBxLN\n_oWnFSRgCzcmJmMjLiuyu5CSpyHI\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "(The above json strings are formatted without newlines or spaces, into utf-8 byte arrays. This is important as even slight changes in the data will affect the resulting token)"
+              }
+            ],
+            "type": "emphasis"
+          }
+        ],
+        "id": "siyogkdsk2q4gxdb",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "This resulting token can be easily passed into "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "HTML"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/HTML",
+            "id": "4cqobju22dhae7md",
+            "title": "HTML",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "HTTP"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/HTTP",
+            "id": "7h6q6nf2x7ytceku",
+            "title": "HTTP",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          },
+          {
+            "referenceId": "3",
+            "type": "citationRef"
+          }
+        ],
+        "id": "3kryvw2luijp4rsr",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Use"
+          }
+        ],
+        "id": "6zdkf3tg4nb6rjfs",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "vxdnoac7f5flnyox",
+        "table": {
+          "alignments": [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "image": {
+                  "alt": "",
+                  "intrinsicHeight": 40,
+                  "intrinsicWidth": 40,
+                  "resolved": false,
+                  "url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                },
+                "type": "image"
+              }
+            ],
+            [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "This section has multiple issues."
+                  }
+                ],
+                "type": "strong"
+              },
+              {
+                "type": "text",
+                "value": " Please help "
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "improve it"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Special:EditPage/JSON_Web_Token",
+                    "id": "agvycccrlwht2z4u",
+                    "title": "Special:EditPage/JSON Web Token",
+                    "type": "link"
+                  }
+                ],
+                "type": "strong"
+              },
+              {
+                "type": "text",
+                "value": " or discuss these issues on the "
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "talk page"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Talk:JSON_Web_Token",
+                    "id": "6o6y5x5heybi6okr",
+                    "title": "Talk:JSON Web Token",
+                    "type": "link"
+                  }
+                ],
+                "type": "strong"
+              },
+              {
+                "type": "text",
+                "value": ". "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "("
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Learn how and when to remove these messages"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Help:Maintenance_template_removal",
+                    "id": "zrgulunpwoqytaus",
+                    "title": "Help:Maintenance template removal",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": ")"
+                  }
+                ],
+                "type": "emphasis"
+              },
+              {
+                "type": "text",
+                "value": " "
+              },
+              {
+                "children": [
+                  {
+                    "image": {
+                      "alt": "icon",
+                      "intrinsicHeight": 39,
+                      "intrinsicWidth": 50,
+                      "resolved": false,
+                      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                    },
+                    "type": "image"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/wiki/File:Question_book-new.svg",
+                "id": "yepdkuvbqcb2y6kz",
+                "title": null,
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": "This section "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "does not "
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "cite"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Wikipedia:Citing_sources",
+                    "id": "cmaa4gi2z6dzsz5p",
+                    "title": "Wikipedia:Citing sources",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": " any "
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "sources"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Wikipedia:Verifiability",
+                    "id": "dvdir7k5xn4xv5d3",
+                    "title": "Wikipedia:Verifiability",
+                    "type": "link"
+                  }
+                ],
+                "type": "strong"
+              },
+              {
+                "type": "text",
+                "value": "."
+              },
+              {
+                "type": "text",
+                "value": " Please help "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "improve this section"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/wiki/Special:EditPage/JSON_Web_Token",
+                "id": "oymnpkh65s44tt3m",
+                "title": "Special:EditPage/JSON Web Token",
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": " by "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "adding citations to reliable sources"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/wiki/Help:Referencing_for_beginners",
+                "id": "la7nivhkw6wvv7wx",
+                "title": "Help:Referencing for beginners",
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": ". Unsourced material may be challenged and "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "removed"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/wiki/Wikipedia:Verifiability#Burden_of_evidence",
+                "id": "mmfy73qnh3lnemzt",
+                "title": "Wikipedia:Verifiability",
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": "."
+              },
+              {
+                "type": "text",
+                "value": " "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "("
+                  },
+                  {
+                    "type": "text",
+                    "value": "February 2026"
+                  },
+                  {
+                    "type": "text",
+                    "value": ")"
+                  }
+                ],
+                "type": "emphasis"
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": " ("
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Learn how and when to remove this message"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Help:Maintenance_template_removal",
+                    "id": "63gvwmhlnoakpyba",
+                    "title": "Help:Maintenance template removal",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": ")"
+                  }
+                ],
+                "type": "emphasis"
+              },
+              {
+                "image": {
+                  "alt": "",
+                  "intrinsicHeight": 40,
+                  "intrinsicWidth": 40,
+                  "resolved": false,
+                  "url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                },
+                "type": "image"
+              },
+              {
+                "type": "text",
+                "value": "This section "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "contains "
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "instructions or advice"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not#GUIDE",
+                    "id": "p2jzqtqiqapmcejt",
+                    "title": "Wikipedia:What Wikipedia is not",
+                    "type": "link"
+                  }
+                ],
+                "type": "strong"
+              },
+              {
+                "type": "text",
+                "value": "."
+              },
+              {
+                "type": "text",
+                "value": " Wikipedia is not a guidebook; please help "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "rewrite such content"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/w/index.php?title=JSON_Web_Token&action=edit",
+                "id": "ervtdbz2wndq4dvu",
+                "title": null,
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": " to be encyclopedic or move it to "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Wikiversity"
+                  }
+                ],
+                "href": "https://en.wikiversity.org/wiki/",
+                "id": "vnleosztq3bhjqe6",
+                "title": "v:",
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": ", "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Wikibooks"
+                  }
+                ],
+                "href": "https://en.wikibooks.org/wiki/",
+                "id": "vsnpcfhfzrb7ytg3",
+                "title": "b:",
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": ", or "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Wikivoyage"
+                  }
+                ],
+                "href": "https://en.wikivoyage.org/wiki/",
+                "id": "afsd2oqrmoqilld3",
+                "title": "voy:",
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": "."
+              },
+              {
+                "type": "text",
+                "value": " "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "("
+                  },
+                  {
+                    "type": "text",
+                    "value": "February 2026"
+                  },
+                  {
+                    "type": "text",
+                    "value": ")"
+                  }
+                ],
+                "type": "emphasis"
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": " ("
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Learn how and when to remove this message"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Help:Maintenance_template_removal",
+                    "id": "63gvwmhlnoakpyba",
+                    "title": "Help:Maintenance template removal",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": ")"
+                  }
+                ],
+                "type": "emphasis"
+              },
+              {
+                "type": "text",
+                "value": " "
+              },
+              {
+                "type": "text",
+                "value": " "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": " ("
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Learn how and when to remove this message"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Help:Maintenance_template_removal",
+                    "id": "63gvwmhlnoakpyba",
+                    "title": "Help:Maintenance template removal",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": ")"
+                  }
+                ],
+                "type": "emphasis"
+              }
+            ],
+            [
+              {
+                "children": [
+                  {
+                    "image": {
+                      "alt": "icon",
+                      "intrinsicHeight": 39,
+                      "intrinsicWidth": 50,
+                      "resolved": false,
+                      "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                    },
+                    "type": "image"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/wiki/File:Question_book-new.svg",
+                "id": "yepdkuvbqcb2y6kz",
+                "title": null,
+                "type": "link"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "This section "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "does not "
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "cite"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Wikipedia:Citing_sources",
+                    "id": "cmaa4gi2z6dzsz5p",
+                    "title": "Wikipedia:Citing sources",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": " any "
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "sources"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Wikipedia:Verifiability",
+                    "id": "dvdir7k5xn4xv5d3",
+                    "title": "Wikipedia:Verifiability",
+                    "type": "link"
+                  }
+                ],
+                "type": "strong"
+              },
+              {
+                "type": "text",
+                "value": "."
+              },
+              {
+                "type": "text",
+                "value": " Please help "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "improve this section"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/wiki/Special:EditPage/JSON_Web_Token",
+                "id": "oymnpkh65s44tt3m",
+                "title": "Special:EditPage/JSON Web Token",
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": " by "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "adding citations to reliable sources"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/wiki/Help:Referencing_for_beginners",
+                "id": "la7nivhkw6wvv7wx",
+                "title": "Help:Referencing for beginners",
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": ". Unsourced material may be challenged and "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "removed"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/wiki/Wikipedia:Verifiability#Burden_of_evidence",
+                "id": "mmfy73qnh3lnemzt",
+                "title": "Wikipedia:Verifiability",
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": "."
+              },
+              {
+                "type": "text",
+                "value": " "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "("
+                  },
+                  {
+                    "type": "text",
+                    "value": "February 2026"
+                  },
+                  {
+                    "type": "text",
+                    "value": ")"
+                  }
+                ],
+                "type": "emphasis"
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": " ("
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Learn how and when to remove this message"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Help:Maintenance_template_removal",
+                    "id": "63gvwmhlnoakpyba",
+                    "title": "Help:Maintenance template removal",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": ")"
+                  }
+                ],
+                "type": "emphasis"
+              }
+            ],
+            [
+              {
+                "image": {
+                  "alt": "",
+                  "intrinsicHeight": 40,
+                  "intrinsicWidth": 40,
+                  "resolved": false,
+                  "url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                },
+                "type": "image"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "This section "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "contains "
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "instructions or advice"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not#GUIDE",
+                    "id": "p2jzqtqiqapmcejt",
+                    "title": "Wikipedia:What Wikipedia is not",
+                    "type": "link"
+                  }
+                ],
+                "type": "strong"
+              },
+              {
+                "type": "text",
+                "value": "."
+              },
+              {
+                "type": "text",
+                "value": " Wikipedia is not a guidebook; please help "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "rewrite such content"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/w/index.php?title=JSON_Web_Token&action=edit",
+                "id": "ervtdbz2wndq4dvu",
+                "title": null,
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": " to be encyclopedic or move it to "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Wikiversity"
+                  }
+                ],
+                "href": "https://en.wikiversity.org/wiki/",
+                "id": "vnleosztq3bhjqe6",
+                "title": "v:",
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": ", "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Wikibooks"
+                  }
+                ],
+                "href": "https://en.wikibooks.org/wiki/",
+                "id": "vsnpcfhfzrb7ytg3",
+                "title": "b:",
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": ", or "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Wikivoyage"
+                  }
+                ],
+                "href": "https://en.wikivoyage.org/wiki/",
+                "id": "afsd2oqrmoqilld3",
+                "title": "voy:",
+                "type": "link"
+              },
+              {
+                "type": "text",
+                "value": "."
+              },
+              {
+                "type": "text",
+                "value": " "
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "("
+                  },
+                  {
+                    "type": "text",
+                    "value": "February 2026"
+                  },
+                  {
+                    "type": "text",
+                    "value": ")"
+                  }
+                ],
+                "type": "emphasis"
+              },
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": " ("
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Learn how and when to remove this message"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Help:Maintenance_template_removal",
+                    "id": "63gvwmhlnoakpyba",
+                    "title": "Help:Maintenance template removal",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": ")"
+                  }
+                ],
+                "type": "emphasis"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "children": [
+                    {
+                      "image": {
+                        "alt": "icon",
+                        "intrinsicHeight": 39,
+                        "intrinsicWidth": 50,
+                        "resolved": false,
+                        "url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                      },
+                      "type": "image"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/File:Question_book-new.svg",
+                  "id": "yepdkuvbqcb2y6kz",
+                  "title": null,
+                  "type": "link"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "This section "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "does not "
+                    },
+                    {
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "cite"
+                        }
+                      ],
+                      "href": "https://en.wikipedia.org/wiki/Wikipedia:Citing_sources",
+                      "id": "cmaa4gi2z6dzsz5p",
+                      "title": "Wikipedia:Citing sources",
+                      "type": "link"
+                    },
+                    {
+                      "type": "text",
+                      "value": " any "
+                    },
+                    {
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "sources"
+                        }
+                      ],
+                      "href": "https://en.wikipedia.org/wiki/Wikipedia:Verifiability",
+                      "id": "dvdir7k5xn4xv5d3",
+                      "title": "Wikipedia:Verifiability",
+                      "type": "link"
+                    }
+                  ],
+                  "type": "strong"
+                },
+                {
+                  "type": "text",
+                  "value": "."
+                },
+                {
+                  "type": "text",
+                  "value": " Please help "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "improve this section"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Special:EditPage/JSON_Web_Token",
+                  "id": "oymnpkh65s44tt3m",
+                  "title": "Special:EditPage/JSON Web Token",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": " by "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "adding citations to reliable sources"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Help:Referencing_for_beginners",
+                  "id": "la7nivhkw6wvv7wx",
+                  "title": "Help:Referencing for beginners",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": ". Unsourced material may be challenged and "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "removed"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Wikipedia:Verifiability#Burden_of_evidence",
+                  "id": "mmfy73qnh3lnemzt",
+                  "title": "Wikipedia:Verifiability",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": "."
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "("
+                    },
+                    {
+                      "type": "text",
+                      "value": "February 2026"
+                    },
+                    {
+                      "type": "text",
+                      "value": ")"
+                    }
+                  ],
+                  "type": "emphasis"
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": " ("
+                    },
+                    {
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "Learn how and when to remove this message"
+                        }
+                      ],
+                      "href": "https://en.wikipedia.org/wiki/Help:Maintenance_template_removal",
+                      "id": "63gvwmhlnoakpyba",
+                      "title": "Help:Maintenance template removal",
+                      "type": "link"
+                    },
+                    {
+                      "type": "text",
+                      "value": ")"
+                    }
+                  ],
+                  "type": "emphasis"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "image": {
+                    "alt": "",
+                    "intrinsicHeight": 40,
+                    "intrinsicWidth": 40,
+                    "resolved": false,
+                    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                  },
+                  "type": "image"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "This section "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "contains "
+                    },
+                    {
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "instructions or advice"
+                        }
+                      ],
+                      "href": "https://en.wikipedia.org/wiki/Wikipedia:What_Wikipedia_is_not#GUIDE",
+                      "id": "p2jzqtqiqapmcejt",
+                      "title": "Wikipedia:What Wikipedia is not",
+                      "type": "link"
+                    }
+                  ],
+                  "type": "strong"
+                },
+                {
+                  "type": "text",
+                  "value": "."
+                },
+                {
+                  "type": "text",
+                  "value": " Wikipedia is not a guidebook; please help "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "rewrite such content"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/w/index.php?title=JSON_Web_Token&action=edit",
+                  "id": "ervtdbz2wndq4dvu",
+                  "title": null,
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": " to be encyclopedic or move it to "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Wikiversity"
+                    }
+                  ],
+                  "href": "https://en.wikiversity.org/wiki/",
+                  "id": "vnleosztq3bhjqe6",
+                  "title": "v:",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Wikibooks"
+                    }
+                  ],
+                  "href": "https://en.wikibooks.org/wiki/",
+                  "id": "vsnpcfhfzrb7ytg3",
+                  "title": "b:",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": ", or "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Wikivoyage"
+                    }
+                  ],
+                  "href": "https://en.wikivoyage.org/wiki/",
+                  "id": "afsd2oqrmoqilld3",
+                  "title": "voy:",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": "."
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "("
+                    },
+                    {
+                      "type": "text",
+                      "value": "February 2026"
+                    },
+                    {
+                      "type": "text",
+                      "value": ")"
+                    }
+                  ],
+                  "type": "emphasis"
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": " ("
+                    },
+                    {
+                      "children": [
+                        {
+                          "type": "text",
+                          "value": "Learn how and when to remove this message"
+                        }
+                      ],
+                      "href": "https://en.wikipedia.org/wiki/Help:Maintenance_template_removal",
+                      "id": "63gvwmhlnoakpyba",
+                      "title": "Help:Maintenance template removal",
+                      "type": "link"
+                    },
+                    {
+                      "type": "text",
+                      "value": ")"
+                    }
+                  ],
+                  "type": "emphasis"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "In authentication, when a user successfully logs in, a JSON Web Token (JWT) is often returned. This token should be sent to the client using a secure mechanism like an "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "HTTP-only cookie"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/HTTP_cookie#Secure_and_HttpOnly",
+            "id": "57apaa4emfa64xce",
+            "title": "HTTP cookie",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ". Storing the JWT locally in browser storage mechanisms like "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "local or session storage"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Web_storage",
+            "id": "kr7nzu73v3a3lbej",
+            "title": "Web storage",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " is discouraged. This is because JavaScript running on the client-side (including browser extensions) can access these storage mechanisms, exposing the JWT and compromising security. To make use of the HTTP-only cookie, as you might need it to authenticate with cross-origin APIs, the best approach is to use the credentials property to tell the browser to automatically send the cookies to the external APIs via a "
+          },
+          {
+            "type": "codeSpan",
+            "value": "fetch"
+          },
+          {
+            "type": "text",
+            "value": " call like so:"
+          }
+        ],
+        "id": "tb4d46ge6umkbiej",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "4bb5b092d514b38a9f3ebce14f17e2bb4c141c56c19c04e59b01784366f5f422",
+          "highlightedLines": null,
+          "id": "s6dz3cxxblaoehds",
+          "language": "javascript",
+          "languageEvidence": "inferred-heuristic",
+          "text": "try {\n  const res = await fetch('https://api.example.com/data', {\n    method: 'GET',\n    credentials: 'include', // This tells the browser to include cookies, etc.\n  });\n  const data = await res.json();\n  console.log(data);\n} catch (err) {\n  console.error('Error:', err);\n}\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": " By using this method, the JWT is never exposed to client-side JavaScript; this is the best approach to make use of your JWT while maintaining security best practices. For unattended processes, the client may also authenticate directly by generating and signing its own JWT with a pre-shared secret and passing it to an "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "OAuth"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/OAuth",
+            "id": "rx3ovatj2r2fofat",
+            "title": "OAuth",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " compliant service like so:"
+          }
+        ],
+        "id": "gwo5lkv4oyghjowt",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "9a93c0b841ba9e6f121b2eb961cba9b8a74887ad5f6192c18d9f448dd5a94fa3",
+          "highlightedLines": null,
+          "id": "abyeg4zpsnqgrurj",
+          "language": null,
+          "languageEvidence": "none",
+          "text": "POST /oauth2/token\nContent-type: application/x-www-form-urlencoded\n\ngrant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=eyJhb...\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "If the client passes a valid JWT assertion the server will generate an access_token valid for making calls to the application and pass it back to the client:"
+          }
+        ],
+        "id": "ql2hp252p3jfa3el",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "94ac255f61b77aeff84ce26cb4613e46f2008704cf49abe65c0ed63d8964fb56",
+          "highlightedLines": null,
+          "id": "pho7dr6f5fhcwirw",
+          "language": "json",
+          "languageEvidence": "inferred-heuristic",
+          "text": "{\n  \"access_token\": \"eyJhb...\",\n  \"token_type\": \"Bearer\",\n  \"expires_in\": 3600\n}\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "When the client wants to access a protected route or resource, the user agent should send the JWT, typically in the "
+          },
+          {
+            "type": "codeSpan",
+            "value": "Authorization"
+          },
+          {
+            "type": "text",
+            "value": " "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "HTTP header"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/HTTP_header",
+            "id": "sqe3g6bcfq4f3dit",
+            "title": "HTTP header",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " using the "
+          },
+          {
+            "type": "codeSpan",
+            "value": "Bearer"
+          },
+          {
+            "type": "text",
+            "value": " schema. The content of the header might look like the following:"
+          }
+        ],
+        "id": "ng56xed5wnxjxuda",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": false,
+          "hash": "37edf62770d4d1a8941e57c9a9c3b1b13fadd5e00e79d5adb59f0b16e75dba5d",
+          "highlightedLines": null,
+          "id": "445d7qe7cj3f5oye",
+          "language": "html",
+          "languageEvidence": "inferred-heuristic",
+          "text": "Authorization: Bearer eyJhbGci...<snip>...yu5CSpyHI"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "This is a stateless authentication mechanism as the user state is never saved in server memory. The server's protected routes will check for a valid JWT in the Authorization header, and if it is present, the user will be allowed to access protected resources. As JWTs are self-contained, all the necessary information is there, reducing the need to query the database multiple times."
+          }
+        ],
+        "id": "uhpxzgmlybycidyf",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Standard fields"
+          }
+        ],
+        "id": "jnoo5k7bivenhtqe",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "pfkngtgkgvn73rml",
+        "table": {
+          "alignments": [
+            "none",
+            "none",
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Code"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Name"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Description"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Standard claim fields"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "The internet drafts define the following standard fields (\"claims\") that can be used inside a JWT claim set."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "iss"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Issuer"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Identifies principal that issued the JWT, e.g. the name of an organization or a URL of a website."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "sub"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Subject"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Identifies the subject of the JWT, e.g. a username or account number."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "aud"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Audience"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Identifies the recipients that the JWT is intended for. Each principal intended to process the JWT "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "must"
+                    }
+                  ],
+                  "type": "strong"
+                },
+                {
+                  "type": "text",
+                  "value": " identify itself with a value in the audience claim. If the principal processing the claim does not identify itself with a value in the "
+                },
+                {
+                  "type": "codeSpan",
+                  "value": "aud"
+                },
+                {
+                  "type": "text",
+                  "value": " claim when this claim is present, then the JWT "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "must"
+                    }
+                  ],
+                  "type": "strong"
+                },
+                {
+                  "type": "text",
+                  "value": " be rejected."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "exp"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Expiration Time"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Identifies the expiration time on and after which the JWT "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "must not"
+                    }
+                  ],
+                  "type": "strong"
+                },
+                {
+                  "type": "text",
+                  "value": " be accepted for processing. The value must be a NumericDate:"
+                },
+                {
+                  "referenceId": "9",
+                  "type": "citationRef"
+                },
+                {
+                  "type": "text",
+                  "value": " either an integer or decimal, representing seconds past "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "1970-01-01 00:00:00Z"
+                    }
+                  ],
+                  "href": "https://en.wikipedia.org/wiki/Unix_time",
+                  "id": "wpsx742oeh2b3ehl",
+                  "title": "Unix time",
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": "."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "nbf"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Not Before"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Identifies the time on which the JWT will start to be accepted for processing. The value must be a NumericDate."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "iat"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Issued at"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Identifies the time at which the JWT was issued. The value must be a NumericDate."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "jti"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "JWT ID"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Case-sensitive unique identifier of the token even among different issuers."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Commonly-used header fields"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "The following fields are commonly used in the header of a JWT"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "typ"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Token type"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "If present, it must be set to a registered "
+                },
+                {
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "IANA Media Type"
+                    }
+                  ],
+                  "href": "https://www.iana.org/assignments/media-types/media-types.xhtml",
+                  "id": "2ayzo4cne3pcxtbn",
+                  "title": null,
+                  "type": "link"
+                },
+                {
+                  "type": "text",
+                  "value": "."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "cty"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Content type"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "If nested signing or encryption is employed, it is recommended to set this to "
+                },
+                {
+                  "type": "codeSpan",
+                  "value": "JWT"
+                },
+                {
+                  "type": "text",
+                  "value": "; otherwise, omit this field."
+                },
+                {
+                  "referenceId": "1",
+                  "type": "citationRef"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "alg"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Message authentication code algorithm"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "The issuer can freely set an algorithm to verify the signature on the token. However, some supported algorithms are insecure."
+                },
+                {
+                  "referenceId": "10",
+                  "type": "citationRef"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "kid"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Key ID"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "A hint indicating which key the client used to generate the token signature. The server will match this value to a key on file in order to verify that the signature is valid and the token is authentic."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "x5c"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "x.509 Certificate Chain"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "A certificate chain in RFC4945 format corresponding to the private key used to generate the token signature. The server will use this information to verify that the signature is valid and the token is authentic."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "x5u"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "x.509 Certificate Chain URL"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "A URL where the server can retrieve a certificate chain corresponding to the private key used to generate the token signature. The server will retrieve and use this information to verify that the signature is authentic."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "crit"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Critical"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "A list of headers that must be understood by the server in order to accept the token as valid"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "Code"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Name"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Description"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "List of currently registered claim names can be obtained from "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "IANA"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/IANA",
+            "id": "pctugaadjps7z3bc",
+            "title": "IANA",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " JSON Web Token Claims Registry."
+          },
+          {
+            "referenceId": "11",
+            "type": "citationRef"
+          }
+        ],
+        "id": "f6yq3rizjvesdfjd",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Implementations"
+          }
+        ],
+        "id": "om7zrnnoinc2zbbw",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "JWT implementations exist for many languages and frameworks, including but not limited to:"
+          }
+        ],
+        "id": "wkvaizpcn3r3uh6z",
+        "type": "paragraph"
+      },
+      {
+        "id": "dvapxbtqfufmewmb",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": ".NET (C# VB.Net etc.)"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/.NET_Framework",
+                    "id": "5fqay4wzktf7gpxf",
+                    "title": ".NET Framework",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "12",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "pxfhdsb7vr2emdht",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "aemfdsauhkzzgqbi",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "C"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/C_(programming_language)",
+                    "id": "55aojd5xdqtgs45y",
+                    "title": "C (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "13",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "lk52lb4jrsmu4avx",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "nb36gfn2aduxnouy",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "C++"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/C++",
+                    "id": "e3kmzviqwmtbpkjd",
+                    "title": "C++",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "14",
+                    "type": "citationRef"
+                  },
+                  {
+                    "referenceId": "15",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "3ijzi5hrb5op2lii",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "54wxjkgfdllfgrc4",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Clojure"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Clojure",
+                    "id": "ma34rabrfugwrfmf",
+                    "title": "Clojure",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "16",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "xr2df4bfitp36ha2",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "lve443uq4bdhkqjo",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Common Lisp"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Common_Lisp",
+                    "id": "xdznw6zcvnbd2yxz",
+                    "title": "Common Lisp",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "17",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "v6wanymbtjb5g37r",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "heinqz7phhsiltp4",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Dart"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Dart_(programming_language)",
+                    "id": "bbe54y53knfwxvbu",
+                    "title": "Dart (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "18",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "3onbgt4mqisxkr4t",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "wxu4747bdnszybga",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Elixir"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Elixir_(programming_language)",
+                    "id": "v7tbfog6c3wksawm",
+                    "title": "Elixir (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "19",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "st3lbeo2dscdipfj",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "tgc6bb72fpitdn7m",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Erlang"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Erlang_(programming_language)",
+                    "id": "7rmm2kuldypz6klk",
+                    "title": "Erlang (programming language)",
+                    "type": "link"
+                  }
+                ],
+                "id": "2q7mk45ujuofayli",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "m7zvbexl4t35amfe",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Go"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Go_(programming_language)",
+                    "id": "qfkyyzw7xhp4ovn4",
+                    "title": "Go (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "20",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "yqvi4vokdxi7cnph",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "k44gsriu52qwqmu7",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Haskell"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Haskell_(programming_language)",
+                    "id": "zoe44dnwhiccizx2",
+                    "title": "Haskell (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "21",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "odhndi3iyjfmfkcd",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "6wm3edqnzbx2ka3i",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Java"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Java_(programming_language)",
+                    "id": "7ggaknc3ao4i6ycm",
+                    "title": "Java (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "22",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "77slwj3wpbdrj75i",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "mkwjzxdqxgnehb6o",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "JavaScript"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/JavaScript",
+                    "id": "uv7nbjphrh2tpp27",
+                    "title": "JavaScript",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "23",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "nazsacxv7cgzz7p7",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "giswjssqbb2fh7oz",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Julia"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Julia_(programming_language)",
+                    "id": "25sonnhpco35x5mz",
+                    "title": "Julia (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "24",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "xgmm4lhl6mhaj3rp",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "xgkw4spf2uxcilti",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Lua"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Lua_(programming_language)",
+                    "id": "shdfevzac36lsfso",
+                    "title": "Lua (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "25",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "n3fvs3vpmzgpnctg",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "w32mnqkglehtiqmu",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Node.js"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Node.js",
+                    "id": "wsx63spebqxe52zc",
+                    "title": "Node.js",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "26",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "3eyfnlolazo62jid",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "hmiqhzjasgua6e7h",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "OCaml"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/OCaml",
+                    "id": "yiofanxlixf6skw2",
+                    "title": "OCaml",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "27",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "uqnbwcpy7nfkdzrp",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "eaz2rndf2pycpkqy",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Perl"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Perl",
+                    "id": "w62l7gut75r4ttmf",
+                    "title": "Perl",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "28",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "ztnpkwjd3maazxal",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "j3o5h73hleg6fgog",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "PHP"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/PHP",
+                    "id": "cbiazdjyirkclaxg",
+                    "title": "PHP",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "29",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "qnyvebfuyjtrsnev",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "5lqjwfav5xigl4h2",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "PL/SQL"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/PL/SQL",
+                    "id": "czme6s3yjgeqsnin",
+                    "title": "PL/SQL",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "30",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "drfke6wrj4c4o2n3",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "tlkkfybomygu64e4",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "PowerShell"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/PowerShell",
+                    "id": "wj5v5ubx42eptj5w",
+                    "title": "PowerShell",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "31",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "uhecert3jt22byqx",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "65pvwpkvxd3eafuq",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Python"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+                    "id": "iutr5x37xnsqf5tp",
+                    "title": "Python (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "32",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "uyjkilxrodqalcfj",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "7dnynnyz35sutaio",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Racket"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Racket_(programming_language)",
+                    "id": "2wctdoafj5gskbrm",
+                    "title": "Racket (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "33",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "rlsgsrm6vnvagptm",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "mikjrs7kzb2vfdxi",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Raku"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Raku_(programming_language)",
+                    "id": "7lbkpdkn5urwodec",
+                    "title": "Raku (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "34",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "mvcwb26q25gjec6h",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "bp422j4ggg3mfgrv",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Ruby"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Ruby_(programming_language)",
+                    "id": "dxrr5m4trm4t6cw5",
+                    "title": "Ruby (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "35",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "bgdh24tkts5hqrsv",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "z2tut3n3uajamwhw",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Rust"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+                    "id": "v5p7b3yabzwfqfas",
+                    "title": "Rust (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "36",
+                    "type": "citationRef"
+                  },
+                  {
+                    "referenceId": "37",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "262y6wo6ttlt7ijv",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "eg6bd6hot4o6btaq",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Scala"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Scala_(programming_language)",
+                    "id": "ch2qxzbitoiorc2q",
+                    "title": "Scala (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "38",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "fmhi26y2hfnseztv",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "fun7brkxnu7qf56o",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Swift"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Swift_(programming_language)",
+                    "id": "oelt22o6qwi3atjl",
+                    "title": "Swift (programming language)",
+                    "type": "link"
+                  },
+                  {
+                    "referenceId": "39",
+                    "type": "citationRef"
+                  }
+                ],
+                "id": "bfip6t22brofnw7g",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "g5mvxsna4fk3pwj4",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Vulnerabilities"
+          }
+        ],
+        "id": "no4eqaw6mwylmnjo",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "JSON web tokens may contain session state. But if project requirements allow session invalidation before JWT expiration, services can no longer trust token assertions by the token alone. To validate that the session stored in the token is not revoked, token assertions must be checked against a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "data store"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Data_store",
+            "id": "trwdw6ajaq7nkdlx",
+            "title": "Data store",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ". This renders the tokens no longer stateless, undermining the primary advantage of JWTs."
+          },
+          {
+            "referenceId": "40",
+            "type": "citationRef"
+          }
+        ],
+        "id": "7jet3f63fvoy5rah",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Security consultant Tim McLean reported vulnerabilities in some JWT libraries that used the "
+          },
+          {
+            "type": "codeSpan",
+            "value": "alg"
+          },
+          {
+            "type": "text",
+            "value": " field to incorrectly validate tokens, most commonly by accepting a "
+          },
+          {
+            "type": "codeSpan",
+            "value": "alg=none"
+          },
+          {
+            "type": "text",
+            "value": " token. While these vulnerabilities were patched, McLean suggested deprecating the "
+          },
+          {
+            "type": "codeSpan",
+            "value": "alg"
+          },
+          {
+            "type": "text",
+            "value": " field altogether to prevent similar implementation confusion."
+          },
+          {
+            "referenceId": "10",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " Still, new "
+          },
+          {
+            "type": "codeSpan",
+            "value": "alg=none"
+          },
+          {
+            "type": "text",
+            "value": " vulnerabilities are still being found in the wild, with four "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "CVEs"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures",
+            "id": "fng24iygvhg2kugk",
+            "title": "Common Vulnerabilities and Exposures",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " filed in the 2018-2021 period having this cause."
+          },
+          {
+            "referenceId": "41",
+            "type": "citationRef"
+          }
+        ],
+        "id": "r3twebo2yussou2p",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "With proper design, developers can address algorithm vulnerabilities by taking precautions:"
+          },
+          {
+            "referenceId": "42",
+            "type": "citationRef"
+          },
+          {
+            "referenceId": "43",
+            "type": "citationRef"
+          }
+        ],
+        "id": "cak5ckteuqjfaeju",
+        "type": "paragraph"
+      },
+      {
+        "id": "7lj7icm3zuaaluos",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Never let the JWT header alone drive verification"
+                  }
+                ],
+                "id": "vw7vqfavzhz7z7wr",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "r7yjqy43aayjcsjh",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Know the algorithms (avoid depending on the "
+                  },
+                  {
+                    "type": "codeSpan",
+                    "value": "alg"
+                  },
+                  {
+                    "type": "text",
+                    "value": " field alone)"
+                  }
+                ],
+                "id": "pgicjumzhbvpjezt",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "zbom7ucaahvzp24b",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Use an appropriate key size"
+                  }
+                ],
+                "id": "7cjs5g2vxfarrp4b",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "d3qlkij74spvmli4",
+            "type": "listItem"
+          }
+        ],
+        "ordered": true,
+        "start": 1,
+        "tight": true,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Several JWT libraries were found to be vulnerable to an "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "invalid Elliptic-curve attack"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Elliptic-curve_cryptography#Invalid_curve_attack",
+            "id": "be32pm3gkze7zi2g",
+            "title": "Elliptic-curve cryptography",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " in 2017."
+          },
+          {
+            "referenceId": "44",
+            "type": "citationRef"
+          }
+        ],
+        "id": "cpdemiabibkrbpjj",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Some have argued that JSON web tokens are difficult to use securely due to the many different encryption algorithms and options available in the standard, and that alternate standards should be used instead for both web frontends"
+          },
+          {
+            "referenceId": "45",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " and backends."
+          },
+          {
+            "referenceId": "46",
+            "type": "citationRef"
+          }
+        ],
+        "id": "xqbcdyghr4nycyzy",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "See also"
+          }
+        ],
+        "id": "ciaghco34em62tco",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "bhmsysjit5fg2as4",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "API key"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/API_key",
+                    "id": "xch426byrtfz7eh7",
+                    "title": "API key",
+                    "type": "link"
+                  }
+                ],
+                "id": "fynksdlzjxxvvvva",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "wrthqfgcezfciduk",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Access token"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Access_token",
+                    "id": "x45pbtizxjiagqm7",
+                    "title": "Access token",
+                    "type": "link"
+                  }
+                ],
+                "id": "v5tqhxblcgaqt3ka",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "tfhebkvaopm2ofyl",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Basic access authentication"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Basic_access_authentication",
+                    "id": "khxvljbr6wv6d7w7",
+                    "title": "Basic access authentication",
+                    "type": "link"
+                  }
+                ],
+                "id": "rrtnuqz2a3qxndxs",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "yyoqhbt64bamxvwl",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Digest access authentication"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Digest_access_authentication",
+                    "id": "mnwm3sot2wrr2bme",
+                    "title": "Digest access authentication",
+                    "type": "link"
+                  }
+                ],
+                "id": "m7mjzjilemj5sanq",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "lym6aru5vngvcc2b",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Claims-based identity"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/Claims-based_identity",
+                    "id": "llc5qyimlnp2ixpr",
+                    "title": "Claims-based identity",
+                    "type": "link"
+                  }
+                ],
+                "id": "czujacnistlbw6dw",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "gf4ie34x2ex2gwdv",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "HTTP header"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/HTTP_header",
+                    "id": "sqe3g6bcfq4f3dit",
+                    "title": "HTTP header",
+                    "type": "link"
+                  }
+                ],
+                "id": "prwyebhzwbxzdwlo",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "kp2o5x5izh5fjlhe",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Concise Binary Object Representation ("
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "CBOR"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/CBOR",
+                    "id": "r6krl33iiikqwqk2",
+                    "title": "CBOR",
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": ")"
+                  }
+                ],
+                "id": "pj4szj3bwbvyhzvx",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "fbwqioipyu67corb",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "References"
+          }
+        ],
+        "id": "aaob2cdrqspicgf4",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "3amd26ghhbukrqgu",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "RFC"
+                      }
+                    ],
+                    "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+                    "id": "5ykpljmfi4ubw6oi",
+                    "title": "RFC (identifier)",
+                    "type": "link"
+                  },
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "7519"
+                      }
+                    ],
+                    "href": "https://www.rfc-editor.org/rfc/rfc7519",
+                    "id": "mjdykxgbkq5zdnef",
+                    "title": null,
+                    "type": "link"
+                  }
+                ],
+                "id": "lcwcegaxiefokeng",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "7zlluejvixcdx3dv",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "jwt.io"
+                      }
+                    ],
+                    "href": "https://jwt.io/",
+                    "id": "wcgoqkqhqsbldgcr",
+                    "title": null,
+                    "type": "link"
+                  },
+                  {
+                    "type": "text",
+                    "value": " – specialized website about JWT with tools and documentation, maintained by Auth0"
+                  }
+                ],
+                "id": "wj5pnwmmf5jxvblq",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "x6akzzkivhapmh7c",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "(, suggested pronunciation , same as the word \"jot\") is a  for creating data with optional  and/or optional  whose  holds  that asserts some number of . The tokens are signed either using a  or a .",
+      "outline": [
+        {
+          "id": "6wf3grutu4qxbrde",
+          "level": 2,
+          "text": "Structure"
+        },
+        {
+          "id": "6zdkf3tg4nb6rjfs",
+          "level": 2,
+          "text": "Use"
+        },
+        {
+          "id": "jnoo5k7bivenhtqe",
+          "level": 2,
+          "text": "Standard fields"
+        },
+        {
+          "id": "om7zrnnoinc2zbbw",
+          "level": 2,
+          "text": "Implementations"
+        },
+        {
+          "id": "no4eqaw6mwylmnjo",
+          "level": 2,
+          "text": "Vulnerabilities"
+        },
+        {
+          "id": "ciaghco34em62tco",
+          "level": 2,
+          "text": "See also"
+        },
+        {
+          "id": "aaob2cdrqspicgf4",
+          "level": 2,
+          "text": "References"
+        }
+      ]
+    },
+    "references": [
+      {
+        "id": "5a7zsnjjtmc4dhbn",
+        "rawText": "Jones, Michael B.; Bradley, John; Sakimura, Nat (May 2015). JSON Web Token (JWT). IETF. doi:10.17487/RFC7519. ISSN 2070-1721. RFC 7519.",
+        "sourceUrl": "https://www.rfc-editor.org/rfc/rfc7519",
+        "structuredFields": null
+      },
+      {
+        "id": "lcniklqd3fpujn6m",
+        "rawText": "Nickel, Jochen (2016). Mastering Identity and Access Management with Microsoft Azure. Packt Publishing. p. 84. ISBN 9781785887888. Retrieved July 20, 2018.",
+        "sourceUrl": "https://books.google.com/books?id=Q4dcDgAAQBAJ&pg=PA84",
+        "structuredFields": null
+      },
+      {
+        "id": "vtrmzrwzknhfhkkp",
+        "rawText": "\"JWT.IO - JSON Web Tokens Introduction\". jwt.io. Retrieved July 20, 2018.",
+        "sourceUrl": "https://jwt.io/introduction/",
+        "structuredFields": null
+      },
+      {
+        "id": "jgbgqx367vh23sev",
+        "rawText": "Sevilleja, Chris. \"The Anatomy of a JSON Web Token\". Retrieved May 8, 2015.",
+        "sourceUrl": "https://scotch.io/tutorials/the-anatomy-of-a-json-web-token",
+        "structuredFields": null
+      },
+      {
+        "id": "ayngc434fby6gn5m",
+        "rawText": "\"Atlassian Connect Documentation\". developer.atlassian.com. Archived from the original on May 18, 2015. Retrieved May 8, 2015.",
+        "sourceUrl": "https://web.archive.org/web/20150518082002/https://developer.atlassian.com/static/connect/docs/latest/concepts/understanding-jwt.html",
+        "structuredFields": null
+      },
+      {
+        "id": "wgdanlbepqqwmtxt",
+        "rawText": "Jones, Michael B.; Bradley, John; Sakimura, Nat (May 2015). \"draft-ietf-jose-json-web-signature-41 - JSON Web Signature (JWS)\". tools.ietf.org. Retrieved May 8, 2015.",
+        "sourceUrl": "https://tools.ietf.org/html/draft-ietf-jose-json-web-signature-41",
+        "structuredFields": null
+      },
+      {
+        "id": "2e5yuoju7a473pn5",
+        "rawText": "Jones, Michael B.; Hildebrand, Joe (May 2015). \"draft-ietf-jose-json-web-encryption-40 - JSON Web Encryption (JWE)\". tools.ietf.org. Retrieved May 8, 2015.",
+        "sourceUrl": "https://tools.ietf.org/html/draft-ietf-jose-json-web-encryption-40",
+        "structuredFields": null
+      },
+      {
+        "id": "2yzmf7jsfwf7mbsp",
+        "rawText": "Jones, Michael B. (May 2015). \"draft-ietf-jose-json-web-algorithms-40 - JSON Web Algorithms (JWA)\". tools.ietf.org. Retrieved May 8, 2015.",
+        "sourceUrl": "https://tools.ietf.org/html/draft-ietf-jose-json-web-algorithms-40",
+        "structuredFields": null
+      },
+      {
+        "id": "67at4zrwvhexfgmk",
+        "rawText": "Jones, Michael B.; Bradley, Bradley; Sakimura, Sakimura (May 2015). \"\"exp\" (Expiration Time) Claim\". JSON Web Token (JWT). IETF. sec. 4.1.4. doi:10.17487/RFC7519. ISSN 2070-1721. RFC 7519.",
+        "sourceUrl": "https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.4",
+        "structuredFields": null
+      },
+      {
+        "id": "6cl52jki4dyaiprh",
+        "rawText": "McLean, Tim (March 31, 2015). \"Critical vulnerabilities in JSON Web Token libraries\". Auth0. Retrieved March 29, 2016.",
+        "sourceUrl": "https://www.chosenplaintext.ca/2015/03/31/jwt-algorithm-confusion.html",
+        "structuredFields": null
+      },
+      {
+        "id": "6ztlkr3nqlzul6ag",
+        "rawText": "\"JSON Web Token (JWT)\". IANA. January 23, 2015. Retrieved December 5, 2024.",
+        "sourceUrl": "https://www.iana.org/assignments/jwt/jwt.xhtml/",
+        "structuredFields": null
+      },
+      {
+        "id": "k45cmqtmlr3oin3j",
+        "rawText": "jwt-dotnet on github.com",
+        "sourceUrl": "https://github.com/jwt-dotnet/jwt",
+        "structuredFields": null
+      },
+      {
+        "id": "sfvpoddmqzpst44m",
+        "rawText": "libjwt on github.com",
+        "sourceUrl": "https://github.com/benmcollins/libjwt",
+        "structuredFields": null
+      },
+      {
+        "id": "vnfsybf5d54ky7de",
+        "rawText": "jwt-cpp on github.com",
+        "sourceUrl": "https://github.com/Thalhammer/jwt-cpp",
+        "structuredFields": null
+      },
+      {
+        "id": "oqf6gehq57xtzfua",
+        "rawText": "POCO C++ Libraries library Poco::JWT",
+        "sourceUrl": "https://en.wikipedia.org/wiki/POCO_C++_Libraries",
+        "structuredFields": null
+      },
+      {
+        "id": "ln7e3wl727hwlozw",
+        "rawText": "\"liquidz/clj-jwt\". GitHub. Retrieved May 7, 2018.",
+        "sourceUrl": "https://github.com/liquidz/clj-jwt",
+        "structuredFields": null
+      },
+      {
+        "id": "wwhvhaw6lsd73fci",
+        "rawText": "cljwt on github.com",
+        "sourceUrl": "https://github.com/gschjetne/cljwt",
+        "structuredFields": null
+      },
+      {
+        "id": "bv6i6y5my3zlmos3",
+        "rawText": "JustJWT on github.com",
+        "sourceUrl": "https://github.com/deftomat/JustJWT",
+        "structuredFields": null
+      },
+      {
+        "id": "36ivbgnyoy334nvh",
+        "rawText": "\"bryanjos/joken\". GitHub. Retrieved May 7, 2018.",
+        "sourceUrl": "https://github.com/bryanjos/joken",
+        "structuredFields": null
+      },
+      {
+        "id": "vq4cnkl3ndyb23ca",
+        "rawText": "\"golang-jwt/jwt\". GitHub. Retrieved January 8, 2018.",
+        "sourceUrl": "https://github.com/golang-jwt/jwt",
+        "structuredFields": null
+      },
+      {
+        "id": "trit73xcrxtij3eh",
+        "rawText": "\"jose: JSON Object Signing and Encryption (JOSE) and JSON Web Token (JWT) library\". Hackage. Retrieved December 25, 2022.",
+        "sourceUrl": "https://hackage.haskell.org/package/jose",
+        "structuredFields": null
+      },
+      {
+        "id": "teoxfshz2oove72q",
+        "rawText": "auth0/java-jwt on github.com",
+        "sourceUrl": "https://github.com/auth0/java-jwt",
+        "structuredFields": null
+      },
+      {
+        "id": "oaxqkrxeacwnr5tk",
+        "rawText": "\"kjur/jsrsasign\". GitHub. Retrieved May 7, 2018.",
+        "sourceUrl": "https://github.com/kjur/jsrsasign",
+        "structuredFields": null
+      },
+      {
+        "id": "je2fnxibtyresba6",
+        "rawText": "\"JWTs.jl\". GitHub. Retrieved October 31, 2025.",
+        "sourceUrl": "https://github.com/JuliaWeb/JWTs.jl",
+        "structuredFields": null
+      },
+      {
+        "id": "42gwvuj2qgm7337m",
+        "rawText": "\"SkyLothar/lua-resty-jwt\". GitHub. Retrieved May 7, 2018.",
+        "sourceUrl": "https://github.com/SkyLothar/lua-resty-jwt",
+        "structuredFields": null
+      },
+      {
+        "id": "jqnagknajowt6j3t",
+        "rawText": "\"jsonwebtoken\". npm. Retrieved May 7, 2018.",
+        "sourceUrl": "https://www.npmjs.com/package/jsonwebtoken",
+        "structuredFields": null
+      },
+      {
+        "id": "26yy2rqzzswdg4gt",
+        "rawText": "ocaml-jwt on github.com",
+        "sourceUrl": "https://github.com/besport/ocaml-jwt",
+        "structuredFields": null
+      },
+      {
+        "id": "lnefmryeglehrzog",
+        "rawText": "Crypt::JWT on cpan.org",
+        "sourceUrl": "https://metacpan.org/pod/Crypt::JWT",
+        "structuredFields": null
+      },
+      {
+        "id": "u4v2ppb7gewo63i6",
+        "rawText": "lcobucci/jwt on github.com",
+        "sourceUrl": "https://github.com/lcobucci/jwt",
+        "structuredFields": null
+      },
+      {
+        "id": "dbxvxddpsnc6tdp7",
+        "rawText": "Egan, Morten (February 7, 2019), GitHub - morten-egan/jwt_ninja: PLSQL Implementation of JSON Web Tokens., retrieved March 14, 2019",
+        "sourceUrl": "https://github.com/morten-egan/jwt_ninja",
+        "structuredFields": null
+      },
+      {
+        "id": "u4fxp76nbjdhm2fr",
+        "rawText": "\"SP3269/posh-jwt\". GitHub. Retrieved August 1, 2018.",
+        "sourceUrl": "https://github.com/SP3269/posh-jwt",
+        "structuredFields": null
+      },
+      {
+        "id": "5hjnwveqgt7e5mq6",
+        "rawText": "\"jpadilla/pyjwt\". GitHub. Retrieved March 21, 2017.",
+        "sourceUrl": "https://github.com/jpadilla/pyjwt",
+        "structuredFields": null
+      },
+      {
+        "id": "lgaccmya6wh3eubv",
+        "rawText": "net-jwt on pkgs.racket-lang.org",
+        "sourceUrl": "https://pkgs.racket-lang.org/package/net-jwt",
+        "structuredFields": null
+      },
+      {
+        "id": "nwqdhbdgygecpdsx",
+        "rawText": "JSON-WebToken on github.com",
+        "sourceUrl": "https://github.com/jamesalbert/JSON-WebToken",
+        "structuredFields": null
+      },
+      {
+        "id": "a2ulrywthveyqpp5",
+        "rawText": "ruby-jwt on github.com",
+        "sourceUrl": "https://github.com/jwt/ruby-jwt",
+        "structuredFields": null
+      },
+      {
+        "id": "2t4besxcfcusnqvt",
+        "rawText": "jsonwebtoken on github.com",
+        "sourceUrl": "https://github.com/Keats/jsonwebtoken",
+        "structuredFields": null
+      },
+      {
+        "id": "f5piraldn65ewvkc",
+        "rawText": "rust-jwt on github.com",
+        "sourceUrl": "https://github.com/mikkyang/rust-jwt",
+        "structuredFields": null
+      },
+      {
+        "id": "ayzfdvtaexeferhe",
+        "rawText": "jwt-scala on github.com",
+        "sourceUrl": "https://github.com/pauldijou/jwt-scala",
+        "structuredFields": null
+      },
+      {
+        "id": "7xir7vyp77jjwpcx",
+        "rawText": "on github.com",
+        "sourceUrl": "https://github.com/kylef/JSONWebToken.swift",
+        "structuredFields": null
+      },
+      {
+        "id": "en3u5koxz2hynzez",
+        "rawText": "Slootweg, Sven. \"Stop using JWT for sessions\". joepie91 Ramblings. Retrieved August 1, 2018.",
+        "sourceUrl": "http://cryto.net/~joepie91/blog/2016/06/13/stop-using-jwt-for-sessions/",
+        "structuredFields": null
+      },
+      {
+        "id": "tusu3esbrhgkp7o6",
+        "rawText": "\"CVE - Search Results\". cve.mitre.org.",
+        "sourceUrl": "https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=jwt+none",
+        "structuredFields": null
+      },
+      {
+        "id": "meec2cflrol35wgx",
+        "rawText": "\"Common JWT security vulnerabilities and how to avoid them\". Retrieved May 14, 2018.",
+        "sourceUrl": "https://connect2id.com/products/nimbus-jose-jwt/vulnerabilities",
+        "structuredFields": null
+      },
+      {
+        "id": "zicc3okakwze443u",
+        "rawText": "Andreas, Happe. \"JWT: Signature vs MAC attacks\". snikt.net. Retrieved May 27, 2019.",
+        "sourceUrl": "https://snikt.net/blog/2019/05/16/jwt-signature-vs-mac-attacks/",
+        "structuredFields": null
+      },
+      {
+        "id": "pdawr2aioxgk5ibv",
+        "rawText": "\"Critical Vulnerability in JSON Web Encryption\". Auth0 - Blog. Retrieved October 14, 2023.",
+        "sourceUrl": "https://auth0.com/blog/critical-vulnerability-in-json-web-encryption/",
+        "structuredFields": null
+      },
+      {
+        "id": "66l32ar4hlt4tvhw",
+        "rawText": "\"No Way, JOSE! Javascript Object Signing and Encryption is a Bad Standard That Everyone Should Avoid - Paragon Initiative Enterprises Blog\". paragonie.com. Retrieved October 13, 2023.",
+        "sourceUrl": "https://paragonie.com/blog/2017/03/jwt-json-web-tokens-is-bad-standard-that-everyone-should-avoid",
+        "structuredFields": null
+      },
+      {
+        "id": "yx76wagwkx5kpaio",
+        "rawText": "\"Pitfalls of JWT Authorization\". authzed.com. Retrieved November 16, 2023.",
+        "sourceUrl": "https://authzed.com/blog/pitfalls-of-jwt-authorization",
+        "structuredFields": null
+      }
+    ],
+    "removedRegions": [
+      {
+        "approxTextLength": 15,
+        "reason": "chrome",
+        "selectorPath": "a[1]"
+      },
+      {
+        "approxTextLength": 205,
+        "reason": "navigation",
+        "selectorPath": "div[2]/header[1]/div[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 83,
+        "reason": "navigation",
+        "selectorPath": "div[2]/header[1]/div[2]/nav[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[2]/div[1]/div[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 131,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[2]/div[2]/nav[1]"
+      },
+      {
+        "approxTextLength": 20,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[1]/div[1]/div[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 22,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[1]/div[1]/div[2]/nav[1]"
+      },
+      {
+        "approxTextLength": 275,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[1]/div[1]/div[2]/nav[2]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[2]/div[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 31,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[2]/div[1]/nav[2]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[1]/div[1]"
+      },
+      {
+        "approxTextLength": 37,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[1]/div[2]"
+      },
+      {
+        "approxTextLength": 366,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[2]"
+      },
+      {
+        "approxTextLength": 34,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[1]/div[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[1]/p[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[1]/span[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[1]/span[2]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[1]/table[1]/tbody[1]/tr[8]/td[1]/span[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[1]/table[1]/tbody[1]/tr[9]/td[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[2]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[3]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[3]/span[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[3]/span[2]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[3]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[3]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[1]/span[2]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[3]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[1]/span[3]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[4]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[5]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[6]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 22,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[6]/p[2]/sup[3]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[7]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 6,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[8]/div[1]/span[1]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[8]/div[3]/span[1]"
+      },
+      {
+        "approxTextLength": 368,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[8]/div[4]"
+      },
+      {
+        "approxTextLength": 0,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[1]/section[8]/span[1]"
+      },
+      {
+        "approxTextLength": 91,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[3]/div[2]"
+      },
+      {
+        "approxTextLength": 665,
+        "reason": "chrome",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/div[3]/div[4]"
+      },
+      {
+        "approxTextLength": 28,
+        "reason": "navigation",
+        "selectorPath": "div[3]/div[1]/div[3]/main[1]/header[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 524,
+        "reason": "footer",
+        "selectorPath": "div[3]/div[1]/div[4]/footer[1]"
+      },
+      {
+        "approxTextLength": 28,
+        "reason": "navigation",
+        "selectorPath": "div[4]/div[1]/div[1]/div[3]/nav[1]"
+      }
+    ]
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-BUNDLE-PAGE-INCOMPLETE",
+      "message": "page may not be fully loaded (5 lazy images, 0 skeletons)",
+      "phase": "assemble",
+      "severity": "warning"
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'typescript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "bzjyktki3yzwplya"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'json' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "uukuqxcs6adsfw53"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'json' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "pspl3n5zjn2gogfw"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'javascript' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "s6dz3cxxblaoehds"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'json' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "pho7dr6f5fhcwirw"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/pre-code: language 'html' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "445d7qe7cj3f5oye"
+      }
+    },
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-INFOBOX-POLICY",
+      "message": "infobox included as a table node per decisions/0024",
+      "phase": "extract",
+      "severity": "info"
+    }
+  ],
+  "hashes": {
+    "blocks": {
+      "445d7qe7cj3f5oye": "37edf62770d4d1a8941e57c9a9c3b1b13fadd5e00e79d5adb59f0b16e75dba5d",
+      "abyeg4zpsnqgrurj": "9a93c0b841ba9e6f121b2eb961cba9b8a74887ad5f6192c18d9f448dd5a94fa3",
+      "bzjyktki3yzwplya": "92c2cfce1b1edda57ce781245273c32cc5bd9603746d7dcbe3f354ce39ee45be",
+      "na2secpsv4waabc6": "d50b932c6283d3021789d3e9d2cbf8bb79234e7d9244f344b8339a106cd05bcf",
+      "pho7dr6f5fhcwirw": "94ac255f61b77aeff84ce26cb4613e46f2008704cf49abe65c0ed63d8964fb56",
+      "pspl3n5zjn2gogfw": "005b45088043e9e261fb82cf91be0d6d620363e4d23d0eb36a9e28e13a342aab",
+      "s6dz3cxxblaoehds": "4bb5b092d514b38a9f3ebce14f17e2bb4c141c56c19c04e59b01784366f5f422",
+      "uukuqxcs6adsfw53": "563e225103455d1dbcdf2c095415e6b35b6b3e4f2c9386994b78dd32c604c55a",
+      "wnicw2iqhxslqsf4": "7406ec73b43889293486339379187f66e5918bc77c9effaf11265450fc30cce3"
+    },
+    "documentContentIdentity": "bcd9cffa763bdd5aa3a7a0875ef5d96a013786c3d739529bba2986535dacbcd7",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://en.wikipedia.org/wiki/JSON_Web_Token",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 5,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://en.wikipedia.org/wiki/JSON_Web_Token",
+    "title": "JSON Web Token"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "canExport": true,
+  "citations": {
+    "resolved": 56,
+    "total": 59
+  },
+  "code": {
+    "approximate": 0,
+    "detected": 35,
+    "exact": 35,
+    "failed": 0,
+    "normalized": 0
+  },
+  "counts": {
+    "error": 0,
+    "fatal": 0,
+    "info": 6,
+    "warning": 12
+  },
+  "reason": "the capture is believed complete with non-critical warnings",
+  "requiresVisibleWarning": false,
+  "sections": {
+    "expected": 0,
+    "kept": 0
+  },
+  "status": "complete_with_warnings",
+  "warnings": [
+    "3 citation/footnote marker(s) unresolved",
+    "the page may not have finished loading"
+  ]
+}
