@@ -1,0 +1,134 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 259,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 229,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "A Short Study"
+          }
+        ],
+        "id": "2bzxnnuyt56mf4wz",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Introduction"
+          }
+        ],
+        "id": "g5juavsgabp3srpf",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "This study looks at a small question in some detail across several sentences of prose."
+          }
+        ],
+        "id": "grdr47kbq2itb2yz",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Conclusion"
+          }
+        ],
+        "id": "cb5s5otp2qi3ltdy",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The question is answered, with more prose here to give the article body some weight."
+          }
+        ],
+        "id": "yndmojbepdkue3zx",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "This study looks at a small question in some detail across several sentences of prose.",
+      "outline": [
+        {
+          "id": "2bzxnnuyt56mf4wz",
+          "level": 1,
+          "text": "A Short Study"
+        },
+        {
+          "id": "g5juavsgabp3srpf",
+          "level": 2,
+          "text": "Introduction"
+        },
+        {
+          "id": "cb5s5otp2qi3ltdy",
+          "level": 2,
+          "text": "Conclusion"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "5723949092f53a2cebbff3b90ae21a0e0b1be601b5d7cbc5e1ecc7f320f2810a",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://study.example/short",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://study.example/short",
+    "title": "A Short Study"
+  }
+}

@@ -5,14 +5,15 @@ the _target_ architecture it is heading toward. Do not read the target
 section as already true — it is refined as later phases land, per
 `AGENTS.md` § documentation sync.
 
-## Current state (Phase 7)
+## Current state (Phase 8)
 
 A pnpm/TypeScript workspace. `packages/core` holds the browser-independent
-foundation **plus the IR→Markdown renderer and the deterministic capture
-bundle**, `packages/detectors` the code/terminal/tab-group detectors,
-`packages/adapters` the ChatGPT conversation adapter + ClipSpec seam, and
-`packages/pipeline` the capture orchestrator (article **and** conversation
-paths); `extension` is still a scaffold; plus a development-time Claude skill:
+foundation **plus the IR→Markdown renderer, the deterministic capture bundle,
+and the completeness/evaluate layer**, `packages/detectors` the
+code/terminal/tab-group detectors, `packages/adapters` the ChatGPT
+conversation adapter + ClipSpec seam, and `packages/pipeline` the capture
+orchestrator (article **and** conversation paths); `extension` is still a
+scaffold; plus a development-time Claude skill:
 
 - `packages/core` — **implemented** (Phase 3): the typed IR family
   (`DocumentIR` / `ArticleIR` / `ConversationIR` / `MessageIR`, the shared
@@ -64,14 +65,15 @@ paths); `extension` is still a scaffold; plus a development-time Claude skill:
   (`scripts/verify-examples.mjs`). It is not shipped in the extension and is
   never authority to change extraction behaviour (`decisions/0002`, `0021`).
 
-Capture → validated `DocumentIR` → **profile-aware Markdown + a deterministic
-capture bundle** works end to end for saved HTML fixtures
-(`fixtures/{articles,code,conversations}/*`), each with golden
+Capture → validated `DocumentIR` → **profile-aware Markdown, a deterministic
+capture bundle, and a completeness report** work end to end for saved HTML
+fixtures (`fixtures/{articles,code,conversations}/*`), each with golden
 `expected.md` / `expected.gfm.md` / `expected.commonmark.md` /
-`expected-hashes.json`. Only the browser extension shell (Phase 9) and the
-release corpus/gates (Phase 10) remain. CI (`.github/workflows/ci.yml`) runs
+`expected-hashes.json` / `expected-report.json`. Only the browser extension
+shell (Phase 9) and the release corpus/gates (Phase 10) remain. CI
+(`.github/workflows/ci.yml`) runs
 format-check/lint/typecheck/build/test/skill:verify across the workspace;
-~131 deterministic tests.
+~147 deterministic tests.
 
 The renderer (`packages/core/src/render/`) is one IR walker with three profile
 configs (`decisions/0019`, `0030`); every fenced block is render-back verified
@@ -124,10 +126,14 @@ matching ADRs in `decisions/`):
 - Every step that cannot produce an exact result emits a diagnostic instead
   of silently degrading.
 
-Between step 7 (assemble + validate IR) and export, an **evaluate** stage
-(Phase 8) runs cross-stage fidelity assertions (sentinel balance, section /
-citation / figure retention, code accounting, conversation order/roles, page
-load state) and derives the export status.
+Between step 7 (assemble + validate IR) and export, the **evaluate** stage
+(`packages/core/src/evaluate/`, Phase 8) runs cross-stage fidelity assertions
+(content present, code accounting `detected = exact + normalized + approximate
+
+- failed`, citation/footnote resolution, and — when a fixture supplies an
+expected outline — section retention), then derives the export status and a
+`CompletenessReport` (`decisions/0031`). `capture()`runs it and returns`report` on the result; sentinel balance and render-back are enforced upstream
+  in the pipeline / renderer.
 
 ## Package responsibilities (target)
 

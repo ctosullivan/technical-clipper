@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://study.example/short",
+  "canonicalUrl": "https://study.example/short",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "Has an expected-outline.json that expects a 'Methods' section the page does not contain -> TC-EXTRACT-SECTION-LOST, status partial.",
+  "producedByExtractorVersion": "1.0.0"
+}

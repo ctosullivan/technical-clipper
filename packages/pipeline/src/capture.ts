@@ -13,7 +13,7 @@ import {
   canonicalize,
   hashCanonicalExcluding,
   hashCodeText,
-  deriveExportStatus,
+  evaluateCapture,
   makeDiagnostic,
   validateDocumentIR,
   DetectorRegistry,
@@ -23,6 +23,7 @@ import {
   PROSE_RULESET_ID,
   type ArticleDocumentIR,
   type BlockNode,
+  type CompletenessReport,
   type ConversationDocumentIR,
   type Diagnostic,
   type DocumentIR,
@@ -70,6 +71,8 @@ export interface CaptureInput {
 export interface CaptureResult {
   document: DocumentIR;
   export: ExportDecision;
+  /** Cross-stage completeness report (`decisions/0015`, Phase 8). */
+  report: CompletenessReport;
 }
 
 function emptyHashes(): HashSet {
@@ -170,10 +173,21 @@ function finalize(doc: DocumentIR): CaptureResult {
   ]);
   void canonicalize(doc);
 
-  const decision = deriveExportStatus(doc.diagnostics, {
-    irValidationFailed: validation.some((d) => d.severity === 'fatal'),
-  });
-  return { document: doc, export: decision };
+  // Phase 8: cross-stage completeness assertions + the export decision.
+  const report = evaluateCapture(doc, { alreadyValidated: true });
+  // The assertion diagnostics that were not already on the doc get appended.
+  const known = new Set(doc.diagnostics);
+  for (const d of report.diagnostics)
+    if (!known.has(d)) doc.diagnostics.push(d);
+
+  const decision: ExportDecision = {
+    status: report.status,
+    reason: report.reason,
+    canExport: report.canExport,
+    requiresVisibleWarning: report.requiresVisibleWarning,
+    counts: report.counts,
+  };
+  return { document: doc, export: decision, report };
 }
 
 function runCapture(input: CaptureInput): CaptureResult {
@@ -283,10 +297,15 @@ function runCapture(input: CaptureInput): CaptureResult {
       pageLoadState,
       diagnostics,
     );
-    const decision = deriveExportStatus(shell.diagnostics, {
-      irValidationFailed: true,
-    });
-    return { document: shell, export: decision };
+    const report = evaluateCapture(shell);
+    const decision: ExportDecision = {
+      status: report.status,
+      reason: report.reason,
+      canExport: report.canExport,
+      requiresVisibleWarning: report.requiresVisibleWarning,
+      counts: report.counts,
+    };
+    return { document: shell, export: decision, report };
   }
 
   const docIR: ArticleDocumentIR = {

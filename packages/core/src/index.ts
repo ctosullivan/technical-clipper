@@ -37,6 +37,9 @@ export * from './seam.js';
 export * from './render/index.js';
 export * from './bundle/index.js';
 
+// --- validation + completeness evaluation ---
+export * from './evaluate/index.js';
+
 /**
  * Thrown by scaffolding stubs in `@technical-clipper/detectors` /
  * `@technical-clipper/adapters` that intentionally have no behaviour yet

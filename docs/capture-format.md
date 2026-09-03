@@ -79,6 +79,18 @@ and personal data — the user opts in per capture). When included, the pipeline
 serializes the cloned DOM with `<script>` / `<style>` / `on*` attributes and
 non-selected-branch subtrees removed; `raw/README.txt` lists the categories.
 
+## Completeness report
+
+`evaluateCapture(doc)` (`decisions/0015`, `0031`) returns a
+`CompletenessReport`: `status`, `reason`, `canExport`,
+`requiresVisibleWarning`, `counts` by severity, `code`
+(`detected / exact / normalized / approximate / failed`), `citations`
+(`total / resolved`), `sections` (`expected / kept` — only when an expected
+outline is available), `warnings` (human capture-scope lines), and the ordered
+`diagnostics`. `capture()` returns it on `result.report`; the extension shows
+it before export and the bundle's `manifest.json` `diagnosticsSummary` is
+derived from `counts`.
+
 ## Export gate
 
 The extension may present copy / Obsidian / download only when

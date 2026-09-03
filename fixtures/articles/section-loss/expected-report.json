@@ -1,0 +1,30 @@
+{
+  "canExport": true,
+  "citations": {
+    "resolved": 0,
+    "total": 0
+  },
+  "code": {
+    "approximate": 0,
+    "detected": 0,
+    "exact": 0,
+    "failed": 0,
+    "normalized": 0
+  },
+  "counts": {
+    "error": 1,
+    "fatal": 0,
+    "info": 0,
+    "warning": 0
+  },
+  "reason": "known content loss or an unresolved reference",
+  "requiresVisibleWarning": true,
+  "sections": {
+    "expected": 3,
+    "kept": 2
+  },
+  "status": "partial",
+  "warnings": [
+    "1 expected section(s) missing"
+  ]
+}

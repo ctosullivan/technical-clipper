@@ -6,8 +6,8 @@ natural stopping point. History lives in git and `CHANGELOG.md` — see
 
 ## Active phase
 
-Phase 7 — Deterministic rendering and capture bundle — status: **done**.
-Next: Phase 8 (`planning/phase-8-validation-and-completeness-diagnostics.md`).
+Phase 8 — Validation and completeness diagnostics — status: **done**.
+Next: Phase 9 (`planning/phase-9-chromium-extension-and-obsidian-handoff.md`).
 
 The user has authorised implementing the phase plans through to the MVP and
 pushing each phase commit, stopping only for genuine blockers and for the
@@ -16,47 +16,50 @@ phase per commit.
 
 ## Last completed work
 
-Phase 7: `packages/core/src/render/` (IR→Markdown, three profiles, degrade
-table `decisions/0030`, render-back verification) and
-`packages/core/src/bundle/` (canonical JSON writers, `manifest.json`
-identity/event split `decisions/0017`, hand-rolled STORE-only deterministic
-ZIP `decisions/0029`, `assembleBundle`). ADRs 0028–0030. Every fixture has
-per-profile `expected.*.md` + `expected-hashes.json` goldens.
-`docs/capture-format.md` replaced. CI green: 17 files / 131 tests.
+Phase 8: `packages/core/src/evaluate/` — `evaluateCapture(doc)` runs the
+cross-stage fidelity assertions (content present, code accounting,
+citation/footnote resolution, section retention) → `CompletenessReport`
+(`decisions/0031`). `capture()` returns `report`; `contentKnownIncomplete`
+forces at least `partial`. Every fixture has `expected-report.json`;
+`fixtures/articles/section-loss` + `expected-outline.json` pin § 12 gate 5.
+CI green: 19 files / 147 tests.
 
 ## Unresolved decisions
 
-None blocking. Phase 8 has no new ADRs likely (the derivation table and
-diagnostics model are `decisions/0015`; the completeness-report shape may need
-one small ADR). Phase 8 implements `packages/core/src/evaluate/` —
-`evaluateCapture(doc)` running the cross-stage fidelity assertions (section
-retention, citation/footnote targets, referenced figures, code accounting,
-conversation order/roles, page-load) that can demote a capture to `partial`,
-plus the completeness-report structure the extension (Phase 9) shows. The
-pipeline currently runs `validateDocumentIR` + `deriveExportStatus`; Phase 8
-adds the assertion layer on top and threads `contentKnownIncomplete` into the
-status derivation.
+None blocking. Phase 9 has several **phase-local** ADRs to make: extension
+results surface (popup vs page), extension bundler (deferred from
+`decisions/0010` — likely `vite` + `@crxjs` or `esbuild`), the Obsidian
+handoff mechanism + content-size guard, and in-page vs worker execution
+context. Phase 9's stop-and-ask conditions include: Obsidian handoff can't
+handle planned content sizes; a feature needs a broader browser permission
+than the action requires; the next step is packaging/signing/store submission
+(that is Phase 10 + explicit approval — Phase 9 must not go there).
 
 ## Verification state
 
 `pnpm` not on PATH; use `npx --yes pnpm@9.12.0 <cmd>`.
 `npx --yes pnpm@9.12.0 run ci` — green: `format:check` clean, `lint` 0 errors,
-`tsc -b` passes, 17 test files / 131 tests pass, `skill:verify` PASS.
+`tsc -b` passes, 19 test files / 147 tests pass, `skill:verify` PASS.
 `node scripts/capture-fixture.mjs --all` — PASS (goldens match, deterministic,
-bundles byte-stable).
+bundles byte-stable, reports match).
 
 ## Working-tree state
 
 Git repo on `master`, tracking `origin/master`
-(<https://github.com/ctosullivan/technical-clipper.git>). Phases 0–6 pushed;
-Phase 7 commit pending. Nothing tagged or released.
+(<https://github.com/ctosullivan/technical-clipper.git>). Phases 0–7 pushed;
+Phase 8 commit pending. Nothing tagged or released.
 
 ## Next concrete action
 
-Begin **Phase 8** per
-`planning/phase-8-validation-and-completeness-diagnostics.md`: implement
-`packages/core/src/evaluate/` (`assertions.ts`, `report.ts`, `evaluate.ts`),
-add the completeness diagnostic codes to the registry, extend the relevant
-fixtures with `expected-outline.json` / `expected-report.json`, wire
-`evaluateCapture` into the pipeline result, and add
-`tests/evaluate-*.test.ts`. Commit `feat(phase-8): …` and push.
+Begin **Phase 9** per
+`planning/phase-9-chromium-extension-and-obsidian-handoff.md`: pick the
+extension bundler (ADR) and produce a loadable unpacked `dist/`; wire
+`activeTab` + `scripting` into the manifest (manifest test asserts the
+permission set); `content/capture.ts` clones the live DOM and runs the
+pipeline (network trap kept); a results page shows the preview (sanitized
+render) + the `CompletenessReport`; Copy / Send-to-Obsidian (URI + size
+guard + fallback, ADR) / Download-bundle actions with the export gate
+(`failed` disables, `partial` shows a non-dismissible warning);
+`tests/extension-*.test.ts` over served fixtures. Replace the
+`docs/cli-or-extension-reference.md` stub. Commit `feat(phase-9): …`, push;
+**do not** package for a store or tag.

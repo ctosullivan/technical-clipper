@@ -2,7 +2,41 @@
 
 ## Status
 
-planned
+done
+
+## Completion evidence
+
+- **`packages/core/src/evaluate/`:** `assertions.ts` (`runAssertions` —
+  content-present, code accounting, citation/footnote resolution, section
+  retention against a supplied outline), `evaluate.ts` (`evaluateCapture` →
+  `CompletenessReport` with status/reason/gate-flags/counts/warnings),
+  `index.ts`.
+- **ADR:** `decisions/0031` (report shape + `expected-outline.json` fixture
+  convention). No new diagnostic codes — the registry from `decisions/0015`
+  already had `TC-EXTRACT-SECTION-LOST` / `-CITATION-UNRESOLVED` /
+  `-FIGURE-MISSING` / `TC-ASSEMBLE-EMPTY`.
+- **Pipeline wiring:** `capture()` `finalize()` calls
+  `evaluateCapture(doc, { alreadyValidated: true })`, appends its assertion
+  diagnostics, and returns `report` on `CaptureResult`. The shell (no-root)
+  path also returns a `report`.
+- **Fixtures:** every fixture now has `expected-report.json`;
+  `fixtures/articles/section-loss` + its `expected-outline.json` pin § 12
+  gate 5 (`status: partial`, `sections: {expected: 3, kept: 2}`).
+  `scripts/capture-fixture.mjs` evaluates against `expected-outline.json` when
+  present.
+- **Tests:** `packages/core/src/evaluate/evaluate.test.ts` (10 — code
+  accounting sum, approximate → warnings, failed → partial, section retention,
+  unresolved footnote, conversation); `tests/evaluate.test.ts` (7 — corpus
+  report goldens, gate 5, canExport-only-on-failed, partial-requires-warning,
+  code-accounting sum for every fixture). `pnpm run ci` green: 19 test files /
+  147 tests.
+- **Deferred as planned:** the prose-referenced-figure check is structural
+  only for the MVP (`decisions/0031`); the extension UI that shows the report
+  is Phase 9.
+- **Commit:** see `planning/CONTEXT.md`.
+
+The scope and plan below are the original Phase 1 statement, retained for
+context.
 
 ## Goal and user-visible outcome
 

@@ -22,8 +22,10 @@ fixtures/articles/<slug>/
 ```
 
 Each case also has `expected.md` (obsidian profile), `expected.gfm.md`,
-`expected.commonmark.md`, and `expected-hashes.json` (Phase 7 — rendered
-Markdown per profile + the content-identity hashes).
+`expected.commonmark.md`, `expected-hashes.json` (Phase 7 — rendered Markdown
+per profile + content-identity hashes), and `expected-report.json` (Phase 8 —
+the completeness report). A fixture that exercises section loss adds an
+`expected-outline.json` (`decisions/0031`).
 
 Regenerate goldens with `node scripts/capture-fixture.mjs --all --write`;
 `tests/pipeline-*.test.ts` fail on any drift, non-determinism, or bundle-ZIP

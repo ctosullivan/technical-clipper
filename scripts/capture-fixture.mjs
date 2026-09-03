@@ -21,6 +21,7 @@ import {
   canonicalizePretty,
   renderMarkdown,
   assembleBundle,
+  evaluateCapture,
 } from '../packages/core/dist/index.js';
 
 const ARTICLES_DIR = 'fixtures/articles';
@@ -104,6 +105,26 @@ function checkOne(dir, write) {
     exportStatus: bundle.manifest.exportStatus,
   });
 
+  // If the fixture supplies an expected section outline, evaluate against it
+  // (production captures have no such outline — decisions/0015 / Phase 8).
+  const outlinePath = join(dir, 'expected-outline.json');
+  const r = existsSync(outlinePath)
+    ? evaluateCapture(result.document, {
+        expectedOutline: JSON.parse(readFileSync(outlinePath, 'utf8')),
+      })
+    : result.report;
+  const reportStr = canonicalizePretty({
+    status: r.status,
+    canExport: r.canExport,
+    requiresVisibleWarning: r.requiresVisibleWarning,
+    reason: r.reason,
+    code: r.code,
+    citations: r.citations,
+    sections: r.sections,
+    warnings: r.warnings,
+    counts: r.counts,
+  });
+
   const files = {
     [irPath]: irStr,
     [diagPath]: diagStr,
@@ -111,6 +132,7 @@ function checkOne(dir, write) {
     [join(dir, 'expected.gfm.md')]: md.gfm,
     [join(dir, 'expected.commonmark.md')]: md.commonmark,
     [join(dir, 'expected-hashes.json')]: hashesStr,
+    [join(dir, 'expected-report.json')]: reportStr,
   };
 
   for (const [path, want] of Object.entries(files)) {
@@ -122,7 +144,7 @@ function checkOne(dir, write) {
     }
   }
 
-  return { name: basename(dir), ok, status: result.export.status, problems };
+  return { name: basename(dir), ok, status: r.status, problems };
 }
 
 const args = process.argv.slice(2);

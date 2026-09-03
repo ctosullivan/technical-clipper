@@ -9,6 +9,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Phase 8: validation and completeness diagnostics.
+  - `packages/core/src/evaluate/` — `evaluateCapture(doc, options)` runs the
+    cross-stage fidelity assertions (content present, code accounting
+    `detected = exact + normalized + approximate + failed`, citation/footnote
+    resolution, and section retention against a fixture-supplied
+    `expected-outline.json`) and returns a `CompletenessReport` (status,
+    reason, gate flags, code/citation/section counts, human warnings) —
+    `decisions/0015`, `0031`.
+  - `capture()` runs `evaluateCapture` in `finalize()` and returns `report`
+    on `CaptureResult`; `contentKnownIncomplete` from any assertion forces at
+    least `partial`.
+  - `decisions/0031` (completeness-report shape + `expected-outline` fixture
+    convention).
+  - Every fixture gains `expected-report.json`; new `fixtures/articles/section-loss`
+    pins § 12 gate 5 (lost section → cannot report `complete`).
+    `tests/evaluate.test.ts` + `packages/core/src/evaluate/evaluate.test.ts`.
+
 - Phase 7: deterministic rendering and the capture bundle.
   - `packages/core/src/render/` — `renderMarkdown(doc, { profile })`: one IR
     walker, three profile configs (`commonmark` / `gfm` / `obsidian`,
