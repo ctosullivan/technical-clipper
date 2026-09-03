@@ -2,14 +2,20 @@
   "name": "@technical-clipper/extension",
   "version": "0.0.0",
   "private": true,
-  "description": "Thin Chromium Manifest V3 extension shell. Scaffold only in Phase 0 — capture action, preview, and Obsidian handoff land in Phase 9.",
+  "description": "Thin Chromium Manifest V3 extension: the Clip page action, a preview + completeness report, copy / Obsidian handoff / bundle download, with a least-privilege manifest.",
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "tsc -b",
+    "build": "tsc -b && node build.mjs",
     "test": "vitest run"
   },
+  "dependencies": {
+    "@technical-clipper/core": "workspace:*",
+    "@technical-clipper/pipeline": "workspace:*"
+  },
   "devDependencies": {
-    "@types/chrome": "^0.0.278"
+    "@types/chrome": "^0.0.278",
+    "esbuild": "^0.28.0",
+    "linkedom": "^0.18.0"
   }
 }

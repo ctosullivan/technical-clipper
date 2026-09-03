@@ -2,7 +2,39 @@
 
 ## Status
 
-planned
+done
+
+## Completion evidence
+
+- **`packages/extension/`:** `manifest.json` (MV3, `activeTab` + `scripting` +
+  `storage`, no host permissions), `src/capture-in-page.ts` (self-executing
+  content script: `capture({ doc: document, url })` + sanitized `raw/page.html`
+  - `chrome.runtime.sendMessage`), `src/background.ts` (action → inject →
+    stash → open results), `src/results.ts` + `results.html` (report + preview +
+    actions), `src/obsidian.ts` (`planObsidianHandoff` + 200 KB guard),
+    `src/gate.ts` (export-gate policy), `src/shared.ts`, `build.mjs` (esbuild).
+- **ADRs:** `decisions/0032` (esbuild + `node:`-free core via
+  `packages/core/src/sha256.ts`), `0033` (Obsidian URI + size guard).
+- **Refactor:** `parseDocument` / `captureFromHtml` moved out of the pipeline
+  barrel into `./parse.js` so a browser bundle never pulls in linkedom;
+  `capture()` now takes `doc` only.
+- **Tests:** `manifest.test.ts` (3 — permission allowlist),
+  `obsidian.test.ts` (4), `gate.test.ts` (4), `capture-path.test.ts` (5 —
+  builds the bundle, asserts no `node:` / linkedom in the artifacts, drives
+  the exact `capture({ doc })` call over fixtures, streaming → export blocked,
+  conversation raw-HTML default off). `pnpm run ci` green: 22 test files /
+  160 tests.
+- **Docs:** `docs/cli-or-extension-reference.md` replaced;
+  `docs/privacy-and-security.md` permission justification + reporting note;
+  `architecture/overview.md`, `README.md`.
+- **Deferred / stop-and-ask respected:** no packaging, signing, store
+  submission, or tag — that is Phase 10 + explicit approval. Manual load-and-
+  smoke in a real Chromium is a Phase 10 manual gate (16). Bundle
+  minification deferred (`decisions/0032`).
+- **Commit:** see `planning/CONTEXT.md`.
+
+The scope and plan below are the original Phase 1 statement, retained for
+context.
 
 ## Goal and user-visible outcome
 

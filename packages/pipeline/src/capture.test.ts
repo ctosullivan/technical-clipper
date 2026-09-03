@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { capture } from './capture.js';
+import { captureFromHtml } from './parse.js';
 import { DetectorRegistry } from '@technical-clipper/core';
 import { runWithNetworkTrap, CaptureNetworkError } from './network-trap.js';
 import { stubCodeDetector } from './__fixtures__/stub-detector.js';
@@ -23,8 +23,7 @@ const article = `<!doctype html><html><head><title>T</title></head><body>
 
 describe('capture — article path', () => {
   it('produces a validated article IR from a clean page', () => {
-    const { document: doc, export: dec } = capture({
-      html: article,
+    const { document: doc, export: dec } = captureFromHtml(article, {
       url: URL,
       capturedAt: AT,
     });
@@ -45,8 +44,7 @@ describe('capture — article path', () => {
   });
 
   it('resolves links to absolute and records removed noise', () => {
-    const { document: doc } = capture({
-      html: article,
+    const { document: doc } = captureFromHtml(article, {
       url: URL,
       capturedAt: AT,
     });
@@ -63,9 +61,11 @@ describe('capture — article path', () => {
   });
 
   it('is deterministic — identical input yields identical content identity', () => {
-    const a = capture({ html: article, url: URL, capturedAt: AT }).document;
-    const b = capture({
-      html: article,
+    const a = captureFromHtml(article, {
+      url: URL,
+      capturedAt: AT,
+    }).document;
+    const b = captureFromHtml(article, {
       url: URL,
       capturedAt: '2099-01-01T00:00:00.000Z',
     }).document;
@@ -80,8 +80,7 @@ describe('capture — article path', () => {
       <pre data-tc-test-code data-lang="ts">const a = 1;\nconst b = 2;\n</pre>
       <p>after</p></main>`;
     const detectors = new DetectorRegistry().register(stubCodeDetector);
-    const { document: doc } = capture({
-      html,
+    const { document: doc } = captureFromHtml(html, {
       url: URL,
       capturedAt: AT,
       detectors,
@@ -102,11 +101,10 @@ describe('capture — article path', () => {
   });
 
   it('flags a fatal when no article root is credible', () => {
-    const { document: doc, export: dec } = capture({
-      html: '<body><span>hi</span></body>',
-      url: URL,
-      capturedAt: AT,
-    });
+    const { document: doc, export: dec } = captureFromHtml(
+      '<body><span>hi</span></body>',
+      { url: URL, capturedAt: AT },
+    );
     expect(dec.status).toBe('failed');
     expect(dec.canExport).toBe(false);
     expect(doc.diagnostics.map((d) => d.code)).toContain('TC-EXTRACT-NOROOT');
@@ -118,8 +116,7 @@ describe('capture — article path', () => {
     const html = `<html><body><main><h1>H</h1><p>body text here</p></main>
       <footer><pre data-tc-test-code>lost = true</pre></footer></body></html>`;
     const detectors = new DetectorRegistry().register(stubCodeDetector);
-    const { document: doc, export: dec } = capture({
-      html,
+    const { document: doc, export: dec } = captureFromHtml(html, {
       url: URL,
       capturedAt: AT,
       detectors,

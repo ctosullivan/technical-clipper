@@ -9,6 +9,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Phase 9: the Chromium MV3 extension and Obsidian handoff.
+  - `packages/extension`: the **Clip page** toolbar action injects
+    `capture-in-page.js` (only `activeTab` + `scripting`), which runs the
+    pipeline against the live DOM inside the network trap and posts the result
+    to the service worker; the results page shows the completeness report + a
+    plain-text Markdown preview + Copy / Send-to-Obsidian / Download-bundle
+    actions, gated by export status (`failed` disables, `partial` shows a
+    non-dismissible warning).
+  - `decisions/0032` (esbuild bundler; `packages/core` made `node:`-free with
+    a synchronous pure-JS SHA-256 in `sha256.ts`), `decisions/0033`
+    (`obsidian://new` URI + 200 KB size guard + copy/download fallback).
+  - `packages/pipeline` no longer re-exports `parseDocument` / `captureFromHtml`
+    from its barrel (they import linkedom) — they live in `./parse.js`; a test
+    greps the built extension artifacts to prove no `node:` / linkedom leaks in.
+  - `docs/cli-or-extension-reference.md` replaced; `docs/privacy-and-security.md`
+    permission justification.
+  - Tests: `manifest.test.ts` (permission allowlist), `obsidian.test.ts`,
+    `gate.test.ts`, `capture-path.test.ts` (builds the bundle + drives the
+    exact `capture({ doc })` call the content script makes).
+
 - Phase 8: validation and completeness diagnostics.
   - `packages/core/src/evaluate/` — `evaluateCapture(doc, options)` runs the
     cross-stage fidelity assertions (content present, code accounting

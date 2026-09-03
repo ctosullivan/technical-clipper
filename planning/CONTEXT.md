@@ -6,60 +6,57 @@ natural stopping point. History lives in git and `CHANGELOG.md` — see
 
 ## Active phase
 
-Phase 8 — Validation and completeness diagnostics — status: **done**.
-Next: Phase 9 (`planning/phase-9-chromium-extension-and-obsidian-handoff.md`).
+Phase 9 — Chromium extension and Obsidian handoff — status: **done**.
+Next: Phase 10 (`planning/phase-10-corpus-evaluation-security-review-mvp-release.md`).
 
 The user has authorised implementing the phase plans through to the MVP and
-pushing each phase commit, stopping only for genuine blockers and for the
-Phase 10 release-approval gate. Implementation proceeds in roadmap order, one
-phase per commit.
+pushing each phase commit. **Phase 10 stops for explicit release approval**
+before any tag / `[Unreleased]` promotion / store submission (`AGENTS.md`
+§ commit/release, § 16).
 
 ## Last completed work
 
-Phase 8: `packages/core/src/evaluate/` — `evaluateCapture(doc)` runs the
-cross-stage fidelity assertions (content present, code accounting,
-citation/footnote resolution, section retention) → `CompletenessReport`
-(`decisions/0031`). `capture()` returns `report`; `contentKnownIncomplete`
-forces at least `partial`. Every fixture has `expected-report.json`;
-`fixtures/articles/section-loss` + `expected-outline.json` pin § 12 gate 5.
-CI green: 19 files / 147 tests.
+Phase 9: `packages/extension` — the loadable Chromium MV3 dev extension.
+Clip page action → inject `capture-in-page.js` (`activeTab` + `scripting`
+only) → pipeline over the live DOM → results page (completeness report +
+Markdown preview + Copy / Send-to-Obsidian (`decisions/0033`) / Download-bundle,
+export-gated). esbuild bundler (`decisions/0032`); `packages/core` is now
+`node:`-free (sync pure-JS SHA-256 in `sha256.ts`); `parseDocument` /
+`captureFromHtml` moved to `pipeline/src/parse.js` so linkedom never enters a
+browser bundle. CI green: 22 files / 160 tests.
 
 ## Unresolved decisions
 
-None blocking. Phase 9 has several **phase-local** ADRs to make: extension
-results surface (popup vs page), extension bundler (deferred from
-`decisions/0010` — likely `vite` + `@crxjs` or `esbuild`), the Obsidian
-handoff mechanism + content-size guard, and in-page vs worker execution
-context. Phase 9's stop-and-ask conditions include: Obsidian handoff can't
-handle planned content sizes; a feature needs a broader browser permission
-than the action requires; the next step is packaging/signing/store submission
-(that is Phase 10 + explicit approval — Phase 9 must not go there).
+None blocking. Phase 10 is corpus + gates + evaluation + security review +
+packaging. Likely phase-local ADRs: only the reference-environment spec for
+the timing gate (recorded in `docs/evaluation/`, ADR if contested).
+Post-MVP roadmap rows/ADRs for anything the evaluation surfaces.
 
 ## Verification state
 
 `pnpm` not on PATH; use `npx --yes pnpm@9.12.0 <cmd>`.
 `npx --yes pnpm@9.12.0 run ci` — green: `format:check` clean, `lint` 0 errors,
-`tsc -b` passes, 19 test files / 147 tests pass, `skill:verify` PASS.
-`node scripts/capture-fixture.mjs --all` — PASS (goldens match, deterministic,
-bundles byte-stable, reports match).
+`tsc -b` passes, 22 test files / 160 tests pass, `skill:verify` PASS.
+`node scripts/capture-fixture.mjs --all` — PASS.
+`pnpm --filter @technical-clipper/extension run build` — produces a loadable
+`dist/` (verified browser-safe: no `node:` / linkedom).
 
 ## Working-tree state
 
 Git repo on `master`, tracking `origin/master`
-(<https://github.com/ctosullivan/technical-clipper.git>). Phases 0–7 pushed;
-Phase 8 commit pending. Nothing tagged or released.
+(<https://github.com/ctosullivan/technical-clipper.git>). Phases 0–8 pushed;
+Phase 9 commit pending. Nothing tagged or released.
 
 ## Next concrete action
 
-Begin **Phase 9** per
-`planning/phase-9-chromium-extension-and-obsidian-handoff.md`: pick the
-extension bundler (ADR) and produce a loadable unpacked `dist/`; wire
-`activeTab` + `scripting` into the manifest (manifest test asserts the
-permission set); `content/capture.ts` clones the live DOM and runs the
-pipeline (network trap kept); a results page shows the preview (sanitized
-render) + the `CompletenessReport`; Copy / Send-to-Obsidian (URI + size
-guard + fallback, ADR) / Download-bundle actions with the export gate
-(`failed` disables, `partial` shows a non-dismissible warning);
-`tests/extension-*.test.ts` over served fixtures. Replace the
-`docs/cli-or-extension-reference.md` stub. Commit `feat(phase-9): …`, push;
-**do not** package for a store or tag.
+Begin **Phase 10** per
+`planning/phase-10-corpus-evaluation-security-review-mvp-release.md`:
+`scripts/fixture-lint.mjs` (corpus completeness + provenance validity),
+`scripts/gates.mjs` (map every § 12 automatable gate to a threshold check),
+fill the article corpus toward ≥ 20 (incl. real revision-pinned Wikipedia if
+raw HTML can be obtained, else keep synthetic + record the gap), the code
+corpus toward ≥ 50 blocks; `docs/evaluation/` (reference environment,
+Obsidian vault check, comparative benchmark, security review); finalize docs;
+assemble the MVP `CHANGELOG.md` entry under `[Unreleased]`. **Then stop and
+request explicit approval to promote `[Unreleased]` and tag the MVP** — do
+not tag, push a release, or submit to a store.

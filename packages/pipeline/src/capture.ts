@@ -40,7 +40,7 @@ import {
   type ConversationAdapter,
   type UserToggles,
 } from '@technical-clipper/adapters';
-import { cloneRoot, parseDocument } from './dom.js';
+import { cloneRoot } from './dom.js';
 import { assertSentinelBalance, substituteSentinels } from './sentinels.js';
 import {
   EXTRACTOR_VERSION,
@@ -50,9 +50,8 @@ import {
 import { runWithNetworkTrap } from './network-trap.js';
 
 export interface CaptureInput {
-  /** Rendered HTML (fixture path) or an already-parsed document (extension path). */
-  html?: string;
-  doc?: Document;
+  /** An already-parsed document. For an HTML string use `captureFromHtml`. */
+  doc: Document;
   url: string;
   canonicalUrl?: string | null;
   /** ISO-8601 UTC; defaults to now. Kept injectable for deterministic tests. */
@@ -192,7 +191,7 @@ function finalize(doc: DocumentIR): CaptureResult {
 
 function runCapture(input: CaptureInput): CaptureResult {
   const capturedAt = input.capturedAt ?? new Date().toISOString();
-  const doc = input.doc ?? parseDocument(input.html ?? '');
+  const doc = input.doc;
   const canonicalUrl = input.canonicalUrl ?? null;
 
   const diagnostics: Diagnostic[] = [];

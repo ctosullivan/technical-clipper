@@ -16,7 +16,7 @@
  */
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { join, basename } from 'node:path';
-import { capture } from '../packages/pipeline/dist/index.js';
+import { captureFromHtml } from '../packages/pipeline/dist/parse.js';
 import {
   canonicalizePretty,
   renderMarkdown,
@@ -43,15 +43,13 @@ function runFixture(dir) {
   const html = readFileSync(join(dir, 'source.html'), 'utf8');
   const url =
     provenance.sourceUrl ?? 'https://fixture.example/' + basename(dir);
-  const result = capture({
-    html,
+  const result = captureFromHtml(html, {
     url,
     canonicalUrl: provenance.canonicalUrl ?? url,
     capturedAt: FIXED_TS,
   });
   // second run for determinism
-  const again = capture({
-    html,
+  const again = captureFromHtml(html, {
     url,
     canonicalUrl: provenance.canonicalUrl ?? url,
     capturedAt: FIXED_TS,

@@ -5,9 +5,9 @@
  * is the canonical compact JSON of an ordered tuple. Ids are a function of
  * captured meaning, never of the page's markup or the tools used.
  */
-import { createHash } from 'node:crypto';
 import { canonicalize } from './canonical.js';
 import { normalizeProse } from './normalize.js';
+import { sha256Bytes } from './sha256.js';
 
 const BASE32_ALPHABET = 'abcdefghijklmnopqrstuvwxyz234567';
 
@@ -31,8 +31,8 @@ function base32Lower(bytes: Uint8Array): string {
 
 /** Compute a 16-char node id from an already-built seed tuple. */
 export function computeNodeId(seed: unknown): string {
-  const digest = createHash('sha256').update(canonicalize(seed)).digest();
-  return base32Lower(new Uint8Array(digest)).slice(0, 16);
+  const digest = sha256Bytes(new TextEncoder().encode(canonicalize(seed)));
+  return base32Lower(digest).slice(0, 16);
 }
 
 /** Seed for a prose block node (`decisions/0014`). */

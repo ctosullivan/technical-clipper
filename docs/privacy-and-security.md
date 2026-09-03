@@ -11,10 +11,16 @@ export behaviour.
   sends page content, telemetry, or usage data anywhere. See
   [`decisions/0001-local-first-offline-capable.md`](../decisions/0001-local-first-offline-capable.md).
 - **Least-privilege manifest.** `packages/extension/manifest.json` requests
-  zero permissions and zero host permissions today. Any future permission
-  addition must be justified by the specific action that needs it — see
-  [`decisions/0009-security-boundary-untrusted-capture.md`](../decisions/0009-security-boundary-untrusted-capture.md)
-  and the stop-and-ask condition in `AGENTS.md` for permission scope.
+  only `activeTab` (read the tab the user clicked the button on, for that
+  click only), `scripting` (inject the capture content script into that tab),
+  and `storage` (hand the result to the results page via
+  `chrome.storage.session`) — and **no host permissions**. No `tabs`, no
+  `<all_urls>`, no background capture, no history access. A manifest test
+  asserts this allowlist so a future phase adding a broader grant regresses
+  loudly. See
+  [`decisions/0009`](../decisions/0009-security-boundary-untrusted-capture.md)
+  and
+  [`decisions/0032`](../decisions/0032-extension-bundler-esbuild.md).
 - **No secrets are persisted.** There is no credential storage, auth flow, or
   account system in the MVP scope.
 
@@ -37,6 +43,8 @@ export behaviour.
 
 ## Reporting a concern
 
-This is a pre-implementation scaffold; there is no shipped software to have a
-vulnerability yet. Once Phase 9 produces a loadable extension, this section
-will be replaced with a real reporting process.
+The extension is a loadable **unpacked dev build** (Phase 9) — it is not
+packaged or published. If you find a security issue in the code, open a
+GitHub issue on <https://github.com/ctosullivan/technical-clipper> describing
+the class of problem (not a working exploit). A formal disclosure process and
+a security contact are finalized as part of the Phase 10 security review.

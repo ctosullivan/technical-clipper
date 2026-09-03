@@ -10,7 +10,9 @@
  */
 export { capture, type CaptureInput, type CaptureResult } from './capture.js';
 export { runWithNetworkTrap, CaptureNetworkError } from './network-trap.js';
-export { parseDocument } from './dom.js';
+// `parseDocument` / `captureFromHtml` live in `./parse.js` (it imports
+// linkedom) and are intentionally NOT re-exported here, so a browser bundle
+// of `@technical-clipper/pipeline` never pulls linkedom in.
 export { EXTRACTOR_VERSION } from './extract/general.js';
 export {
   ROOT_SELECTION_VERSION,

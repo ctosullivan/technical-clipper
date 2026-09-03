@@ -1,25 +1,13 @@
 /**
- * Narrow DOM helpers over the pinned DOM implementation (`decisions/0022`).
- *
- * The pipeline is written against the standard DOM lib types so the same
- * extraction code runs against a real browser `document` in Phase 9. linkedom
- * is used only to turn a fixture HTML string into a `Document`.
+ * Narrow DOM helpers over the standard DOM lib types, so the same extraction
+ * code runs against a fixture-parsed `Document` (linkedom, `src/parse.ts`) and
+ * a real browser `document` in the extension. No DOM *implementation* is
+ * imported here.
  */
-import { parseHTML } from 'linkedom';
 
 export const NODE_ELEMENT = 1;
 export const NODE_TEXT = 3;
 export const NODE_COMMENT = 8;
-
-/** Parse a rendered-HTML fixture string into a DOM `Document` (no scripts run). */
-export function parseDocument(html: string): Document {
-  const looksLikeFullDoc = /<html[\s>]/i.test(html) || /<body[\s>]/i.test(html);
-  const wrapped = looksLikeFullDoc
-    ? html
-    : `<!doctype html><html><head></head><body>${html}</body></html>`;
-  const { document } = parseHTML(wrapped);
-  return document as unknown as Document;
-}
 
 /** Deep-clone a document's `<body>` (or `documentElement`) for mutation. */
 export function cloneRoot(doc: Document): Element {

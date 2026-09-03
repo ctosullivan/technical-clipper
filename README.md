@@ -9,15 +9,31 @@ structured capture bundles. It is a deterministic web document compiler with
 strong code awareness, not an AI summariser and not a general archival
 crawler. Obsidian is the first export target.
 
-## Status: Phase 0 scaffold — no capture behaviour exists yet
+## Status: Phase 9 — loadable dev extension; capture works end to end
 
-Nothing in this repository can capture a page today. `packages/core`,
-`packages/detectors`, and `packages/adapters` are scaffolds whose only
-exported behaviour is throwing `NotImplementedError`; `packages/extension`
-is an empty, zero-permission Manifest V3 shell. See
-[`planning/ROADMAP.md`](planning/ROADMAP.md) for what's implemented versus
-planned, and [`planning/CONTEXT.md`](planning/CONTEXT.md) for the current
-resumption state.
+The full pipeline is implemented: clone the rendered DOM → detect code /
+terminal / tab-group structures → deterministic article-root selection →
+typed IR → profile-aware Markdown (`commonmark` / `gfm` / `obsidian`) → a
+deterministic capture bundle → a completeness report and export gate. The
+Chromium MV3 extension (`packages/extension`) is a **loadable unpacked dev
+build** with a **Clip page** action, a results page (report + preview + Copy /
+Send-to-Obsidian / Download-bundle), and a least-privilege manifest.
+
+Remaining before the MVP tag (Phase 10): fill the fixture corpus to the § 12
+minimums, wire `pnpm run gates`, run the comparative benchmark and security
+review, and get explicit approval to release. See
+[`planning/ROADMAP.md`](planning/ROADMAP.md) and
+[`planning/CONTEXT.md`](planning/CONTEXT.md).
+
+### Load the extension
+
+```sh
+pnpm --filter @technical-clipper/extension run build
+```
+
+then load `packages/extension/dist/` as an unpacked extension in Chromium
+(`chrome://extensions` → Developer mode → Load unpacked). See
+[`docs/cli-or-extension-reference.md`](docs/cli-or-extension-reference.md).
 
 ## What this will prove (the MVP thesis)
 

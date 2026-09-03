@@ -2,14 +2,15 @@
   "manifest_version": 3,
   "name": "technical-clipper (dev)",
   "version": "0.0.0",
-  "description": "Local-first capture of code-heavy technical pages and ChatGPT conversations into deterministic Markdown and structured bundles. Phase 0 scaffold — no capture behaviour implemented yet.",
+  "description": "Local-first capture of code-heavy technical pages and ChatGPT conversations into deterministic Markdown and structured bundles.",
   "action": {
-    "default_title": "technical-clipper (scaffold — no capture yet)"
+    "default_title": "Clip page (technical-clipper)"
   },
   "background": {
-    "service_worker": "src/background.js",
+    "service_worker": "background.js",
     "type": "module"
   },
-  "permissions": [],
-  "host_permissions": []
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": [],
+  "web_accessible_resources": []
 }

@@ -10,13 +10,10 @@
  *   `DocumentIR` with volatile capture-event fields removed.
  * - `HashSet.markdown` / `HashSet.rawPageHtml` — exact rendered bytes.
  */
-import { createHash } from 'node:crypto';
 import { canonicalize } from './canonical.js';
+import { sha256Hex } from './sha256.js';
 
-/** SHA-256 of a UTF-8 string, lowercase hex. */
-export function sha256Hex(input: string): string {
-  return createHash('sha256').update(input, 'utf8').digest('hex');
-}
+export { sha256Hex };
 
 /** Hash of the exact code bytes (`CodeBlockIR.hash`). */
 export function hashCodeText(text: string): string {

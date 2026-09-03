@@ -5,15 +5,15 @@ the _target_ architecture it is heading toward. Do not read the target
 section as already true — it is refined as later phases land, per
 `AGENTS.md` § documentation sync.
 
-## Current state (Phase 8)
+## Current state (Phase 9)
 
-A pnpm/TypeScript workspace. `packages/core` holds the browser-independent
-foundation **plus the IR→Markdown renderer, the deterministic capture bundle,
-and the completeness/evaluate layer**, `packages/detectors` the
-code/terminal/tab-group detectors, `packages/adapters` the ChatGPT
-conversation adapter + ClipSpec seam, and `packages/pipeline` the capture
-orchestrator (article **and** conversation paths); `extension` is still a
-scaffold; plus a development-time Claude skill:
+A pnpm/TypeScript workspace, all five packages implemented: `packages/core`
+(browser-independent foundation + IR→Markdown renderer + deterministic capture
+bundle + completeness/evaluate layer), `packages/detectors`
+(code/terminal/tab-group detectors), `packages/adapters` (ChatGPT conversation
+adapter + ClipSpec seam), `packages/pipeline` (capture orchestrator, article
+**and** conversation paths), and `packages/extension` (the loadable Chromium
+MV3 dev extension); plus a development-time Claude skill:
 
 - `packages/core` — **implemented** (Phase 3): the typed IR family
   (`DocumentIR` / `ArticleIR` / `ConversationIR` / `MessageIR`, the shared
@@ -54,9 +54,15 @@ scaffold; plus a development-time Claude skill:
   metadata only), and the ClipSpec override seam (`resolveClipSpec` +
   `mergeEffectiveConfig`, `decisions/0018`). Message content reuses the
   standard code detectors.
-- `packages/extension` — a Manifest V3 shell with a zero-permission
-  `manifest.json` and an empty background service worker. No capture action,
-  preview UI, or Obsidian handoff exists yet (Phase 9).
+- `packages/extension` — **implemented** (Phase 9): the Chromium MV3
+  extension. The **Clip page** toolbar action injects `capture-in-page.js`
+  (only `activeTab` + `scripting`), which runs the pipeline against the live
+  DOM inside the network trap and posts the result back; the service worker
+  stashes it and opens a results page showing the completeness report + a
+  Markdown preview + Copy / Send-to-Obsidian (`decisions/0033`) /
+  Download-bundle actions, gated by export status. Bundled with esbuild
+  (`decisions/0032`); `core` is now `node:`-free (a sync pure-JS SHA-256).
+  Least-privilege manifest, no host permissions.
 
 - `.claude/skills/markdown-clipping/` — a **development-time** Claude skill
   (Phase 2): profile-separated CommonMark / GFM / Obsidian reference notes, a
@@ -65,15 +71,15 @@ scaffold; plus a development-time Claude skill:
   (`scripts/verify-examples.mjs`). It is not shipped in the extension and is
   never authority to change extraction behaviour (`decisions/0002`, `0021`).
 
-Capture → validated `DocumentIR` → **profile-aware Markdown, a deterministic
-capture bundle, and a completeness report** work end to end for saved HTML
-fixtures (`fixtures/{articles,code,conversations}/*`), each with golden
-`expected.md` / `expected.gfm.md` / `expected.commonmark.md` /
-`expected-hashes.json` / `expected-report.json`. Only the browser extension
-shell (Phase 9) and the release corpus/gates (Phase 10) remain. CI
-(`.github/workflows/ci.yml`) runs
+The full path — Clip page → capture → validated `DocumentIR` →
+profile-aware Markdown, a deterministic capture bundle, a completeness report,
+and the export gate — works end to end. The pipeline is verified over saved
+HTML fixtures (`fixtures/{articles,code,conversations}/*`, each with golden
+`expected.*` files); the extension bundle is built and its browser-safety +
+capture path are tested. Only the release corpus / gates / security review
+(Phase 10) remain. CI (`.github/workflows/ci.yml`) runs
 format-check/lint/typecheck/build/test/skill:verify across the workspace;
-~147 deterministic tests.
+~160 deterministic tests.
 
 The renderer (`packages/core/src/render/`) is one IR walker with three profile
 configs (`decisions/0019`, `0030`); every fenced block is render-back verified
