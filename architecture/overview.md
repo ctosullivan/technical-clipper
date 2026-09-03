@@ -5,10 +5,11 @@ the _target_ architecture it is heading toward. Do not read the target
 section as already true — it is refined as later phases land, per
 `AGENTS.md` § documentation sync.
 
-## Current state (Phase 6)
+## Current state (Phase 7)
 
 A pnpm/TypeScript workspace. `packages/core` holds the browser-independent
-foundation, `packages/detectors` the code/terminal/tab-group detectors,
+foundation **plus the IR→Markdown renderer and the deterministic capture
+bundle**, `packages/detectors` the code/terminal/tab-group detectors,
 `packages/adapters` the ChatGPT conversation adapter + ClipSpec seam, and
 `packages/pipeline` the capture orchestrator (article **and** conversation
 paths); `extension` is still a scaffold; plus a development-time Claude skill:
@@ -63,13 +64,22 @@ paths); `extension` is still a scaffold; plus a development-time Claude skill:
   (`scripts/verify-examples.mjs`). It is not shipped in the extension and is
   never authority to change extraction behaviour (`decisions/0002`, `0021`).
 
-Article, technical-article, **and ChatGPT conversation** capture work end to
-end for saved HTML fixtures (`fixtures/articles/*`, `fixtures/code/*`,
-`fixtures/conversations/*`, verified by `tests/pipeline-*.test.ts` +
-`scripts/capture-fixture.mjs`). There is no Markdown rendering, no capture
-bundle, and no browser extension yet. CI (`.github/workflows/ci.yml`) runs
+Capture → validated `DocumentIR` → **profile-aware Markdown + a deterministic
+capture bundle** works end to end for saved HTML fixtures
+(`fixtures/{articles,code,conversations}/*`), each with golden
+`expected.md` / `expected.gfm.md` / `expected.commonmark.md` /
+`expected-hashes.json`. Only the browser extension shell (Phase 9) and the
+release corpus/gates (Phase 10) remain. CI (`.github/workflows/ci.yml`) runs
 format-check/lint/typecheck/build/test/skill:verify across the workspace;
-~118 deterministic tests.
+~131 deterministic tests.
+
+The renderer (`packages/core/src/render/`) is one IR walker with three profile
+configs (`decisions/0019`, `0030`); every fenced block is render-back verified
+(`decisions/0016`); raw HTML is emitted as fenced text, never markup
+(`decisions/0028`). The bundle (`packages/core/src/bundle/`) writes canonical
+JSON files and a hand-rolled STORE-only deterministic ZIP (`decisions/0029`);
+`manifest.json` separates content identity (hashes) from event metadata
+(timestamp) per `decisions/0017`.
 
 The detector/adapter seam contracts (`ComponentDetector`, `Adapter`,
 `DETECTOR_PRIORITY`, the registries) live in `packages/core/src/seam.ts` —

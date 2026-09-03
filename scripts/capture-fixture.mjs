@@ -17,7 +17,11 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { join, basename } from 'node:path';
 import { capture } from '../packages/pipeline/dist/index.js';
-import { canonicalizePretty } from '../packages/core/dist/index.js';
+import {
+  canonicalizePretty,
+  renderMarkdown,
+  assembleBundle,
+} from '../packages/core/dist/index.js';
 
 const ARTICLES_DIR = 'fixtures/articles';
 const CODE_DIR = 'fixtures/code';
@@ -79,17 +83,42 @@ function checkOne(dir, write) {
   const problems = [];
   if (!deterministic) problems.push('non-deterministic output');
 
-  if (write) {
-    writeFileSync(irPath, irStr);
-    writeFileSync(diagPath, diagStr);
-  } else {
-    if (!existsSync(irPath) || readFileSync(irPath, 'utf8') !== irStr) {
+  // --- rendering + bundle goldens (decisions/0019, 0017) ---
+  const md = {
+    obsidian: renderMarkdown(result.document, { profile: 'obsidian' }).markdown,
+    gfm: renderMarkdown(result.document, { profile: 'gfm' }).markdown,
+    commonmark: renderMarkdown(result.document, { profile: 'commonmark' })
+      .markdown,
+  };
+  const bundle = assembleBundle(result.document, { profile: 'obsidian' });
+  const bundle2 = assembleBundle(result.document, { profile: 'obsidian' });
+  const zipStable =
+    Buffer.from(bundle.zip).toString('base64') ===
+    Buffer.from(bundle2.zip).toString('base64');
+  if (!zipStable) problems.push('bundle ZIP not byte-stable');
+  const hashesStr = canonicalizePretty({
+    documentContentIdentity:
+      bundle.manifest.contentIdentity.documentContentIdentity,
+    markdown: bundle.manifest.contentIdentity.markdown,
+    blocks: bundle.manifest.contentIdentity.blocks,
+    exportStatus: bundle.manifest.exportStatus,
+  });
+
+  const files = {
+    [irPath]: irStr,
+    [diagPath]: diagStr,
+    [join(dir, 'expected.md')]: md.obsidian,
+    [join(dir, 'expected.gfm.md')]: md.gfm,
+    [join(dir, 'expected.commonmark.md')]: md.commonmark,
+    [join(dir, 'expected-hashes.json')]: hashesStr,
+  };
+
+  for (const [path, want] of Object.entries(files)) {
+    if (write) {
+      writeFileSync(path, want);
+    } else if (!existsSync(path) || readFileSync(path, 'utf8') !== want) {
       ok = false;
-      problems.push('expected-ir.json mismatch');
-    }
-    if (!existsSync(diagPath) || readFileSync(diagPath, 'utf8') !== diagStr) {
-      ok = false;
-      problems.push('expected-diagnostics.json mismatch');
+      problems.push(`${basename(path)} mismatch`);
     }
   }
 

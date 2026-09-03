@@ -21,8 +21,13 @@ fixtures/articles/<slug>/
 └── provenance.json          # origin, sourceUrl, licence, (Wikipedia: revision fields)
 ```
 
+Each case also has `expected.md` (obsidian profile), `expected.gfm.md`,
+`expected.commonmark.md`, and `expected-hashes.json` (Phase 7 — rendered
+Markdown per profile + the content-identity hashes).
+
 Regenerate goldens with `node scripts/capture-fixture.mjs --all --write`;
-`tests/pipeline-article.test.ts` fails on any drift or non-determinism.
+`tests/pipeline-*.test.ts` fail on any drift, non-determinism, or bundle-ZIP
+instability.
 
 `fixtures/code/<slug>/` has the same file set; its `source.html` is a full
 page whose article body contains a code / terminal structure, so it exercises

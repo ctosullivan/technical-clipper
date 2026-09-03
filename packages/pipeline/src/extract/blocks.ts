@@ -9,6 +9,7 @@
 import {
   computeNodeId,
   makeDiagnostic,
+  normalizeInlineText,
   normalizeProse,
   proseBlockSeed,
   referenceSeed,
@@ -70,8 +71,10 @@ function extractInlines(
   const out: InlineNode[] = [];
   for (const node of Array.from(el.childNodes)) {
     if (node.nodeType === NODE_TEXT) {
-      const value = normalizeProse(node.textContent ?? '');
-      if (value) out.push({ type: 'text', value });
+      const value = normalizeInlineText(node.textContent ?? '');
+      if (value.trim() || (value === ' ' && out.length > 0)) {
+        out.push({ type: 'text', value });
+      }
       continue;
     }
     if (node.nodeType !== NODE_ELEMENT) continue;

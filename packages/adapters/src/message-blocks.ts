@@ -7,6 +7,7 @@
  */
 import {
   computeNodeId,
+  normalizeInlineText,
   normalizeProse,
   proseBlockSeed,
   referenceSeed,
@@ -38,8 +39,10 @@ function inlines(el: Element, base: string | null): InlineNode[] {
   const out: InlineNode[] = [];
   for (const n of Array.from(el.childNodes)) {
     if (n.nodeType === NODE_TEXT) {
-      const v = normalizeProse(n.textContent ?? '');
-      if (v) out.push({ type: 'text', value: v });
+      const v = normalizeInlineText(n.textContent ?? '');
+      if (v.trim() || (v === ' ' && out.length > 0)) {
+        out.push({ type: 'text', value: v });
+      }
       continue;
     }
     if (n.nodeType !== NODE_ELEMENT) continue;

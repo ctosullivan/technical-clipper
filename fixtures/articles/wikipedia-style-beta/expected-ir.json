@@ -30,7 +30,7 @@
         "children": [
           {
             "type": "text",
-            "value": "The"
+            "value": "The "
           },
           {
             "children": [
@@ -43,7 +43,7 @@
           },
           {
             "type": "text",
-            "value": "illustrates tables and figures."
+            "value": " illustrates tables and figures."
           }
         ],
         "id": "a7mfvgbewkmr7ot3",
@@ -242,7 +242,7 @@
   "diagnostics": [],
   "hashes": {
     "blocks": {},
-    "documentContentIdentity": "35498e28bc69d7606ee8f7442e629fd7449d047bfcdfbc4de23628c58f1d82c7",
+    "documentContentIdentity": "2302446611a1237ba19a60dd990bdaaa2fe3993de744ea1cf1746913ec9201be",
     "markdown": null,
     "normalizationRulesets": {
       "code": "norm/code@1",

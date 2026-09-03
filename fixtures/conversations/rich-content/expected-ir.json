@@ -106,7 +106,7 @@
             "children": [
               {
                 "type": "text",
-                "value": "See the"
+                "value": "See the "
               },
               {
                 "children": [
@@ -122,7 +122,7 @@
               },
               {
                 "type": "text",
-                "value": "for details."
+                "value": " for details."
               }
             ],
             "id": "k3m2n4g5tkncy2xt",
@@ -198,7 +198,7 @@
             "type": "list"
           }
         ],
-        "hash": "0fd9eb13c67d214c884a09c374bbdb7ca23176ea386391d1e448096cddd97f34",
+        "hash": "2636a3fb7ba2a6c3869f95ee4003148b01d0f82e8b2b811cdf6775f00d7f1cf1",
         "id": "rhtuvd2umd7jaxig",
         "order": 1,
         "role": "assistant",
@@ -212,9 +212,9 @@
   "hashes": {
     "blocks": {
       "arpylrst7bq35rgm": "41af52fdb39bcfc27bcd8419b2f7e8c8975096b2a85888d02fe2791196de2302",
-      "rhtuvd2umd7jaxig": "0fd9eb13c67d214c884a09c374bbdb7ca23176ea386391d1e448096cddd97f34"
+      "rhtuvd2umd7jaxig": "2636a3fb7ba2a6c3869f95ee4003148b01d0f82e8b2b811cdf6775f00d7f1cf1"
     },
-    "documentContentIdentity": "d3e33bb60a548b963acec28439193aec031945a65cc41aea18630f77e13136b9",
+    "documentContentIdentity": "071540b02133f3c384fe9076f7de2dcfae56ecd050fb306fb46747587ddd66e2",
     "markdown": null,
     "normalizationRulesets": {
       "code": "norm/code@1",

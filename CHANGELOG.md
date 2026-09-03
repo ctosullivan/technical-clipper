@@ -9,6 +9,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Phase 7: deterministic rendering and the capture bundle.
+  - `packages/core/src/render/` — `renderMarkdown(doc, { profile })`: one IR
+    walker, three profile configs (`commonmark` / `gfm` / `obsidian`,
+    `decisions/0019`), the `decisions/0030` degrade table, `selectFence`
+    integration with render-back verification (`TC-RENDER-CODE-MISMATCH`),
+    labelled code groups + terminal input/output, obsidian YAML frontmatter,
+    and raw HTML emitted as fenced text (`decisions/0028`).
+  - `packages/core/src/bundle/` — canonical JSON file writers,
+    `manifest.json` (content-identity vs. event-metadata split,
+    `decisions/0017`), a hand-rolled STORE-only deterministic ZIP writer
+    (`decisions/0029`, with a table-based CRC-32), and `assembleBundle()`.
+  - `decisions/0028` (HTML → fenced text), `0029` (STORE-only ZIP), `0030`
+    (profile-degrade table).
+  - Every fixture now carries golden `expected.md` / `expected.gfm.md` /
+    `expected.commonmark.md` / `expected-hashes.json`; `scripts/capture-fixture.mjs`
+    renders all three profiles and checks bundle byte-stability.
+  - `docs/capture-format.md` replaced with the implemented contract.
+
 - Phase 6: structured adapters — the conversation path and the ClipSpec seam.
   - `@technical-clipper/adapters`: the ChatGPT current-branch conversation
     adapter (`ConversationIR`; role + branch evidence per `decisions/0026`;

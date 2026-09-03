@@ -31,7 +31,7 @@
         "children": [
           {
             "type": "text",
-            "value": "A"
+            "value": "A "
           },
           {
             "children": [
@@ -44,7 +44,7 @@
           },
           {
             "type": "text",
-            "value": "is a small component. See the"
+            "value": " is a small component. See the "
           },
           {
             "children": [
@@ -60,7 +60,7 @@
           },
           {
             "type": "text",
-            "value": "for details."
+            "value": " for details."
           }
         ],
         "id": "2p3rkyk65plqwakm",
@@ -103,7 +103,11 @@
                 "children": [
                   {
                     "type": "text",
-                    "value": "Dynamic widgets"
+                    "value": "Dynamic widgets "
+                  },
+                  {
+                    "type": "text",
+                    "value": " "
                   }
                 ],
                 "id": "4pytls7vr5s5aaj6",
@@ -210,7 +214,7 @@
     },
     "footnotes": [],
     "metadata": {
-      "lead": "Ais a small component. See thefor details.",
+      "lead": "A  is a small component. See the  for details.",
       "outline": [
         {
           "id": "ch5hgp4hszb4olyc",
@@ -247,7 +251,7 @@
   "diagnostics": [],
   "hashes": {
     "blocks": {},
-    "documentContentIdentity": "4d62eed33f06dd0bf8db0cd8ff86daaa3de7d9e7f79f3433d02b3d89194b5695",
+    "documentContentIdentity": "405d52303d88ca7ea1690ec75576d0f0fd2ab15d86da32040dffec2f9794c2c4",
     "markdown": null,
     "normalizationRulesets": {
       "code": "norm/code@1",

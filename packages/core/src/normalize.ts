@@ -38,6 +38,19 @@ export function normalizeProse(input: string): string {
   return s.trim();
 }
 
+/**
+ * Like {@link normalizeProse} but **does not trim** — a leading/trailing
+ * single space is preserved. Used for an individual inline text run so the
+ * spaces between adjacent inline nodes (`text` / `strong` / `codeSpan` / …)
+ * survive; the block renderer trims the assembled line.
+ */
+export function normalizeInlineText(input: string): string {
+  let s = input.replace(/\r\n?/g, '\n');
+  s = s.normalize('NFC');
+  s = s.replace(ZERO_WIDTH, '');
+  return s.replace(/[ \t\n]+/g, ' ');
+}
+
 export interface CodeNormalizationResult {
   text: string;
   bomStripped: boolean;

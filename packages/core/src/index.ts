@@ -33,6 +33,10 @@ export * from './validate.js';
 // --- detector / adapter seam contracts ---
 export * from './seam.js';
 
+// --- rendering + capture bundle ---
+export * from './render/index.js';
+export * from './bundle/index.js';
+
 /**
  * Thrown by scaffolding stubs in `@technical-clipper/detectors` /
  * `@technical-clipper/adapters` that intentionally have no behaviour yet

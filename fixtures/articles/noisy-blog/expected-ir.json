@@ -52,7 +52,7 @@
         "children": [
           {
             "type": "text",
-            "value": "More real content with a"
+            "value": "More real content with a "
           },
           {
             "children": [
@@ -129,7 +129,7 @@
   "diagnostics": [],
   "hashes": {
     "blocks": {},
-    "documentContentIdentity": "e9902ed37e668044b106571211eed774d7cd603f6dcd97985115bbe0cc9030ae",
+    "documentContentIdentity": "6f08291b0f73cad06269149c58d3ec8bb6f1b4999a58c17cfa49a9946c7048e6",
     "markdown": null,
     "normalizationRulesets": {
       "code": "norm/code@1",

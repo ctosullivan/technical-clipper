@@ -2,7 +2,41 @@
 
 ## Status
 
-planned
+done
+
+## Completion evidence
+
+- **`packages/core/src/render/`:** `profiles.ts` (capability matrix),
+  `frontmatter.ts` (obsidian YAML), `markdown.ts` (`renderMarkdown` — the
+  single IR walker, three profile configs, degrade table, `selectFence` +
+  render-back, code groups, terminals, tables, figures, footnotes,
+  references), `index.ts`.
+- **`packages/core/src/bundle/`:** `zip.ts` (hand-rolled STORE-only
+  deterministic ZIP + table CRC-32), `assemble.ts` (`assembleBundle`,
+  `manifest.json` identity/event split, canonical JSON writers, raw-HTML
+  inclusion policy), `index.ts`.
+- **ADRs:** `decisions/0028` (HTML → fenced text, no sanitizer in core),
+  `0029` (STORE-only ZIP), `0030` (profile-degrade table).
+- **Fixtures:** every `articles/*` / `code/*` / `conversations/*` fixture now
+  has `expected.md` (obsidian), `expected.gfm.md`, `expected.commonmark.md`,
+  and `expected-hashes.json`; `scripts/capture-fixture.mjs` renders all three
+  profiles + asserts bundle ZIP byte-stability; `tests/pipeline-*.test.ts`
+  drive it via `--all` / `--code` / `--conversations`.
+- **Tests:** `packages/core/src/render/markdown.test.ts` (8 — profiles,
+  render-back, table degrade, pipe escape, code group, HTML-as-fenced-text,
+  determinism); `packages/core/src/bundle/bundle.test.ts` (6 — ZIP
+  determinism + ordering, known CRC-32, five core files, content-vs-event
+  identity, raw-HTML policy). `pnpm run ci` green: 17 test files / 131 tests.
+- **Docs:** `docs/capture-format.md` stub replaced with the implemented
+  contract; `architecture/overview.md` updated.
+- **Deferred as planned:** `raw/page.html` production + sanitization is wired
+  in Phase 9 (the pipeline has the DOM; `assembleBundle` already takes the
+  `rawPageHtml` option and applies the kind-defaulted inclusion policy).
+  DEFLATE compression deferred (`decisions/0029`).
+- **Commit:** see `planning/CONTEXT.md`.
+
+The scope and plan below are the original Phase 1 statement, retained for
+context.
 
 ## Goal and user-visible outcome
 
