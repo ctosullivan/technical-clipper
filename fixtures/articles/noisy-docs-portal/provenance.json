@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://example.com/docs/config/env",
+  "canonicalUrl": "https://example.com/docs/config/env",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "Noisy docs page: cookie-consent, masthead nav, breadcrumbs, docs sidebar, related-content aside, newsletter signup, footer nav around a short real body. NOT a real page.",
+  "producedByExtractorVersion": "1.0.0"
+}

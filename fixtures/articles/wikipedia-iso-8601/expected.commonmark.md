@@ -84,9 +84,7 @@ Examples:
 
 ### Week dates
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISO_week_date" title="ISO week date">ISO week date</a>
-```
+Main article: [ISO week date](https://en.wikipedia.org/wiki/ISO_week_date "ISO week date")
 
 - **YYYY-Www:** YYYY-Www-D · **_or_:** _or_ · **YYYYWww:** YYYYWwwD
 
@@ -273,9 +271,7 @@ It is based on syntax from [iCalendar](https://en.wikipedia.org/wiki/ICalendar "
 
 ## Truncated representations (deprecated)
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/#Reduced_precision" title="">§<span typeof="mw:Entity">&#160;</span>Reduced precision</a>
-```
+Not to be confused with [§Reduced precision](https://en.wikipedia.org/wiki/#Reduced_precision).
 
 ISO8601:2000 allowed truncation (by agreement), where leading components of a date or time are omitted. Notably, this allowed two-digit years to be used as well as the ambiguous formats YY-MM-DD and YYMMDD. This provision was removed in ISO8601:2004.
 

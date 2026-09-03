@@ -1,0 +1,137 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 132,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 102,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "blocklevel code only"
+          }
+        ],
+        "id": "5aznjpqb7wphvj6e",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Intro paragraph for context."
+          }
+        ],
+        "id": "udqqftl2sppadhy7",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/blocklevel-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "f7153d13632303219a147766bbc6943763b548d2312af224ebb8f23359108da6",
+          "highlightedLines": null,
+          "id": "vrv72lvj5blepbpc",
+          "language": "shell",
+          "languageEvidence": "inferred-heuristic",
+          "text": "$ git status\nOn branch master\nnothing to commit, working tree clean\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Trailing paragraph."
+          }
+        ],
+        "id": "mrihvlfehy7nagvr",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Intro paragraph for context.",
+      "outline": [
+        {
+          "id": "5aznjpqb7wphvj6e",
+          "level": 1,
+          "text": "blocklevel code only"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [
+    {
+      "blocksExport": false,
+      "code": "TC-EXTRACT-LANG-LOWCONF",
+      "message": "code/blocklevel-code: language 'shell' inferred heuristically",
+      "phase": "extract",
+      "severity": "warning",
+      "sourceLocation": {
+        "nodeId": "vrv72lvj5blepbpc"
+      }
+    }
+  ],
+  "hashes": {
+    "blocks": {
+      "vrv72lvj5blepbpc": "f7153d13632303219a147766bbc6943763b548d2312af224ebb8f23359108da6"
+    },
+    "documentContentIdentity": "91c18baf06c9a73b06e231014cfd2cc2b55ecbe133d553cf45b3ad63b67bea8e",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://fixture.example/code/blocklevel-code-only",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://fixture.example/code/blocklevel-code-only",
+    "title": "blocklevel code only"
+  }
+}

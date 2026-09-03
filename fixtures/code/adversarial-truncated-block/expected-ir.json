@@ -1,0 +1,126 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 139,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 109,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "adversarial truncated block"
+          }
+        ],
+        "id": "u6ssdexvrtjkjhsq",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Intro paragraph for context."
+          }
+        ],
+        "id": "udqqftl2sppadhy7",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "51b1587679b9f2ef254d283ac18b856f7fcbfe9f3083ce2e472c33f0721fe2d5",
+          "highlightedLines": null,
+          "id": "uztqhmory23whtcp",
+          "language": "python",
+          "languageEvidence": "class-token",
+          "text": "def process(items):\n    for item in items:\n        handle(item)\n    # ... 40 lines omitted ...\n    return results\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Trailing paragraph."
+          }
+        ],
+        "id": "mrihvlfehy7nagvr",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Intro paragraph for context.",
+      "outline": [
+        {
+          "id": "u6ssdexvrtjkjhsq",
+          "level": 1,
+          "text": "adversarial truncated block"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {
+      "uztqhmory23whtcp": "51b1587679b9f2ef254d283ac18b856f7fcbfe9f3083ce2e472c33f0721fe2d5"
+    },
+    "documentContentIdentity": "3801bbef0b892607e5258ede48f0b5db747b1740947901dfe80360b72a537276",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://fixture.example/code/adversarial-truncated-block",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://fixture.example/code/adversarial-truncated-block",
+    "title": "adversarial truncated block"
+  }
+}

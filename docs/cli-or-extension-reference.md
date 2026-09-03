@@ -7,12 +7,14 @@ explicit approval, Phase 10).
 ## Build and load
 
 ```sh
-pnpm --filter @technical-clipper/extension run build
+pnpm --filter @technical-clipper/extension run build   # -> packages/extension/dist/
+pnpm package:extension                                  # -> dist-artifacts/<tag>/ + <tag>.zip
 ```
 
-produces `packages/extension/dist/` (`decisions/0032`). In Chromium:
-`chrome://extensions` → enable Developer mode → **Load unpacked** →
-`packages/extension/dist`.
+Both produce an unpacked build (`decisions/0032`); `package:extension` also
+stamps a versioned folder and a deterministic zip for manual install. In
+Chromium: `chrome://extensions` → enable Developer mode → **Load unpacked** →
+`packages/extension/dist` (or the unpacked folder under `dist-artifacts/`).
 
 ## Permissions
 
@@ -54,6 +56,7 @@ failed` code counts, citations resolved, sections kept (when known), and
 ## Known limitations (MVP)
 
 - Chromium Manifest V3 only (`decisions/0007`).
-- The content-script bundle is ~105 KB unminified.
+- The content-script bundle is ~110 KB unminified (linkedom is excluded — the
+  content script uses the live DOM); minification is deferred (`decisions/0032`).
 - No options/settings page — profile and raw-HTML are per-capture toggles;
   there is no persisted vault name yet.

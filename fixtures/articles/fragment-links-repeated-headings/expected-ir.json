@@ -1,0 +1,534 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 384,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 384,
+          "selectorPath": "main[1]/article[1]"
+        },
+        {
+          "score": 354,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]/article[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Configuration options"
+          }
+        ],
+        "id": "a3nwv3i33ids7lwx",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Each subsystem below has its own "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Options"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Examples"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": " section. Jump straight to "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "logging options"
+              }
+            ],
+            "href": "https://docs.example/config/options#logging-options",
+            "id": "y32adyoltc3tgfog",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " or "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "cache options"
+              }
+            ],
+            "href": "https://docs.example/config/options#cache-options",
+            "id": "zig4duutzftz5l45",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "bdz2vi7uzygjofcm",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Logging"
+          }
+        ],
+        "id": "o3rr23xf7vwwvvoq",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Options"
+          }
+        ],
+        "id": "272p6wamlitmh47i",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "id": "dby3vk5peoakz54h",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "codeSpan",
+                    "value": "level"
+                  },
+                  {
+                    "type": "text",
+                    "value": " "
+                  },
+                  {
+                    "type": "text",
+                    "value": "—"
+                  },
+                  {
+                    "type": "text",
+                    "value": " one of "
+                  },
+                  {
+                    "type": "codeSpan",
+                    "value": "debug"
+                  },
+                  {
+                    "type": "text",
+                    "value": ", "
+                  },
+                  {
+                    "type": "codeSpan",
+                    "value": "info"
+                  },
+                  {
+                    "type": "text",
+                    "value": ", "
+                  },
+                  {
+                    "type": "codeSpan",
+                    "value": "warn"
+                  },
+                  {
+                    "type": "text",
+                    "value": ", "
+                  },
+                  {
+                    "type": "codeSpan",
+                    "value": "error"
+                  },
+                  {
+                    "type": "text",
+                    "value": "."
+                  }
+                ],
+                "id": "cxelxhkypyemdsfn",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "gc6du3kolulb2g3r",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "codeSpan",
+                    "value": "json"
+                  },
+                  {
+                    "type": "text",
+                    "value": " "
+                  },
+                  {
+                    "type": "text",
+                    "value": "—"
+                  },
+                  {
+                    "type": "text",
+                    "value": " emit one JSON object per line when "
+                  },
+                  {
+                    "type": "codeSpan",
+                    "value": "true"
+                  },
+                  {
+                    "type": "text",
+                    "value": "."
+                  }
+                ],
+                "id": "eqobrpimtr7gl6yy",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "v5tyuiimfldnvuer",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Examples"
+          }
+        ],
+        "id": "l2e6bauov4cvecbq",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "See the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "cache examples"
+              }
+            ],
+            "href": "https://docs.example/config/options#cache-examples",
+            "id": "i3n4tz7tbx7zax3o",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " for the matching pattern."
+          }
+        ],
+        "id": "qj6y7nu34nabrlbw",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "01e212d7956df165ccfa07ba912f8552d2c6cf5d37e64641eccf1d1880c7cc95",
+          "highlightedLines": null,
+          "id": "glpx7iwkxhzfl3z3",
+          "language": "toml",
+          "languageEvidence": "class-token",
+          "text": "[logging]\nlevel = \"info\"\njson = true\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Cache"
+          }
+        ],
+        "id": "lgvfwoqxpcyocdjc",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Options"
+          }
+        ],
+        "id": "p4dndg7nlb3kow5i",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "id": "ja6mrmj24jgi5cfr",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "codeSpan",
+                    "value": "maxEntries"
+                  },
+                  {
+                    "type": "text",
+                    "value": " "
+                  },
+                  {
+                    "type": "text",
+                    "value": "—"
+                  },
+                  {
+                    "type": "text",
+                    "value": " evict least-recently-used past this count."
+                  }
+                ],
+                "id": "gxa7glze3zqczxss",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "px7y4dh6ku5co6lr",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "codeSpan",
+                    "value": "ttlSeconds"
+                  },
+                  {
+                    "type": "text",
+                    "value": " "
+                  },
+                  {
+                    "type": "text",
+                    "value": "—"
+                  },
+                  {
+                    "type": "text",
+                    "value": " hard expiry regardless of use."
+                  }
+                ],
+                "id": "gqkkmyjqpmxuj5vj",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "sx2f7n4qzwcgcih7",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Examples"
+          }
+        ],
+        "id": "du2ab7i2q3adhuww",
+        "level": 3,
+        "type": "heading"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "96034e988105961feb7a7c77292e658009149b39aa86b7d7ac089bb64788d015",
+          "highlightedLines": null,
+          "id": "v5t2mrptf5jql5a6",
+          "language": "toml",
+          "languageEvidence": "class-token",
+          "text": "[cache]\nmaxEntries = 5000\nttlSeconds = 300\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Back to "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "logging"
+              }
+            ],
+            "href": "https://docs.example/config/options#logging",
+            "id": "wbvcvvevpqrvp7sr",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "rmzoj6we6dw54hf4",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Each subsystem below has its own  and  section. Jump straight to  or .",
+      "outline": [
+        {
+          "id": "a3nwv3i33ids7lwx",
+          "level": 1,
+          "text": "Configuration options"
+        },
+        {
+          "id": "o3rr23xf7vwwvvoq",
+          "level": 2,
+          "text": "Logging"
+        },
+        {
+          "id": "272p6wamlitmh47i",
+          "level": 3,
+          "text": "Options"
+        },
+        {
+          "id": "l2e6bauov4cvecbq",
+          "level": 3,
+          "text": "Examples"
+        },
+        {
+          "id": "lgvfwoqxpcyocdjc",
+          "level": 2,
+          "text": "Cache"
+        },
+        {
+          "id": "p4dndg7nlb3kow5i",
+          "level": 3,
+          "text": "Options"
+        },
+        {
+          "id": "du2ab7i2q3adhuww",
+          "level": 3,
+          "text": "Examples"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": [
+      {
+        "approxTextLength": 4,
+        "reason": "footer",
+        "selectorPath": "footer[1]"
+      },
+      {
+        "approxTextLength": 4,
+        "reason": "navigation",
+        "selectorPath": "header[1]/nav[1]"
+      }
+    ]
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {
+      "glpx7iwkxhzfl3z3": "01e212d7956df165ccfa07ba912f8552d2c6cf5d37e64641eccf1d1880c7cc95",
+      "v5t2mrptf5jql5a6": "96034e988105961feb7a7c77292e658009149b39aa86b7d7ac089bb64788d015"
+    },
+    "documentContentIdentity": "a7b2176d6b98c5baf52158e26119fb9badd4b42f7f973e2385609bbef9190ae0",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://docs.example/config/options",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://docs.example/config/options",
+    "title": "Configuration options"
+  }
+}

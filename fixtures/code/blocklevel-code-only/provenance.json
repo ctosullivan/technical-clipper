@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/blocklevel-code-only",
+  "canonicalUrl": "https://fixture.example/code/blocklevel-code-only",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "blocklevel-code",
+  "notes": "A bare <code style=display:block> with no <pre> wrapper — block-level code detection without a <pre>.",
+  "producedByExtractorVersion": "1.0.0"
+}

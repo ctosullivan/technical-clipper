@@ -1,50 +1,71 @@
 # Privacy and security
 
-This document is partly current (the invariants below already hold, even
-though no capture behaviour exists yet) and partly forward-looking (marked
-explicitly). It will grow as later phases add real capture, rendering, and
-export behaviour.
+This describes the shipped MVP behaviour. The security review that backs it is
+[`docs/evaluation/security-review.md`](evaluation/security-review.md).
 
-## Current invariants (Phase 0)
+## Invariants
 
-- **No network calls in the deterministic path.** Nothing in this repository
-  sends page content, telemetry, or usage data anywhere. See
-  [`decisions/0001-local-first-offline-capable.md`](../decisions/0001-local-first-offline-capable.md).
+- **No network calls in the capture path.** `runWithNetworkTrap()` replaces
+  `fetch`, `XMLHttpRequest`, `WebSocket`, `EventSource`, `importScripts`, and
+  `navigator.sendBeacon` with throwing stubs for the duration of a capture.
+  Release gate 12 independently proves zero network calls over the fixture
+  corpus. Nothing sends page content, telemetry, or usage data anywhere. See
+  [`decisions/0001`](../decisions/0001-local-first-offline-capable.md),
+  [`decisions/0009`](../decisions/0009-security-boundary-untrusted-capture.md).
 - **Least-privilege manifest.** `packages/extension/manifest.json` requests
-  only `activeTab` (read the tab the user clicked the button on, for that
-  click only), `scripting` (inject the capture content script into that tab),
-  and `storage` (hand the result to the results page via
-  `chrome.storage.session`) — and **no host permissions**. No `tabs`, no
-  `<all_urls>`, no background capture, no history access. A manifest test
-  asserts this allowlist so a future phase adding a broader grant regresses
-  loudly. See
-  [`decisions/0009`](../decisions/0009-security-boundary-untrusted-capture.md)
-  and
-  [`decisions/0032`](../decisions/0032-extension-bundler-esbuild.md).
-- **No secrets are persisted.** There is no credential storage, auth flow, or
-  account system in the MVP scope.
+  only `activeTab`, `scripting`, and `storage`, with **no host permissions**.
+  No `tabs`, no `<all_urls>`, no `webRequest`, no `downloads`, no background
+  capture, no history access. Capture runs only on the tab whose toolbar
+  button you clicked, for that click. `manifest.test.ts` and gate 14 assert the
+  allowlist so a future broader grant regresses loudly.
+- **Captured content is untrusted and never executed.** Page HTML, text, and
+  metadata are parsed and transformed, never `eval`'d and never inserted into
+  any extension page as markup. The preview is `<pre>` text. Raw HTML in the IR
+  is emitted as a fenced ` ```html ` code block, never as live markup
+  (`decisions/0028`).
+- **Nothing is persisted but the last capture.** The extension writes exactly
+  one value — the most recent capture result — to `chrome.storage.session`,
+  overwritten each capture and gone when the browser session ends. No
+  `storage.local`, no `localStorage`, no cookies, no IndexedDB. No credential
+  storage, auth flow, or account system.
+- **Only the visible page state is captured.** Hidden ChatGPT branches, deleted
+  edits, and model reasoning are never captured (`decisions/0008`, `0026`).
+  Attachments are recorded as metadata only, never fetched. Images are
+  referenced by URL, never mirrored.
+- **Raw HTML inclusion defaults off for conversations** (`decisions/0017`), on
+  for articles; the toggle is shown before every export.
 
-## Planned (not yet implemented)
+## `raw/page.html` in the bundle
 
-- Captured HTML and page metadata will be treated as untrusted at every
-  boundary: never executed, never injected unsanitized into extension pages.
-- ChatGPT captures need explicit sanitization/privacy handling before export,
-  since conversation content is more sensitive than a public article. Raw
-  HTML inclusion defaults **off** for `conversation` captures (`decisions/0017`,
-  implemented in Phase 7); the conversation adapter (Phase 6) already reads
-  only the currently selected branch and downloads nothing.
-- The extension will only ever capture the currently rendered, user-visible
-  page state — see
-  [`decisions/0008-chatgpt-current-branch-scope.md`](../decisions/0008-chatgpt-current-branch-scope.md)
-  and [`decisions/0026-chatgpt-branch-and-role-evidence.md`](../decisions/0026-chatgpt-branch-and-role-evidence.md).
-  Hidden branches, deleted edits, and internal reasoning are never captured;
-  attachments are recorded as metadata only, never fetched.
-- A security review is a named MVP release gate (Phase 10).
+When you include raw HTML, the extension stores a **sanitised** copy: `<script>`,
+`<style>`, `<template>`, and stylesheet links are removed, along with every
+`on*` handler attribute and any `javascript:` URL. This is defence-in-depth —
+the extension itself never renders this file. It is **not** a full HTML
+sanitiser (it does not neutralise every exotic vector); if you feed
+`raw/page.html` to another tool, that tool is responsible for handling it
+safely.
 
-## Reporting a concern
+## What you are responsible for
 
-The extension is a loadable **unpacked dev build** (Phase 9) — it is not
-packaged or published. If you find a security issue in the code, open a
-GitHub issue on <https://github.com/ctosullivan/technical-clipper> describing
-the class of problem (not a working exploit). A formal disclosure process and
-a security contact are finalized as part of the Phase 10 security review.
+A capture is your data, and the tool keeps it local — but you decide where it
+goes next:
+
+- A page you capture may itself contain secrets: a logged-in dashboard, a
+  token in example code, private conversation content. The full preview and the
+  export gate let you see exactly what will leave the browser before you copy,
+  send to Obsidian, or download the bundle.
+- `Send to Obsidian` puts the note content in an `obsidian://new` URI;
+  `Download bundle` writes it to your disk. Both are explicit actions on
+  content you have previewed.
+- There is no telemetry and no "phone home" — but equally, no server-side
+  backup. If you lose the bundle, it is gone.
+
+## Reporting a security issue
+
+The extension is currently a loadable **unpacked dev build** — not packaged or
+published. Report a suspected vulnerability by opening a GitHub issue at
+<https://github.com/ctosullivan/technical-clipper> that describes the **class**
+of problem (not a working exploit or a step-by-step extraction path). If the
+issue is sensitive, open a minimal issue asking for a private channel and a
+maintainer will follow up. Findings are tracked to closure in
+[`docs/evaluation/security-review.md`](evaluation/security-review.md).

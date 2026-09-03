@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://docs.example/api/fetch-json",
+  "canonicalUrl": "https://docs.example/api/fetch-json",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "API reference page: param table, code example, nested error list, sidebar + footer chrome. NOT a real page.",
+  "producedByExtractorVersion": "1.0.0"
+}

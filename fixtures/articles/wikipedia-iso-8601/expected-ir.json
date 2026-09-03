@@ -2609,9 +2609,26 @@
         "type": "heading"
       },
       {
-        "id": "2l6y6z7nxmjkna2p",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/ISO_week_date\" title=\"ISO week date\">ISO week date</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Main article: "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "ISO week date"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/ISO_week_date",
+            "id": "wda376n3xbcmywtn",
+            "title": "ISO week date",
+            "type": "link"
+          }
+        ],
+        "id": "c5wwtz6nmj75lnel",
+        "type": "paragraph"
       },
       {
         "id": "kevfqjvpnke26iqm",
@@ -2759,7 +2776,7 @@
             "value": ", from 1 through 7, beginning with Monday and ending with Sunday."
           }
         ],
-        "id": "37nf6dq7qyjdjrt5",
+        "id": "bn2vy6pzu2m7a7ei",
         "type": "paragraph"
       },
       {
@@ -2769,7 +2786,7 @@
             "value": "There are several mutually equivalent and compatible descriptions of week 01:"
           }
         ],
-        "id": "wbiq4y7hyrzr2dk5",
+        "id": "rs22qtiu3eibtrsi",
         "type": "paragraph"
       },
       {
@@ -2800,7 +2817,7 @@
                     "value": " in the starting year (considering that Saturdays, Sundays and 1 January are non-working days),"
                   }
                 ],
-                "id": "5suo33az7lnacilo",
+                "id": "enz6sciotezud6ma",
                 "type": "paragraph"
               }
             ],
@@ -2817,7 +2834,7 @@
                     "value": "the week with the starting year's first Thursday in it (the formal ISO definition),"
                   }
                 ],
-                "id": "nmgqzs5mccznd2in",
+                "id": "s6hpbp2fvlsnv2ae",
                 "type": "paragraph"
               }
             ],
@@ -2834,7 +2851,7 @@
                     "value": "the week with 4 January in it,"
                   }
                 ],
-                "id": "kd7tqnsrw2vy4mre",
+                "id": "nayhf64rsy6suf3r",
                 "type": "paragraph"
               }
             ],
@@ -2851,7 +2868,7 @@
                     "value": "the first week with the majority (four or more) of its days in the starting year, and"
                   }
                 ],
-                "id": "3bibbcubaoffinfl",
+                "id": "w6zyywmczolzzyfp",
                 "type": "paragraph"
               }
             ],
@@ -2868,7 +2885,7 @@
                     "value": "the week starting with the Monday in the period 29 December to 4 January."
                   }
                 ],
-                "id": "rdqiqqaleb4jwjy5",
+                "id": "q5zwwovl5hhiwgct",
                 "type": "paragraph"
               }
             ],
@@ -2889,7 +2906,7 @@
             "value": "As a consequence, if 1 January is on a Monday, Tuesday, Wednesday or Thursday, it is in week 01. If 1 January is on a Friday, Saturday or Sunday, it is in week 52 or 53 of the previous year (there is no week 00). 28 December is always in the last week of its year."
           }
         ],
-        "id": "6wzkv4zykiybe4k7",
+        "id": "5l3viuqp5d2b3356",
         "type": "paragraph"
       },
       {
@@ -2899,7 +2916,7 @@
             "value": "The week number can be described by counting the Thursdays: Week 12 contains the 12th Thursday of the year."
           }
         ],
-        "id": "e7rascxybbdta3c2",
+        "id": "hbfrmayipinqn4i6",
         "type": "paragraph"
       },
       {
@@ -2922,7 +2939,7 @@
             "value": " starts at the first day (Monday) of week 01 and ends at the Sunday before the new ISO year (hence without overlap or gap). It consists of 52 or 53 full weeks. The first ISO week of a year may have up to three days that are actually in the Gregorian calendar year that is ending; if three, they are Monday, Tuesday and Wednesday. Similarly, the last ISO week of a year may have up to three days that are actually in the Gregorian calendar year that is starting; if three, they are Friday, Saturday, and Sunday. The Thursday of each ISO week is always in the Gregorian calendar year denoted by the ISO week-numbering year."
           }
         ],
-        "id": "r35d4br4btmpb6ux",
+        "id": "gt6go2nhnhqou435",
         "type": "paragraph"
       },
       {
@@ -2932,7 +2949,7 @@
             "value": "Examples:"
           }
         ],
-        "id": "v543xkbjqku5ajhl",
+        "id": "6gei4lywfkmdnlys",
         "type": "paragraph"
       },
       {
@@ -2959,7 +2976,7 @@
                     "value": "\""
                   }
                 ],
-                "id": "zzwxfg4dl5i4q2gs",
+                "id": "b5vgz4qxyumjgjvs",
                 "type": "paragraph"
               }
             ],
@@ -2988,7 +3005,7 @@
                     "value": "\""
                   }
                 ],
-                "id": "o2msbzreyabpbbaw",
+                "id": "tr56zdtsqgxj25t3",
                 "type": "paragraph"
               }
             ],
@@ -3126,7 +3143,7 @@
             "value": "."
           }
         ],
-        "id": "26uwcj2ikz6hqbrh",
+        "id": "zbetmimpy6ejpt4g",
         "type": "paragraph"
       },
       {
@@ -3168,7 +3185,7 @@
             "value": " which uses the Gregorian proleptic calendar with a year 0000)."
           }
         ],
-        "id": "z5t2l44okvdk3bdx",
+        "id": "7crl3epa3t5ebxqa",
         "type": "paragraph"
       },
       {
@@ -3470,7 +3487,7 @@
             "value": " is T[hh]:[mm]:[ss]. Earlier versions omitted the T (representing time) in both formats."
           }
         ],
-        "id": "62unmmmjh2qehono",
+        "id": "abpgjsrdiacuo7sx",
         "type": "paragraph"
       },
       {
@@ -3501,7 +3518,7 @@
                     "value": " between 00 and 24."
                   }
                 ],
-                "id": "kiyucwggzda2hcdz",
+                "id": "gnnkevd56i3vftzw",
                 "type": "paragraph"
               }
             ],
@@ -3534,7 +3551,7 @@
                     "value": " between 00 and 59."
                   }
                 ],
-                "id": "ybxm4hm2kcrqam37",
+                "id": "rukg4spgggw3zfnl",
                 "type": "paragraph"
               }
             ],
@@ -3583,7 +3600,7 @@
                     "value": ")."
                   }
                 ],
-                "id": "av76fjh3obqfzg7b",
+                "id": "7r5p4te3ihixofo6",
                 "type": "paragraph"
               }
             ],
@@ -3634,7 +3651,7 @@
             "value": "8601-1:2019 allows the T to be omitted in the extended format, as in \"13:47:30\", but only allows the T to be omitted in the basic format when there is no risk of confusion with date expressions."
           }
         ],
-        "id": "lsre7sioeab7slsl",
+        "id": "jnm35pwn2ipwe7j7",
         "type": "paragraph"
       },
       {
@@ -3648,7 +3665,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "or3lrdx3m62w34tj",
+        "id": "5cqnelsjjdk6n55z",
         "type": "paragraph"
       },
       {
@@ -3689,7 +3706,7 @@
                     "value": ", when seconds are omitted."
                   }
                 ],
-                "id": "upjqfz6d63w4753p",
+                "id": "2gionjxjrefxeu4v",
                 "type": "paragraph"
               }
             ],
@@ -3706,7 +3723,7 @@
                     "value": "T[hh], when both seconds and minutes are omitted."
                   }
                 ],
-                "id": "gwx2a2wlrmfzwlm2",
+                "id": "d4rh4pd33rfpzgjs",
                 "type": "paragraph"
               }
             ],
@@ -3764,7 +3781,7 @@
             "value": "8601-1:2019 as originally published removed \"24:00:00\" as a representation for the end of day although it had been permitted in earlier versions of the standard."
           }
         ],
-        "id": "wws43j4v6w773dnp",
+        "id": "bckvp4umm6pbrgas",
         "type": "paragraph"
       },
       {
@@ -3862,7 +3879,7 @@
             "value": ") For example, to denote \"14 hours, 30 and one half minutes\", do not include a seconds figure; represent it as \"14:30,5\", \"T1430,5\", \"14:30.5\", or \"T1430.5\"."
           }
         ],
-        "id": "lt6y73afpkhdqsbz",
+        "id": "i3326oconmagc4p7",
         "type": "paragraph"
       },
       {
@@ -3892,7 +3909,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "rnsx7v575b3x624j",
+        "id": "3ais3jsv3ltcl32m",
         "type": "paragraph"
       },
       {
@@ -4036,7 +4053,7 @@
             "value": ", or as an offset from UTC."
           }
         ],
-        "id": "wyu3b4oouerslbmk",
+        "id": "zww4ofm5ifgd6kjt",
         "type": "paragraph"
       },
       {
@@ -4086,7 +4103,7 @@
             "value": ". It is usually preferable to indicate a time zone (zone designator) using the standard's notation."
           }
         ],
-        "id": "3k4vjcd72xodbibh",
+        "id": "svacmb4dmtmyyjic",
         "type": "paragraph"
       },
       {
@@ -4149,7 +4166,7 @@
             "value": " is the zone designator for the zero UTC offset. \"09:30 UTC\" is therefore represented as \"09:30Z\" or \"T0930Z\". \"14:45:15 UTC\" would be \"14:45:15Z\" or \"T144515Z\"."
           }
         ],
-        "id": "sxjgzzv46jhonsss",
+        "id": "e5f3evolzg7vklqg",
         "type": "paragraph"
       },
       {
@@ -4253,7 +4270,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "vvesqe7fmudh2gdx",
+        "id": "yqzimyakcxhlbwot",
         "type": "paragraph"
       },
       {
@@ -4354,7 +4371,7 @@
             "value": " in the format '±[hh]:[mm]', '±[hh][mm]', or '±[hh]'."
           }
         ],
-        "id": "75ubtnc6huyg2bh7",
+        "id": "asskruspjy5uvmoi",
         "type": "paragraph"
       },
       {
@@ -4484,7 +4501,7 @@
             "value": " will be \"+02:00\", \"+0200\", or \"+02\"."
           }
         ],
-        "id": "soy7ixyndgcmflnw",
+        "id": "vkkmbbwadlp6gz7i",
         "type": "paragraph"
       },
       {
@@ -4542,7 +4559,7 @@
             "value": "\", \"+0000\", or \"+00\"."
           }
         ],
-        "id": "mtedukw4fc3ibn2q",
+        "id": "3vxdfwdj7watc4zf",
         "type": "paragraph"
       },
       {
@@ -4600,7 +4617,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "n6nffu3eajd54a6n",
+                "id": "oql4xcdtxy4u26nq",
                 "type": "paragraph"
               }
             ],
@@ -4697,7 +4714,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "qmnsfdxj77as4b4d",
+                "id": "pfdyhu5nycepysqf",
                 "type": "paragraph"
               }
             ],
@@ -4746,7 +4763,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "zzzotdg4olbcypls",
+                "id": "wgwgdhjlv2e5if57",
                 "type": "paragraph"
               }
             ],
@@ -4807,7 +4824,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "vul5ebtzjdpjctq2",
+                "id": "sdwqt7gdbzgoxb5w",
                 "type": "paragraph"
               }
             ],
@@ -4852,7 +4869,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "trjomycy6mw2ewno",
+                "id": "3xsnabkzxg7bwn2h",
                 "type": "paragraph"
               }
             ],
@@ -4897,7 +4914,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "tikeusskt6wzm67u",
+                "id": "zvg3uti4bg6gqo4w",
                 "type": "paragraph"
               }
             ],
@@ -4942,7 +4959,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "4yxqjuh7y4b2y7ms",
+                "id": "4dvdnn47txmi5dcl",
                 "type": "paragraph"
               }
             ],
@@ -4995,7 +5012,7 @@
             "value": "."
           }
         ],
-        "id": "d7h22nzjfglhe2ls",
+        "id": "lelp552yoh6zns2r",
         "type": "paragraph"
       },
       {
@@ -5068,7 +5085,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "bamqjv5atjycwtgc",
+        "id": "2mxm3jux4k74x54k",
         "type": "paragraph"
       },
       {
@@ -5114,7 +5131,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "2s6zeswz3mvt3ckt",
+        "id": "ucz7ajgg3dkofsvq",
         "type": "paragraph"
       },
       {
@@ -5276,7 +5293,7 @@
             "value": "."
           }
         ],
-        "id": "mnugfvvrvgkhalup",
+        "id": "lj5uivihmckupx2j",
         "type": "paragraph"
       },
       {
@@ -5302,7 +5319,7 @@
             "value": "time>±[n]H[n]M[n]S' as below."
           }
         ],
-        "id": "ldg76diwwj4gvosf",
+        "id": "7m762b6wifhojtqb",
         "type": "paragraph"
       },
       {
@@ -5431,7 +5448,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "pgsyss3ebinvfu25",
+        "id": "o652niumfj3nxriu",
         "type": "paragraph"
       },
       {
@@ -5457,7 +5474,7 @@
             "value": "."
           }
         ],
-        "id": "2gtajw6grbo7nyyd",
+        "id": "3lxncpeqnsskl5xr",
         "type": "paragraph"
       },
       {
@@ -5467,7 +5484,7 @@
             "value": "Either basic or extended formats may be used, but both date and time must use the same format. The date expression may be calendar, week, or ordinal, and must use a complete representation. The time may be represented using a specified reduced precision format."
           }
         ],
-        "id": "kg7wi37z3nufgjx6",
+        "id": "e6vbyoxy5j277aks",
         "type": "paragraph"
       },
       {
@@ -5672,7 +5689,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "75tduybc5yxsjvcj",
+        "id": "sesxkczd5mhc7mak",
         "type": "paragraph"
       },
       {
@@ -5709,7 +5726,7 @@
                     "value": ") placed at the start of the duration representation. "
                   }
                 ],
-                "id": "bvw62bj2kwtszzzc",
+                "id": "uqwealk4lkvqc6jx",
                 "type": "paragraph"
               },
               {
@@ -5733,7 +5750,7 @@
                             "value": " is the year designator that follows the value for the number of calendar years."
                           }
                         ],
-                        "id": "yeikkkks2aj7nofz",
+                        "id": "vtbqukaluku52gyy",
                         "type": "paragraph"
                       }
                     ],
@@ -5759,7 +5776,7 @@
                             "value": " is the month designator that follows the value for the number of calendar months."
                           }
                         ],
-                        "id": "xafoanwumzijfj3u",
+                        "id": "rnt5cnhcjlcga4dc",
                         "type": "paragraph"
                       }
                     ],
@@ -5785,7 +5802,7 @@
                             "value": " is the week designator that follows the value for the number of weeks."
                           }
                         ],
-                        "id": "fkh7nzdhua5cronn",
+                        "id": "qpxb3cjr6aeb7h5b",
                         "type": "paragraph"
                       }
                     ],
@@ -5811,7 +5828,7 @@
                             "value": " is the day designator that follows the value for the number of calendar days."
                           }
                         ],
-                        "id": "sqwt3aluehee636c",
+                        "id": "xyunoffjrq3nayk7",
                         "type": "paragraph"
                       }
                     ],
@@ -5848,7 +5865,7 @@
                     "value": " is the time designator that precedes the time components of the duration representation. "
                   }
                 ],
-                "id": "y7v4dyb67dmw6jgm",
+                "id": "moky2m6t5z36uved",
                 "type": "paragraph"
               },
               {
@@ -5872,7 +5889,7 @@
                             "value": " is the hour designator that follows the value for the number of hours."
                           }
                         ],
-                        "id": "newfn5p5asvmeby5",
+                        "id": "qsv66h5xztr4btmq",
                         "type": "paragraph"
                       }
                     ],
@@ -5898,7 +5915,7 @@
                             "value": " is the minute designator that follows the value for the number of minutes."
                           }
                         ],
-                        "id": "ygdykm6hu3f5luvz",
+                        "id": "cniexbun6q5smedu",
                         "type": "paragraph"
                       }
                     ],
@@ -5924,7 +5941,7 @@
                             "value": " is the second designator that follows the value for the number of seconds."
                           }
                         ],
-                        "id": "ar4l3sempybfssum",
+                        "id": "bfhrauceojmo6ufj",
                         "type": "paragraph"
                       }
                     ],
@@ -5956,7 +5973,7 @@
             "value": "For example, \"P3Y6M4DT12H30M5S\" represents a duration of \"three years, six months, four days, twelve hours, thirty minutes, and five seconds\"."
           }
         ],
-        "id": "unq7q63padqo7btc",
+        "id": "fgs56j6y3bfl73po",
         "type": "paragraph"
       },
       {
@@ -5966,7 +5983,7 @@
             "value": "Date and time elements including their designator may be omitted if their value is zero, and lower-order elements may also be omitted for reduced precision. For example, \"P23DT23H\" and \"P4Y\" are both acceptable duration representations. However, at least one element must be present, thus \"P\" is not a valid representation for a duration of 0 seconds. \"PT0S\" or \"P0D\", however, are both valid and represent the same duration."
           }
         ],
-        "id": "nb6laqrbjhqzkc5w",
+        "id": "zez4a4qc57xa3i77",
         "type": "paragraph"
       },
       {
@@ -6032,7 +6049,7 @@
             "value": "."
           }
         ],
-        "id": "kfkp6i2sopdkm7fn",
+        "id": "4oycjuut7mwmmgxm",
         "type": "paragraph"
       },
       {
@@ -6078,7 +6095,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "avevxjmkodzct4wl",
+        "id": "lbgsuifh5fikxpg5",
         "type": "paragraph"
       },
       {
@@ -6104,7 +6121,7 @@
             "value": ". For example \"P1M\" on its own could be 28, 29, 30, or 31 days. There is no ambiguity when used in a time interval. Using example \"P2M\" duration of two calendar months:"
           }
         ],
-        "id": "avtsf3dv2a7nquqx",
+        "id": "wa7twxu5xdj6um5v",
         "type": "paragraph"
       },
       {
@@ -6119,7 +6136,7 @@
                     "value": "interval 2003-02-15T00:00:00Z/P2M ends two calendar months later at 2003-04-15T00:00:00Z which is 59 days later"
                   }
                 ],
-                "id": "gwzegrci4silbx5g",
+                "id": "xdemcei2b63mmvew",
                 "type": "paragraph"
               }
             ],
@@ -6136,7 +6153,7 @@
                     "value": "interval 2003-07-15T00:00:00Z/P2M ends two calendar months later at 2003-09-15T00:00:00Z which is 62 days later"
                   }
                 ],
-                "id": "6lxkm7fqvtujiwlf",
+                "id": "2qzvupffirfecuj5",
                 "type": "paragraph"
               }
             ],
@@ -6165,7 +6182,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "z463hh3igwuvjznz",
+        "id": "wnjjoykxbhcmabj6",
         "type": "paragraph"
       },
       {
@@ -6269,7 +6286,7 @@
             "value": "A time interval is the intervening time between two time points. The amount of intervening time is expressed by a duration (as described in the previous section). The two time points (start and end) are expressed by either a combined date and time representation or just a date representation."
           }
         ],
-        "id": "w54ovba3oxlanh6v",
+        "id": "lfau3gdtnmeksxho",
         "type": "paragraph"
       },
       {
@@ -6279,7 +6296,7 @@
             "value": "There are four ways to express a time interval:"
           }
         ],
-        "id": "3pxtz3vvdo5xsbcg",
+        "id": "c3kmzutbb7gixaai",
         "type": "paragraph"
       },
       {
@@ -6294,7 +6311,7 @@
                     "value": "Start and end, such as \"2007-03-01T13:00:00Z/2008-05-11T15:30:00Z\""
                   }
                 ],
-                "id": "p5vqgtynmjy3ie7w",
+                "id": "baj4qunkzkwty2am",
                 "type": "paragraph"
               }
             ],
@@ -6311,7 +6328,7 @@
                     "value": "Start and duration, such as \"2007-03-01T13:00:00Z/P1Y2M10DT2H30M\""
                   }
                 ],
-                "id": "v54hi3vt3nges56k",
+                "id": "5osiu3wcd67naoz3",
                 "type": "paragraph"
               }
             ],
@@ -6328,7 +6345,7 @@
                     "value": "Duration and end, such as \"P1Y2M10DT2H30M/2008-05-11T15:30:00Z\""
                   }
                 ],
-                "id": "zg74d6fpl2eyfpmb",
+                "id": "axr3qzoxzclf4k2k",
                 "type": "paragraph"
               }
             ],
@@ -6345,7 +6362,7 @@
                     "value": "Duration only, such as \"P1Y2M10DT2H30M\", with additional context information"
                   }
                 ],
-                "id": "zir5iae3dmokh4wq",
+                "id": "2vh4i4k7zykk37kv",
                 "type": "paragraph"
               }
             ],
@@ -6447,7 +6464,7 @@
             "value": " and is not allowed in a filename."
           }
         ],
-        "id": "kmxvd2z4peocfslu",
+        "id": "kvfvztvjxv66nsvy",
         "type": "paragraph"
       },
       {
@@ -6473,7 +6490,7 @@
             "value": "end> expressions, if any elements are missing from the end value, they are assumed to be the same as for the start value including the time zone. This feature of the standard allows for concise representations of time intervals. For example, the date of a two-hour meeting including the start and finish times could be shown as \"2007-12-14T13:30/15:30\", where \"/15:30\" implies \"/2007-12-14T15:30\" (the same date as the start), or the beginning and end dates of a monthly billing period as \"2008-02-15/03-14\", where \"/03-14\" implies \"/2008-03-14\" (the same year as the start)."
           }
         ],
-        "id": "julcbfxhr7hxvgoq",
+        "id": "r4hkjzuwxsggfcks",
         "type": "paragraph"
       },
       {
@@ -6523,7 +6540,7 @@
             "value": "."
           }
         ],
-        "id": "rcq4wiin63epfzux",
+        "id": "vhylim2vdcp4u7gz",
         "type": "paragraph"
       },
       {
@@ -6600,7 +6617,7 @@
             "value": " is used as the letter itself and [n] is replaced by the number of repetitions. Leaving out the value for [n] or specifying a value of -1, means an unbounded number of repetitions. A value of 0 for [n] means the interval is not repeated."
           }
         ],
-        "id": "bhpim7pkke5ena4y",
+        "id": "qlkua6pc7iqyihco",
         "type": "paragraph"
       },
       {
@@ -6626,7 +6643,7 @@
             "value": "."
           }
         ],
-        "id": "u7swrb5bajrnxuq2",
+        "id": "ihm35ed6qlrcsjmk",
         "type": "paragraph"
       },
       {
@@ -6656,7 +6673,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "2yj6aidizorviyqf",
+        "id": "eja3rwfsgvvie5to",
         "type": "paragraph"
       },
       {
@@ -6671,9 +6688,34 @@
         "type": "heading"
       },
       {
-        "id": "3w3njsj6eb7ktvnz",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/#Reduced_precision\" title=\"\">§<span typeof=\"mw:Entity\">&#160;</span>Reduced precision</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Not to be confused with "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "§"
+              },
+              {
+                "type": "text",
+                "value": "Reduced precision"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/#Reduced_precision",
+            "id": "szac45fkqlceduem",
+            "title": "",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "63du4o3av67lianf",
+        "type": "paragraph"
       },
       {
         "children": [
@@ -6690,7 +6732,7 @@
             "value": "8601:2004."
           }
         ],
-        "id": "behok3ksci5bs2v5",
+        "id": "dslbdww2pzxeitjx",
         "type": "paragraph"
       },
       {
@@ -7191,7 +7233,7 @@
             "value": " per omitted century, year, month, week, hour and minute as necessary to disambiguate the format."
           }
         ],
-        "id": "5vx6tqdgmmmrffqc",
+        "id": "plrfymdoirjbba43",
         "type": "paragraph"
       },
       {
@@ -7220,7 +7262,7 @@
             "value": "8601 date and time formats."
           }
         ],
-        "id": "mquvr3k573pjd7cy",
+        "id": "qsx32oimi4ukqdlc",
         "type": "paragraph"
       },
       {
@@ -7245,7 +7287,7 @@
             "value": "8601 in Part 2. It comes in three levels, where level 0 is a subset of Part 1 restricted to extended month–day notation, CCYY-MM-DD, similar to RFC 3339, and levels 1 and 2 build upon that. "
           }
         ],
-        "id": "svwicstmirdi2ute",
+        "id": "cdhgsn27dpbzpnpj",
         "type": "paragraph"
       },
       {
@@ -7259,7 +7301,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "tchbf73foz4vxs5i",
+        "id": "sf6ltg37jasegp3k",
         "type": "paragraph"
       },
       {
@@ -7286,7 +7328,7 @@
                     "value": " and approximate qualifiers, '?' and '~', as well as their combined use, '%'; they can be applied to the whole date or to individual components."
                   }
                 ],
-                "id": "xeiyzfdooov6ggw6",
+                "id": "vwainasmciekwhna",
                 "type": "paragraph"
               }
             ],
@@ -7303,7 +7345,7 @@
                     "value": "Time intervals with an open (unbounded) or unknown end or start, e.g. \"../2025\" or \"2024/\"."
                   }
                 ],
-                "id": "suerjdwgujedcld4",
+                "id": "gzleyfz6btdbruvk",
                 "type": "paragraph"
               }
             ],
@@ -7320,7 +7362,7 @@
                     "value": "Exponential ('E') and significant figure ('S') notation in years with a new 'Y' prefix, e.g. \"Y-1.25E6S2\"."
                   }
                 ],
-                "id": "4jfz4ikgx2hn7pyp",
+                "id": "suu52waa3iepznvy",
                 "type": "paragraph"
               }
             ],
@@ -7337,7 +7379,7 @@
                     "value": "Special \"month\" values indicating sub-year groupings such as seasons and quarters, e.g. \"2025-26\" for summer in the Northern hemisphere."
                   }
                 ],
-                "id": "4ruq5nwhmbmndhxz",
+                "id": "xjhpkgcfmywcfg4t",
                 "type": "paragraph"
               }
             ],
@@ -7354,7 +7396,7 @@
                     "value": "Syntax for serializing a list of dates within brackets '[]' for single choices or braces '{}' for inclusive lists."
                   }
                 ],
-                "id": "c6e6x5u47r4a2xdv",
+                "id": "yjgvmxdxrpinsbru",
                 "type": "paragraph"
               }
             ],
@@ -7383,7 +7425,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "dwst6mhzpcl5josg",
+        "id": "p7olm52titaxfpbc",
         "type": "paragraph"
       },
       {
@@ -7432,7 +7474,7 @@
             "value": " among other formating patterns:"
           }
         ],
-        "id": "4ippgwldb2pun4uu",
+        "id": "ui5darphps456rtx",
         "type": "paragraph"
       },
       {
@@ -7539,7 +7581,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "2wd36dtbiw2kxvh5",
+        "id": "6aqxrsmo2mwdrwst",
         "type": "paragraph"
       },
       {
@@ -7637,7 +7679,7 @@
             "value": "8601."
           }
         ],
-        "id": "ycrd7cgoidg3cylq",
+        "id": "damol2z37u77wnjr",
         "type": "paragraph"
       },
       {
@@ -7678,7 +7720,7 @@
             "value": " Its appearance depended on the particular packaging, canning, or bottling plant more than any particular brand. The format is particularly useful for quality assurance, so that production errors can be readily traced."
           }
         ],
-        "id": "pkdqqw7hmycgiv73",
+        "id": "b3i6cwuvnswmg5fs",
         "type": "paragraph"
       },
       {
@@ -7763,7 +7805,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "kpa6r3znq6phcgsk",
+        "id": "do5m7fhoyamij5dt",
         "type": "paragraph"
       },
       {
@@ -7829,7 +7871,7 @@
             "value": "8601, and so was free to use this convention without conflict."
           }
         ],
-        "id": "nv4a3kgqojcrb4fj",
+        "id": "bzky3mtzemuoqdev",
         "type": "paragraph"
       },
       {
@@ -7863,7 +7905,7 @@
             "value": " This format extends the timestamp representation to include additional information such as an associated time zone name. The inclusion of time zone names is particularly useful for applications that need to account for events like daylight saving time transitions. Furthermore, IXDTF maintains compatibility with pre-existing syntax for attaching time zone names to timestamps, providing a standardized and flexible approach to timestamp representation on the internet. Example:"
           }
         ],
-        "id": "rjz6rk3avuo7qvxp",
+        "id": "xzghfrof55qk54ou",
         "type": "paragraph"
       },
       {
@@ -7873,7 +7915,7 @@
             "value": "1996-12-19T16:39:57-08:00[America/Los_Angeles]"
           }
         ],
-        "id": "fbcdzpzp3tz55msh",
+        "id": "g3giskzqqqnkw2ll",
         "type": "paragraph"
       },
       {
@@ -8602,7 +8644,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "smdn7hd7bqm6jhce",
+                "id": "g32gnck5tee7dni2",
                 "type": "paragraph"
               }
             ],
@@ -8627,7 +8669,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "oejzqadmslry3doi",
+                "id": "dzs3za3sy7xxz63d",
                 "type": "paragraph"
               }
             ],
@@ -8652,7 +8694,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "r4hxs7bktu2ip3k5",
+                "id": "z6hjlifsqovb7byf",
                 "type": "paragraph"
               }
             ],
@@ -8677,7 +8719,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "26w3dx4s4uwpacgs",
+                "id": "tchpw7vje22q3rd4",
                 "type": "paragraph"
               }
             ],
@@ -8733,7 +8775,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "6qn2fwzahdml2pf2",
+                "id": "nf2e67kriirmscqy",
                 "type": "paragraph"
               }
             ],
@@ -8770,7 +8812,7 @@
                     "value": " by the World Wide Web Consortium (W3C)"
                   }
                 ],
-                "id": "gpa54us6wlgjptvz",
+                "id": "wajsepic6yp6w4wt",
                 "type": "paragraph"
               }
             ],
@@ -8811,7 +8853,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "wu2u6mzzxyujkdxa",
+                "id": "gn4gxmcdbsy2laqi",
                 "type": "paragraph"
               }
             ],
@@ -8856,7 +8898,7 @@
                     "value": "(archived 2011-06-14)"
                   }
                 ],
-                "id": "4xvvrbd4otetz23y",
+                "id": "g3xbqpbjccwf36hs",
                 "type": "paragraph"
               }
             ],
@@ -8897,7 +8939,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "abeybx5mstmpett7",
+                "id": "hzavntjn2kylwpae",
                 "type": "paragraph"
               }
             ],
@@ -8942,7 +8984,7 @@
                     "value": " illustrating the difference between the two standards"
                   }
                 ],
-                "id": "eduwcjspeb4ter4w",
+                "id": "i45k3wuvloj63eei",
                 "type": "paragraph"
               }
             ],
@@ -8983,7 +9025,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "vfkdbrq65cimiw5f",
+                "id": "6hbfou52ntmreh2e",
                 "type": "paragraph"
               }
             ],
@@ -9783,7 +9825,7 @@
     "blocks": {
       "6bynoape33d7dc7o": "6a95e75bc7191722ff0a301d8b2839e782f14044df619401a1e02084f7cd3e0d"
     },
-    "documentContentIdentity": "7dc33f4e1ec3f99f4b33406c2ac7043cc2817ad0d09ad8d1a75d3a39ec8d2ff0",
+    "documentContentIdentity": "835b6e8f37e0ef3f79e5967a8f76a5479589ae2f18477c2da0d4546c3b297fcf",
     "markdown": null,
     "normalizationRulesets": {
       "code": "norm/code@1",

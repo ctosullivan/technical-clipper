@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head><title>HTTP status codes at a glance</title></head>
+<body>
+<header><nav><a href="/">Reference</a></nav></header>
+<main>
+  <article>
+    <h1>HTTP status codes at a glance</h1>
+    <p>A compact reference for the status codes this service can return, with the
+      retry behaviour clients should apply to each.</p>
+
+    <h2>Client and server codes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Code</th><th>Name</th><th>Category</th><th>Body?</th>
+          <th>Retry</th><th>Idempotent-safe</th><th>Typical cause</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>400</td><td>Bad Request</td><td>Client</td><td>yes</td><td>no</td><td>n/a</td><td>Malformed payload or query</td></tr>
+        <tr><td>401</td><td>Unauthorized</td><td>Client</td><td>yes</td><td>after refresh</td><td>yes</td><td>Missing or expired token</td></tr>
+        <tr><td>404</td><td>Not Found</td><td>Client</td><td>yes</td><td>no</td><td>yes</td><td>Unknown resource id</td></tr>
+        <tr><td>409</td><td>Conflict</td><td>Client</td><td>yes</td><td>no</td><td>no</td><td>Concurrent write</td></tr>
+        <tr><td>429</td><td>Too Many Requests</td><td>Client</td><td>yes</td><td>yes, honour <code>Retry-After</code></td><td>yes</td><td>Rate limit</td></tr>
+        <tr><td>500</td><td>Internal Server Error</td><td>Server</td><td>maybe</td><td>yes, backoff</td><td>yes</td><td>Unhandled exception</td></tr>
+        <tr><td>503</td><td>Service Unavailable</td><td>Server</td><td>maybe</td><td>yes, backoff</td><td>yes</td><td>Deploy or overload</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Notes</h2>
+    <ul>
+      <li>Only retry non-idempotent requests when the response explicitly permits it.</li>
+      <li>All backoff is full-jitter exponential with a 30-second ceiling.</li>
+    </ul>
+  </article>
+</main>
+<footer>Reference &middot; internal</footer>
+</body>
+</html>

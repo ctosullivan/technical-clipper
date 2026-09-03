@@ -1,6 +1,13 @@
 dist
+dist-artifacts
 coverage
 pnpm-lock.yaml
+
+# Comparative-benchmark evidence: verbatim captured/converted output, not prose
+# (the README and commentary.md files ARE formatted).
+docs/evaluation/comparative/**/naive.md
+docs/evaluation/comparative/**/ours.md
+docs/evaluation/comparative/**/input.html
 
 # Test fixtures are byte-exact inputs and generated golden outputs — never
 # reformat them (the pipeline's determinism tests compare exact bytes).

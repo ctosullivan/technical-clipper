@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/semantic-multi-block",
+  "canonicalUrl": "https://fixture.example/code/semantic-multi-block",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "semantic-html",
+  "notes": "Three consecutive semantic <pre><code> blocks (json, yaml, sql) in one article — multi-block ordering and per-block language.",
+  "producedByExtractorVersion": "1.0.0"
+}

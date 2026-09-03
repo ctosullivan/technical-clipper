@@ -6,6 +6,7 @@ export default tseslint.config(
   {
     ignores: [
       '**/dist/**',
+      'dist-artifacts/**',
       '**/node_modules/**',
       '**/*.d.ts',
       '**/coverage/**',

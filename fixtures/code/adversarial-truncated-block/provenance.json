@@ -1,0 +1,11 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://fixture.example/code/adversarial-truncated-block",
+  "canonicalUrl": "https://fixture.example/code/adversarial-truncated-block",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "category": "adversarial",
+  "notes": "Code block with an author-inserted \"... omitted ...\" marker — the visible bytes are preserved exactly; truncation is the author’s, not ours.",
+  "producedByExtractorVersion": "1.0.0"
+}

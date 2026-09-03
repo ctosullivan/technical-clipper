@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head><title>Release notes 4.2</title></head>
+<body>
+<header><nav><a href="/">Home</a></nav></header>
+<main aria-label="Announcement">
+  <p>We have a new logo. Read the <a href="/blog/brand">brand post</a>.</p>
+</main>
+<main aria-label="Release notes">
+  <article>
+    <h1>Release notes 4.2</h1>
+    <p>This release focuses on determinism and error reporting. It contains no
+      breaking changes to the capture bundle format.</p>
+    <h2>Added</h2>
+    <ul>
+      <li>A completeness report is now written into every bundle.</li>
+      <li>The export gate blocks on <code>failed</code> and warns on <code>partial</code>.</li>
+    </ul>
+    <h2>Fixed</h2>
+    <ul>
+      <li>Inter-word spacing was lost when a bold run met a plain run.</li>
+      <li>Duplicate <code>References</code> headings on some articles.</li>
+    </ul>
+    <h2>Known issues</h2>
+    <p>Virtualized editors are still reported as <code>partial</code>; exact
+      recovery is out of scope for this line.</p>
+  </article>
+</main>
+<footer><p>Changelog</p></footer>
+</body>
+</html>

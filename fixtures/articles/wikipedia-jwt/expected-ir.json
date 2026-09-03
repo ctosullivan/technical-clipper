@@ -827,29 +827,94 @@
         "type": "heading"
       },
       {
-        "id": "zag5bfv2w7bus5y4",
-        "rawHtml": "<code id=\"mwRQ\">HS256</code>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Header"
+          }
+        ],
+        "id": "3g7gnt3mzej64tiu",
+        "type": "paragraph"
       },
       {
-        "id": "6m5i2biybgbreq25",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/HMAC\" title=\"HMAC\" id=\"mwSA\">HMAC</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Identifies which algorithm is used to generate the signature. In the below example, "
+          },
+          {
+            "type": "codeSpan",
+            "value": "HS256"
+          },
+          {
+            "type": "text",
+            "value": " indicates that this token is signed using HMAC-SHA256."
+          }
+        ],
+        "id": "ln6soc3inkkf45ph",
+        "type": "paragraph"
       },
       {
-        "id": "mqxtue32lc76ubpw",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/SHA-256\" title=\"SHA-256\" class=\"mw-redirect\" id=\"mwSQ\">SHA-256</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "pwenpqlldtntm5cc",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Digital_signature\" title=\"Digital signature\" id=\"mwSg\">RSA signature</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "x4rneoa2im7srdr7",
-        "rawHtml": "<sup about=\"#mwt32\" class=\"mw-ref reference\" id=\"cite_ref-8\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-8&quot;}}\"><a href=\"#cite_note-8\" id=\"mwSw\"><span class=\"mw-reflink-text\" id=\"mwTA\"><span class=\"cite-bracket\" id=\"mwTQ\">[</span>8<span class=\"cite-bracket\" id=\"mwTg\">]</span></span></a></sup>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Typical cryptographic algorithms used are "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "HMAC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/HMAC",
+            "id": "ph6fgywu22to3thy",
+            "title": "HMAC",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " with "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "SHA-256"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/SHA-256",
+            "id": "6v3setjd276sroox",
+            "title": "SHA-256",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " (HS256) and "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RSA signature"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Digital_signature",
+            "id": "ewl2yygptgksz6rl",
+            "title": "Digital signature",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " with SHA-256 (RS256). JWA (JSON Web Algorithms) RFC 7518 introduces many more for both authentication and encryption."
+          },
+          {
+            "referenceId": "8",
+            "type": "citationRef"
+          }
+        ],
+        "id": "qh6dow6wfbszsvyp",
+        "type": "paragraph"
       },
       {
         "code": {
@@ -874,24 +939,74 @@
         "type": "codeBlock"
       },
       {
-        "id": "boud2o7c3tnjxo7k",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"#Standard_fields\" class=\"mw-selflink-fragment\" id=\"mwYg\">standard fields</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Payload"
+          }
+        ],
+        "id": "53j6r7q4e4gbbgov",
+        "type": "paragraph"
       },
       {
-        "id": "knexlwltwolth2ks",
-        "rawHtml": "<sup about=\"#mwt34\" class=\"mw-ref reference\" id=\"cite_ref-rfc7519_1-2\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{&quot;name&quot;:&quot;rfc7519&quot;}}\"><a href=\"#cite_note-rfc7519-1\" id=\"mwYw\"><span class=\"mw-reflink-text\" id=\"mwZA\"><span class=\"cite-bracket\" id=\"mwZQ\">[</span>1<span class=\"cite-bracket\" id=\"mwZg\">]</span></span></a></sup>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Contains a set of claims. The JWT specification defines seven Registered Claim Names, which are the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "standard fields"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/JSON_Web_Token#Standard_fields",
+            "id": "g4zdax46fvugxau2",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " commonly included in tokens."
+          },
+          {
+            "referenceId": "1",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " Custom claims are usually also included, depending on the purpose of the token."
+          }
+        ],
+        "id": "7clga4ko6ya4efiu",
+        "type": "paragraph"
       },
       {
-        "id": "yza4dkf7lv5gerua",
-        "rawHtml": "<code id=\"mwaA\">iat</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "pxzxzsmt7spclcy3",
-        "rawHtml": "<code id=\"mwaQ\">loggedInAs</code>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "This example has the standard Issued At Time claim ("
+          },
+          {
+            "type": "codeSpan",
+            "value": "iat"
+          },
+          {
+            "type": "text",
+            "value": ") and a custom claim ("
+          },
+          {
+            "type": "codeSpan",
+            "value": "loggedInAs"
+          },
+          {
+            "type": "text",
+            "value": ")."
+          }
+        ],
+        "id": "cziaep7jz6yg3zd2",
+        "type": "paragraph"
       },
       {
         "code": {
@@ -916,29 +1031,99 @@
         "type": "codeBlock"
       },
       {
-        "id": "gc73tyzh5oakaqoz",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Base64#RFC_4648\" title=\"Base64\" id=\"mwfQ\">Base64url Encoding</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Signature"
+          }
+        ],
+        "id": "uczldlv6skmgx26k",
+        "type": "paragraph"
       },
       {
-        "id": "za53f2wjx7p6fn5q",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/RFC_(identifier)\" title=\"RFC (identifier)\" about=\"#mwt36\" class=\"mw-redirect\">RFC</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Securely validates the token. The signature is calculated by encoding the header and payload using "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Base64url Encoding"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Base64#RFC_4648",
+            "id": "jb6ex4ftdm55tsxe",
+            "title": "Base64",
+            "type": "link"
+          }
+        ],
+        "id": "sd7tl2k3rse2fzku",
+        "type": "paragraph"
       },
       {
-        "id": "7pnqbwwjyyilucvq",
-        "rawHtml": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.rfc-editor.org/rfc/rfc4648\" about=\"#mwt36\" class=\"external text\">4648</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "3noengupo2p7y2cz",
-        "rawHtml": "<i id=\"mwfw\">Base64url Encoding</i>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "6rphjwpnsenmewbi",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Base64\" title=\"Base64\" id=\"mwgA\">base64</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "RFC"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/RFC_(identifier)",
+            "id": "5ykpljmfi4ubw6oi",
+            "title": "RFC (identifier)",
+            "type": "link"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "4648"
+              }
+            ],
+            "href": "https://www.rfc-editor.org/rfc/rfc4648",
+            "id": "lusjazkfx43m7rp2",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " and concatenating the two together with a period separator. That string is then run through the cryptographic algorithm specified in the header. This example uses HMAC-SHA256 with a shared secret (public key algorithms are also defined). The "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Base64url Encoding"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": " is similar to "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "base64"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Base64",
+            "id": "dp22skol2trvkw7p",
+            "title": "Base64",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", but uses different non-alphanumeric characters and omits padding."
+          }
+        ],
+        "id": "ok2b273pe6kgutqo",
+        "type": "paragraph"
       },
       {
         "code": {
@@ -1013,7 +1198,7 @@
             "value": ", and concatenated using periods to produce the JWT:"
           }
         ],
-        "id": "t5ply5v72fay6xbh",
+        "id": "atxtsrxix2c2742w",
         "type": "paragraph"
       },
       {
@@ -1045,7 +1230,7 @@
             "value": "The above data and the secret of \"secretkey\" creates the token:"
           }
         ],
-        "id": "a25pj3xljha72zsi",
+        "id": "rr6mtnhfxjywvpdu",
         "type": "paragraph"
       },
       {
@@ -1082,7 +1267,7 @@
             "type": "emphasis"
           }
         ],
-        "id": "siyogkdsk2q4gxdb",
+        "id": "pxcmbsoqkamscem6",
         "type": "paragraph"
       },
       {
@@ -1128,7 +1313,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "3kryvw2luijp4rsr",
+        "id": "ua7uwkyj6fvazy5s",
         "type": "paragraph"
       },
       {
@@ -2300,7 +2485,7 @@
             "value": " call like so:"
           }
         ],
-        "id": "tb4d46ge6umkbiej",
+        "id": "5mjmh4ssds3ow4ho",
         "type": "paragraph"
       },
       {
@@ -2348,7 +2533,7 @@
             "value": " compliant service like so:"
           }
         ],
-        "id": "gwo5lkv4oyghjowt",
+        "id": "732nv454gz4cfk55",
         "type": "paragraph"
       },
       {
@@ -2380,7 +2565,7 @@
             "value": "If the client passes a valid JWT assertion the server will generate an access_token valid for making calls to the application and pass it back to the client:"
           }
         ],
-        "id": "ql2hp252p3jfa3el",
+        "id": "lmsy6htwt75upnq4",
         "type": "paragraph"
       },
       {
@@ -2444,7 +2629,7 @@
             "value": " schema. The content of the header might look like the following:"
           }
         ],
-        "id": "ng56xed5wnxjxuda",
+        "id": "k4sxchcxqodxk7zb",
         "type": "paragraph"
       },
       {
@@ -2476,7 +2661,7 @@
             "value": "This is a stateless authentication mechanism as the user state is never saved in server memory. The server's protected routes will check for a valid JWT in the Authorization header, and if it is present, the user will be allowed to access protected resources. As JWTs are self-contained, all the necessary information is there, reducing the need to query the database multiple times."
           }
         ],
-        "id": "uhpxzgmlybycidyf",
+        "id": "eeas5whxgdtxl6yx",
         "type": "paragraph"
       },
       {
@@ -2981,7 +3166,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "f6yq3rizjvesdfjd",
+        "id": "uqafwhvdv2aur5ai",
         "type": "paragraph"
       },
       {
@@ -3002,7 +3187,7 @@
             "value": "JWT implementations exist for many languages and frameworks, including but not limited to:"
           }
         ],
-        "id": "wkvaizpcn3r3uh6z",
+        "id": "rv4v2qvwdsgs4nka",
         "type": "paragraph"
       },
       {
@@ -3029,7 +3214,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "pxfhdsb7vr2emdht",
+                "id": "6yna4fszo2dmfcfp",
                 "type": "paragraph"
               }
             ],
@@ -3058,7 +3243,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "lk52lb4jrsmu4avx",
+                "id": "yap7whjbxll6w6r2",
                 "type": "paragraph"
               }
             ],
@@ -3091,7 +3276,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "3ijzi5hrb5op2lii",
+                "id": "z7vpqw2fmyby5uuc",
                 "type": "paragraph"
               }
             ],
@@ -3120,7 +3305,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "xr2df4bfitp36ha2",
+                "id": "jrxbky4mx26uopy5",
                 "type": "paragraph"
               }
             ],
@@ -3149,7 +3334,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "v6wanymbtjb5g37r",
+                "id": "uyei7ixdkaftyvdt",
                 "type": "paragraph"
               }
             ],
@@ -3178,7 +3363,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "3onbgt4mqisxkr4t",
+                "id": "y5je76scevhabuvt",
                 "type": "paragraph"
               }
             ],
@@ -3207,7 +3392,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "st3lbeo2dscdipfj",
+                "id": "php6ytfudhvyb2sw",
                 "type": "paragraph"
               }
             ],
@@ -3232,7 +3417,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "2q7mk45ujuofayli",
+                "id": "sf55aj4mu7336krj",
                 "type": "paragraph"
               }
             ],
@@ -3261,7 +3446,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "yqvi4vokdxi7cnph",
+                "id": "46o6ytnvubhzt4o3",
                 "type": "paragraph"
               }
             ],
@@ -3290,7 +3475,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "odhndi3iyjfmfkcd",
+                "id": "rhlif34tkq46ruei",
                 "type": "paragraph"
               }
             ],
@@ -3319,7 +3504,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "77slwj3wpbdrj75i",
+                "id": "fmasn4tnm2x4oevx",
                 "type": "paragraph"
               }
             ],
@@ -3348,7 +3533,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "nazsacxv7cgzz7p7",
+                "id": "mflroplvetu3q3sa",
                 "type": "paragraph"
               }
             ],
@@ -3377,7 +3562,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "xgmm4lhl6mhaj3rp",
+                "id": "gb333cdft246zqeh",
                 "type": "paragraph"
               }
             ],
@@ -3406,7 +3591,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "n3fvs3vpmzgpnctg",
+                "id": "yvi35532r5pqzp3l",
                 "type": "paragraph"
               }
             ],
@@ -3435,7 +3620,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "3eyfnlolazo62jid",
+                "id": "jod6kpz5wq676sgb",
                 "type": "paragraph"
               }
             ],
@@ -3464,7 +3649,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "uqnbwcpy7nfkdzrp",
+                "id": "hc4xs6ydifjfxbne",
                 "type": "paragraph"
               }
             ],
@@ -3493,7 +3678,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "ztnpkwjd3maazxal",
+                "id": "pz7kzm5vznh5aa6c",
                 "type": "paragraph"
               }
             ],
@@ -3522,7 +3707,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "qnyvebfuyjtrsnev",
+                "id": "maudfb6ltaxdbwep",
                 "type": "paragraph"
               }
             ],
@@ -3551,7 +3736,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "drfke6wrj4c4o2n3",
+                "id": "kd6rrwvzbq4pm575",
                 "type": "paragraph"
               }
             ],
@@ -3580,7 +3765,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "uhecert3jt22byqx",
+                "id": "z4ac3xex4tizv2hn",
                 "type": "paragraph"
               }
             ],
@@ -3609,7 +3794,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "uyjkilxrodqalcfj",
+                "id": "pe2vdmeowokbxqjm",
                 "type": "paragraph"
               }
             ],
@@ -3638,7 +3823,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "rlsgsrm6vnvagptm",
+                "id": "a7kztdswtfmozu3v",
                 "type": "paragraph"
               }
             ],
@@ -3667,7 +3852,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "mvcwb26q25gjec6h",
+                "id": "ycmss5ealx6vocdp",
                 "type": "paragraph"
               }
             ],
@@ -3696,7 +3881,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "bgdh24tkts5hqrsv",
+                "id": "4elkbtm7udfmsuvr",
                 "type": "paragraph"
               }
             ],
@@ -3729,7 +3914,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "262y6wo6ttlt7ijv",
+                "id": "e3ogerepotragkvf",
                 "type": "paragraph"
               }
             ],
@@ -3758,7 +3943,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "fmhi26y2hfnseztv",
+                "id": "sexsjsvkke6z2zad",
                 "type": "paragraph"
               }
             ],
@@ -3787,7 +3972,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "bfip6t22brofnw7g",
+                "id": "fkoqmftkaff7dq3j",
                 "type": "paragraph"
               }
             ],
@@ -3839,7 +4024,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "7jet3f63fvoy5rah",
+        "id": "g3pgtsuj3cfxhpqd",
         "type": "paragraph"
       },
       {
@@ -3909,7 +4094,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "r3twebo2yussou2p",
+        "id": "g63ovpklxdstpphl",
         "type": "paragraph"
       },
       {
@@ -3927,7 +4112,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "cak5ckteuqjfaeju",
+        "id": "7a2w6q6iuyj6vyg7",
         "type": "paragraph"
       },
       {
@@ -3942,7 +4127,7 @@
                     "value": "Never let the JWT header alone drive verification"
                   }
                 ],
-                "id": "vw7vqfavzhz7z7wr",
+                "id": "2tylvdqivn63qvfa",
                 "type": "paragraph"
               }
             ],
@@ -3967,7 +4152,7 @@
                     "value": " field alone)"
                   }
                 ],
-                "id": "pgicjumzhbvpjezt",
+                "id": "fg5iy4xzwndqa7vz",
                 "type": "paragraph"
               }
             ],
@@ -3984,7 +4169,7 @@
                     "value": "Use an appropriate key size"
                   }
                 ],
-                "id": "7cjs5g2vxfarrp4b",
+                "id": "lsu463u5a7ksn6na",
                 "type": "paragraph"
               }
             ],
@@ -4025,7 +4210,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "cpdemiabibkrbpjj",
+        "id": "6zcinxfec7wzijha",
         "type": "paragraph"
       },
       {
@@ -4047,7 +4232,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "xqbcdyghr4nycyzy",
+        "id": "v4rvcwnmpd6qxj7p",
         "type": "paragraph"
       },
       {
@@ -4081,7 +4266,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "fynksdlzjxxvvvva",
+                "id": "mqyxt4ft4zsajbqu",
                 "type": "paragraph"
               }
             ],
@@ -4106,7 +4291,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "v5tqhxblcgaqt3ka",
+                "id": "pxntl7aqwf4wujdr",
                 "type": "paragraph"
               }
             ],
@@ -4131,7 +4316,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "rrtnuqz2a3qxndxs",
+                "id": "uc2cxdby42h2czbx",
                 "type": "paragraph"
               }
             ],
@@ -4156,7 +4341,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "m7mjzjilemj5sanq",
+                "id": "pk3gdmc4pdivjk4o",
                 "type": "paragraph"
               }
             ],
@@ -4181,7 +4366,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "czujacnistlbw6dw",
+                "id": "4andc6vvdtdgxvrc",
                 "type": "paragraph"
               }
             ],
@@ -4206,7 +4391,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "prwyebhzwbxzdwlo",
+                "id": "3oqdmj35io3p27yu",
                 "type": "paragraph"
               }
             ],
@@ -4239,7 +4424,7 @@
                     "value": ")"
                   }
                 ],
-                "id": "pj4szj3bwbvyhzvx",
+                "id": "vgotdgiyzhjihvcd",
                 "type": "paragraph"
               }
             ],
@@ -4296,7 +4481,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "lcwcegaxiefokeng",
+                "id": "iuggk3e7hm4e2duy",
                 "type": "paragraph"
               }
             ],
@@ -4325,7 +4510,7 @@
                     "value": " – specialized website about JWT with tools and documentation, maintained by Auth0"
                   }
                 ],
-                "id": "wj5pnwmmf5jxvblq",
+                "id": "5zwgwlr6hcj2k4uw",
                 "type": "paragraph"
               }
             ],
@@ -4961,7 +5146,7 @@
       "uukuqxcs6adsfw53": "563e225103455d1dbcdf2c095415e6b35b6b3e4f2c9386994b78dd32c604c55a",
       "wnicw2iqhxslqsf4": "7406ec73b43889293486339379187f66e5918bc77c9effaf11265450fc30cce3"
     },
-    "documentContentIdentity": "bcd9cffa763bdd5aa3a7a0875ef5d96a013786c3d739529bba2986535dacbcd7",
+    "documentContentIdentity": "7dd1011f8ed2947539627d6ed408665c20e7afd5234d6cf0fd1ebc0604d16939",
     "markdown": null,
     "normalizationRulesets": {
       "code": "norm/code@1",

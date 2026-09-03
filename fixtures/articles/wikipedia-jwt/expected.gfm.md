@@ -19,25 +19,11 @@ JWT relies on other JSON-based standards: [JSON Web Signature](https://en.wikipe
 
 ## Structure
 
-```html
-<code id="mwRQ">HS256</code>
-```
+Header
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/HMAC" title="HMAC" id="mwSA">HMAC</a>
-```
+Identifies which algorithm is used to generate the signature. In the below example, `HS256` indicates that this token is signed using HMAC-SHA256.
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/SHA-256" title="SHA-256" class="mw-redirect" id="mwSQ">SHA-256</a>
-```
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Digital_signature" title="Digital signature" id="mwSg">RSA signature</a>
-```
-
-```html
-<sup about="#mwt32" class="mw-ref reference" id="cite_ref-8" rel="dc:references" typeof="mw:Extension/ref" data-mw="{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-8&quot;}}"><a href="#cite_note-8" id="mwSw"><span class="mw-reflink-text" id="mwTA"><span class="cite-bracket" id="mwTQ">[</span>8<span class="cite-bracket" id="mwTg">]</span></span></a></sup>
-```
+Typical cryptographic algorithms used are [HMAC](https://en.wikipedia.org/wiki/HMAC "HMAC") with [SHA-256](https://en.wikipedia.org/wiki/SHA-256 "SHA-256") (HS256) and [RSA signature](https://en.wikipedia.org/wiki/Digital_signature "Digital signature") with SHA-256 (RS256). JWA (JSON Web Algorithms) RFC 7518 introduces many more for both authentication and encryption.[8]
 
 ```json
 {
@@ -47,21 +33,11 @@ JWT relies on other JSON-based standards: [JSON Web Signature](https://en.wikipe
 
 ```
 
-```html
-<a rel="mw:WikiLink" href="#Standard_fields" class="mw-selflink-fragment" id="mwYg">standard fields</a>
-```
+Payload
 
-```html
-<sup about="#mwt34" class="mw-ref reference" id="cite_ref-rfc7519_1-2" rel="dc:references" typeof="mw:Extension/ref" data-mw="{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{&quot;name&quot;:&quot;rfc7519&quot;}}"><a href="#cite_note-rfc7519-1" id="mwYw"><span class="mw-reflink-text" id="mwZA"><span class="cite-bracket" id="mwZQ">[</span>1<span class="cite-bracket" id="mwZg">]</span></span></a></sup>
-```
+Contains a set of claims. The JWT specification defines seven Registered Claim Names, which are the [standard fields](https://en.wikipedia.org/wiki/JSON_Web_Token#Standard_fields) commonly included in tokens.[1] Custom claims are usually also included, depending on the purpose of the token.
 
-```html
-<code id="mwaA">iat</code>
-```
-
-```html
-<code id="mwaQ">loggedInAs</code>
-```
+This example has the standard Issued At Time claim (`iat`) and a custom claim (`loggedInAs`).
 
 ```json
 {
@@ -71,25 +47,11 @@ JWT relies on other JSON-based standards: [JSON Web Signature](https://en.wikipe
 
 ```
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Base64#RFC_4648" title="Base64" id="mwfQ">Base64url Encoding</a>
-```
+Signature
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/RFC_(identifier)" title="RFC (identifier)" about="#mwt36" class="mw-redirect">RFC</a>
-```
+Securely validates the token. The signature is calculated by encoding the header and payload using [Base64url Encoding](https://en.wikipedia.org/wiki/Base64#RFC_4648 "Base64")
 
-```html
-<a rel="mw:ExtLink nofollow" href="https://www.rfc-editor.org/rfc/rfc4648" about="#mwt36" class="external text">4648</a>
-```
-
-```html
-<i id="mwfw">Base64url Encoding</i>
-```
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Base64" title="Base64" id="mwgA">base64</a>
-```
+[RFC](https://en.wikipedia.org/wiki/RFC_(identifier) "RFC (identifier)")[4648](https://www.rfc-editor.org/rfc/rfc4648) and concatenating the two together with a period separator. That string is then run through the cryptographic algorithm specified in the header. This example uses HMAC-SHA256 with a shared secret (public key algorithms are also defined). The _Base64url Encoding_ is similar to [base64](https://en.wikipedia.org/wiki/Base64 "Base64"), but uses different non-alphanumeric characters and omits padding.
 
 ```
 HMAC_SHA256(

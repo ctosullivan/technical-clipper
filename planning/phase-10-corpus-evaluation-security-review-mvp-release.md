@@ -2,7 +2,50 @@
 
 ## Status
 
-planned
+done — except the final release-approval gate (promote `[Unreleased]` + tag),
+which is deliberately **not** done and needs explicit user approval.
+
+## Completion evidence
+
+- **Corpus (§ 12):** 22 `fixtures/articles/*` (incl. `wikipedia-iso-8601`,
+  `wikipedia-base64`, `wikipedia-tail-call`, `wikipedia-uri`, `wikipedia-jwt` —
+  real revision-pinned read-view HTML with `origin: "licensed"` provenance:
+  revision id/URL/timestamp, CC BY-SA 4.0 & GFDL, attribution string), 19
+  `fixtures/code/*`, 4 `fixtures/conversations/*`. 87 code blocks corpus-wide,
+  every supported one `exact`. `pnpm fixture-lint` — PASS.
+- **`scripts/gates.mjs` (`pnpm gates`):** gates 1–15 as threshold checks, run
+  in CI. All PASS; gate 15 worst real fixture ~0.6 s (< 2 s).
+- **`scripts/fixture-lint.mjs`, `scripts/package-extension.mjs`,
+  `scripts/naive-clip.mjs`** added; `package.json` gains `fixtures`,
+  `fixture-lint`, `gates`, `package:extension`; `ci` now ends with
+  `fixture-lint && gates`. `.github/workflows/ci.yml` runs both.
+- **`docs/evaluation/`:** `README.md` (gate map + how to run),
+  `reference-environment.md` (timing gate machine spec + result),
+  `obsidian-vault-check.md` (gate 16 — automated pre-checks pass; in-Obsidian
+  visual confirmation is part of release approval), `security-review.md`
+  (gate: untrusted boundary, no code execution, no network, permission scope,
+  no secret persistence — findings S-1/S-2 closed), `comparative/` (gate 17 —
+  3 cases: line-number gutter, 5-tab code group, Wikipedia citations, each with
+  `input.html` / `ours.md` / `naive.md` / `commentary.md`).
+- **Extraction hardening** for real MediaWiki HTML (root ascend/descend, link
+  density exemptions, inline-run coalescing, `<dl>`/`<dd>` + code-table
+  handling, `<style>` text exclusion). New diagnostics
+  `TC-EXTRACT-NOISE-REGION`, `TC-EXTRACT-TABLE-FLATTENED`,
+  `TC-EXTRACT-CODE-IN-CHROME`. `TC-VALIDATE-DUP-ID` scoped to structural nodes
+  (`decisions/0014`).
+- **Docs finalized:** `docs/privacy-and-security.md` (real reporting process),
+  `docs/cli-or-extension-reference.md`, `architecture/overview.md` (current ==
+  Phase 10), `ai-docs/AGENTS.md` (live contracts), `README.md` (status → MVP
+  candidate).
+- **`CHANGELOG.md`:** MVP entry assembled under `[Unreleased]`, **not promoted**.
+- **Packaging:** `pnpm package:extension` produces
+  `dist-artifacts/technical-clipper-<version>+<sha>/` + a deterministic zip.
+  Not signed, not submitted.
+- **Not done (needs explicit approval):** promoting `[Unreleased]` to a dated
+  release, creating the MVP tag, any store submission.
+
+The scope and plan below are the original Phase 1 statement, retained for
+context.
 
 ## Goal and user-visible outcome
 

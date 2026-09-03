@@ -323,144 +323,636 @@
         "type": "paragraph"
       },
       {
-        "id": "r7pb4zpsmqddp75f",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/World_Wide_Web\" title=\"World Wide Web\" id=\"mwNQ\">World Wide Web</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Web pages"
+          }
+        ],
+        "id": "mwziszpbiyey7pmi",
+        "type": "paragraph"
       },
       {
-        "id": "eowsqluieloukpre",
-        "rawHtml": "<sup about=\"#mwt18\" class=\"mw-ref reference\" id=\"cite_ref-7\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-7&quot;}}\"><a href=\"#cite_note-7\" id=\"mwNg\"><span class=\"mw-reflink-text\" id=\"mwNw\"><span class=\"cite-bracket\" id=\"mwOA\">[</span>7<span class=\"cite-bracket\" id=\"mwOQ\">]</span></span></a></sup>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Base64 encoding is prevalent on the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "World Wide Web"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/World_Wide_Web",
+            "id": "xvwuqdsvcilxjg3k",
+            "title": "World Wide Web",
+            "type": "link"
+          },
+          {
+            "referenceId": "7",
+            "type": "citationRef"
+          },
+          {
+            "type": "text",
+            "value": " where it is often used to embed binary data such as a digital image in text such as "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "HTML"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/HTML",
+            "id": "4cqobju22dhae7md",
+            "title": "HTML",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "CSS"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/CSS",
+            "id": "ol7372hemzravitw",
+            "title": "CSS",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          },
+          {
+            "referenceId": "8",
+            "type": "citationRef"
+          }
+        ],
+        "id": "nroc33h4eeapvq45",
+        "type": "paragraph"
       },
       {
-        "id": "x4fenv6l3urs2lfu",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/HTML\" title=\"HTML\" id=\"mwOg\">HTML</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "E-mail attachments"
+          }
+        ],
+        "id": "bvnlk4e4qzd2v2dz",
+        "type": "paragraph"
       },
       {
-        "id": "c5xt5px5z6ts47c6",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/CSS\" title=\"CSS\" id=\"mwOw\">CSS</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Base64 is widely used for sending "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "e-mail"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/E-mail",
+            "id": "hvx46u3pggxltrdm",
+            "title": "E-mail",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " attachments, because "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "SMTP"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol",
+            "id": "jji346k33fgwqmw6",
+            "title": "Simple Mail Transfer Protocol",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "– in its original form"
+          },
+          {
+            "type": "text",
+            "value": "– was designed to transport "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "7-bit ASCII"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/7-bit_ASCII",
+            "id": "bvrzdtzjpsykhd6e",
+            "title": "7-bit ASCII",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " characters only. Encoding an attachment as Base64 before sending, and then decoding when received, assures older SMTP servers correctly transmit messages with attached binary information."
+          }
+        ],
+        "id": "vqdtpw4gsqxdteg3",
+        "type": "paragraph"
       },
       {
-        "id": "x4rneoa2im7srdr7",
-        "rawHtml": "<sup about=\"#mwt21\" class=\"mw-ref reference\" id=\"cite_ref-8\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-8&quot;}}\"><a href=\"#cite_note-8\" id=\"mwPA\"><span class=\"mw-reflink-text\" id=\"mwPQ\"><span class=\"cite-bracket\" id=\"mwPg\">[</span>8<span class=\"cite-bracket\" id=\"mwPw\">]</span></span></a></sup>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Embed binary data in a text file"
+          }
+        ],
+        "id": "eymwnk7q4464edna",
+        "type": "paragraph"
       },
       {
-        "id": "qaqqwdxzovyzbxvt",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/E-mail\" title=\"E-mail\" class=\"mw-redirect\" id=\"mwQg\">e-mail</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "For example, to include the data of an image in a script to avoid depending on external files."
+          }
+        ],
+        "id": "qyqyxjfkjcp4r3a6",
+        "type": "paragraph"
       },
       {
-        "id": "gzsbsklelm5eifux",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol\" title=\"Simple Mail Transfer Protocol\" id=\"mwQw\">SMTP</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Embed binary data in XML"
+          }
+        ],
+        "id": "5grew24obvsx3ljm",
+        "type": "paragraph"
       },
       {
-        "id": "xebizu4ydicavdzw",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/7-bit_ASCII\" title=\"7-bit ASCII\" class=\"mw-redirect\" id=\"mwRg\">7-bit ASCII</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "To embed binary data in an "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "XML"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/XML",
+            "id": "kkfsg6wdtmfqooj4",
+            "title": "XML",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " file, using a syntax similar to "
+          },
+          {
+            "type": "codeSpan",
+            "value": "<data encoding=\"base64\">...</data>"
+          },
+          {
+            "type": "text",
+            "value": " e.g. "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "favicons"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Favicon",
+            "id": "kfoj7oao6xnw4kkf",
+            "title": "Favicon",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " in "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Firefox"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Firefox",
+            "id": "gtnowh2mrnrv4434",
+            "title": "Firefox",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "'s exported "
+          },
+          {
+            "type": "codeSpan",
+            "value": "bookmarks.html"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "zr54teapchk5cfhu",
+        "type": "paragraph"
       },
       {
-        "id": "42pqijvxqvbvqna4",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/XML\" title=\"XML\" id=\"mwSw\">XML</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "PDF files"
+          }
+        ],
+        "id": "ohvvuam4d6a5ds2u",
+        "type": "paragraph"
       },
       {
-        "id": "7nwbf6ly52bgnuyc",
-        "rawHtml": "<code id=\"mwTA\"><span typeof=\"mw:Nowiki\" id=\"mwTQ\">&lt;data encoding=\"base64\"&gt;...&lt;/data&gt;</span></code>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "To embed a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "PDF"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/PDF",
+            "id": "qlwqdyro4h5pchcf",
+            "title": "PDF",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " file in an HTML page."
+          }
+        ],
+        "id": "lbqhzgrqalpovnif",
+        "type": "paragraph"
       },
       {
-        "id": "tro2qorjixzl4ux3",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Favicon\" title=\"Favicon\" id=\"mwTg\">favicons</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Embedded elements"
+          }
+        ],
+        "id": "titi4z2w2ywibe2e",
+        "type": "paragraph"
       },
       {
-        "id": "24oboptymlhu5n5j",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Firefox\" title=\"Firefox\" id=\"mwTw\">Firefox</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Although not part of the official specification for the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "SVG"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/SVG",
+            "id": "hbev2q6zxhw6d7gn",
+            "title": "SVG",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " format, some viewers can interpret Base64 when used for embedded elements, such as raster images inside SVG files."
+          },
+          {
+            "referenceId": "9",
+            "type": "citationRef"
+          }
+        ],
+        "id": "h65ug7ec37ygx7ok",
+        "type": "paragraph"
       },
       {
-        "id": "r77fqwvsv5qpvdb7",
-        "rawHtml": "<code id=\"mwUA\">bookmarks.html</code>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Preventing delimiter collisions"
+          }
+        ],
+        "id": "v2e3uvd4lduqml63",
+        "type": "paragraph"
       },
       {
-        "id": "dsofhmhgesn5rbwe",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/PDF\" title=\"PDF\" id=\"mwUw\">PDF</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "To transmit and store text that might otherwise cause "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "delimiter collision"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Delimiter_collision",
+            "id": "o6zpgkueojuzdcev",
+            "title": "Delimiter collision",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "wzevpr4fod4nrcsy",
+        "type": "paragraph"
       },
       {
-        "id": "hbqvlzziwrggxf5f",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/SVG\" title=\"SVG\" id=\"mwVg\">SVG</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "LDAP Data Interchange Format"
+          }
+        ],
+        "id": "mroip4eacjlwf5j2",
+        "type": "paragraph"
       },
       {
-        "id": "paj25dzfqbzwwgtb",
-        "rawHtml": "<sup about=\"#mwt24\" class=\"mw-ref reference\" id=\"cite_ref-9\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-9&quot;}}\"><a href=\"#cite_note-9\" id=\"mwVw\"><span class=\"mw-reflink-text\" id=\"mwWA\"><span class=\"cite-bracket\" id=\"mwWQ\">[</span>9<span class=\"cite-bracket\" id=\"mwWg\">]</span></span></a></sup>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "To encode character strings in "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "LDAP Data Interchange Format"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format",
+            "id": "rjtojmzzjderlzyz",
+            "title": "LDAP Data Interchange Format",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " files."
+          }
+        ],
+        "id": "ac2vusjrhdzi2wnz",
+        "type": "paragraph"
       },
       {
-        "id": "6c2wgqb4wytlix2g",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Delimiter_collision\" title=\"Delimiter collision\" class=\"mw-redirect\" id=\"mwXQ\">delimiter collision</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Data URI schemes"
+          }
+        ],
+        "id": "z244bwfzrfbfc35q",
+        "type": "paragraph"
       },
       {
-        "id": "qwynhxrherowwzi6",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format\" title=\"LDAP Data Interchange Format\" id=\"mwYA\">LDAP Data Interchange Format</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "data URI scheme"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Data_URI_scheme",
+            "id": "zyprkh6hc5is24li",
+            "title": "Data URI scheme",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " can use Base64 to represent file contents. For instance, background images and fonts can be specified in a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "CSS"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/CSS",
+            "id": "ol7372hemzravitw",
+            "title": "CSS",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " stylesheet file as "
+          },
+          {
+            "type": "codeSpan",
+            "value": "data:"
+          },
+          {
+            "type": "text",
+            "value": " URIs, instead of being supplied in separate files."
+          }
+        ],
+        "id": "lwtjm5nnhj7c2kcm",
+        "type": "paragraph"
       },
       {
-        "id": "u5rt3kse2svjw4kl",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Data_URI_scheme\" title=\"Data URI scheme\" id=\"mwYw\">data URI scheme</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Leverage clipboard"
+          }
+        ],
+        "id": "4kkoxt6qqo7rocwd",
+        "type": "paragraph"
       },
       {
-        "id": "obrvdarvep364ki7",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/CSS\" title=\"CSS\" id=\"mwZA\">CSS</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "To store/transmit relatively small amounts of binary data via a computer's text "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "clipboard"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Clipboard_(computing)",
+            "id": "yno2hohae76xg2ud",
+            "title": "Clipboard (computing)",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " functionality, especially in cases where the information doesn't warrant being permanently saved or when information must be quickly sent between a wide variety of different, potentially incompatible programs. An example is the representation of the public keys of "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "cryptocurrency"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Cryptocurrency",
+            "id": "6l5t5hzzmedvccn3",
+            "title": "Cryptocurrency",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " recipients as Base64 encoded text strings, which can be easily copied and pasted into users' "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "wallet software"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Cryptocurrency_wallet",
+            "id": "nalwp5pdkty6ipaj",
+            "title": "Cryptocurrency wallet",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "zrabkjywuyk2v33l",
+        "type": "paragraph"
       },
       {
-        "id": "cwb2zp65ffaqtvtf",
-        "rawHtml": "<code id=\"mwZQ\">data:</code>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Support human verification"
+          }
+        ],
+        "id": "lp2pud2dcs2l7ek3",
+        "type": "paragraph"
       },
       {
-        "id": "agozbkcnwupuqoyk",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Clipboard_(computing)\" title=\"Clipboard (computing)\" id=\"mwaA\">clipboard</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Binary data that must be quickly verified by humans as a safety mechanism, such as "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "file checksums"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Checksum",
+            "id": "trdcf6ffpbilyhdq",
+            "title": "Checksum",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " or "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "key fingerprints"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Public_key_fingerprint",
+            "id": "yhwa5lnfh3p5mq77",
+            "title": "Public key fingerprint",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", is often represented in Base64 for easy checking, sometimes with additional formatting, such as separating each group of four characters in the representation of a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "PGP"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Pretty_Good_Privacy",
+            "id": "yuhzxhnhf7uwzdot",
+            "title": "Pretty Good Privacy",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " key fingerprint with a space."
+          }
+        ],
+        "id": "hmdvox3yvhghuvd5",
+        "type": "paragraph"
       },
       {
-        "id": "xuzvile27ibyn73f",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Cryptocurrency\" title=\"Cryptocurrency\" id=\"mwaQ\">cryptocurrency</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "QR code encoding"
+          }
+        ],
+        "id": "fvxxfm6hxxraozzh",
+        "type": "paragraph"
       },
       {
-        "id": "oeh5fwowpuadhy7q",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Cryptocurrency_wallet\" title=\"Cryptocurrency wallet\" id=\"mwag\">wallet software</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "tndi5oanc2d27azi",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Checksum\" title=\"Checksum\" id=\"mwbQ\">file checksums</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "ksmvakkqfvbxbc3m",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Public_key_fingerprint\" title=\"Public key fingerprint\" id=\"mwbg\">key fingerprints</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "u34gtahp5qbfghg7",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Pretty_Good_Privacy\" title=\"Pretty Good Privacy\" id=\"mwbw\">PGP</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "imrzhr7ihjkqtmtu",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/QR_code\" title=\"QR code\" id=\"mwcg\">QR code</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "A "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "QR code"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/QR_code",
+            "id": "3f3qo7tcijdwmubo",
+            "title": "QR code",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", which contains binary data, is sometimes stored as Base64 since it is more likely that a QR code reader accurately decodes text than binary data. Also, some devices more readily save text from a QR code than potentially malicious binary data."
+          }
+        ],
+        "id": "r77rr4xa7cv4ugkl",
+        "type": "paragraph"
       },
       {
         "children": [
@@ -584,7 +1076,7 @@
             "value": " for the last two."
           }
         ],
-        "id": "xazj7nj2c2t3kqx3",
+        "id": "hk4wisef5wx565m2",
         "type": "paragraph"
       },
       {
@@ -622,7 +1114,7 @@
             "value": " is used."
           }
         ],
-        "id": "yliuldy3dsw256ad",
+        "id": "abfj5sxs3tdhp46p",
         "type": "paragraph"
       },
       {
@@ -1538,7 +2030,7 @@
             "value": " to make the encoded string HTTP-safe and avoid the need for escaping."
           }
         ],
-        "id": "3poc5s52qifsqwmw",
+        "id": "lbvatoktksuk6yey",
         "type": "paragraph"
       },
       {
@@ -1559,7 +2051,7 @@
             "value": "To simplify explanation, the example below uses plain text for input. While this is done in practice, a much more common use is encoding images and other data that are normally not representable with plain text, and the result then represents the data in a printable text format."
           }
         ],
-        "id": "4gsayabp2stpaioz",
+        "id": "kazmz2cumvapefg6",
         "type": "paragraph"
       },
       {
@@ -1569,7 +2061,7 @@
             "value": "For the input data:"
           }
         ],
-        "id": "vwyn67kwoz6kz2ka",
+        "id": "qootckclpdwolno3",
         "type": "paragraph"
       },
       {
@@ -1601,7 +2093,7 @@
             "value": "The typical Base64 representation is:"
           }
         ],
-        "id": "mevr6md6mtjwzsjx",
+        "id": "c7mdidk5vulcffbe",
         "type": "paragraph"
       },
       {
@@ -1704,7 +2196,7 @@
             "value": ". Joining these representations and splitting into 6-bit groups gives:"
           }
         ],
-        "id": "3bz7kwj7o2lszx5z",
+        "id": "ikabasbo3zwucafc",
         "type": "paragraph"
       },
       {
@@ -1744,7 +2236,7 @@
             "value": " (per ASCII or similar)."
           }
         ],
-        "id": "g6jwkgqsegtf4wen",
+        "id": "2dzoxhupuj3ui422",
         "type": "paragraph"
       },
       {
@@ -1778,7 +2270,7 @@
             "value": " (per ASCII and similar)."
           }
         ],
-        "id": "bagz2khw3avtldwc",
+        "id": "scn6w6t7h2vacnr5",
         "type": "paragraph"
       },
       {
@@ -2242,7 +2734,7 @@
             "value": " padding character)."
           }
         ],
-        "id": "gxy2uj4kmn6vzaaw",
+        "id": "rywoimbdjhw42pp5",
         "type": "paragraph"
       },
       {
@@ -2653,7 +3145,7 @@
             "value": " padding characters):"
           }
         ],
-        "id": "6cvmigkt2cljwc73",
+        "id": "oug3obar2pzbymir",
         "type": "paragraph"
       },
       {
@@ -2985,7 +3477,7 @@
             "value": "When decoding, each sequence of four encoded characters is converted to three output bytes, but with a single padding character the final 4 characters decode to only two bytes, or with two padding characters, the final 4 characters decode to a single byte. For example:"
           }
         ],
-        "id": "47o6zgatgsqtf5ss",
+        "id": "7jt3l6znelafv226",
         "type": "paragraph"
       },
       {
@@ -3232,7 +3724,7 @@
             "value": " ends up producing 8 bits (1 byte) when decoded."
           }
         ],
-        "id": "h44n3bl3jomm3gbv",
+        "id": "nvdaedgffa2f4vpa",
         "type": "paragraph"
       },
       {
@@ -3282,7 +3774,7 @@
             "value": " during encoding to avoid ambiguity when decoding."
           }
         ],
-        "id": "ljt6vmcif3iaiwie",
+        "id": "a4dzjtoyjkt6bs4e",
         "type": "paragraph"
       },
       {
@@ -3292,7 +3784,7 @@
             "value": "Without padding, after decoding each sequence of 4 encoded characters, there may be 2 or 3 encoded characters left over (as seen in the table above). A single remaining encoded character is not possible because a single Base64 character only contains 6 bits, and 8 bits are required to create a byte, so the first Base64 character contributes 6 bits, and the second Base64 character contributes its first 2 bits to finish filling the byte (see above)."
           }
         ],
-        "id": "d56dgqh5k6yprkvl",
+        "id": "23u7imvs6slj7z56",
         "type": "paragraph"
       },
       {
@@ -3302,7 +3794,7 @@
             "value": "The following table demonstrates decoding encoded strings that have 2, 3 or no left-over characters."
           }
         ],
-        "id": "xxmfo6jwao3ress2",
+        "id": "mtnbzkt2kdirz7ij",
         "type": "paragraph"
       },
       {
@@ -3526,7 +4018,7 @@
             "value": " "
           }
         ],
-        "id": "3kqjxcxtpophtif2",
+        "id": "ciin24n3hqy4ke4r",
         "type": "paragraph"
       },
       {
@@ -3563,7 +4055,7 @@
             "value": "."
           }
         ],
-        "id": "fdhtskib2mau3kqo",
+        "id": "bopkm7dz75x5coah",
         "type": "paragraph"
       },
       {
@@ -4214,7 +4706,7 @@
             "value": " is intended for general-use."
           }
         ],
-        "id": "hbutggktwph4ynbb",
+        "id": "eyt6y5xbe7no5hrf",
         "type": "paragraph"
       },
       {
@@ -4301,7 +4793,7 @@
             "value": " need to encode binary data in a way that is convenient for inclusion in a URL, including in hidden web form fields, and Base64 is a convenient encoding to render them in a compact way."
           }
         ],
-        "id": "b4hmwgnji3uh4ruq",
+        "id": "s4ofjyht4mqbpwxm",
         "type": "paragraph"
       },
       {
@@ -4515,7 +5007,7 @@
             "value": " when a folder name is encoded from user data."
           }
         ],
-        "id": "rnygpsetldgh57i4",
+        "id": "s77s7zksxcdjosf7",
         "type": "paragraph"
       },
       {
@@ -4629,7 +5121,7 @@
             "value": " specifications of Base64 encodings, alternative-alphabet encodings, and the Base32 (which is seldom used) and Base16 encodings. RFC 4648 obsoletes RFC 3548."
           }
         ],
-        "id": "imuakpwohykxf2ln",
+        "id": "im75eddphfygzrem",
         "type": "paragraph"
       },
       {
@@ -4675,7 +5167,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "hkvkktnd2vhsfvjm",
+        "id": "nogmbqmx6xkkjlfr",
         "type": "paragraph"
       },
       {
@@ -4816,7 +5308,7 @@
             "value": "."
           }
         ],
-        "id": "zcp4citm6jypxif5",
+        "id": "ofqx4efrinhjlksk",
         "type": "paragraph"
       },
       {
@@ -4842,7 +5334,7 @@
             "value": " pair to delimit encoded lines."
           }
         ],
-        "id": "b5ul5yrlvhkjzxs2",
+        "id": "hc2dne4ox3dipsxb",
         "type": "paragraph"
       },
       {
@@ -4888,7 +5380,7 @@
             "value": "), though for very short messages the overhead can be much higher due to the overhead of the headers. Very roughly, the final size of Base64-encoded binary data is equal to 1.37 times the original data size + 814 bytes (for headers). The size of the decoded data can be approximated with this formula:"
           }
         ],
-        "id": "alk4xkgf47d66oxs",
+        "id": "6hr5qz77ezpkzskr",
         "type": "paragraph"
       },
       {
@@ -4995,7 +5487,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "b5pi4wpxhtmjqyhd",
+        "id": "jbs3rvu3giir3462",
         "type": "paragraph"
       },
       {
@@ -5165,7 +5657,7 @@
             "value": " symbol to delimit encoded but unencrypted data within the output stream."
           }
         ],
-        "id": "5kmvf5qeellog3tq",
+        "id": "d54werotkyp4xkyh",
         "type": "paragraph"
       },
       {
@@ -5231,7 +5723,7 @@
             "value": "\", and the indicated character is output."
           }
         ],
-        "id": "mjq6gwws5fomjqhq",
+        "id": "amxtfol2j3xocz2u",
         "type": "paragraph"
       },
       {
@@ -5241,7 +5733,7 @@
             "value": "The process is repeated on the remaining data until fewer than four bytes remain. If three bytes remain, they are processed normally. If fewer than three bytes (24 bits) are remaining to encode, the input data is right-padded with zero bits to form an integral multiple of six bits."
           }
         ],
-        "id": "abhus4b7tczp56ch",
+        "id": "hjxpkclxjwlux4fn",
         "type": "paragraph"
       },
       {
@@ -5267,7 +5759,7 @@
             "value": " character is appended. This signals the decoder that the zero bits added due to padding should be excluded from the reconstructed data. This also guarantees that the encoded output length is a multiple of 4 bytes."
           }
         ],
-        "id": "kwu6vb5twet7ofr2",
+        "id": "f2mjo6ieagg6rogi",
         "type": "paragraph"
       },
       {
@@ -5277,7 +5769,7 @@
             "value": "PEM requires that all encoded lines consist of exactly 64 printable characters, with the exception of the last line, which may contain fewer printable characters. Lines are delimited by whitespace characters according to local (platform-specific) conventions."
           }
         ],
-        "id": "x6svtnhc57crqwco",
+        "id": "qmltkgalvdozbxwb",
         "type": "paragraph"
       },
       {
@@ -5435,7 +5927,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "by72q6gdwppflmst",
+        "id": "jwf23b736y3mumg4",
         "type": "paragraph"
       },
       {
@@ -5489,7 +5981,7 @@
             "value": "\" character is reserved in that context as the escape character for \"quoted-printable\" encoding. Modified Base64 simply omits the padding and ends immediately after the last Base64 digit containing useful bits leaving up to three unused bits in the last Base64 digit."
           }
         ],
-        "id": "b3alagp6plcqz4qa",
+        "id": "yemyztjxse7tvdnl",
         "type": "paragraph"
       },
       {
@@ -5504,9 +5996,30 @@
         "type": "heading"
       },
       {
-        "id": "euvxqxlkf2ysuxoj",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP\" title=\"Pretty Good Privacy\">Pretty Good Privacy §<span typeof=\"mw:Entity\">&#160;</span>OpenPGP</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Further information: "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Pretty Good Privacy §"
+              },
+              {
+                "type": "text",
+                "value": "OpenPGP"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP",
+            "id": "cjxk63eg7ll3z7ji",
+            "title": "Pretty Good Privacy",
+            "type": "link"
+          }
+        ],
+        "id": "alzan7mwu7lmwx4a",
+        "type": "paragraph"
       },
       {
         "children": [
@@ -5615,7 +6128,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "t3c4w67qjnqejy37",
+        "id": "cfk5yd5eecty2f72",
         "type": "paragraph"
       },
       {
@@ -5704,7 +6217,7 @@
             "value": "."
           }
         ],
-        "id": "phzxximfd672gnl2",
+        "id": "ziv5wq4puhuc224r",
         "type": "paragraph"
       },
       {
@@ -5725,118 +6238,401 @@
             "value": "Several variants use alphabets similar to the common variants, but in a different order."
           }
         ],
-        "id": "4b3pzrpnoapfthm2",
+        "id": "eooioxfc5orx53ik",
         "type": "paragraph"
       },
       {
-        "id": "xrwvc55e2yq5imcf",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Crypt_(C)\" title=\"Crypt (C)\" id=\"mwBAQ\"><b id=\"mwBAU\">crypt</b></a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Unix password"
+          }
+        ],
+        "id": "zcxgh4fz4ufqqvrh",
+        "type": "paragraph"
       },
       {
-        "id": "k3if4ikdbecwagik",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Passwd#Password_file\" title=\"Passwd\" id=\"mwBAY\"><code id=\"mwBAc\">/etc/passwd</code> file</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Unix stores password hashes computed with "
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "crypt"
+                  }
+                ],
+                "type": "strong"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Crypt_(C)",
+            "id": "6v7tjgicfk2bdb7b",
+            "title": "Crypt (C)",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " in the "
+          },
+          {
+            "children": [
+              {
+                "type": "codeSpan",
+                "value": "/etc/passwd"
+              },
+              {
+                "type": "text",
+                "value": " file"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Passwd#Password_file",
+            "id": "b3gpb2hcwsuic7np",
+            "title": "Passwd",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " using an encoding called "
+          },
+          {
+            "type": "text",
+            "value": "B64"
+          },
+          {
+            "type": "text",
+            "value": ". crypt's alphabet puts the punctuation "
+          },
+          {
+            "type": "codeSpan",
+            "value": "."
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "/"
+          },
+          {
+            "type": "text",
+            "value": " before the alphanumeric characters. crypt uses the alphabet \""
+          },
+          {
+            "type": "codeSpan",
+            "value": "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+          },
+          {
+            "type": "text",
+            "value": "\" without padding. An advantage over RFC 4648 is that sorting encoded ASCII data results in the same order as sorting the plain ASCII data."
+          }
+        ],
+        "id": "v3yebnr3hcblu32y",
+        "type": "paragraph"
       },
       {
-        "id": "w7hf5pftjszhmtzs",
-        "rawHtml": "<code id=\"mwBAg\">.</code>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "GEDCOM"
+          }
+        ],
+        "id": "fmjrgczwzl4idi6c",
+        "type": "paragraph"
       },
       {
-        "id": "abawutqvf6cizxjo",
-        "rawHtml": "<code id=\"mwBAk\">/</code>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "GEDCOM"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/wiki/GEDCOM",
+                "id": "kfj5e5kbzq3tte5b",
+                "title": "GEDCOM",
+                "type": "link"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": " 5.5 standard for genealogical data interchange encodes multimedia files in its text-line hierarchical file format. GEDCOM uses the same alphabet as crypt, which is "
+          },
+          {
+            "type": "text",
+            "value": "\""
+          },
+          {
+            "type": "codeSpan",
+            "value": "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+          },
+          {
+            "type": "text",
+            "value": "\""
+          },
+          {
+            "type": "text",
+            "value": "."
+          },
+          {
+            "referenceId": "20",
+            "type": "citationRef"
+          }
+        ],
+        "id": "duwp2yxjfqzm467i",
+        "type": "paragraph"
       },
       {
-        "id": "lo2ogawbadxkgfj4",
-        "rawHtml": "<code id=\"mwBAo\">./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "bcrypt"
+          }
+        ],
+        "id": "ciory7fjbqncquco",
+        "type": "paragraph"
       },
       {
-        "id": "quftomfw42chuzqr",
-        "rawHtml": "<b id=\"mwBA0\"><a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/GEDCOM\" title=\"GEDCOM\" id=\"mwBA4\">GEDCOM</a></b>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "bcrypt"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/wiki/Bcrypt",
+                "id": "y7hveagkv73euaw5",
+                "title": "Bcrypt",
+                "type": "link"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": " hashes are designed to be used in the same way as traditional crypt(3) hashes, but bcrypt's alphabet is in a different order than crypt's. bcrypt uses the alphabet "
+          },
+          {
+            "type": "text",
+            "value": "\""
+          },
+          {
+            "type": "codeSpan",
+            "value": "./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+          },
+          {
+            "type": "text",
+            "value": "\""
+          },
+          {
+            "type": "text",
+            "value": "."
+          },
+          {
+            "referenceId": "21",
+            "type": "citationRef"
+          }
+        ],
+        "id": "irxchf3cvy7a2xj7",
+        "type": "paragraph"
       },
       {
-        "id": "wrrtzwqq6kxfhq75",
-        "rawHtml": "<code id=\"mwBBA\">./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Xxencoding"
+          }
+        ],
+        "id": "p3aik74hooqyxe2q",
+        "type": "paragraph"
       },
       {
-        "id": "x4qvpp2y4sfa4rj2",
-        "rawHtml": "<sup about=\"#mwt226\" class=\"mw-ref reference\" id=\"cite_ref-20\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-20&quot;}}\"><a href=\"#cite_note-20\" id=\"mwBBE\"><span class=\"mw-reflink-text\" id=\"mwBBI\"><span class=\"cite-bracket\" id=\"mwBBM\">[</span>20<span class=\"cite-bracket\" id=\"mwBBQ\">]</span></span></a></sup>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Xxencoding"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/wiki/Xxencoding",
+                "id": "lwgip2s2g3joijii",
+                "title": "Xxencoding",
+                "type": "link"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": " uses a mostly-alphanumeric character set similar to crypt, but using "
+          },
+          {
+            "type": "codeSpan",
+            "value": "+"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "-"
+          },
+          {
+            "type": "text",
+            "value": " rather than "
+          },
+          {
+            "type": "codeSpan",
+            "value": "."
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "/"
+          },
+          {
+            "type": "text",
+            "value": ". Xxencoding uses the alphabet "
+          },
+          {
+            "type": "text",
+            "value": "\""
+          },
+          {
+            "type": "codeSpan",
+            "value": "+-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+          },
+          {
+            "type": "text",
+            "value": "\""
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "h7uxpfoir47dqjaz",
+        "type": "paragraph"
       },
       {
-        "id": "o3klroukj24qgicn",
-        "rawHtml": "<b id=\"mwBBc\"><a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Bcrypt\" title=\"Bcrypt\" id=\"mwBBg\">bcrypt</a></b>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "6PACK"
+          }
+        ],
+        "id": "zq2skylf6r4n7rtc",
+        "type": "paragraph"
       },
       {
-        "id": "fhqt4lfufxmhqkzp",
-        "rawHtml": "<code id=\"mwBBo\">./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</code>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Used with some "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "terminal node controllers"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Terminal_node_controller",
+            "id": "3eqzxuacywiy4p6k",
+            "title": "Terminal node controller",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", uses an alphabet from 0x00 to 0x3f."
+          },
+          {
+            "referenceId": "22",
+            "type": "citationRef"
+          }
+        ],
+        "id": "wvjbgvmx7yg625x2",
+        "type": "paragraph"
       },
       {
-        "id": "fldht2x3pylwymgo",
-        "rawHtml": "<sup about=\"#mwt229\" class=\"mw-ref reference\" id=\"cite_ref-21\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-21&quot;}}\"><a href=\"#cite_note-21\" id=\"mwBBs\"><span class=\"mw-reflink-text\" id=\"mwBBw\"><span class=\"cite-bracket\" id=\"mwBB0\">[</span>21<span class=\"cite-bracket\" id=\"mwBB4\">]</span></span></a></sup>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Bash"
+          }
+        ],
+        "id": "vqvof6knaljgujwd",
+        "type": "paragraph"
       },
       {
-        "id": "6rn6o7pju3tm22ln",
-        "rawHtml": "<b id=\"mwBCE\"><a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Xxencoding\" title=\"Xxencoding\" id=\"mwBCI\">Xxencoding</a></b>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "5a3jhed3krgan2bi",
-        "rawHtml": "<code id=\"mwBCM\">+</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "jsmokb3wer5n3t7g",
-        "rawHtml": "<code id=\"mwBCQ\">-</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "iz7zvfg64jfoqw7j",
-        "rawHtml": "<code id=\"mwBCU\">.</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "qx54m7nkkupmnrit",
-        "rawHtml": "<code id=\"mwBCY\">/</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "mvmyzh43wyhjphad",
-        "rawHtml": "<code id=\"mwBCg\">+-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "4b5vvyieygaob4yk",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Terminal_node_controller\" title=\"Terminal node controller\" id=\"mwBCs\">terminal node controllers</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "pon47f7zuzyopfzt",
-        "rawHtml": "<sup about=\"#mwt232\" class=\"mw-ref reference\" id=\"cite_ref-22\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-22&quot;}}\"><a href=\"#cite_note-22\" id=\"mwBCw\"><span class=\"mw-reflink-text\" id=\"mwBC0\"><span class=\"cite-bracket\" id=\"mwBC4\">[</span>22<span class=\"cite-bracket\" id=\"mwBC8\">]</span></span></a></sup>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "ov7hkybq2q77yrro",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Bash_(Unix_shell)\" title=\"Bash (Unix shell)\" id=\"mwBDI\"><b id=\"mwBDM\">Bash</b></a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "tvwfx3zy6basdrbq",
-        "rawHtml": "<code id=\"mwBDU\">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@_</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "7t6hqf4unygwtqas",
-        "rawHtml": "<sup about=\"#mwt235\" class=\"mw-ref reference\" id=\"cite_ref-23\" rel=\"dc:references\" typeof=\"mw:Extension/ref\" data-mw=\"{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-23&quot;}}\"><a href=\"#cite_note-23\" id=\"mwBDY\"><span class=\"mw-reflink-text\" id=\"mwBDc\"><span class=\"cite-bracket\" id=\"mwBDg\">[</span>23<span class=\"cite-bracket\" id=\"mwBDk\">]</span></span></a></sup>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Bash"
+                  }
+                ],
+                "type": "strong"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Bash_(Unix_shell)",
+            "id": "4xmyokk6yeu2hamz",
+            "title": "Bash (Unix shell)",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " supports numeric literals in Base64. Bash uses the alphabet "
+          },
+          {
+            "type": "text",
+            "value": "\""
+          },
+          {
+            "type": "codeSpan",
+            "value": "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@_"
+          },
+          {
+            "type": "text",
+            "value": "\""
+          },
+          {
+            "type": "text",
+            "value": "."
+          },
+          {
+            "referenceId": "23",
+            "type": "citationRef"
+          }
+        ],
+        "id": "pa2w5xdco35trhn3",
+        "type": "paragraph"
       },
       {
         "children": [
@@ -5856,73 +6652,242 @@
             "value": "Some variants use a Base64 alphabet that is significantly different from the alphabets used in the most common Base64 variants (like RFC 4648)."
           }
         ],
-        "id": "nooingpaalpgzg57",
+        "id": "bl3mpmkstbrwz3ej",
         "type": "paragraph"
       },
       {
-        "id": "fe7yevc6bcby6tgd",
-        "rawHtml": "<b id=\"mwBD8\"><a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Uuencoding\" title=\"Uuencoding\" id=\"mwBEA\">Uuencoding</a></b>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Uuencoding"
+          }
+        ],
+        "id": "jyezmxzvytr2ze2z",
+        "type": "paragraph"
       },
       {
-        "id": "ozt2akxxaowsf7pb",
-        "rawHtml": "<code id=\"mwBEM\">_</code>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "The "
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Uuencoding"
+                  }
+                ],
+                "href": "https://en.wikipedia.org/wiki/Uuencoding",
+                "id": "gcrpc4lwjaxavtdh",
+                "title": "Uuencoding",
+                "type": "link"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": " alphabet includes no lowercase characters, instead using ASCII codes 32 (\""
+          },
+          {
+            "type": "codeSpan",
+            "value": " "
+          },
+          {
+            "type": "text",
+            "value": "\" (space)) through 95 (\""
+          },
+          {
+            "type": "codeSpan",
+            "value": "_"
+          },
+          {
+            "type": "text",
+            "value": "\"), consecutively. Uuencoding uses the alphabet "
+          },
+          {
+            "type": "text",
+            "value": "\""
+          },
+          {
+            "type": "codeSpan",
+            "value": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
+          },
+          {
+            "type": "text",
+            "value": "\""
+          },
+          {
+            "type": "text",
+            "value": ". Avoiding all lower-case letters was helpful, because many older printers only printed uppercase. Using consecutive ASCII characters saved computing power, because it was only necessary to add 32, without requiring a lookup table. Its use of most punctuation characters and the space character may limit its usefulness in some applications, such as those that use these characters as syntax."
+          }
+        ],
+        "id": "xiogo6ofgtzz5fvw",
+        "type": "paragraph"
       },
       {
-        "id": "unluoawz5vhod44q",
-        "rawHtml": "<code id=\"mwBEU\"><span typeof=\"mw:Entity\" id=\"mwBEY\">&#160;</span>!\"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_</code>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "BinHex"
+          }
+        ],
+        "id": "krc4dlskekiycbqv",
+        "type": "paragraph"
       },
       {
-        "id": "7snjnx53xpvwhtuq",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/BinHex\" title=\"BinHex\" id=\"mwBEs\"><b id=\"mwBEw\">BinHex 4</b></a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "BinHex 4"
+                  }
+                ],
+                "type": "strong"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/BinHex",
+            "id": "6sfmxn4gzro62jfr",
+            "title": "BinHex",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " (HQX), which was used within the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "classic Mac OS"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Classic_Mac_OS",
+            "id": "wec63mvjtrivowjp",
+            "title": "Classic Mac OS",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ", excludes some visually confusable characters like '"
+          },
+          {
+            "type": "codeSpan",
+            "value": "7"
+          },
+          {
+            "type": "text",
+            "value": "', '"
+          },
+          {
+            "type": "codeSpan",
+            "value": "O"
+          },
+          {
+            "type": "text",
+            "value": "', '"
+          },
+          {
+            "type": "codeSpan",
+            "value": "g"
+          },
+          {
+            "type": "text",
+            "value": "' and '"
+          },
+          {
+            "type": "codeSpan",
+            "value": "o"
+          },
+          {
+            "type": "text",
+            "value": "'. Its alphabet includes additional punctuation characters. It uses the alphabet "
+          },
+          {
+            "type": "text",
+            "value": "\""
+          },
+          {
+            "type": "codeSpan",
+            "value": "!\"#$%&'()*+,-012345689@ABCDEFGHIJKLMNPQRSTUVXYZ[`abcdefhijklmpqr"
+          },
+          {
+            "type": "text",
+            "value": "\""
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "flcv2bjk6hxxmc2n",
+        "type": "paragraph"
       },
       {
-        "id": "fvdyvyhfvkzhjrpx",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Classic_Mac_OS\" title=\"Classic Mac OS\" id=\"mwBE0\">classic Mac OS</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "UTF-8"
+          }
+        ],
+        "id": "6eoph3bkpqzkem3s",
+        "type": "paragraph"
       },
       {
-        "id": "zy4kwm3ppezxcmcf",
-        "rawHtml": "<code id=\"mwBE4\">7</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "vft6raeuur5lzwez",
-        "rawHtml": "<code id=\"mwBE8\">O</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "at5z7anrkn5ptumu",
-        "rawHtml": "<code id=\"mwBFA\">g</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "l3tb63sxywtljwtf",
-        "rawHtml": "<code id=\"mwBFE\">o</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "b2wr3hce3kxswaki",
-        "rawHtml": "<code id=\"mwBFM\"><span typeof=\"mw:Nowiki\" id=\"mwBFQ\">!\"#$%&amp;'()*+,-012345689@ABCDEFGHIJKLMNPQRSTUVXYZ[`abcdefhijklmpqr</span></code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "svtzlf7jzsfhlo67",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/UTF-8\" title=\"UTF-8\" id=\"mwBFc\">UTF-8</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "psvueexlhoh7c23o",
-        "rawHtml": "<code id=\"mwBFg\">0b10<b id=\"mwBFk\">xxxxxx</b></code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "jnzmwrlo75yf76tt",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/UTF-8#Comparison_with_other_encodings\" title=\"UTF-8\" id=\"mwBFo\">UTF-8#Self-synchronization</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "A "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "UTF-8"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/UTF-8",
+            "id": "h4q2pyctneqoj5vl",
+            "title": "UTF-8",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " environment can use non-synchronized continuation bytes as base64: "
+          },
+          {
+            "type": "codeSpan",
+            "value": "0b10xxxxxx"
+          },
+          {
+            "type": "text",
+            "value": ". See "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "UTF-8#Self-synchronization"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/UTF-8#Comparison_with_other_encodings",
+            "id": "t65g7bpvrwakmzjy",
+            "title": "UTF-8",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "epgkqekdakae2ypt",
+        "type": "paragraph"
       },
       {
         "children": [
@@ -5967,7 +6932,7 @@
                     "value": " 8-bit data transmission for SMTP"
                   }
                 ],
-                "id": "rkorf6k7oeliybsj",
+                "id": "eslitob27gsghsm6",
                 "type": "paragraph"
               }
             ],
@@ -5996,7 +6961,7 @@
                     "value": "– Encoding for a sequence of byte values using 85 printable characters"
                   }
                 ],
-                "id": "rfwvahknxe5ku2qh",
+                "id": "zcyokju4dblwvfhh",
                 "type": "paragraph"
               }
             ],
@@ -6033,7 +6998,7 @@
                     "value": " Encoding for a sequence of byte values using hexadecimal"
                   }
                 ],
-                "id": "fx22evcfitnix2lk",
+                "id": "xphlhn5p2g3lojgx",
                 "type": "paragraph"
               }
             ],
@@ -6062,7 +7027,7 @@
                     "value": "– Encoding for a sequence of byte values using 32 printable characters"
                   }
                 ],
-                "id": "ql6ofhf3qchcq6bo",
+                "id": "5vvgz7n23oozxihk",
                 "type": "paragraph"
               }
             ],
@@ -6091,7 +7056,7 @@
                     "value": "– Encoding for a sequence of byte values using 36 printable characters"
                   }
                 ],
-                "id": "75bktn5c4cdfbzhm",
+                "id": "5gh23kctkea4aix2",
                 "type": "paragraph"
               }
             ],
@@ -6120,7 +7085,7 @@
                     "value": "– Encoding for a sequence of byte values using 62 printable characters"
                   }
                 ],
-                "id": "clhumbpyaacrxgez",
+                "id": "lcqnqnbcgn3ahoto",
                 "type": "paragraph"
               }
             ],
@@ -6149,7 +7114,7 @@
                     "value": "– Number expressed in the base-2 numeral system"
                   }
                 ],
-                "id": "kjkbm45dmkdwvuxv",
+                "id": "2o7qqijus67q6abf",
                 "type": "paragraph"
               }
             ],
@@ -6691,7 +7656,7 @@
       "gyxkazcoqfwo4wtf": "0293d08a99a9e02ff035cb90a11e82848f0c0e4ce6a8f142821d509a71188377",
       "piiyt26ojsm55k3s": "e4c3fc8ef2347ff50cdde3b877836cf1bfb4e0527f2e017089a86a44682ddce9"
     },
-    "documentContentIdentity": "98aac082d26540973bbbb43eff84bd9cfafd2ff90a3b0548665a18010948c9b5",
+    "documentContentIdentity": "a87c966eebeb6f4bfe16a8cd1bace30790fb26a071c35993cf4fa431966e424e",
     "markdown": null,
     "normalizationRulesets": {
       "code": "norm/code@1",

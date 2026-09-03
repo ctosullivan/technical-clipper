@@ -1,0 +1,251 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 639,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 639,
+          "selectorPath": "main[1]/article[1]"
+        },
+        {
+          "score": 609,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]/article[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Standards body ratifies date format update"
+          }
+        ],
+        "id": "6k4s7y3eoe4k36qt",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "By P. Correspondent "
+          },
+          {
+            "type": "text",
+            "value": "·"
+          },
+          {
+            "type": "text",
+            "value": " Updated 3 September 2026"
+          }
+        ],
+        "id": "gaiofhihw736cwon",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The committee approved the amendment after a two-year review, adding clarifications rather than new syntax."
+          }
+        ],
+        "id": "37wsqbbjmzfmotcu",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Implementers said the change would have little effect on existing software, because the affected notation was already widely supported."
+          }
+        ],
+        "id": "pqm57d7lzto2eoaa",
+        "type": "paragraph"
+      },
+      {
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "“"
+              },
+              {
+                "type": "text",
+                "value": "This is housekeeping, and that is a good thing,"
+              },
+              {
+                "type": "text",
+                "value": "”"
+              },
+              {
+                "type": "text",
+                "value": " one working-group member said."
+              }
+            ],
+            "id": "stpozenictycd72l",
+            "type": "paragraph"
+          }
+        ],
+        "callout": null,
+        "id": "h472ja3ax6pjkbww",
+        "type": "blockquote"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "What changes"
+          }
+        ],
+        "id": "arbxwec3xjyrne4f",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "mcabcinvgs2hoyyg",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "The end-of-day instant may again be written as "
+                  },
+                  {
+                    "type": "codeSpan",
+                    "value": "24:00:00"
+                  },
+                  {
+                    "type": "text",
+                    "value": "."
+                  }
+                ],
+                "id": "ps6bgq3q2tve7ryj",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "577nufp5zzataomm",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Several definitions were reworded to remove ambiguity."
+                  }
+                ],
+                "id": "hkowxyk4xwis26em",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "hu2n2ivfv2xm2fbt",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "By P. Correspondent · Updated 3 September 2026",
+      "outline": [
+        {
+          "id": "6k4s7y3eoe4k36qt",
+          "level": 1,
+          "text": "Standards body ratifies date format update"
+        },
+        {
+          "id": "arbxwec3xjyrne4f",
+          "level": 2,
+          "text": "What changes"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": [
+      {
+        "approxTextLength": 42,
+        "reason": "cookie-ui",
+        "selectorPath": "div[1]"
+      },
+      {
+        "approxTextLength": 22,
+        "reason": "footer",
+        "selectorPath": "footer[1]"
+      },
+      {
+        "approxTextLength": 13,
+        "reason": "navigation",
+        "selectorPath": "header[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 31,
+        "reason": "chrome",
+        "selectorPath": "main[1]/article[1]/div[1]"
+      },
+      {
+        "approxTextLength": 39,
+        "reason": "chrome",
+        "selectorPath": "main[1]/article[1]/div[2]"
+      },
+      {
+        "approxTextLength": 65,
+        "reason": "related-content",
+        "selectorPath": "main[1]/aside[1]"
+      }
+    ]
+  },
+  "captureKind": "article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "d45f2919c061bbf906d59c5700eb7c6ef3bef91e2bac39c032d158e1cf75b9d7",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": "P. Correspondent",
+    "canonicalUrl": "https://thewire.example/tech/date-format-update",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://thewire.example/tech/date-format-update",
+    "title": "Standards body ratifies date format update"
+  }
+}

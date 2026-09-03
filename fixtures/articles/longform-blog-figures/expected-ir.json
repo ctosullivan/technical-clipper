@@ -1,0 +1,299 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 1331,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 1331,
+          "selectorPath": "main[1]/article[1]"
+        },
+        {
+          "score": 1301,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]/article[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Notes on building a deterministic compiler"
+          }
+        ],
+        "id": "usm3w34gb5z5mjxr",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "By J. Engineer "
+          },
+          {
+            "type": "text",
+            "value": "·"
+          },
+          {
+            "type": "text",
+            "value": " 12 minute read"
+          }
+        ],
+        "id": "sl2adi3uhx6wdewz",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Determinism is a property you design in, not one you test in afterwards. This post collects the decisions that mattered most on a recent project."
+          }
+        ],
+        "id": "reyqrjaocb2vdpza",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Hash the meaning, not the markup"
+          }
+        ],
+        "id": "va43bn4loszqwsld",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "The single most useful rule was to derive every identifier from the captured meaning of a node rather than from its position in the source tree. Two inputs that mean the same thing then produce the same output."
+          }
+        ],
+        "id": "ojts2srq2s2dsjcv",
+        "type": "paragraph"
+      },
+      {
+        "altText": "A block diagram of the four pipeline stages feeding a hash function",
+        "caption": [
+          {
+            "type": "text",
+            "value": "Figure 1. Each stage is a pure function; the final hash covers the canonical form of the whole tree."
+          }
+        ],
+        "id": "av6giptgafgtfsgf",
+        "image": {
+          "alt": "A block diagram of the four pipeline stages feeding a hash function",
+          "intrinsicHeight": 420,
+          "intrinsicWidth": 900,
+          "resolved": false,
+          "url": "https://blog.example/img/pipeline.png"
+        },
+        "type": "figure"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "As Figure 1 shows, the hash sits at the end of a chain of pure functions. Nothing in that chain reads a clock or the network."
+          }
+        ],
+        "id": "crfalqrm3ntgzmw6",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Normalize early, normalize once"
+          }
+        ],
+        "id": "6372pyqltwposky6",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Whitespace, line endings, and Unicode form are all normalized at the boundary. Downstream code can then assume a single representation."
+          }
+        ],
+        "id": "22hinzt3njheenea",
+        "type": "paragraph"
+      },
+      {
+        "blocks": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "If you find yourself normalizing the same value twice, one of the two call sites is in the wrong place."
+              }
+            ],
+            "id": "mkgr6ztj34mk47cw",
+            "type": "paragraph"
+          }
+        ],
+        "callout": null,
+        "id": "clxlw6ywq2pdakaa",
+        "type": "blockquote"
+      },
+      {
+        "altText": "Bar chart of capture timings across twelve fixtures, all under 400 milliseconds",
+        "caption": [
+          {
+            "type": "text",
+            "value": "Figure 2. Capture-plus-render timings for the fixture corpus."
+          }
+        ],
+        "id": "ko5xknvucu4lr5at",
+        "image": {
+          "alt": "Bar chart of capture timings across twelve fixtures, all under 400 milliseconds",
+          "intrinsicHeight": null,
+          "intrinsicWidth": null,
+          "resolved": false,
+          "url": "https://cdn.example/img/timings.svg"
+        },
+        "type": "figure"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "What I would do differently"
+          }
+        ],
+        "id": "af4vplhr5e2cwofd",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "qti6aclrbu33b5j7",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Write the fixture runner before the extractor, not after."
+                  }
+                ],
+                "id": "a4j2xksx72caccxc",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "ipiqlsfw2jjqzkrk",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Treat \"unsupported\" as a first-class output, with its own diagnostic."
+                  }
+                ],
+                "id": "oohr2nsdd6hgqpow",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "vk6hlhcpt4xftgal",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "By J. Engineer · 12 minute read",
+      "outline": [
+        {
+          "id": "usm3w34gb5z5mjxr",
+          "level": 1,
+          "text": "Notes on building a deterministic compiler"
+        },
+        {
+          "id": "va43bn4loszqwsld",
+          "level": 2,
+          "text": "Hash the meaning, not the markup"
+        },
+        {
+          "id": "6372pyqltwposky6",
+          "level": 2,
+          "text": "Normalize early, normalize once"
+        },
+        {
+          "id": "af4vplhr5e2cwofd",
+          "level": 2,
+          "text": "What I would do differently"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": [
+      {
+        "approxTextLength": 18,
+        "reason": "footer",
+        "selectorPath": "footer[1]"
+      },
+      {
+        "approxTextLength": 11,
+        "reason": "navigation",
+        "selectorPath": "nav[1]"
+      }
+    ]
+  },
+  "captureKind": "article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "0ba91c0e20a3dbe875469a2106724469f608310477cb51fd26073e774f958f8b",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": "J. Engineer",
+    "canonicalUrl": "https://blog.example/deterministic-compiler",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://blog.example/deterministic-compiler",
+    "title": "Notes on building a deterministic compiler"
+  }
+}

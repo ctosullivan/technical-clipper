@@ -38,6 +38,41 @@ export interface BlockExtractionContext {
 
 const HEADING_TAGS = new Set(['H1', 'H2', 'H3', 'H4', 'H5', 'H6']);
 
+/** Phrasing-content tags: a run of these between block elements is one paragraph. */
+const INLINE_TAGS = new Set([
+  'A',
+  'ABBR',
+  'B',
+  'BDI',
+  'BDO',
+  'CITE',
+  'CODE',
+  'DATA',
+  'DFN',
+  'EM',
+  'I',
+  'KBD',
+  'MARK',
+  'Q',
+  'RP',
+  'RT',
+  'RUBY',
+  'S',
+  'SAMP',
+  'SMALL',
+  'SPAN',
+  'STRIKE',
+  'STRONG',
+  'SUB',
+  'SUP',
+  'TIME',
+  'U',
+  'VAR',
+  'WBR',
+  'BR',
+  'IMG',
+]);
+
 /** A list that is really a reference/bibliography list — consumed into
  *  `ArticleIR.references`, not emitted as a block. */
 function isReferenceList(el: Element): boolean {
@@ -464,11 +499,16 @@ export function extractBlocks(
       case 'MAIN':
       case 'ARTICLE':
       case 'HEADER':
-      case 'SPAN':
       case 'DL':
       case 'DD':
       case 'DT':
-        for (const child of Array.from(el.childNodes)) visit(child);
+        visitChildren(el);
+        return;
+      case 'SPAN':
+        // A block-level SPAN (MediaWiki uses them as section wrappers) is
+        // transparent; an inline one is handled by the inline-run batcher and
+        // never reaches here.
+        visitChildren(el);
         return;
       default: {
         // Unknown block-ish element with content -> htmlBlock, never dropped.
@@ -485,6 +525,47 @@ export function extractBlocks(
     }
   };
 
-  for (const child of Array.from(root.childNodes)) visit(child);
+  /**
+   * Visit a parent's children, coalescing every run of phrasing content (loose
+   * text, `<a>`, `<code>`, `<sup>`, …) into a single synthetic paragraph the
+   * way an HTML renderer forms anonymous block boxes. Without this, loose
+   * inline nodes inside a `<section>`/`<dd>` each became a junk `htmlBlock`.
+   */
+  const visitChildren = (parent: Element): void => {
+    let inlineRun: Node[] = [];
+    const flush = (): void => {
+      if (inlineRun.length === 0) return;
+      const holder = parent.ownerDocument.createElement('span');
+      for (const n of inlineRun) holder.appendChild(n.cloneNode(true));
+      const inlines = extractInlines(holder, ctx);
+      const rawText = holder.textContent ?? '';
+      inlineRun = [];
+      if (inlines.length && rawText.trim()) {
+        blocks.push({
+          type: 'paragraph',
+          id: makeId('paragraph', rawText),
+          children: inlines,
+        });
+      }
+    };
+    for (const child of Array.from(parent.childNodes)) {
+      if (child.nodeType === NODE_TEXT) {
+        if ((child.textContent ?? '').trim()) inlineRun.push(child);
+        continue;
+      }
+      if (
+        child.nodeType === NODE_ELEMENT &&
+        INLINE_TAGS.has((child as Element).tagName)
+      ) {
+        inlineRun.push(child);
+        continue;
+      }
+      flush();
+      visit(child);
+    }
+    flush();
+  };
+
+  visitChildren(root);
   return blocks;
 }

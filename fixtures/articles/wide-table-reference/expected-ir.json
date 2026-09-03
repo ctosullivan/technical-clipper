@@ -1,0 +1,555 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 872,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 872,
+          "selectorPath": "main[1]/article[1]"
+        },
+        {
+          "score": 842,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]/article[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "HTTP status codes at a glance"
+          }
+        ],
+        "id": "kdttqpn5tn576uwl",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "A compact reference for the status codes this service can return, with the retry behaviour clients should apply to each."
+          }
+        ],
+        "id": "nyw7snpld23xixfh",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Client and server codes"
+          }
+        ],
+        "id": "pkspva635hlqof6f",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "a22fxjg5zmgy235j",
+        "table": {
+          "alignments": [
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Code"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Name"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Category"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Body?"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Retry"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Idempotent-safe"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Typical cause"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "400"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Bad Request"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Client"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "no"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "n/a"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Malformed payload or query"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "401"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Unauthorized"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Client"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "after refresh"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Missing or expired token"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "404"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Not Found"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Client"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "no"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Unknown resource id"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "409"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Conflict"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Client"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "no"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "no"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Concurrent write"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "429"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Too Many Requests"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Client"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes, honour "
+                },
+                {
+                  "type": "codeSpan",
+                  "value": "Retry-After"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Rate limit"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "500"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Internal Server Error"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Server"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "maybe"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes, backoff"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Unhandled exception"
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "text",
+                  "value": "503"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Service Unavailable"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Server"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "maybe"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes, backoff"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "yes"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Deploy or overload"
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Notes"
+          }
+        ],
+        "id": "24w2nfzzr5hzvl2m",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "sksq5vhmv4tubytb",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Only retry non-idempotent requests when the response explicitly permits it."
+                  }
+                ],
+                "id": "f5dbhdvdnswufafg",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "6s4fxgvy4bw7lsr5",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "All backoff is full-jitter exponential with a 30-second ceiling."
+                  }
+                ],
+                "id": "taue6ruopmggdst4",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "ydqqrll6diwjyste",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "A compact reference for the status codes this service can return, with the retry behaviour clients should apply to each.",
+      "outline": [
+        {
+          "id": "kdttqpn5tn576uwl",
+          "level": 1,
+          "text": "HTTP status codes at a glance"
+        },
+        {
+          "id": "pkspva635hlqof6f",
+          "level": 2,
+          "text": "Client and server codes"
+        },
+        {
+          "id": "24w2nfzzr5hzvl2m",
+          "level": 2,
+          "text": "Notes"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": [
+      {
+        "approxTextLength": 20,
+        "reason": "footer",
+        "selectorPath": "footer[1]"
+      },
+      {
+        "approxTextLength": 9,
+        "reason": "navigation",
+        "selectorPath": "header[1]/nav[1]"
+      }
+    ]
+  },
+  "captureKind": "article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "75fae5a0f95fd41192087bf37979e71ccf125048e678ebe261bb5c487ad20c3c",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://ref.example/http-status-codes",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://ref.example/http-status-codes",
+    "title": "HTTP status codes at a glance"
+  }
+}

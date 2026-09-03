@@ -12,6 +12,8 @@ capture_kind: technical_article
 
 Intro paragraph for context.
 
+bash
+
 ```html
 <button class="copy-code-button">Copy</button>
 ```

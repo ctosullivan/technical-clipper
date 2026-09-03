@@ -1,0 +1,287 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 588,
+          "selectorPath": "main[2]"
+        },
+        {
+          "score": 588,
+          "selectorPath": "main[2]/article[1]"
+        },
+        {
+          "score": 559,
+          "selectorPath": "body"
+        },
+        {
+          "score": 60,
+          "selectorPath": "main[1]"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[2]/article[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Release notes 4.2"
+          }
+        ],
+        "id": "sqq47rmvia7j3qgp",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "This release focuses on determinism and error reporting. It contains no breaking changes to the capture bundle format."
+          }
+        ],
+        "id": "phadbfxvmjmxrwxe",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Added"
+          }
+        ],
+        "id": "6nrtdnw6fuaumzcd",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "wsakhsa65r3uhcgb",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "A completeness report is now written into every bundle."
+                  }
+                ],
+                "id": "3quevfq3dc4gcny5",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "ujl3lgcokr7stmhn",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "The export gate blocks on "
+                  },
+                  {
+                    "type": "codeSpan",
+                    "value": "failed"
+                  },
+                  {
+                    "type": "text",
+                    "value": " and warns on "
+                  },
+                  {
+                    "type": "codeSpan",
+                    "value": "partial"
+                  },
+                  {
+                    "type": "text",
+                    "value": "."
+                  }
+                ],
+                "id": "opeq2lbrj4sivwq4",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "jo2ijjw6lrecuajf",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Fixed"
+          }
+        ],
+        "id": "gu44jivqx4nbhlsr",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "pllgvddpyey2neip",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Inter-word spacing was lost when a bold run met a plain run."
+                  }
+                ],
+                "id": "ieaqiqle5265cdwg",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "c3n5prz7igglv7vx",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Duplicate "
+                  },
+                  {
+                    "type": "codeSpan",
+                    "value": "References"
+                  },
+                  {
+                    "type": "text",
+                    "value": " headings on some articles."
+                  }
+                ],
+                "id": "eu2hbnwshzgqjdan",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "k6mc3w5wurua24uo",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Known issues"
+          }
+        ],
+        "id": "u6jgq5jsmysd63gt",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Virtualized editors are still reported as "
+          },
+          {
+            "type": "codeSpan",
+            "value": "partial"
+          },
+          {
+            "type": "text",
+            "value": "; exact recovery is out of scope for this line."
+          }
+        ],
+        "id": "6jkheph56pqo223e",
+        "type": "paragraph"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "This release focuses on determinism and error reporting. It contains no breaking changes to the capture bundle format.",
+      "outline": [
+        {
+          "id": "sqq47rmvia7j3qgp",
+          "level": 1,
+          "text": "Release notes 4.2"
+        },
+        {
+          "id": "6nrtdnw6fuaumzcd",
+          "level": 2,
+          "text": "Added"
+        },
+        {
+          "id": "gu44jivqx4nbhlsr",
+          "level": 2,
+          "text": "Fixed"
+        },
+        {
+          "id": "u6jgq5jsmysd63gt",
+          "level": 2,
+          "text": "Known issues"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": [
+      {
+        "approxTextLength": 9,
+        "reason": "footer",
+        "selectorPath": "footer[1]"
+      },
+      {
+        "approxTextLength": 4,
+        "reason": "navigation",
+        "selectorPath": "header[1]/nav[1]"
+      }
+    ]
+  },
+  "captureKind": "article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {},
+    "documentContentIdentity": "498f6dfcea9809ed31a10d217dc8216e2fc3059c9a8ea6e3ae13b3540042a95e",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://example.com/changelog/4.2",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://example.com/changelog/4.2",
+    "title": "Release notes 4.2"
+  }
+}

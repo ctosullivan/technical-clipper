@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://ref.example/http-status-codes",
+  "canonicalUrl": "https://ref.example/http-status-codes",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "Reference article whose body is a 7-column wide table with inline code and an entity-heavy header. NOT a real page.",
+  "producedByExtractorVersion": "1.0.0"
+}

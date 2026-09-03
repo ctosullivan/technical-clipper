@@ -1,0 +1,533 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 687,
+          "selectorPath": "div[1]/main[1]"
+        },
+        {
+          "score": 687,
+          "selectorPath": "div[1]/main[1]/article[1]"
+        },
+        {
+          "score": 657,
+          "selectorPath": "body"
+        },
+        {
+          "score": 657,
+          "selectorPath": "div[1]"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "div[1]/main[1]/article[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "codeSpan",
+            "value": "fetchJSON(url, options)"
+          }
+        ],
+        "id": "bampp3atu7tobci5",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Fetches "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "the resource"
+              }
+            ],
+            "href": "https://docs.example/api/fetch-json",
+            "id": "zypd7kgp4dneyjcy",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " at "
+          },
+          {
+            "type": "codeSpan",
+            "value": "url"
+          },
+          {
+            "type": "text",
+            "value": " and parses the response body as JSON. Rejects on a non-2xx status or a body that is not valid JSON."
+          }
+        ],
+        "id": "ya2i7effrfttsphk",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Parameters"
+          }
+        ],
+        "id": "w5ckvs67tvp32lbo",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "2gdygon64n5efe5m",
+        "table": {
+          "alignments": [
+            "none",
+            "none",
+            "none",
+            "none"
+          ],
+          "header": [
+            [
+              {
+                "type": "text",
+                "value": "Name"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Type"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Default"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Description"
+              }
+            ]
+          ],
+          "rows": [
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "url"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "string"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "—"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Absolute or relative URL. Relative URLs resolve against "
+                },
+                {
+                  "type": "codeSpan",
+                  "value": "document.baseURI"
+                },
+                {
+                  "type": "text",
+                  "value": "."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "options.timeoutMs"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "number"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "10000"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Abort the request after this many milliseconds."
+                }
+              ]
+            ],
+            [
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "options.retries"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "number"
+                }
+              ],
+              [
+                {
+                  "type": "codeSpan",
+                  "value": "0"
+                }
+              ],
+              [
+                {
+                  "type": "text",
+                  "value": "Retry count for network errors only, not HTTP errors."
+                }
+              ]
+            ]
+          ]
+        },
+        "type": "table"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Return value"
+          }
+        ],
+        "id": "v5n2unuh6lwijzdd",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "A "
+          },
+          {
+            "type": "codeSpan",
+            "value": "Promise"
+          },
+          {
+            "type": "text",
+            "value": " that resolves with the parsed value."
+          }
+        ],
+        "id": "arum7td5djaf4lrp",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Example"
+          }
+        ],
+        "id": "oxcsif4kkuyfulwu",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "272ce66eef5a196264da36802cb46c4c8f003f390be99bf7a496348d105b2d49",
+          "highlightedLines": null,
+          "id": "mlham6a4xqrn6kni",
+          "language": "javascript",
+          "languageEvidence": "class-token",
+          "text": "const user = await fetchJSON('/api/users/42', { timeoutMs: 2000 });\nconsole.log(user.name);\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Errors"
+          }
+        ],
+        "id": "cvcusdh4obcqzyfs",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "tgm7m25gxeeebpks",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "HttpError"
+                      }
+                    ],
+                    "type": "strong"
+                  },
+                  {
+                    "type": "text",
+                    "value": " — the response status was outside 200"
+                  },
+                  {
+                    "type": "text",
+                    "value": "–"
+                  },
+                  {
+                    "type": "text",
+                    "value": "299. "
+                  },
+                  {
+                    "type": "text",
+                    "value": " "
+                  }
+                ],
+                "id": "rlwhj53dfwbypeby",
+                "type": "paragraph"
+              },
+              {
+                "id": "txjquyjjdydbd6qu",
+                "items": [
+                  {
+                    "blocks": [
+                      {
+                        "children": [
+                          {
+                            "type": "codeSpan",
+                            "value": "error.status"
+                          },
+                          {
+                            "type": "text",
+                            "value": " holds the numeric code."
+                          }
+                        ],
+                        "id": "vll5zofguzd4goyn",
+                        "type": "paragraph"
+                      }
+                    ],
+                    "checked": null,
+                    "id": "intn73qqlkdkqnby",
+                    "type": "listItem"
+                  }
+                ],
+                "ordered": false,
+                "start": null,
+                "tight": true,
+                "type": "list"
+              }
+            ],
+            "checked": null,
+            "id": "k6tctkszwoqkuky4",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "TimeoutError"
+                      }
+                    ],
+                    "type": "strong"
+                  },
+                  {
+                    "type": "text",
+                    "value": " — the request exceeded "
+                  },
+                  {
+                    "type": "codeSpan",
+                    "value": "timeoutMs"
+                  },
+                  {
+                    "type": "text",
+                    "value": "."
+                  }
+                ],
+                "id": "lqyhew6mop7ndv5x",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "veuhi4rid4pu7koq",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "See also"
+          }
+        ],
+        "id": "ciaghco34em62tco",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "4f3khuy6fcn5dl2u",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "codeSpan",
+                        "value": "postJSON()"
+                      }
+                    ],
+                    "href": "https://docs.example/api/post-json",
+                    "id": "rseq4thw7spdepcx",
+                    "title": null,
+                    "type": "link"
+                  }
+                ],
+                "id": "2kqgkqyhxuxlwtgz",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "yjyju4yyloi56oqq",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "Fetches  at url and parses the response body as JSON. Rejects on a non-2xx status or a body that is not valid JSON.",
+      "outline": [
+        {
+          "id": "bampp3atu7tobci5",
+          "level": 1,
+          "text": "fetchJSON(url, options)"
+        },
+        {
+          "id": "w5ckvs67tvp32lbo",
+          "level": 2,
+          "text": "Parameters"
+        },
+        {
+          "id": "v5n2unuh6lwijzdd",
+          "level": 2,
+          "text": "Return value"
+        },
+        {
+          "id": "oxcsif4kkuyfulwu",
+          "level": 2,
+          "text": "Example"
+        },
+        {
+          "id": "cvcusdh4obcqzyfs",
+          "level": 2,
+          "text": "Errors"
+        },
+        {
+          "id": "ciaghco34em62tco",
+          "level": 2,
+          "text": "See also"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": [
+      {
+        "approxTextLength": 17,
+        "reason": "navigation",
+        "selectorPath": "div[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 21,
+        "reason": "footer",
+        "selectorPath": "footer[1]"
+      },
+      {
+        "approxTextLength": 8,
+        "reason": "navigation",
+        "selectorPath": "header[1]/nav[1]"
+      }
+    ]
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {
+      "mlham6a4xqrn6kni": "272ce66eef5a196264da36802cb46c4c8f003f390be99bf7a496348d105b2d49"
+    },
+    "documentContentIdentity": "4c336ad490e604ec723a9ec097ced92beb73cd15417ba9e49e4ca0d27454546d",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": "Docs Team",
+    "canonicalUrl": "https://docs.example/api/fetch-json",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://docs.example/api/fetch-json",
+    "title": "fetchJSON(url, options)"
+  }
+}

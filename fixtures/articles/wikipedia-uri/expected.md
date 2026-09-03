@@ -8,13 +8,9 @@ export_status: complete_with_warnings
 capture_kind: technical_article
 ---
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/URI_(disambiguation)" title="URI (disambiguation)" class="mw-disambig">URI (disambiguation)</a>
-```
+"URI" redirects here. For other uses, see [URI (disambiguation)](https://en.wikipedia.org/wiki/URI_(disambiguation) "URI (disambiguation)").
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/URL" title="URL">URL</a>
-```
+Not to be confused with [URL](https://en.wikipedia.org/wiki/URL "URL").
 
 | Uniform Resource Identifier |
 | --- |
@@ -78,9 +74,7 @@ While most URI schemes were originally designed to be used with a particular [pr
 
 ### Syntax
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/List_of_URI_schemes" title="List of URI schemes">List of URI schemes</a>
-```
+See also: [List of URI schemes](https://en.wikipedia.org/wiki/List_of_URI_schemes "List of URI schemes")
 
 A URI has a scheme that refers to a specification for assigning identifiers within that scheme. As such, the URI syntax is a federated and extensible naming system wherein each scheme's specification may further restrict the syntax and semantics of identifiers using that scheme. The URI generic syntax is a superset of the syntax of all URI schemes. It was first defined in [RFC](https://en.wikipedia.org/wiki/RFC_(identifier) "RFC (identifier)")[2396](https://www.rfc-editor.org/rfc/rfc2396), published in August 1998,[9] and finalized in [RFC](https://en.wikipedia.org/wiki/RFC_(identifier) "RFC (identifier)")[3986](https://www.rfc-editor.org/rfc/rfc3986), published in January 2005.[19]
 
@@ -116,81 +110,15 @@ The URI comprises:
 
 - A **path** component, consisting of a sequence of path segments separated by a slash (`/`). A path is always defined for a URI, though the defined path may be empty (zero length). A segment may also be empty, resulting in two consecutive slashes (`//`) in the path component. A path component may resemble or map exactly to a [file system path](https://en.wikipedia.org/wiki/Path_(computing) "Path (computing)") but does not always imply a relation to one. If an authority component is defined, then the path component must either be empty or begin with a slash (`/`). If an authority component is undefined, then the path cannot begin with an empty segment—that is, with two slashes (`//`)—since the following characters would be interpreted as an authority component.[9][: §3.3]
 
-```html
-<b id="mwAdQ">http</b>
-```
+By convention, in **http** and **https** URIs, the last part of a _path_ is named **pathinfo** and it is optional. It is composed by zero or more path segments that do not refer to an existing physical resource name (e.g. a file, an internal module program or an executable program) but to a logical part (e.g. a command or a qualifier part) that has to be passed separately to the first part of the path that identifies an executable module or program managed by a [web server](https://en.wikipedia.org/wiki/Web_server "Web server"); this is often used to select dynamic content (a document, etc.) or to tailor it as requested (see also: [CGI](https://en.wikipedia.org/wiki/Common_Gateway_Interface "Common Gateway Interface") and PATH\_INFO, etc.).
 
-```html
-<b id="mwAdU">https</b>
-```
+Example:
 
-```html
-<i id="mwAdY">path</i>
-```
+URI: `"http://www.example.com/questions/3456/my-document"`
 
-```html
-<b id="mwAdc"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1349394836" about="#mwt407" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwAdg" data-mw="{&quot;name&quot;:&quot;templatestyles&quot;,&quot;attrs&quot;:{&quot;src&quot;:&quot;Template:Visible anchor/styles.css&quot;},&quot;parts&quot;:[{&quot;template&quot;:{&quot;target&quot;:{&quot;wt&quot;:&quot;visible anchor&quot;,&quot;href&quot;:&quot;./Template:Visible_anchor&quot;},&quot;params&quot;:{&quot;1&quot;:{&quot;wt&quot;:&quot;pathinfo&quot;}},&quot;i&quot;:0}}]}"><span class="vanchor" about="#mwt407" id="mwAdk"><span id="pathinfo"></span><span class="vanchor-text">pathinfo</span></span></b>
-```
+where: `"/questions"` is the first part of the _path_ (an executable module or program) and `"/3456/my-document"` is the second part of the _path_ named _pathinfo_, which is passed to the executable module or program named `"/questions"` to select the requested document.
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Web_server" title="Web server" id="mwAdo">web server</a>
-```
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Common_Gateway_Interface" title="Common Gateway Interface" id="mwAds">CGI</a>
-```
-
-```html
-<code class="mw-highlight mw-highlight-lang-text mw-content-ltr" dir="ltr" typeof="mw:Extension/syntaxhighlight mw:Transclusion" about="#mwt409" id="mwAd8" data-mw="{&quot;name&quot;:&quot;syntaxhighlight&quot;,&quot;attrs&quot;:{&quot;lang&quot;:&quot;text&quot;,&quot;class&quot;:&quot;&quot;,&quot;style&quot;:&quot;&quot;,&quot;inline&quot;:&quot;1&quot;},&quot;body&quot;:{&quot;extsrc&quot;:&quot;\&quot;http://www.example.com/questions/3456/my-document\&quot;&quot;},&quot;parts&quot;:[{&quot;template&quot;:{&quot;target&quot;:{&quot;wt&quot;:&quot;code&quot;,&quot;href&quot;:&quot;./Template:Code&quot;},&quot;params&quot;:{&quot;1&quot;:{&quot;wt&quot;:&quot;\&quot;http://www.example.com/questions/3456/my-document\&quot;&quot;}},&quot;i&quot;:0}}]}">"http://www.example.com/questions/3456/my-document"</code>
-```
-
-```html
-<code class="mw-highlight mw-highlight-lang-text mw-content-ltr" dir="ltr" typeof="mw:Extension/syntaxhighlight mw:Transclusion" about="#mwt411" id="mwAeE" data-mw="{&quot;name&quot;:&quot;syntaxhighlight&quot;,&quot;attrs&quot;:{&quot;lang&quot;:&quot;text&quot;,&quot;class&quot;:&quot;&quot;,&quot;style&quot;:&quot;&quot;,&quot;inline&quot;:&quot;1&quot;},&quot;body&quot;:{&quot;extsrc&quot;:&quot;\&quot;/questions\&quot;&quot;},&quot;parts&quot;:[{&quot;template&quot;:{&quot;target&quot;:{&quot;wt&quot;:&quot;code&quot;,&quot;href&quot;:&quot;./Template:Code&quot;},&quot;params&quot;:{&quot;1&quot;:{&quot;wt&quot;:&quot;\&quot;/questions\&quot;&quot;}},&quot;i&quot;:0}}]}">"/questions"</code>
-```
-
-```html
-<i id="mwAeI">path</i>
-```
-
-```html
-<code class="mw-highlight mw-highlight-lang-text mw-content-ltr" dir="ltr" typeof="mw:Extension/syntaxhighlight mw:Transclusion" about="#mwt413" id="mwAeM" data-mw="{&quot;name&quot;:&quot;syntaxhighlight&quot;,&quot;attrs&quot;:{&quot;lang&quot;:&quot;text&quot;,&quot;class&quot;:&quot;&quot;,&quot;style&quot;:&quot;&quot;,&quot;inline&quot;:&quot;1&quot;},&quot;body&quot;:{&quot;extsrc&quot;:&quot;\&quot;/3456/my-document\&quot;&quot;},&quot;parts&quot;:[{&quot;template&quot;:{&quot;target&quot;:{&quot;wt&quot;:&quot;code&quot;,&quot;href&quot;:&quot;./Template:Code&quot;},&quot;params&quot;:{&quot;1&quot;:{&quot;wt&quot;:&quot;\&quot;/3456/my-document\&quot;&quot;}},&quot;i&quot;:0}}]}">"/3456/my-document"</code>
-```
-
-```html
-<i id="mwAeQ">path</i>
-```
-
-```html
-<i id="mwAeU">pathinfo</i>
-```
-
-```html
-<code class="mw-highlight mw-highlight-lang-text mw-content-ltr" dir="ltr" typeof="mw:Extension/syntaxhighlight mw:Transclusion" about="#mwt415" id="mwAeY" data-mw="{&quot;name&quot;:&quot;syntaxhighlight&quot;,&quot;attrs&quot;:{&quot;lang&quot;:&quot;text&quot;,&quot;class&quot;:&quot;&quot;,&quot;style&quot;:&quot;&quot;,&quot;inline&quot;:&quot;1&quot;},&quot;body&quot;:{&quot;extsrc&quot;:&quot;\&quot;/questions\&quot;&quot;},&quot;parts&quot;:[{&quot;template&quot;:{&quot;target&quot;:{&quot;wt&quot;:&quot;code&quot;,&quot;href&quot;:&quot;./Template:Code&quot;},&quot;params&quot;:{&quot;1&quot;:{&quot;wt&quot;:&quot;\&quot;/questions\&quot;&quot;}},&quot;i&quot;:0}}]}">"/questions"</code>
-```
-
-```html
-<b id="mwAeg">http</b>
-```
-
-```html
-<b id="mwAek">https</b>
-```
-
-```html
-<i id="mwAeo">pathinfo</i>
-```
-
-```html
-<a rel="mw:WikiLink" href="#query" class="mw-selflink-fragment" id="mwAes">query</a>
-```
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Clean_URL" title="Clean URL" id="mwAew">clean URL</a>
-```
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Clean_URL#Slug" title="Clean URL" id="mwAe0">slug</a>
-```
+An **http** or **https** URI containing a _pathinfo_ part without a [query](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier#query) part may also be referred to as a '[clean URL](https://en.wikipedia.org/wiki/Clean_URL "Clean URL"),' whose last part may be a '[slug](https://en.wikipedia.org/wiki/Clean_URL#Slug "Clean URL").'
 
 | Query delimiter | Example |
 | --- | --- |

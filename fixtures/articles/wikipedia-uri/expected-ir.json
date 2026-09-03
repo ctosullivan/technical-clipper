@@ -41,14 +41,56 @@
     },
     "blocks": [
       {
-        "id": "hmairc2lzpycn2ub",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/URI_(disambiguation)\" title=\"URI (disambiguation)\" class=\"mw-disambig\">URI (disambiguation)</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "\"URI\" redirects here. For other uses, see "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "URI (disambiguation)"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/URI_(disambiguation)",
+            "id": "vqorvegnraokwl66",
+            "title": "URI (disambiguation)",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "eoabsnjcwctsccya",
+        "type": "paragraph"
       },
       {
-        "id": "3bd6l5lu75tt45tf",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/URL\" title=\"URL\">URL</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Not to be confused with "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "URL"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/URL",
+            "id": "7sovooodab6y5lum",
+            "title": "URL",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "."
+          }
+        ],
+        "id": "atdqwzwemh75c4jt",
+        "type": "paragraph"
       },
       {
         "id": "5xfk7wpsbrih4cqf",
@@ -393,7 +435,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "2ov7ukhzypzpqoys",
+        "id": "54sid6e3ssaevw4z",
         "type": "paragraph"
       },
       {
@@ -543,7 +585,7 @@
             "value": "."
           }
         ],
-        "id": "d7yvuchcjcm7kwjp",
+        "id": "ftydb5kqx63uril7",
         "type": "paragraph"
       },
       {
@@ -639,7 +681,7 @@
             "value": " or \"document name\"."
           }
         ],
-        "id": "n3hkbcq27d4lr66t",
+        "id": "o23wr4mcn3cghwzq",
         "type": "paragraph"
       },
       {
@@ -783,7 +825,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "3h2kerkohp76qk2k",
+        "id": "7rb4vqnmvlub2gkd",
         "type": "paragraph"
       },
       {
@@ -885,7 +927,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "wg5cg2mavuqclhki",
+        "id": "2moiyv23wac2nda2",
         "type": "paragraph"
       },
       {
@@ -954,7 +996,7 @@
             "value": " in May 1997."
           }
         ],
-        "id": "cm72daavemegzrhp",
+        "id": "7eujis2js6npyooe",
         "type": "paragraph"
       },
       {
@@ -1030,7 +1072,7 @@
             "value": " from \"Universal\" to \"Uniform.\""
           }
         ],
-        "id": "me6dc4adhmyrluyf",
+        "id": "f5ocxwhydvkqlorr",
         "type": "paragraph"
       },
       {
@@ -1184,7 +1226,7 @@
             "value": " as the full standard STD 66, reflecting the establishment of the URI generic syntax as an official Internet protocol."
           }
         ],
-        "id": "dijhbzktrcjcmt67",
+        "id": "kwjs2iw7pli3ikyw",
         "type": "paragraph"
       },
       {
@@ -1234,7 +1276,7 @@
             "value": " For example, content might differ by language or by size to adjust for capacity or settings of the device used to access that content."
           }
         ],
-        "id": "gdf7iof6gbtkjdv7",
+        "id": "7qjlx3x3ruempfjl",
         "type": "paragraph"
       },
       {
@@ -1292,7 +1334,7 @@
             "value": " make evident, resource identification need not suggest the retrieval of resource representations over the Internet, nor need they imply network-based resources at all."
           }
         ],
-        "id": "4cda3iwvnb6ahlek",
+        "id": "gesyvaxjedz6gtge",
         "type": "paragraph"
       },
       {
@@ -1388,7 +1430,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "qs4egmbfkk4sn2ve",
+        "id": "yok6ag6vmffd2b4h",
         "type": "paragraph"
       },
       {
@@ -1519,7 +1561,7 @@
             "value": ". However, it gives no information as to where to find a copy of that book."
           }
         ],
-        "id": "4hcevzlacw5qym2g",
+        "id": "mroplck2fnwsw2wj",
         "type": "paragraph"
       },
       {
@@ -1630,7 +1672,7 @@
             "value": " and related code. In practice, that is not necessarily the case, as HTTP allows specifying arbitrary formats in its header.)"
           }
         ],
-        "id": "lqw23ayjdxi3g7ev",
+        "id": "5evvne7nuk2xyilx",
         "type": "paragraph"
       },
       {
@@ -1640,7 +1682,7 @@
             "value": "A URN is analogous to a person's name, while a URL is analogous to their street address. In other words, a URN identifies an item and a URL provides a method for finding it."
           }
         ],
-        "id": "dkkpgad7yncmjgrj",
+        "id": "lxqadb77lopelj62",
         "type": "paragraph"
       },
       {
@@ -1666,7 +1708,7 @@
             "value": " of 30 July 2001, which acknowledges the precedence of the term URI rather than endorsing any formal subdivision into URL and URN. "
           }
         ],
-        "id": "vuqob42xxn7aarjh",
+        "id": "nlslpf5rej6dm2br",
         "type": "paragraph"
       },
       {
@@ -1751,7 +1793,7 @@
             "value": "."
           }
         ],
-        "id": "lwrohpxorqwwet5z",
+        "id": "femo4xbipaj2zops",
         "type": "paragraph"
       },
       {
@@ -1833,7 +1875,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "r77aoc7do4ezwy4r",
+        "id": "5oxu3lefhz4uaioc",
         "type": "paragraph"
       },
       {
@@ -1930,7 +1972,7 @@
             "value": " has no protocol."
           }
         ],
-        "id": "fkplu53fjb3xr53t",
+        "id": "63jou6geshgtwlph",
         "type": "paragraph"
       },
       {
@@ -1945,9 +1987,26 @@
         "type": "heading"
       },
       {
-        "id": "dzyfglfr2l2rszqw",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/List_of_URI_schemes\" title=\"List of URI schemes\">List of URI schemes</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "See also: "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "List of URI schemes"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/List_of_URI_schemes",
+            "id": "dksymm4v2lfnv7x3",
+            "title": "List of URI schemes",
+            "type": "link"
+          }
+        ],
+        "id": "jz33wsuiiiyqbcbm",
+        "type": "paragraph"
       },
       {
         "children": [
@@ -2024,7 +2083,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "6krwlyctgqbt62y4",
+        "id": "alooiix7k43lrq2m",
         "type": "paragraph"
       },
       {
@@ -2404,7 +2463,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "gx35pivc73ithioq",
+        "id": "b63dkfh4y3ilorkh",
         "type": "paragraph"
       },
       {
@@ -2435,7 +2494,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "qs4xosx5y64fts3a",
+        "id": "t3bbfqlhj35qjr2y",
         "type": "paragraph"
       },
       {
@@ -2513,7 +2572,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "inf37prvn3kusfj6",
+        "id": "4qnb4cq4tgdfqnvt",
         "type": "paragraph"
       },
       {
@@ -2536,7 +2595,7 @@
             "value": ":"
           }
         ],
-        "id": "vfdlybguox6js3nr",
+        "id": "k2rewvds2tcvzlyu",
         "type": "paragraph"
       },
       {
@@ -2584,7 +2643,7 @@
             "value": " as:"
           }
         ],
-        "id": "yfpgwtwxpsr5kd3g",
+        "id": "utcrw6lh73hihszz",
         "type": "paragraph"
       },
       {
@@ -2594,7 +2653,7 @@
             "value": "The URI comprises:"
           }
         ],
-        "id": "ofx2mkvxufq4hlwa",
+        "id": "52tbw2zhzyxixfvj",
         "type": "paragraph"
       },
       {
@@ -2734,7 +2793,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "gcahz43qctvlle2l",
+                "id": "2sfwg4petbaomhsy",
                 "type": "paragraph"
               }
             ],
@@ -2772,7 +2831,7 @@
                     "value": "), comprising: "
                   }
                 ],
-                "id": "sy6iuvoop6j6r3xz",
+                "id": "ofosxjkxxiedokxu",
                 "type": "paragraph"
               },
               {
@@ -2864,7 +2923,7 @@
                             "value": ") found within a userinfo subcomponent unless the data after the colon is the empty string (indicating no password)."
                           }
                         ],
-                        "id": "jzln2aop5twny4y3",
+                        "id": "kfc4gjkj4si7zo3g",
                         "type": "paragraph"
                       }
                     ],
@@ -2994,7 +3053,7 @@
                             "type": "citationRef"
                           }
                         ],
-                        "id": "7wac3yoninnh2st2",
+                        "id": "x2asauk67ynxvq54",
                         "type": "paragraph"
                       }
                     ],
@@ -3032,7 +3091,7 @@
                             "value": "), consisting of decimal digits."
                           }
                         ],
-                        "id": "4oka4ctwqs4pmraf",
+                        "id": "fnogf3whf7vch6vf",
                         "type": "paragraph"
                       }
                     ],
@@ -3129,7 +3188,7 @@
                     "type": "citationRef"
                   }
                 ],
-                "id": "xqzndpc4bpvtecku",
+                "id": "e46y7ngojbrx2qhv",
                 "type": "paragraph"
               }
             ],
@@ -3144,99 +3203,292 @@
         "type": "list"
       },
       {
-        "id": "53nvkkc5qazd6anx",
-        "rawHtml": "<b id=\"mwAdQ\">http</b>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "By convention, in "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "http"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": " and "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "https"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": " URIs, the last part of a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "path"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": " is named "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "pathinfo"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": " and it is optional. It is composed by zero or more path segments that do not refer to an existing physical resource name (e.g. a file, an internal module program or an executable program) but to a logical part (e.g. a command or a qualifier part) that has to be passed separately to the first part of the path that identifies an executable module or program managed by a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "web server"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Web_server",
+            "id": "5ze3cbyq6sigthqu",
+            "title": "Web server",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": "; this is often used to select dynamic content (a document, etc.) or to tailor it as requested (see also: "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "CGI"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Common_Gateway_Interface",
+            "id": "rhw5qxkstlmhxsq2",
+            "title": "Common Gateway Interface",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " and PATH_INFO, etc.)."
+          }
+        ],
+        "id": "q7auhnvqdl6tkebn",
+        "type": "paragraph"
       },
       {
-        "id": "rop6pucyzoez24ql",
-        "rawHtml": "<b id=\"mwAdU\">https</b>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "Example: "
+          }
+        ],
+        "id": "322dbpqjebpyf6ia",
+        "type": "paragraph"
       },
       {
-        "id": "ck7yhpl6jhfv2va6",
-        "rawHtml": "<i id=\"mwAdY\">path</i>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "URI: "
+          },
+          {
+            "type": "codeSpan",
+            "value": "\"http://www.example.com/questions/3456/my-document\""
+          }
+        ],
+        "id": "d26qbyf267ngaa72",
+        "type": "paragraph"
       },
       {
-        "id": "5gy5fl4upc55y5og",
-        "rawHtml": "<b id=\"mwAdc\"><link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r1349394836\" about=\"#mwt407\" typeof=\"mw:Extension/templatestyles mw:Transclusion\" id=\"mwAdg\" data-mw=\"{&quot;name&quot;:&quot;templatestyles&quot;,&quot;attrs&quot;:{&quot;src&quot;:&quot;Template:Visible anchor/styles.css&quot;},&quot;parts&quot;:[{&quot;template&quot;:{&quot;target&quot;:{&quot;wt&quot;:&quot;visible anchor&quot;,&quot;href&quot;:&quot;./Template:Visible_anchor&quot;},&quot;params&quot;:{&quot;1&quot;:{&quot;wt&quot;:&quot;pathinfo&quot;}},&quot;i&quot;:0}}]}\"><span class=\"vanchor\" about=\"#mwt407\" id=\"mwAdk\"><span id=\"pathinfo\"></span><span class=\"vanchor-text\">pathinfo</span></span></b>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "where: "
+          },
+          {
+            "type": "codeSpan",
+            "value": "\"/questions\""
+          },
+          {
+            "type": "text",
+            "value": " is the first part of the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "path"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": " (an executable module or program) and "
+          },
+          {
+            "type": "codeSpan",
+            "value": "\"/3456/my-document\""
+          },
+          {
+            "type": "text",
+            "value": " is the second part of the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "path"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": " named "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "pathinfo"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": ", which is passed to the executable module or program named "
+          },
+          {
+            "type": "codeSpan",
+            "value": "\"/questions\""
+          },
+          {
+            "type": "text",
+            "value": " to select the requested document."
+          }
+        ],
+        "id": "stsqgkajfyjdpmv7",
+        "type": "paragraph"
       },
       {
-        "id": "s4t3pvoi6wnlbd7n",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Web_server\" title=\"Web server\" id=\"mwAdo\">web server</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "vaqxmqvaz7ixh6qd",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Common_Gateway_Interface\" title=\"Common Gateway Interface\" id=\"mwAds\">CGI</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "qodkxwmgcmrgckvd",
-        "rawHtml": "<code class=\"mw-highlight mw-highlight-lang-text mw-content-ltr\" dir=\"ltr\" typeof=\"mw:Extension/syntaxhighlight mw:Transclusion\" about=\"#mwt409\" id=\"mwAd8\" data-mw=\"{&quot;name&quot;:&quot;syntaxhighlight&quot;,&quot;attrs&quot;:{&quot;lang&quot;:&quot;text&quot;,&quot;class&quot;:&quot;&quot;,&quot;style&quot;:&quot;&quot;,&quot;inline&quot;:&quot;1&quot;},&quot;body&quot;:{&quot;extsrc&quot;:&quot;\\&quot;http://www.example.com/questions/3456/my-document\\&quot;&quot;},&quot;parts&quot;:[{&quot;template&quot;:{&quot;target&quot;:{&quot;wt&quot;:&quot;code&quot;,&quot;href&quot;:&quot;./Template:Code&quot;},&quot;params&quot;:{&quot;1&quot;:{&quot;wt&quot;:&quot;\\&quot;http://www.example.com/questions/3456/my-document\\&quot;&quot;}},&quot;i&quot;:0}}]}\">\"http://www.example.com/questions/3456/my-document\"</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "66gvyoy2vhaoohiu",
-        "rawHtml": "<code class=\"mw-highlight mw-highlight-lang-text mw-content-ltr\" dir=\"ltr\" typeof=\"mw:Extension/syntaxhighlight mw:Transclusion\" about=\"#mwt411\" id=\"mwAeE\" data-mw=\"{&quot;name&quot;:&quot;syntaxhighlight&quot;,&quot;attrs&quot;:{&quot;lang&quot;:&quot;text&quot;,&quot;class&quot;:&quot;&quot;,&quot;style&quot;:&quot;&quot;,&quot;inline&quot;:&quot;1&quot;},&quot;body&quot;:{&quot;extsrc&quot;:&quot;\\&quot;/questions\\&quot;&quot;},&quot;parts&quot;:[{&quot;template&quot;:{&quot;target&quot;:{&quot;wt&quot;:&quot;code&quot;,&quot;href&quot;:&quot;./Template:Code&quot;},&quot;params&quot;:{&quot;1&quot;:{&quot;wt&quot;:&quot;\\&quot;/questions\\&quot;&quot;}},&quot;i&quot;:0}}]}\">\"/questions\"</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "hgzgjwadhl26kzrw",
-        "rawHtml": "<i id=\"mwAeI\">path</i>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "coj2gypv67u637sl",
-        "rawHtml": "<code class=\"mw-highlight mw-highlight-lang-text mw-content-ltr\" dir=\"ltr\" typeof=\"mw:Extension/syntaxhighlight mw:Transclusion\" about=\"#mwt413\" id=\"mwAeM\" data-mw=\"{&quot;name&quot;:&quot;syntaxhighlight&quot;,&quot;attrs&quot;:{&quot;lang&quot;:&quot;text&quot;,&quot;class&quot;:&quot;&quot;,&quot;style&quot;:&quot;&quot;,&quot;inline&quot;:&quot;1&quot;},&quot;body&quot;:{&quot;extsrc&quot;:&quot;\\&quot;/3456/my-document\\&quot;&quot;},&quot;parts&quot;:[{&quot;template&quot;:{&quot;target&quot;:{&quot;wt&quot;:&quot;code&quot;,&quot;href&quot;:&quot;./Template:Code&quot;},&quot;params&quot;:{&quot;1&quot;:{&quot;wt&quot;:&quot;\\&quot;/3456/my-document\\&quot;&quot;}},&quot;i&quot;:0}}]}\">\"/3456/my-document\"</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "7pboluwkbeqbqw3w",
-        "rawHtml": "<i id=\"mwAeQ\">path</i>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "7hdp36xbocb2nnac",
-        "rawHtml": "<i id=\"mwAeU\">pathinfo</i>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "nxsz6q74htnbirok",
-        "rawHtml": "<code class=\"mw-highlight mw-highlight-lang-text mw-content-ltr\" dir=\"ltr\" typeof=\"mw:Extension/syntaxhighlight mw:Transclusion\" about=\"#mwt415\" id=\"mwAeY\" data-mw=\"{&quot;name&quot;:&quot;syntaxhighlight&quot;,&quot;attrs&quot;:{&quot;lang&quot;:&quot;text&quot;,&quot;class&quot;:&quot;&quot;,&quot;style&quot;:&quot;&quot;,&quot;inline&quot;:&quot;1&quot;},&quot;body&quot;:{&quot;extsrc&quot;:&quot;\\&quot;/questions\\&quot;&quot;},&quot;parts&quot;:[{&quot;template&quot;:{&quot;target&quot;:{&quot;wt&quot;:&quot;code&quot;,&quot;href&quot;:&quot;./Template:Code&quot;},&quot;params&quot;:{&quot;1&quot;:{&quot;wt&quot;:&quot;\\&quot;/questions\\&quot;&quot;}},&quot;i&quot;:0}}]}\">\"/questions\"</code>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "jm5nzehmdwstvb4z",
-        "rawHtml": "<b id=\"mwAeg\">http</b>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "o3mpqycmcc6s456y",
-        "rawHtml": "<b id=\"mwAek\">https</b>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "2s7pqxbjrj7a76ri",
-        "rawHtml": "<i id=\"mwAeo\">pathinfo</i>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "np6bncdap4ygvap7",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"#query\" class=\"mw-selflink-fragment\" id=\"mwAes\">query</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "bbsbl2aagd6kvu5n",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Clean_URL\" title=\"Clean URL\" id=\"mwAew\">clean URL</a>",
-        "type": "htmlBlock"
-      },
-      {
-        "id": "t3lsl4gzuhcvqxz3",
-        "rawHtml": "<a rel=\"mw:WikiLink\" href=\"https://en.wikipedia.org/wiki/Clean_URL#Slug\" title=\"Clean URL\" id=\"mwAe0\">slug</a>",
-        "type": "htmlBlock"
+        "children": [
+          {
+            "type": "text",
+            "value": "An "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "http"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": " or "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "https"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": " URI containing a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "pathinfo"
+              }
+            ],
+            "type": "emphasis"
+          },
+          {
+            "type": "text",
+            "value": " part without a "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "query"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Uniform_Resource_Identifier#query",
+            "id": "kccf3vbjynaobbtw",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " part may also be referred to as a '"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "clean URL"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Clean_URL",
+            "id": "4duhb6mirxtbk6pn",
+            "title": "Clean URL",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ",' whose last part may be a '"
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "slug"
+              }
+            ],
+            "href": "https://en.wikipedia.org/wiki/Clean_URL#Slug",
+            "id": "5dpvmihp2aoek2qf",
+            "title": "Clean URL",
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": ".'"
+          }
+        ],
+        "id": "jzk7kloqhybfq7dj",
+        "type": "paragraph"
       },
       {
         "id": "rfedzgywayjy4dpu",
@@ -3393,7 +3645,7 @@
                     "value": "."
                   }
                 ],
-                "id": "kw6bpaezod7n33um",
+                "id": "cuxfxl3amqtww4ji",
                 "type": "paragraph"
               }
             ],
@@ -3499,7 +3751,7 @@
                     "value": " of a specific element, and web browsers will scroll this element into view."
                   }
                 ],
-                "id": "mue7z7angy7pasrl",
+                "id": "ukh4q4on2dzfnb2s",
                 "type": "paragraph"
               }
             ],
@@ -3648,7 +3900,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "l4x3leqaehvmxlm7",
+        "id": "ovnsml7kaudaa5uo",
         "type": "paragraph"
       },
       {
@@ -3669,7 +3921,7 @@
             "value": "The following displays example URIs and their component parts."
           }
         ],
-        "id": "up6xqdbdkwbagqqq",
+        "id": "v22cvylkrlzddbh4",
         "type": "paragraph"
       },
       {
@@ -3749,7 +4001,7 @@
             "value": "."
           }
         ],
-        "id": "tuwpbyfjuntzzhb4",
+        "id": "l327427e4rodl55v",
         "type": "paragraph"
       },
       {
@@ -3848,7 +4100,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "hdzvafna4y46ugmg",
+        "id": "nfc2vhpexmhvm77n",
         "type": "paragraph"
       },
       {
@@ -3882,7 +4134,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "dr5lqaypgi6rvh3r",
+        "id": "jdot7vlswqzflppv",
         "type": "paragraph"
       },
       {
@@ -3953,7 +4205,7 @@
                     "value": " element;"
                   }
                 ],
-                "id": "bytshoxgl4chbnve",
+                "id": "hlye3smqokzt3mss",
                 "type": "paragraph"
               }
             ],
@@ -4026,7 +4278,7 @@
                     "value": " is a fragmentless URI reference;"
                   }
                 ],
-                "id": "kgqk7tnrg5q2vag4",
+                "id": "6zzylc6a5yzwd7w2",
                 "type": "paragraph"
               }
             ],
@@ -4083,7 +4335,7 @@
                     "value": " function."
                   }
                 ],
-                "id": "3zjrgvbn3rgyplzk",
+                "id": "b4cic72kd4vj26a4",
                 "type": "paragraph"
               }
             ],
@@ -4193,7 +4445,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "qdfe4w53l75ucpem",
+        "id": "c7mucpv7lmy5ohjh",
         "type": "paragraph"
       },
       {
@@ -4208,7 +4460,7 @@
                     "value": "the reference URI itself if it is a URI;"
                   }
                 ],
-                "id": "hztmsq7pavi5avaa",
+                "id": "aeutho3w4ebsiqtt",
                 "type": "paragraph"
               }
             ],
@@ -4225,7 +4477,7 @@
                     "value": "the content of the representation;"
                   }
                 ],
-                "id": "alt53s7ve7nl5gz6",
+                "id": "jcqpmrpo3e4k2ghw",
                 "type": "paragraph"
               }
             ],
@@ -4242,7 +4494,7 @@
                     "value": "the entity encapsulating the representation;"
                   }
                 ],
-                "id": "4rawueflipsdxiti",
+                "id": "yxyl4l7hs6wzfuha",
                 "type": "paragraph"
               }
             ],
@@ -4259,7 +4511,7 @@
                     "value": "the URI used for the actual retrieval of the representation;"
                   }
                 ],
-                "id": "o7kifwrv2ns7h33z",
+                "id": "l3u3gftrgcwatwzt",
                 "type": "paragraph"
               }
             ],
@@ -4276,7 +4528,7 @@
                     "value": "the context of the application."
                   }
                 ],
-                "id": "lub47sshvhfjjykr",
+                "id": "mcb7xh4xdcdbwjja",
                 "type": "paragraph"
               }
             ],
@@ -4297,7 +4549,7 @@
             "value": "Within a representation with a well defined base URI of"
           }
         ],
-        "id": "mjlixtt25bkvbe4v",
+        "id": "edu2zg6ccsecmfbj",
         "type": "paragraph"
       },
       {
@@ -4337,7 +4589,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "d4zeakd52djv5kgm",
+        "id": "vy4bp4clo3hkisbt",
         "type": "paragraph"
       },
       {
@@ -4472,7 +4724,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "eqca4gmjxjgmok6y",
+        "id": "rzyu7sl5uzuf5vj3",
         "type": "paragraph"
       },
       {
@@ -4574,7 +4826,7 @@
             "value": "."
           }
         ],
-        "id": "g5mm76fhb3c4zlbw",
+        "id": "qxnijrcbliqucan6",
         "type": "paragraph"
       },
       {
@@ -4612,7 +4864,7 @@
             "type": "citationRef"
           }
         ],
-        "id": "2qne46udsxf673pb",
+        "id": "aq45zv5rrbgmydta",
         "type": "paragraph"
       },
       {
@@ -4646,7 +4898,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "if2ebmcqqpuiqkx3",
+                "id": "5azlyyntxo2nv5lf",
                 "type": "paragraph"
               }
             ],
@@ -4671,7 +4923,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "cn3zem5s27b7ylsv",
+                "id": "zarszdzctojm25ci",
                 "type": "paragraph"
               }
             ],
@@ -4696,7 +4948,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "oddzb66win5q2p4a",
+                "id": "55hur5ydco4bbfxe",
                 "type": "paragraph"
               }
             ],
@@ -4725,7 +4977,7 @@
                     "value": " (IRI)"
                   }
                 ],
-                "id": "rvheqly2z43g3cpc",
+                "id": "ebzlkbj4omkcbdri",
                 "type": "paragraph"
               }
             ],
@@ -4750,7 +5002,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "2rqzk2vaj5y4cqmq",
+                "id": "3ea5m3nvqm5wwxy3",
                 "type": "paragraph"
               }
             ],
@@ -4775,7 +5027,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "3hk2k5hnpgjm6cjq",
+                "id": "b6lft27fza3bmplv",
                 "type": "paragraph"
               }
             ],
@@ -4800,7 +5052,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "bcoyetyyly526jws",
+                "id": "wcgh4m6uabe6yixe",
                 "type": "paragraph"
               }
             ],
@@ -4825,7 +5077,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "axqcerjfglkh5ljb",
+                "id": "fb3cs6aqi4mweoz4",
                 "type": "paragraph"
               }
             ],
@@ -4850,7 +5102,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "aeolmaotbfaflmze",
+                "id": "qhater4i7csnnkhm",
                 "type": "paragraph"
               }
             ],
@@ -4875,7 +5127,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "5fdlkdeznxvz3avr",
+                "id": "4m3c7jruhqcly7ky",
                 "type": "paragraph"
               }
             ],
@@ -4900,7 +5152,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "hug3ownnajbi6aun",
+                "id": "cityxmw6j2lyliip",
                 "type": "paragraph"
               }
             ],
@@ -5015,7 +5267,7 @@
                     "value": "."
                   }
                 ],
-                "id": "x54p2ajfumpprqu7",
+                "id": "yendkbsth3pg33um",
                 "type": "paragraph"
               }
             ],
@@ -5088,7 +5340,7 @@
                     "value": "."
                   }
                 ],
-                "id": "7d3lkm46tydhtghi",
+                "id": "yg6osjqoog2m46ru",
                 "type": "paragraph"
               }
             ],
@@ -5182,7 +5434,7 @@
                     "value": "."
                   }
                 ],
-                "id": "kjten3p7xzh5zelx",
+                "id": "elxz7oznjagevrzw",
                 "type": "paragraph"
               }
             ],
@@ -5252,7 +5504,7 @@
                     "value": "."
                   }
                 ],
-                "id": "f46zd7yciaaavp6s",
+                "id": "7la2vntci3q2tw7h",
                 "type": "paragraph"
               }
             ],
@@ -5327,7 +5579,7 @@
                     "value": "91."
                   }
                 ],
-                "id": "v332z4pu4tu7kow5",
+                "id": "jrg5jzwmsptm2ffq",
                 "type": "paragraph"
               }
             ],
@@ -5446,7 +5698,7 @@
                     "value": "."
                   }
                 ],
-                "id": "77k6v2ke3wqumdas",
+                "id": "6bdtkmpzck2vqqba",
                 "type": "paragraph"
               }
             ],
@@ -5507,7 +5759,7 @@
                     "value": "."
                   }
                 ],
-                "id": "lamubhe4p2fidtlx",
+                "id": "shmnkzlb5puhjdsb",
                 "type": "paragraph"
               }
             ],
@@ -5564,7 +5816,7 @@
                     "value": "."
                   }
                 ],
-                "id": "gyq7ccqy7apwrx5c",
+                "id": "3t3mahgdxloqnexo",
                 "type": "paragraph"
               }
             ],
@@ -5629,7 +5881,7 @@
                     "value": "-maintained registry of URI Schemes"
                   }
                 ],
-                "id": "frjnel7lz55cjrsn",
+                "id": "tiazatuadh3ab5wg",
                 "type": "paragraph"
               }
             ],
@@ -5654,7 +5906,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "u6gdyk5t3fxb6bjp",
+                "id": "bdkpjrwox7mdlkt6",
                 "type": "paragraph"
               }
             ],
@@ -5683,7 +5935,7 @@
                     "value": "– by W3C"
                   }
                 ],
-                "id": "xd5jbbrus6xp7zkj",
+                "id": "kh46opllu4ydjovb",
                 "type": "paragraph"
               }
             ],
@@ -5708,7 +5960,7 @@
                     "type": "link"
                   }
                 ],
-                "id": "z7fulmton4zthcvv",
+                "id": "vdbyh3py27uad3q3",
                 "type": "paragraph"
               }
             ],
@@ -5730,7 +5982,7 @@
     },
     "footnotes": [],
     "metadata": {
-      "lead": "A  (), formerly , is a unique sequence of characters that identifies an abstract or physical resource, such as resources on a , , phone number, books, real-world objects such as people and places, and concepts. In particular, the resource need not be retrievable via the Internet, or any computer network.",
+      "lead": "\"URI\" redirects here. For other uses, see .",
       "outline": [
         {
           "id": "2mr2x4w4i7g6o7bv",
@@ -6311,7 +6563,7 @@
       "vdwdkstf77mwm6va": "4213d498b8829d70f55ef5530cafcfa18d84ea52d2dae6ac49e07785746c914d",
       "y6bemnfwpaq5yssx": "3825bd939f57d517a47e1aed8c758bfac227f66f8d59c2ce08b300b73b27e227"
     },
-    "documentContentIdentity": "460020bdaadfd2982da559f5792deafdee59a0bb7c602099e0be140dda06a7a7",
+    "documentContentIdentity": "c9774f8dd670df2e70a72d2534a9ce270477935f09e89eaa35f8b6175c820758",
     "markdown": null,
     "normalizationRulesets": {
       "code": "norm/code@1",

@@ -7,7 +7,53 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+This section is the assembled MVP release note. It is **not** promoted to a
+dated version or tagged — that needs explicit release approval
+(`AGENTS.md` § commit/release, planning-prompt § 16).
+
 ### Added
+
+- Phase 10: corpus, evaluation, security review, and packaging — the MVP is
+  provable and packaged.
+  - **Fixture corpus to the § 12 minimums:** 22 article fixtures (incl. 5
+    revision-pinned Wikipedia read-view captures — ISO 8601, Base64, Tail call,
+    URI, JSON Web Token — with full CC BY-SA / GFDL provenance), 19 code
+    fixtures, 4 conversation fixtures; 87 code blocks across the corpus, every
+    supported one exact.
+  - **`pnpm gates`** (`scripts/gates.mjs`): release gates 1–15 from
+    `decisions/0020` as threshold checks — golden equality, chrome removal,
+    Wikipedia-via-generic-path, content-loss ⇒ not `complete`, exact code,
+    code-group retention, role/order, determinism (IR + Markdown + bundle
+    bytes), no contamination, expected diagnostics, no-network trap, no unsafe
+    preview, least-privilege manifest, and a timing pass (< 2 s; worst real
+    fixture ~0.6 s). Runs in CI.
+  - **`pnpm fixture-lint`** (`scripts/fixture-lint.mjs`): corpus completeness +
+    provenance validity (revision-pinned Wikipedia cases must carry
+    revision id/URL/date/licence/attribution). Runs in CI.
+  - **`pnpm package:extension`** (`scripts/package-extension.mjs`): a versioned
+    unpacked build + a deterministic zip for manual install. No signing, no
+    store submission.
+  - **`docs/evaluation/`:** the gate map + how to run it, the timing
+    reference environment, the manual Obsidian vault checklist, the security
+    review (untrusted-input boundary, no code execution, no network, permission
+    scope, no secret persistence — all findings closed), and the comparative
+    benchmark (`comparative/`, gate 17): three cases — line-number gutter,
+    5-tab code group, Wikipedia citations — where the common readability +
+    turndown clip path corrupts, collapses, or drops content this pipeline
+    preserves, with `scripts/naive-clip.mjs` to reproduce.
+  - Extraction hardening for real-world MediaWiki HTML: article-root selection
+    ascends out of a single dense Parsoid `<section>` to the whole-article
+    container and sheds chrome-padded wrappers; link density excludes reference
+    lists / infoboxes / navboxes; loose inline runs coalesce into paragraphs
+    instead of junk HTML blocks; code inside `<dl>`/`<dd>` and layout tables is
+    kept exact (`TC-EXTRACT-TABLE-FLATTENED`); `<style>`/`<script>` text no
+    longer inflates scoring. New diagnostics `TC-EXTRACT-NOISE-REGION`,
+    `TC-EXTRACT-TABLE-FLATTENED`, `TC-EXTRACT-CODE-IN-CHROME`.
+  - `decisions/0014`: duplicate content-addressable ids on inline links are
+    legal (a term linked many times is one id); `TC-VALIDATE-DUP-ID` now
+    applies to structural nodes only.
+  - `docs/privacy-and-security.md` finalized with the real reporting process;
+    `README.md` status → MVP candidate.
 
 - Phase 9: the Chromium MV3 extension and Obsidian handoff.
   - `packages/extension`: the **Clip page** toolbar action injects

@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://example.com/changelog/4.2",
+  "canonicalUrl": "https://example.com/changelog/4.2",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "Two <main> elements — a one-line announcement and the real release notes; the content-bearing one must win. NOT a real page.",
+  "producedByExtractorVersion": "1.0.0"
+}

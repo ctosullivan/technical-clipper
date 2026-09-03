@@ -1,0 +1,182 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 114,
+          "selectorPath": "main[1]"
+        },
+        {
+          "score": 84,
+          "selectorPath": "body"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "main[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "semantic multi block"
+          }
+        ],
+        "id": "7c2s5kvwies343ii",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "First:"
+          }
+        ],
+        "id": "levzmkvxuxuf6wdg",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "13bcacc8d47bd26aff811a06be81b73c1f20e30576e437509e8690adefad6241",
+          "highlightedLines": null,
+          "id": "wppyjblqtaqmplpl",
+          "language": "json",
+          "languageEvidence": "class-token",
+          "text": "{ \"a\": 1 }\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Second:"
+          }
+        ],
+        "id": "cmmamosceg2ofc7g",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "d02b8bb58aa82e872f709035f39b734b9f28dde0c3d305698a95d04aec594cfa",
+          "highlightedLines": null,
+          "id": "k6ft4kp56hedh423",
+          "language": "yaml",
+          "languageEvidence": "class-token",
+          "text": "a: 1\nb: 2\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Third:"
+          }
+        ],
+        "id": "ixadkuncbb3cvasf",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "b4e0497804e46e0a0b0b8c31975b062152d551bac49c3c2e80932567b4085dcd",
+          "highlightedLines": null,
+          "id": "iwnwabnkz5sgrhce",
+          "language": "sql",
+          "languageEvidence": "class-token",
+          "text": "SELECT 1;\n"
+        },
+        "type": "codeBlock"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "First:",
+      "outline": [
+        {
+          "id": "7c2s5kvwies343ii",
+          "level": 1,
+          "text": "semantic multi block"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": []
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {
+      "iwnwabnkz5sgrhce": "b4e0497804e46e0a0b0b8c31975b062152d551bac49c3c2e80932567b4085dcd",
+      "k6ft4kp56hedh423": "d02b8bb58aa82e872f709035f39b734b9f28dde0c3d305698a95d04aec594cfa",
+      "wppyjblqtaqmplpl": "13bcacc8d47bd26aff811a06be81b73c1f20e30576e437509e8690adefad6241"
+    },
+    "documentContentIdentity": "77f9ff69a2b3df8e8e474c9ee905b00c2c79ca7e408d8c19787a19c4b6fc755b",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": null,
+    "canonicalUrl": "https://fixture.example/code/semantic-multi-block",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://fixture.example/code/semantic-multi-block",
+    "title": "semantic multi block"
+  }
+}

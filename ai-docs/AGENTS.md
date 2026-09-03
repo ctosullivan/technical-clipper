@@ -14,14 +14,30 @@ where its evidence claims end. For process/protocol, see the repository-root
 That is the whole product thesis. It is not an AI summariser and not a
 general archival crawler.
 
-## Current status (Phase 0)
+## Current status (Phase 10 — MVP candidate)
 
-None of this is implemented yet. Every package in `packages/` is a scaffold
-that throws `NotImplementedError` on its placeholder entrypoints. There is no
-DOM capture, no IR, no rendering, and no bundle output. Do not describe any
-capture capability as working until its phase (`planning/ROADMAP.md`) is
-`done` and its release gates (`planning/v0-to-mvp-planning-prompt.md` § 12)
-pass.
+All ten roadmap phases are `done`. The pipeline captures article and
+conversation pages end to end; the Chromium MV3 extension is a loadable
+unpacked build. Release gates 1–15 (`decisions/0020`, run via `pnpm gates`)
+pass, the fixture corpus meets § 12, and the security review + comparative
+benchmark are in `docs/evaluation/`. The MVP is **not tagged or published** —
+that is a separate explicit approval step. Still: do not describe a capability
+as working beyond what a `done` phase and a passing gate actually demonstrate.
+
+Live contracts (no longer "planned"):
+
+- IR family + provenance/confidence — `packages/core/src/ir/`, `provenance.ts`,
+  `decisions/0011`, `0012`.
+- Diagnostics registry + export gate — `packages/core/src/diagnostics/`,
+  `decisions/0015`.
+- Canonical JSON / normalization / hashing / fence — `packages/core`,
+  `decisions/0016`.
+- Renderer profiles + degrade table — `packages/core/src/render/`,
+  `decisions/0019`, `0028`, `0030`.
+- Bundle contract — `packages/core/src/bundle/`, `decisions/0017`, `0029`.
+- Detector/adapter seam + sentinels — `packages/core/src/seam.ts`,
+  `packages/pipeline/src/sentinels.ts`, `decisions/0013`.
+- Completeness report — `packages/core/src/evaluate/`, `decisions/0031`.
 
 ## Evidence boundaries — the discipline that matters most
 
@@ -35,8 +51,8 @@ reasoning about or implementing extraction:
   proof of source-code fidelity. Only an asserted string and its hash prove
   that.
 - Confidence levels (`exact`, `normalized`, `approximate`, `failed`, defined
-  precisely once Phase 3 lands) exist so that uncertainty is reported, not
-  hidden. Never let a partial extraction silently present as `exact`.
+  in `packages/core/src/provenance.ts`) exist so that uncertainty is reported,
+  not hidden. Never let a partial extraction silently present as `exact`.
 - Diagnostics carry severity, code, source location, a human message, and
   whether they block export. An agent implementing extraction should default
   to emitting a diagnostic over guessing.

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head><title>Environment variables</title></head>
+<body>
+<div class="cookie-consent" aria-label="cookie consent">
+  <p>We use cookies to measure traffic. <button>Accept</button> <button>Reject</button></p>
+</div>
+<header class="masthead">
+  <nav aria-label="Primary">
+    <a href="/">Product</a><a href="/pricing">Pricing</a><a href="/docs">Docs</a><a href="/login">Log in</a>
+  </nav>
+</header>
+<div class="breadcrumbs"><a href="/docs">Docs</a> / <a href="/docs/config">Config</a> / Environment variables</div>
+<div class="page">
+  <nav class="docs-sidebar" aria-label="Docs navigation">
+    <ul>
+      <li><a href="/docs/config/files">Config files</a></li>
+      <li><a href="/docs/config/env">Environment variables</a></li>
+      <li><a href="/docs/config/precedence">Precedence</a></li>
+    </ul>
+  </nav>
+  <main>
+    <article>
+      <h1>Environment variables</h1>
+      <p>Every configuration key can be set with an environment variable. The
+        variable name is the key path in upper snake case, prefixed with
+        <code>APP_</code>.</p>
+      <h2>Naming</h2>
+      <p>The key <code>server.port</code> becomes <code>APP_SERVER_PORT</code>.
+        Nested keys join with a single underscore.</p>
+      <h2>Types</h2>
+      <ul>
+        <li>Numbers and booleans are parsed; everything else stays a string.</li>
+        <li>An empty value unsets the key rather than setting it to <code>""</code>.</li>
+      </ul>
+      <pre><code class="language-bash">APP_SERVER_PORT=8080 APP_LOG_JSON=true ./app
+</code></pre>
+    </article>
+    <aside class="related-content" aria-label="Related">
+      <h3>Recommended for you</h3>
+      <ul><li><a href="/docs/config/files">Config files</a></li><li><a href="/blog/12-factor">The 12-factor app</a></li></ul>
+    </aside>
+  </main>
+</div>
+<div class="newsletter-signup">
+  <h3>Get the monthly newsletter</h3>
+  <form><input type="email" placeholder="you@example.com"><button>Subscribe</button></form>
+</div>
+<footer class="site-footer">
+  <nav aria-label="Footer"><a href="/legal">Legal</a><a href="/status">Status</a><a href="/careers">Careers</a></nav>
+  <p>&copy; 2026 Example, Inc. All rights reserved.</p>
+</footer>
+</body>
+</html>

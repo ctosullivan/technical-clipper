@@ -38,6 +38,16 @@
         "type": "paragraph"
       },
       {
+        "children": [
+          {
+            "type": "text",
+            "value": "bash"
+          }
+        ],
+        "id": "ueiiprwgjmazwlyl",
+        "type": "paragraph"
+      },
+      {
         "id": "nxpjqepakwe2yh5c",
         "rawHtml": "<button class=\"copy-code-button\">Copy</button>",
         "type": "htmlBlock"
@@ -71,7 +81,7 @@
             "value": "Trailing paragraph."
           }
         ],
-        "id": "mrihvlfehy7nagvr",
+        "id": "3b2w32fjkcuamlbc",
         "type": "paragraph"
       }
     ],
@@ -100,7 +110,7 @@
     "blocks": {
       "xwfgk2anmllxfr4a": "875c6527e63909c82a818bf4a7d6cd860da1d58642fd6b8677d61b8c29b3ef9c"
     },
-    "documentContentIdentity": "bbbb0d7b23e75b0230066dddcb4c2ded3e5eebe3b08d13feb78721424755165d",
+    "documentContentIdentity": "d23b83ceaf720c519ec51bbe3cef9cfab44bad9c545ea0ab70df7bcf70dd3821",
     "markdown": null,
     "normalizationRulesets": {
       "code": "norm/code@1",

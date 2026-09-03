@@ -17,7 +17,11 @@
     "build": "tsc -b",
     "test": "vitest run",
     "skill:verify": "node .claude/skills/markdown-clipping/scripts/verify-examples.mjs",
-    "ci": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm build && pnpm test && pnpm skill:verify"
+    "fixtures": "node scripts/capture-fixture.mjs --all",
+    "fixture-lint": "node scripts/fixture-lint.mjs --counts",
+    "gates": "node scripts/gates.mjs",
+    "package:extension": "node scripts/package-extension.mjs --build",
+    "ci": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm build && pnpm test && pnpm skill:verify && pnpm fixture-lint && pnpm gates"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.0",

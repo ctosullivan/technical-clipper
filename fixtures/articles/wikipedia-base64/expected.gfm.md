@@ -12,117 +12,53 @@ Example of an SVG file containing embedded JPEG images encoded in Base64[6]
 
 Notable applications of Base64:
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/World_Wide_Web" title="World Wide Web" id="mwNQ">World Wide Web</a>
-```
+Web pages
 
-```html
-<sup about="#mwt18" class="mw-ref reference" id="cite_ref-7" rel="dc:references" typeof="mw:Extension/ref" data-mw="{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-7&quot;}}"><a href="#cite_note-7" id="mwNg"><span class="mw-reflink-text" id="mwNw"><span class="cite-bracket" id="mwOA">[</span>7<span class="cite-bracket" id="mwOQ">]</span></span></a></sup>
-```
+Base64 encoding is prevalent on the [World Wide Web](https://en.wikipedia.org/wiki/World_Wide_Web "World Wide Web")[7] where it is often used to embed binary data such as a digital image in text such as [HTML](https://en.wikipedia.org/wiki/HTML "HTML") and [CSS](https://en.wikipedia.org/wiki/CSS "CSS").[8]
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/HTML" title="HTML" id="mwOg">HTML</a>
-```
+E-mail attachments
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/CSS" title="CSS" id="mwOw">CSS</a>
-```
+Base64 is widely used for sending [e-mail](https://en.wikipedia.org/wiki/E-mail "E-mail") attachments, because [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol "Simple Mail Transfer Protocol")– in its original form– was designed to transport [7-bit ASCII](https://en.wikipedia.org/wiki/7-bit_ASCII "7-bit ASCII") characters only. Encoding an attachment as Base64 before sending, and then decoding when received, assures older SMTP servers correctly transmit messages with attached binary information.
 
-```html
-<sup about="#mwt21" class="mw-ref reference" id="cite_ref-8" rel="dc:references" typeof="mw:Extension/ref" data-mw="{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-8&quot;}}"><a href="#cite_note-8" id="mwPA"><span class="mw-reflink-text" id="mwPQ"><span class="cite-bracket" id="mwPg">[</span>8<span class="cite-bracket" id="mwPw">]</span></span></a></sup>
-```
+Embed binary data in a text file
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/E-mail" title="E-mail" class="mw-redirect" id="mwQg">e-mail</a>
-```
+For example, to include the data of an image in a script to avoid depending on external files.
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol" title="Simple Mail Transfer Protocol" id="mwQw">SMTP</a>
-```
+Embed binary data in XML
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/7-bit_ASCII" title="7-bit ASCII" class="mw-redirect" id="mwRg">7-bit ASCII</a>
-```
+To embed binary data in an [XML](https://en.wikipedia.org/wiki/XML "XML") file, using a syntax similar to `<data encoding="base64">...</data>` e.g. [favicons](https://en.wikipedia.org/wiki/Favicon "Favicon") in [Firefox](https://en.wikipedia.org/wiki/Firefox "Firefox")'s exported `bookmarks.html`.
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/XML" title="XML" id="mwSw">XML</a>
-```
+PDF files
 
-```html
-<code id="mwTA"><span typeof="mw:Nowiki" id="mwTQ">&lt;data encoding="base64"&gt;...&lt;/data&gt;</span></code>
-```
+To embed a [PDF](https://en.wikipedia.org/wiki/PDF "PDF") file in an HTML page.
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Favicon" title="Favicon" id="mwTg">favicons</a>
-```
+Embedded elements
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Firefox" title="Firefox" id="mwTw">Firefox</a>
-```
+Although not part of the official specification for the [SVG](https://en.wikipedia.org/wiki/SVG "SVG") format, some viewers can interpret Base64 when used for embedded elements, such as raster images inside SVG files.[9]
 
-```html
-<code id="mwUA">bookmarks.html</code>
-```
+Preventing delimiter collisions
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/PDF" title="PDF" id="mwUw">PDF</a>
-```
+To transmit and store text that might otherwise cause [delimiter collision](https://en.wikipedia.org/wiki/Delimiter_collision "Delimiter collision").
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/SVG" title="SVG" id="mwVg">SVG</a>
-```
+LDAP Data Interchange Format
 
-```html
-<sup about="#mwt24" class="mw-ref reference" id="cite_ref-9" rel="dc:references" typeof="mw:Extension/ref" data-mw="{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-9&quot;}}"><a href="#cite_note-9" id="mwVw"><span class="mw-reflink-text" id="mwWA"><span class="cite-bracket" id="mwWQ">[</span>9<span class="cite-bracket" id="mwWg">]</span></span></a></sup>
-```
+To encode character strings in [LDAP Data Interchange Format](https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format "LDAP Data Interchange Format") files.
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Delimiter_collision" title="Delimiter collision" class="mw-redirect" id="mwXQ">delimiter collision</a>
-```
+Data URI schemes
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format" title="LDAP Data Interchange Format" id="mwYA">LDAP Data Interchange Format</a>
-```
+The [data URI scheme](https://en.wikipedia.org/wiki/Data_URI_scheme "Data URI scheme") can use Base64 to represent file contents. For instance, background images and fonts can be specified in a [CSS](https://en.wikipedia.org/wiki/CSS "CSS") stylesheet file as `data:` URIs, instead of being supplied in separate files.
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Data_URI_scheme" title="Data URI scheme" id="mwYw">data URI scheme</a>
-```
+Leverage clipboard
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/CSS" title="CSS" id="mwZA">CSS</a>
-```
+To store/transmit relatively small amounts of binary data via a computer's text [clipboard](https://en.wikipedia.org/wiki/Clipboard_(computing) "Clipboard (computing)") functionality, especially in cases where the information doesn't warrant being permanently saved or when information must be quickly sent between a wide variety of different, potentially incompatible programs. An example is the representation of the public keys of [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency "Cryptocurrency") recipients as Base64 encoded text strings, which can be easily copied and pasted into users' [wallet software](https://en.wikipedia.org/wiki/Cryptocurrency_wallet "Cryptocurrency wallet").
 
-```html
-<code id="mwZQ">data:</code>
-```
+Support human verification
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Clipboard_(computing)" title="Clipboard (computing)" id="mwaA">clipboard</a>
-```
+Binary data that must be quickly verified by humans as a safety mechanism, such as [file checksums](https://en.wikipedia.org/wiki/Checksum "Checksum") or [key fingerprints](https://en.wikipedia.org/wiki/Public_key_fingerprint "Public key fingerprint"), is often represented in Base64 for easy checking, sometimes with additional formatting, such as separating each group of four characters in the representation of a [PGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy "Pretty Good Privacy") key fingerprint with a space.
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Cryptocurrency" title="Cryptocurrency" id="mwaQ">cryptocurrency</a>
-```
+QR code encoding
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Cryptocurrency_wallet" title="Cryptocurrency wallet" id="mwag">wallet software</a>
-```
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Checksum" title="Checksum" id="mwbQ">file checksums</a>
-```
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Public_key_fingerprint" title="Public key fingerprint" id="mwbg">key fingerprints</a>
-```
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy" title="Pretty Good Privacy" id="mwbw">PGP</a>
-```
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/QR_code" title="QR code" id="mwcg">QR code</a>
-```
+A [QR code](https://en.wikipedia.org/wiki/QR_code "QR code"), which contains binary data, is sometimes stored as Base64 since it is more likely that a QR code reader accurately decodes text than binary data. Also, some devices more readily save text from a QR code than potentially malicious binary data.
 
 ## Alphabet
 
@@ -310,9 +246,7 @@ The "Modified Base64" alphabet consists of the MIME Base64 alphabet, but does no
 
 ### OpenPGP
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP" title="Pretty Good Privacy">Pretty Good Privacy §<span typeof="mw:Entity">&#160;</span>OpenPGP</a>
-```
+Further information: [Pretty Good Privacy §OpenPGP](https://en.wikipedia.org/wiki/Pretty_Good_Privacy#OpenPGP "Pretty Good Privacy")
 
 [OpenPGP](https://en.wikipedia.org/wiki/OpenPGP "OpenPGP"), described in [RFC](https://en.wikipedia.org/wiki/RFC_(identifier) "RFC (identifier)")[9580](https://www.rfc-editor.org/rfc/rfc9580), specifies "[ASCII armor](https://en.wikipedia.org/wiki/ASCII_armor "ASCII armor")", which is identical to the "Base64" encoding described by MIME, with the addition of an optional 24-bit [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check "Cyclic redundancy check"). The [checksum](https://en.wikipedia.org/wiki/Checksum "Checksum") is calculated on the input data before encoding; the checksum is then encoded with the same Base64 algorithm and, prefixed by the "`=`" symbol as the separator, appended to the encoded output data.[17]
 
@@ -325,149 +259,45 @@ The `atob()` and `btoa()` JavaScript methods, defined in the HTML5 draft specifi
 
 Several variants use alphabets similar to the common variants, but in a different order.
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Crypt_(C)" title="Crypt (C)" id="mwBAQ"><b id="mwBAU">crypt</b></a>
-```
+Unix password
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Passwd#Password_file" title="Passwd" id="mwBAY"><code id="mwBAc">/etc/passwd</code> file</a>
-```
+Unix stores password hashes computed with [**crypt**](https://en.wikipedia.org/wiki/Crypt_(C) "Crypt (C)") in the [`/etc/passwd` file](https://en.wikipedia.org/wiki/Passwd#Password_file "Passwd") using an encoding called B64. crypt's alphabet puts the punctuation `.` and `/` before the alphanumeric characters. crypt uses the alphabet "`./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`" without padding. An advantage over RFC 4648 is that sorting encoded ASCII data results in the same order as sorting the plain ASCII data.
 
-```html
-<code id="mwBAg">.</code>
-```
+GEDCOM
 
-```html
-<code id="mwBAk">/</code>
-```
+The **[GEDCOM](https://en.wikipedia.org/wiki/GEDCOM "GEDCOM")** 5.5 standard for genealogical data interchange encodes multimedia files in its text-line hierarchical file format. GEDCOM uses the same alphabet as crypt, which is "`./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`".[20]
 
-```html
-<code id="mwBAo">./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>
-```
+bcrypt
 
-```html
-<b id="mwBA0"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/GEDCOM" title="GEDCOM" id="mwBA4">GEDCOM</a></b>
-```
+**[bcrypt](https://en.wikipedia.org/wiki/Bcrypt "Bcrypt")** hashes are designed to be used in the same way as traditional crypt(3) hashes, but bcrypt's alphabet is in a different order than crypt's. bcrypt uses the alphabet "`./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789`".[21]
 
-```html
-<code id="mwBBA">./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>
-```
+Xxencoding
 
-```html
-<sup about="#mwt226" class="mw-ref reference" id="cite_ref-20" rel="dc:references" typeof="mw:Extension/ref" data-mw="{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-20&quot;}}"><a href="#cite_note-20" id="mwBBE"><span class="mw-reflink-text" id="mwBBI"><span class="cite-bracket" id="mwBBM">[</span>20<span class="cite-bracket" id="mwBBQ">]</span></span></a></sup>
-```
+**[Xxencoding](https://en.wikipedia.org/wiki/Xxencoding "Xxencoding")** uses a mostly-alphanumeric character set similar to crypt, but using `+` and `-` rather than `.` and `/`. Xxencoding uses the alphabet "`+-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz`".
 
-```html
-<b id="mwBBc"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Bcrypt" title="Bcrypt" id="mwBBg">bcrypt</a></b>
-```
+6PACK
 
-```html
-<code id="mwBBo">./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</code>
-```
+Used with some [terminal node controllers](https://en.wikipedia.org/wiki/Terminal_node_controller "Terminal node controller"), uses an alphabet from 0x00 to 0x3f.[22]
 
-```html
-<sup about="#mwt229" class="mw-ref reference" id="cite_ref-21" rel="dc:references" typeof="mw:Extension/ref" data-mw="{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-21&quot;}}"><a href="#cite_note-21" id="mwBBs"><span class="mw-reflink-text" id="mwBBw"><span class="cite-bracket" id="mwBB0">[</span>21<span class="cite-bracket" id="mwBB4">]</span></span></a></sup>
-```
+Bash
 
-```html
-<b id="mwBCE"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Xxencoding" title="Xxencoding" id="mwBCI">Xxencoding</a></b>
-```
-
-```html
-<code id="mwBCM">+</code>
-```
-
-```html
-<code id="mwBCQ">-</code>
-```
-
-```html
-<code id="mwBCU">.</code>
-```
-
-```html
-<code id="mwBCY">/</code>
-```
-
-```html
-<code id="mwBCg">+-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code>
-```
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Terminal_node_controller" title="Terminal node controller" id="mwBCs">terminal node controllers</a>
-```
-
-```html
-<sup about="#mwt232" class="mw-ref reference" id="cite_ref-22" rel="dc:references" typeof="mw:Extension/ref" data-mw="{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-22&quot;}}"><a href="#cite_note-22" id="mwBCw"><span class="mw-reflink-text" id="mwBC0"><span class="cite-bracket" id="mwBC4">[</span>22<span class="cite-bracket" id="mwBC8">]</span></span></a></sup>
-```
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)" id="mwBDI"><b id="mwBDM">Bash</b></a>
-```
-
-```html
-<code id="mwBDU">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@_</code>
-```
-
-```html
-<sup about="#mwt235" class="mw-ref reference" id="cite_ref-23" rel="dc:references" typeof="mw:Extension/ref" data-mw="{&quot;name&quot;:&quot;ref&quot;,&quot;attrs&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;mw-reference-text-cite_note-23&quot;}}"><a href="#cite_note-23" id="mwBDY"><span class="mw-reflink-text" id="mwBDc"><span class="cite-bracket" id="mwBDg">[</span>23<span class="cite-bracket" id="mwBDk">]</span></span></a></sup>
-```
+[**Bash**](https://en.wikipedia.org/wiki/Bash_(Unix_shell) "Bash (Unix shell)") supports numeric literals in Base64. Bash uses the alphabet "`0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@_`".[23]
 
 ### With atypical alphabet
 
 Some variants use a Base64 alphabet that is significantly different from the alphabets used in the most common Base64 variants (like RFC 4648).
 
-```html
-<b id="mwBD8"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Uuencoding" title="Uuencoding" id="mwBEA">Uuencoding</a></b>
-```
+Uuencoding
 
-```html
-<code id="mwBEM">_</code>
-```
+The **[Uuencoding](https://en.wikipedia.org/wiki/Uuencoding "Uuencoding")** alphabet includes no lowercase characters, instead using ASCII codes 32 ("` `" (space)) through 95 ("`_`"), consecutively. Uuencoding uses the alphabet "` !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`". Avoiding all lower-case letters was helpful, because many older printers only printed uppercase. Using consecutive ASCII characters saved computing power, because it was only necessary to add 32, without requiring a lookup table. Its use of most punctuation characters and the space character may limit its usefulness in some applications, such as those that use these characters as syntax.
 
-```html
-<code id="mwBEU"><span typeof="mw:Entity" id="mwBEY">&#160;</span>!"#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_</code>
-```
+BinHex
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/BinHex" title="BinHex" id="mwBEs"><b id="mwBEw">BinHex 4</b></a>
-```
+[**BinHex 4**](https://en.wikipedia.org/wiki/BinHex "BinHex") (HQX), which was used within the [classic Mac OS](https://en.wikipedia.org/wiki/Classic_Mac_OS "Classic Mac OS"), excludes some visually confusable characters like '`7`', '`O`', '`g`' and '`o`'. Its alphabet includes additional punctuation characters. It uses the alphabet "``!"#$%&'()*+,-012345689@ABCDEFGHIJKLMNPQRSTUVXYZ[`abcdefhijklmpqr``".
 
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Classic_Mac_OS" title="Classic Mac OS" id="mwBE0">classic Mac OS</a>
-```
+UTF-8
 
-```html
-<code id="mwBE4">7</code>
-```
-
-```html
-<code id="mwBE8">O</code>
-```
-
-```html
-<code id="mwBFA">g</code>
-```
-
-```html
-<code id="mwBFE">o</code>
-```
-
-~~~html
-<code id="mwBFM"><span typeof="mw:Nowiki" id="mwBFQ">!"#$%&amp;'()*+,-012345689@ABCDEFGHIJKLMNPQRSTUVXYZ[`abcdefhijklmpqr</span></code>
-~~~
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/UTF-8" title="UTF-8" id="mwBFc">UTF-8</a>
-```
-
-```html
-<code id="mwBFg">0b10<b id="mwBFk">xxxxxx</b></code>
-```
-
-```html
-<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/UTF-8#Comparison_with_other_encodings" title="UTF-8" id="mwBFo">UTF-8#Self-synchronization</a>
-```
+A [UTF-8](https://en.wikipedia.org/wiki/UTF-8 "UTF-8") environment can use non-synchronized continuation bytes as base64: `0b10xxxxxx`. See [UTF-8#Self-synchronization](https://en.wikipedia.org/wiki/UTF-8#Comparison_with_other_encodings "UTF-8").
 
 ## See also
 

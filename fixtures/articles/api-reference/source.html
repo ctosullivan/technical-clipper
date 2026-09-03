@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>fetchJSON() — API reference</title>
+  <meta name="author" content="Docs Team">
+  <link rel="canonical" href="https://docs.example/api/fetch-json">
+</head>
+<body>
+<header class="site-header">
+  <nav aria-label="Primary"><a href="/">Home</a> <a href="/api">API</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar" aria-label="API index">
+    <ul><li><a href="/api/fetch-json">fetchJSON</a></li><li><a href="/api/post-json">postJSON</a></li></ul>
+  </nav>
+  <main>
+    <article class="api-body">
+      <h1><code>fetchJSON(url, options)</code></h1>
+      <p>Fetches <a href="https://docs.example/api/fetch-json">the resource</a> at
+        <code>url</code> and parses the response body as JSON. Rejects on a
+        non-2xx status or a body that is not valid JSON.</p>
+
+      <h2 id="parameters">Parameters</h2>
+      <table>
+        <thead>
+          <tr><th>Name</th><th>Type</th><th>Default</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>url</code></td><td>string</td><td>&mdash;</td><td>Absolute or relative URL. Relative URLs resolve against <code>document.baseURI</code>.</td></tr>
+          <tr><td><code>options.timeoutMs</code></td><td>number</td><td><code>10000</code></td><td>Abort the request after this many milliseconds.</td></tr>
+          <tr><td><code>options.retries</code></td><td>number</td><td><code>0</code></td><td>Retry count for network errors only, not HTTP errors.</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="returns">Return value</h2>
+      <p>A <code>Promise</code> that resolves with the parsed value.</p>
+
+      <h2 id="example">Example</h2>
+      <pre><code class="language-javascript">const user = await fetchJSON('/api/users/42', { timeoutMs: 2000 });
+console.log(user.name);
+</code></pre>
+
+      <h2 id="errors">Errors</h2>
+      <ul>
+        <li><strong>HttpError</strong> — the response status was outside 200&ndash;299.
+          <ul><li><code>error.status</code> holds the numeric code.</li></ul>
+        </li>
+        <li><strong>TimeoutError</strong> — the request exceeded <code>timeoutMs</code>.</li>
+      </ul>
+
+      <h2 id="see-also">See also</h2>
+      <ul>
+        <li><a href="https://docs.example/api/post-json"><code>postJSON()</code></a></li>
+      </ul>
+    </article>
+  </main>
+</div>
+<footer class="site-footer"><p>&copy; Example Docs. <a href="/legal">Legal</a></p></footer>
+</body>
+</html>

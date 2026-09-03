@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head><title>Configuration options</title></head>
+<body>
+<header><nav aria-label="Primary"><a href="/">Home</a></nav></header>
+<main>
+  <article>
+    <h1>Configuration options</h1>
+    <p>Each subsystem below has its own <em>Options</em> and <em>Examples</em>
+      section. Jump straight to <a href="#logging-options">logging options</a> or
+      <a href="#cache-options">cache options</a>.</p>
+
+    <h2 id="logging">Logging</h2>
+    <h3 id="logging-options">Options</h3>
+    <ul>
+      <li><code>level</code> &mdash; one of <code>debug</code>, <code>info</code>, <code>warn</code>, <code>error</code>.</li>
+      <li><code>json</code> &mdash; emit one JSON object per line when <code>true</code>.</li>
+    </ul>
+    <h3>Examples</h3>
+    <p>See the <a href="#cache-examples">cache examples</a> for the matching pattern.</p>
+    <pre><code class="language-toml">[logging]
+level = "info"
+json = true
+</code></pre>
+
+    <h2 id="cache">Cache</h2>
+    <h3 id="cache-options">Options</h3>
+    <ul>
+      <li><code>maxEntries</code> &mdash; evict least-recently-used past this count.</li>
+      <li><code>ttlSeconds</code> &mdash; hard expiry regardless of use.</li>
+    </ul>
+    <h3 id="cache-examples">Examples</h3>
+    <pre><code class="language-toml">[cache]
+maxEntries = 5000
+ttlSeconds = 300
+</code></pre>
+
+    <p>Back to <a href="#logging">logging</a>.</p>
+  </article>
+</main>
+<footer><p>Docs</p></footer>
+</body>
+</html>

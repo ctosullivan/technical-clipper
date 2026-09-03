@@ -6,57 +6,63 @@ natural stopping point. History lives in git and `CHANGELOG.md` — see
 
 ## Active phase
 
-Phase 9 — Chromium extension and Obsidian handoff — status: **done**.
-Next: Phase 10 (`planning/phase-10-corpus-evaluation-security-review-mvp-release.md`).
+**All ten roadmap phases are `done`.** Phase 10 (corpus, evaluation, security
+review, packaging) is complete except its final step: promoting the MVP
+release, which is **blocked on explicit user approval** by design
+(`AGENTS.md` § commit/release, planning-prompt § 16).
 
-The user has authorised implementing the phase plans through to the MVP and
-pushing each phase commit. **Phase 10 stops for explicit release approval**
-before any tag / `[Unreleased]` promotion / store submission (`AGENTS.md`
-§ commit/release, § 16).
+## Next concrete action
+
+**Request explicit approval to release the MVP.** Nothing else should be done
+autonomously. On approval, and only then:
+
+1. Move the `[Unreleased]` block in `CHANGELOG.md` to a dated `## [0.1.0] - <date>`
+   (or the agreed version), keeping a fresh empty `[Unreleased]`.
+2. Bump `version` in `package.json`, `packages/extension/package.json`, and
+   `packages/extension/manifest.json` to match.
+3. `git tag` the release commit.
+4. Only if separately authorized: package for a store, sign, submit.
+
+If approval is **not** given, leave everything as-is — the repo is in a
+consistent "MVP candidate" state.
 
 ## Last completed work
 
-Phase 9: `packages/extension` — the loadable Chromium MV3 dev extension.
-Clip page action → inject `capture-in-page.js` (`activeTab` + `scripting`
-only) → pipeline over the live DOM → results page (completeness report +
-Markdown preview + Copy / Send-to-Obsidian (`decisions/0033`) / Download-bundle,
-export-gated). esbuild bundler (`decisions/0032`); `packages/core` is now
-`node:`-free (sync pure-JS SHA-256 in `sha256.ts`); `parseDocument` /
-`captureFromHtml` moved to `pipeline/src/parse.js` so linkedom never enters a
-browser bundle. CI green: 22 files / 160 tests.
+Phase 10, committed in two parts:
 
-## Unresolved decisions
-
-None blocking. Phase 10 is corpus + gates + evaluation + security review +
-packaging. Likely phase-local ADRs: only the reference-environment spec for
-the timing gate (recorded in `docs/evaluation/`, ADR if contested).
-Post-MVP roadmap rows/ADRs for anything the evaluation surfaces.
+- `fix(phase-10): harden extraction for real Wikipedia HTML` — 5 revision-pinned
+  Wikipedia fixtures + the extractor fixes they surfaced (root ascend/descend,
+  link-density exemptions, inline-run coalescing, `<dl>`/`<dd>` + code-table
+  handling, `<style>`-text exclusion, `TC-VALIDATE-DUP-ID` scoped to structural
+  nodes).
+- `feat(phase-10): corpus, gates, evaluation, security review, packaging` —
+  corpus to § 12 minimums (22 articles / 19 code / 4 conversations, 87 code
+  blocks), `scripts/{fixture-lint,gates,package-extension,naive-clip}.mjs`,
+  `docs/evaluation/**` (gate map, timing env, Obsidian checklist, security
+  review, comparative benchmark), doc finalization, MVP `CHANGELOG.md` entry
+  under `[Unreleased]` (not promoted), all docs → "MVP candidate".
 
 ## Verification state
 
 `pnpm` not on PATH; use `npx --yes pnpm@9.12.0 <cmd>`.
-`npx --yes pnpm@9.12.0 run ci` — green: `format:check` clean, `lint` 0 errors,
-`tsc -b` passes, 22 test files / 160 tests pass, `skill:verify` PASS.
+`npx --yes pnpm@9.12.0 run ci` — green: `format:check`, `lint`, `tsc -b`, 160
+tests, `skill:verify`, `fixture-lint` (PASS, 22/19/4, 87 code blocks),
+`gates` (gates 1–15 PASS, timing worst ~0.6 s).
 `node scripts/capture-fixture.mjs --all` — PASS.
-`pnpm --filter @technical-clipper/extension run build` — produces a loadable
-`dist/` (verified browser-safe: no `node:` / linkedom).
+`node scripts/gates.mjs` — PASS (0 gates failing).
+`pnpm --filter @technical-clipper/extension run build` + `pnpm package:extension`
+— produce a loadable `dist/` and `dist-artifacts/*.zip`.
 
 ## Working-tree state
 
 Git repo on `master`, tracking `origin/master`
-(<https://github.com/ctosullivan/technical-clipper.git>). Phases 0–8 pushed;
-Phase 9 commit pending. Nothing tagged or released.
+(<https://github.com/ctosullivan/technical-clipper.git>). Phases 0–10 pushed.
+**Nothing tagged or released.** `dist/`, `dist-artifacts/`, `*.tsbuildinfo`
+are gitignored.
 
-## Next concrete action
+## Unresolved decisions
 
-Begin **Phase 10** per
-`planning/phase-10-corpus-evaluation-security-review-mvp-release.md`:
-`scripts/fixture-lint.mjs` (corpus completeness + provenance validity),
-`scripts/gates.mjs` (map every § 12 automatable gate to a threshold check),
-fill the article corpus toward ≥ 20 (incl. real revision-pinned Wikipedia if
-raw HTML can be obtained, else keep synthetic + record the gap), the code
-corpus toward ≥ 50 blocks; `docs/evaluation/` (reference environment,
-Obsidian vault check, comparative benchmark, security review); finalize docs;
-assemble the MVP `CHANGELOG.md` entry under `[Unreleased]`. **Then stop and
-request explicit approval to promote `[Unreleased]` and tag the MVP** — do
-not tag, push a release, or submit to a store.
+None blocking. Post-MVP items (each needs its own ADR before scheduling):
+Firefox/Safari, native Obsidian plugin, ClipSpec editor, image mirroring,
+a full sanitiser for `raw/page.html` if a future feature renders it
+(security-review finding S-1), an SRI-style manifest for the packaged zip.

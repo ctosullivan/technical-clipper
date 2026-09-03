@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://blog.example/deterministic-compiler",
+  "canonicalUrl": "https://blog.example/deterministic-compiler",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "Long-form blog with two <figure>/<figcaption> pairs (one CDN-hosted image) and prose that references Figure 1. NOT a real page.",
+  "producedByExtractorVersion": "1.0.0"
+}

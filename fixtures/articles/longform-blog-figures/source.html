@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head><title>Notes on building a deterministic compiler</title>
+<meta name="author" content="J. Engineer"></head>
+<body>
+<nav class="topbar"><a href="/">blog</a><a href="/archive">archive</a></nav>
+<main>
+  <article>
+    <h1>Notes on building a deterministic compiler</h1>
+    <p class="byline">By J. Engineer &middot; 12 minute read</p>
+
+    <p>Determinism is a property you design in, not one you test in afterwards.
+      This post collects the decisions that mattered most on a recent project.</p>
+
+    <h2>Hash the meaning, not the markup</h2>
+    <p>The single most useful rule was to derive every identifier from the
+      captured meaning of a node rather than from its position in the source
+      tree. Two inputs that mean the same thing then produce the same output.</p>
+
+    <figure>
+      <img src="/img/pipeline.png" alt="A block diagram of the four pipeline stages feeding a hash function" width="900" height="420">
+      <figcaption>Figure 1. Each stage is a pure function; the final hash covers
+        the canonical form of the whole tree.</figcaption>
+    </figure>
+
+    <p>As Figure 1 shows, the hash sits at the end of a chain of pure functions.
+      Nothing in that chain reads a clock or the network.</p>
+
+    <h2>Normalize early, normalize once</h2>
+    <p>Whitespace, line endings, and Unicode form are all normalized at the
+      boundary. Downstream code can then assume a single representation.</p>
+
+    <blockquote>
+      <p>If you find yourself normalizing the same value twice, one of the two
+        call sites is in the wrong place.</p>
+    </blockquote>
+
+    <figure>
+      <img src="https://cdn.example/img/timings.svg" alt="Bar chart of capture timings across twelve fixtures, all under 400 milliseconds">
+      <figcaption>Figure 2. Capture-plus-render timings for the fixture corpus.</figcaption>
+    </figure>
+
+    <h2>What I would do differently</h2>
+    <ul>
+      <li>Write the fixture runner before the extractor, not after.</li>
+      <li>Treat "unsupported" as a first-class output, with its own diagnostic.</li>
+    </ul>
+  </article>
+</main>
+<footer class="site-footer"><p>&copy; 2026 J. Engineer</p></footer>
+</body>
+</html>

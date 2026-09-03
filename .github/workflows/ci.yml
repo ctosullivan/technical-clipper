@@ -38,3 +38,9 @@ jobs:
 
       - name: Verify markdown-clipping skill examples
         run: pnpm skill:verify
+
+      - name: Fixture-corpus lint
+        run: pnpm fixture-lint
+
+      - name: Release gates
+        run: pnpm gates

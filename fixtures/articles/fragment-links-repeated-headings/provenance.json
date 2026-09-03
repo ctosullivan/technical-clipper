@@ -1,0 +1,12 @@
+{
+  "origin": "synthetic",
+  "sourceUrl": "https://docs.example/config/options",
+  "canonicalUrl": "https://docs.example/config/options",
+  "retrievedAt": null,
+  "licence": "n/a (synthetic)",
+  "attribution": null,
+  "revisionId": null,
+  "revisionUrl": null,
+  "notes": "Repeated identical headings (Options, Examples) under different parents; multiple in-page #fragment links. NOT a real page.",
+  "producedByExtractorVersion": "1.0.0"
+}

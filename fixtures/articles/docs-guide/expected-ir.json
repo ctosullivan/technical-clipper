@@ -1,0 +1,459 @@
+{
+  "body": {
+    "articleRoot": {
+      "candidatesConsidered": [
+        {
+          "score": 553,
+          "selectorPath": "div[1]/div[1]/main[1]"
+        },
+        {
+          "score": 553,
+          "selectorPath": "div[1]/div[1]/main[1]/article[1]"
+        },
+        {
+          "score": 523,
+          "selectorPath": "body"
+        },
+        {
+          "score": 523,
+          "selectorPath": "div[1]"
+        },
+        {
+          "score": 523,
+          "selectorPath": "div[1]/div[1]"
+        }
+      ],
+      "method": "density-score",
+      "methodVersion": "1.0.0",
+      "selectorPath": "div[1]/div[1]/main[1]/article[1]"
+    },
+    "blocks": [
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Routing guide"
+          }
+        ],
+        "id": "rig4ynglwzsx2arn",
+        "level": 1,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "This guide explains how the router maps a URL to a view. If you are new, read the "
+          },
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "getting-started guide"
+              }
+            ],
+            "href": "https://docs.example/docs/getting-started",
+            "id": "wt6qe2cxcshitpgr",
+            "title": null,
+            "type": "link"
+          },
+          {
+            "type": "text",
+            "value": " first."
+          }
+        ],
+        "id": "uzhpc3fbylaiybt4",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "type": "text",
+                "value": "Note:"
+              }
+            ],
+            "type": "strong"
+          },
+          {
+            "type": "text",
+            "value": " route matching is case-sensitive except for the scheme and host."
+          }
+        ],
+        "id": "mmqqxzy3bji3myo5",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Defining routes"
+          }
+        ],
+        "id": "2atzdpisl5zu5fls",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "A route is an object with a "
+          },
+          {
+            "type": "codeSpan",
+            "value": "path"
+          },
+          {
+            "type": "text",
+            "value": " and a "
+          },
+          {
+            "type": "codeSpan",
+            "value": "component"
+          },
+          {
+            "type": "text",
+            "value": ":"
+          }
+        ],
+        "id": "jniyqjzntko5udvr",
+        "type": "paragraph"
+      },
+      {
+        "code": {
+          "caption": null,
+          "confidence": "exact",
+          "evidenceSource": "dom-text-content",
+          "extraction": {
+            "detectorId": "code/pre-code",
+            "evidenceSource": "dom-text-content",
+            "method": "detector",
+            "methodVersion": "1.0.0"
+          },
+          "filename": null,
+          "hasFinalNewline": true,
+          "hash": "e7fc11bf90c98dc7709da547fce9fe941c9cef63dd53148e32a9dc07bfa8836f",
+          "highlightedLines": null,
+          "id": "6repr7xrlomgxcoh",
+          "language": "typescript",
+          "languageEvidence": "class-token",
+          "text": "export const routes = [\n  { path: '/', component: Home },\n  { path: '/about', component: About },\n];\n"
+        },
+        "type": "codeBlock"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Paths are matched in declaration order; the first match wins."
+          }
+        ],
+        "id": "5s5ng5gdv4peh3et",
+        "type": "paragraph"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Nested routes"
+          }
+        ],
+        "id": "yzur7uwcsa7yka4i",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "Child routes render into a parent's "
+          },
+          {
+            "type": "codeSpan",
+            "value": "<Outlet />"
+          },
+          {
+            "type": "text",
+            "value": ". The steps are:"
+          }
+        ],
+        "id": "n6f2hddrmvcarudz",
+        "type": "paragraph"
+      },
+      {
+        "id": "pfq3m2jhmfjg5yz3",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Add a "
+                  },
+                  {
+                    "type": "codeSpan",
+                    "value": "children"
+                  },
+                  {
+                    "type": "text",
+                    "value": " array to the parent route. "
+                  },
+                  {
+                    "type": "text",
+                    "value": " "
+                  }
+                ],
+                "id": "4jbhkwbp64o2ctll",
+                "type": "paragraph"
+              },
+              {
+                "id": "o6zkrlrl7wlx5dwb",
+                "items": [
+                  {
+                    "blocks": [
+                      {
+                        "children": [
+                          {
+                            "type": "text",
+                            "value": "Give each child a "
+                          },
+                          {
+                            "children": [
+                              {
+                                "type": "text",
+                                "value": "relative"
+                              }
+                            ],
+                            "type": "emphasis"
+                          },
+                          {
+                            "type": "text",
+                            "value": " path (no leading slash)."
+                          }
+                        ],
+                        "id": "dej77kvvxrodpqby",
+                        "type": "paragraph"
+                      }
+                    ],
+                    "checked": null,
+                    "id": "dhjpd3ehqdrgrmpo",
+                    "type": "listItem"
+                  },
+                  {
+                    "blocks": [
+                      {
+                        "children": [
+                          {
+                            "type": "text",
+                            "value": "Render "
+                          },
+                          {
+                            "type": "codeSpan",
+                            "value": "<Outlet />"
+                          },
+                          {
+                            "type": "text",
+                            "value": " where the child should appear."
+                          }
+                        ],
+                        "id": "brce27lpvlc74fk2",
+                        "type": "paragraph"
+                      }
+                    ],
+                    "checked": null,
+                    "id": "qdhpm3uy37m62ian",
+                    "type": "listItem"
+                  }
+                ],
+                "ordered": true,
+                "start": 1,
+                "tight": true,
+                "type": "list"
+              }
+            ],
+            "checked": null,
+            "id": "mk267e73vxxxe6ah",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Link to the child with its full, absolute path."
+                  }
+                ],
+                "id": "5llihujxvriimjy4",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "qe3ppptfvzytvwhk",
+            "type": "listItem"
+          }
+        ],
+        "ordered": true,
+        "start": 1,
+        "tight": false,
+        "type": "list"
+      },
+      {
+        "children": [
+          {
+            "type": "text",
+            "value": "See also"
+          }
+        ],
+        "id": "vvbzedk6fbvo57ve",
+        "level": 2,
+        "type": "heading"
+      },
+      {
+        "id": "2reqx3vvphn235o4",
+        "items": [
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Data loading"
+                      }
+                    ],
+                    "href": "https://docs.example/docs/data-loading",
+                    "id": "5c3fmt7jyzfbap3n",
+                    "title": null,
+                    "type": "link"
+                  }
+                ],
+                "id": "lkl3srjewcgjiia6",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "wkvfki7uiyg2kkkh",
+            "type": "listItem"
+          },
+          {
+            "blocks": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Redirects"
+                      }
+                    ],
+                    "href": "https://docs.example/docs/redirects",
+                    "id": "jhqynfdd35ex7ebh",
+                    "title": null,
+                    "type": "link"
+                  }
+                ],
+                "id": "5w6djqrccafmdd65",
+                "type": "paragraph"
+              }
+            ],
+            "checked": null,
+            "id": "eqlzrrhkqqjz3kjt",
+            "type": "listItem"
+          }
+        ],
+        "ordered": false,
+        "start": null,
+        "tight": true,
+        "type": "list"
+      }
+    ],
+    "extraction": {
+      "evidenceSource": "dom-text-content",
+      "method": "general-extractor",
+      "methodVersion": "1.0.0"
+    },
+    "footnotes": [],
+    "metadata": {
+      "lead": "This guide explains how the router maps a URL to a view. If you are new, read the  first.",
+      "outline": [
+        {
+          "id": "rig4ynglwzsx2arn",
+          "level": 1,
+          "text": "Routing guide"
+        },
+        {
+          "id": "2atzdpisl5zu5fls",
+          "level": 2,
+          "text": "Defining routes"
+        },
+        {
+          "id": "yzur7uwcsa7yka4i",
+          "level": 2,
+          "text": "Nested routes"
+        },
+        {
+          "id": "vvbzedk6fbvo57ve",
+          "level": 2,
+          "text": "See also"
+        }
+      ]
+    },
+    "references": [],
+    "removedRegions": [
+      {
+        "approxTextLength": 28,
+        "reason": "navigation",
+        "selectorPath": "div[1]/div[1]/nav[1]"
+      },
+      {
+        "approxTextLength": 32,
+        "reason": "footer",
+        "selectorPath": "div[1]/footer[1]"
+      },
+      {
+        "approxTextLength": 8,
+        "reason": "navigation",
+        "selectorPath": "div[1]/header[1]/nav[1]"
+      }
+    ]
+  },
+  "captureKind": "technical_article",
+  "diagnostics": [],
+  "hashes": {
+    "blocks": {
+      "6repr7xrlomgxcoh": "e7fc11bf90c98dc7709da547fce9fe941c9cef63dd53148e32a9dc07bfa8836f"
+    },
+    "documentContentIdentity": "12598730d6da491217a083a7cbc0afff3b63f706170ea3bfa5dbfaa717d4f626",
+    "markdown": null,
+    "normalizationRulesets": {
+      "code": "norm/code@1",
+      "infostring": "norm/infostring@1",
+      "prose": "norm/prose@1"
+    },
+    "rawPageHtml": null
+  },
+  "schemaVersion": 1,
+  "source": {
+    "byline": "Framework Docs",
+    "canonicalUrl": "https://docs.example/docs/routing",
+    "captureScope": "full-article",
+    "captureTimestamp": "2026-01-01T00:00:00.000Z",
+    "extractorVersion": "1.0.0",
+    "pageLoadState": {
+      "belowFoldLazyImages": 0,
+      "conversationStreaming": false,
+      "documentReadyState": "complete",
+      "infiniteScrollSentinelPresent": false,
+      "observedAt": "2026-01-01T00:00:00.000Z",
+      "skeletonOrPlaceholderNodes": 0
+    },
+    "publishedDate": null,
+    "sourceUrl": "https://docs.example/docs/routing",
+    "title": "Routing guide"
+  }
+}

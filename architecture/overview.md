@@ -5,7 +5,7 @@ the _target_ architecture it is heading toward. Do not read the target
 section as already true — it is refined as later phases land, per
 `AGENTS.md` § documentation sync.
 
-## Current state (Phase 9)
+## Current state (Phase 10 — MVP candidate)
 
 A pnpm/TypeScript workspace, all five packages implemented: `packages/core`
 (browser-independent foundation + IR→Markdown renderer + deterministic capture
@@ -23,8 +23,9 @@ MV3 dev extension); plus a development-time Claude skill:
   (`canonicalize` / `canonicalizePretty`), the normalization rulesets
   (`norm/prose@1`, `norm/code@1`, `norm/infostring@1`), content-addressable
   node ids, SHA-256 hashing with fixed boundaries, safe Markdown fence
-  selection, and `validateDocumentIR`. All pure functions, no DOM. Still
-  exports `notImplemented` for the downstream scaffolds.
+  selection, and `validateDocumentIR`, plus the IR→Markdown renderer, the
+  deterministic capture bundle, and the `evaluateCapture` completeness layer.
+  All pure functions, no DOM, and `node:`-free (sync pure-JS SHA-256).
 - `packages/pipeline` — **implemented** (Phase 4): the capture orchestrator.
   `capture()` clones the rendered DOM (linkedom for fixtures, `decisions/0022`),
   runs the detector→sentinel seam (`decisions/0013`; detectors are injected —
@@ -33,8 +34,11 @@ MV3 dev extension); plus a development-time Claude skill:
   `TC-EXTRACT-NOROOT` fatal), extracts DOM → `ArticleIR` block/inline nodes
   (Wikipedia infobox/navbox policy per `decisions/0024`), restores protected
   code at sentinels with a balance check, and assembles + validates a
-  `DocumentIR` with hashes and a derived export status. All offline, run inside
-  a network trap. Conversation captures and real code detection are Phases 5–6.
+  `DocumentIR` with hashes and a derived export status — for article **and**
+  conversation captures, with the standard detector + ChatGPT adapter registries
+  wired in by default. All offline, run inside a network trap. Root selection
+  ascends/descends the candidate lattice to survive MediaWiki `<section>`
+  segmentation; loose inline runs coalesce into paragraphs.
 - `packages/detectors` — **implemented** (Phase 5): the standard code/terminal
   detector set — `code/pre-code`, `code/blocklevel-code`, `code/prism`,
   `code/highlightjs` (exact from a copy-source or token `textContent`, else
@@ -73,13 +77,17 @@ MV3 dev extension); plus a development-time Claude skill:
 
 The full path — Clip page → capture → validated `DocumentIR` →
 profile-aware Markdown, a deterministic capture bundle, a completeness report,
-and the export gate — works end to end. The pipeline is verified over saved
-HTML fixtures (`fixtures/{articles,code,conversations}/*`, each with golden
-`expected.*` files); the extension bundle is built and its browser-safety +
-capture path are tested. Only the release corpus / gates / security review
-(Phase 10) remain. CI (`.github/workflows/ci.yml`) runs
-format-check/lint/typecheck/build/test/skill:verify across the workspace;
-~160 deterministic tests.
+and the export gate — works end to end. The pipeline is verified over a fixture
+corpus at the § 12 minimums: 22 article fixtures (incl. 5 revision-pinned
+Wikipedia read-view captures with full provenance), 19 code fixtures, 4
+conversation fixtures, each with golden `expected.*` files. Release gates 1–15
+(`decisions/0020`) run as `pnpm gates`; `pnpm fixture-lint` checks corpus
+completeness + provenance; both run in CI alongside
+format-check/lint/typecheck/build/test/skill:verify (~160 deterministic tests).
+The security review, timing reference environment, Obsidian checklist, and the
+gate-17 comparative benchmark are in `docs/evaluation/`. The MVP is a
+loadable unpacked build (`pnpm package:extension`); it is not tagged or
+published pending explicit release approval.
 
 The renderer (`packages/core/src/render/`) is one IR walker with three profile
 configs (`decisions/0019`, `0030`); every fenced block is render-back verified

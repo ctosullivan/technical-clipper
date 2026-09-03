@@ -1,0 +1,28 @@
+{
+  "canExport": true,
+  "citations": {
+    "resolved": 0,
+    "total": 0
+  },
+  "code": {
+    "approximate": 0,
+    "detected": 3,
+    "exact": 3,
+    "failed": 0,
+    "normalized": 0
+  },
+  "counts": {
+    "error": 0,
+    "fatal": 0,
+    "info": 0,
+    "warning": 0
+  },
+  "reason": "no warnings or errors; all completeness assertions passed",
+  "requiresVisibleWarning": false,
+  "sections": {
+    "expected": 0,
+    "kept": 0
+  },
+  "status": "complete",
+  "warnings": []
+}

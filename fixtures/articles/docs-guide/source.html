@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head><title>Routing guide</title><meta name="author" content="Framework Docs"></head>
+<body>
+<div id="__docs">
+  <header><nav aria-label="Primary"><a href="/">Home</a><a href="/docs">Docs</a></nav></header>
+  <div class="doc-shell">
+    <nav class="toc" aria-label="On this page">
+      <ul><li><a href="#defining-routes">Defining routes</a></li><li><a href="#nested">Nested routes</a></li></ul>
+    </nav>
+    <main id="main-content">
+      <article>
+        <h1>Routing guide</h1>
+        <p>This guide explains how the router maps a URL to a view. If you are
+          new, read the <a href="/docs/getting-started">getting-started guide</a> first.</p>
+
+        <div class="callout callout-note" role="note">
+          <p><strong>Note:</strong> route matching is case-sensitive except for the
+            scheme and host.</p>
+        </div>
+
+        <h2 id="defining-routes">Defining routes</h2>
+        <p>A route is an object with a <code>path</code> and a <code>component</code>:</p>
+        <pre><code class="language-ts">export const routes = [
+  { path: '/', component: Home },
+  { path: '/about', component: About },
+];
+</code></pre>
+        <p>Paths are matched in declaration order; the first match wins.</p>
+
+        <h2 id="nested">Nested routes</h2>
+        <p>Child routes render into a parent's <code>&lt;Outlet /&gt;</code>. The
+          steps are:</p>
+        <ol>
+          <li>Add a <code>children</code> array to the parent route.
+            <ol>
+              <li>Give each child a <em>relative</em> path (no leading slash).</li>
+              <li>Render <code>&lt;Outlet /&gt;</code> where the child should appear.</li>
+            </ol>
+          </li>
+          <li>Link to the child with its full, absolute path.</li>
+        </ol>
+
+        <h2 id="see-also">See also</h2>
+        <ul>
+          <li><a href="/docs/data-loading">Data loading</a></li>
+          <li><a href="/docs/redirects">Redirects</a></li>
+        </ul>
+      </article>
+    </main>
+  </div>
+  <footer><p>Framework docs are <a href="/license">MIT licensed</a>.</p></footer>
+</div>
+</body>
+</html>
